@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+playwright-report/
+test-results/
