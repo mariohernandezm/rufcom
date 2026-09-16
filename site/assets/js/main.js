@@ -16,3 +16,8 @@ if (menuBtn && mainNav) {
     }
   });
 }
+
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('#mainNav a').forEach(link => {
+  if (link.getAttribute('href') === currentPage) link.setAttribute('aria-current', 'page');
+});
