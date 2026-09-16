@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <g transform="rotate(-18 180 180)" opacity=".88">
+    <circle cx="180" cy="180" r="138" fill="none" stroke="#dfe3e4" stroke-width="4"/>
+    <circle cx="180" cy="180" r="110" fill="none" stroke="#dfe3e4" stroke-width="3"/>
+    <circle cx="180" cy="180" r="18" fill="none" stroke="#dfe3e4" stroke-width="3"/>
+    <path d="M180 52 L197 158 L180 180 L163 158 Z" fill="none" stroke="#dfe3e4" stroke-width="4"/>
+    <path d="M180 308 L197 202 L180 180 L163 202 Z" fill="none" stroke="#dfe3e4" stroke-width="4"/>
+    <path d="M52 180 L158 197 L180 180 L158 163 Z" fill="none" stroke="#dfe3e4" stroke-width="4"/>
+    <path d="M308 180 L202 197 L180 180 L202 163 Z" fill="none" stroke="#dfe3e4" stroke-width="4"/>
+    <text x="173" y="28" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#dfe3e4">N</text>
+    <text x="173" y="338" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#dfe3e4">S</text>
+    <text x="18" y="188" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#dfe3e4">W</text>
+    <text x="326" y="188" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#dfe3e4">E</text>
+  </g>
+</svg>

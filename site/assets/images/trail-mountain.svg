@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320">
+  <defs>
+    <style>
+      .line{fill:none;stroke:#173344;stroke-width:8;stroke-linecap:round;stroke-dasharray:14 14;opacity:.55}
+      .mount{fill:none;stroke:#173344;stroke-width:8;stroke-linejoin:round;stroke-linecap:round;opacity:.55}
+    </style>
+  </defs>
+  <path class="line" d="M30 220 C140 170, 160 260, 280 220 S440 140, 560 200 S730 250, 820 150" />
+  <path class="mount" d="M790 180 L840 110 L890 180" />
+  <path class="mount" d="M820 180 L852 135 L884 180" />
+</svg>

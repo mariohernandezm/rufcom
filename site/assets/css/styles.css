@@ -1,0 +1,1358 @@
+
+:root{
+  --bg:#f7f3e8;
+  --surface:#ffffff;
+  --surface-2:#fffaf0;
+  --ink:#26211b;
+  --muted:#6f6558;
+  --accent:#cc8a00;
+  --accent-strong:#b26f00;
+  --brown:#44250a;
+  --line:#eadfcb;
+  --max:1120px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter:blur(14px);
+  background:rgba(247,243,232,.9);
+  border-bottom:1px solid rgba(68,37,10,.08);
+}
+.nav-wrap{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  font-weight:800;
+  letter-spacing:.04em;
+}
+.brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  display:grid;place-items:center;
+  background:linear-gradient(180deg,#ffd76c,#f6b327);
+  color:#4a2f0b;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+nav{display:flex;gap:24px;align-items:center}
+nav a{text-decoration:none;font-size:.94rem;font-weight:700;color:#5a4a37}
+nav a:hover{color:var(--accent-strong)}
+.menu-btn{display:none;border:0;background:transparent;font-size:1.5rem}
+
+.hero{padding:56px 0 52px}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:48px;
+  align-items:center;
+}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.78rem;
+  font-weight:800;
+  color:var(--accent-strong);
+  margin:0 0 10px;
+}
+h1,h2,h3{line-height:1.12;margin-top:0}
+h1{font-size:clamp(2.1rem,3.5vw,2.9rem);line-height:1.04;letter-spacing:-.04em;margin-bottom:16px}
+h2{
+  font-size:clamp(2rem,4vw,3.4rem);
+  letter-spacing:-.04em;
+  margin-bottom:18px;
+}
+h3{font-size:1.2rem;margin-bottom:10px}
+.hero-copy{font-size:1.02rem;color:var(--muted);max-width:650px;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;
+  padding:14px 18px;
+  border-radius:14px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.2s ease;
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-strong);transform:translateY(-1px)}
+.btn-secondary{background:var(--surface);border:1px solid var(--line)}
+.btn-secondary:hover{transform:translateY(-1px)}
+
+.trust-inline{
+  margin-top:22px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:12px 14px;
+  max-width:430px;
+  box-shadow:0 10px 25px rgba(0,0,0,.04);
+}
+.trust-inline img{width:68px;height:68px;object-fit:contain}
+.trust-inline p{margin:.2rem 0 0;color:var(--muted)}
+
+.hero-panel{
+  background:linear-gradient(180deg,#fff7dd,#fffdfa);
+  border:1px solid #f1e2b8;
+  border-radius:30px;
+  padding:28px;
+  box-shadow:0 20px 60px rgba(109,71,8,.08);
+}
+.hero-panel img{
+  width:min(100%, 360px);
+  margin:0 auto 16px;
+}
+.panel-copy p:last-child{color:var(--muted)}
+
+.section{padding:82px 0}
+.section.alt{background:#fcf8ef}
+.section-heading{max-width:760px;margin-bottom:36px}
+.section-heading p:last-child{color:var(--muted);font-size:1.05rem}
+
+.cards{display:grid;gap:18px}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.card{
+  background:var(--surface);
+  border:1px solid rgba(68,37,10,.08);
+  border-radius:22px;
+  padding:26px;
+  box-shadow:0 10px 32px rgba(0,0,0,.04);
+}
+.card p{color:var(--muted);margin:.45rem 0 0}
+.number{
+  display:inline-block;
+  margin-bottom:24px;
+  color:var(--accent-strong);
+  font-size:.8rem;
+  font-weight:800;
+}
+
+.product{position:relative;padding-top:56px}
+.mini-badge{
+  position:absolute;
+  top:16px;left:16px;
+  display:inline-block;
+  padding:7px 10px;
+  background:#ffe6a8;
+  color:#6b4200;
+  border-radius:999px;
+  font-size:.78rem;
+  font-weight:800;
+}
+.mini-badge.muted{
+  background:#eee5d3;
+  color:#6b6358;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.feature-copy p{color:var(--muted)}
+.feature-list{
+  list-style:none;
+  padding:0;
+  margin:24px 0 0;
+}
+.feature-list li{
+  margin:.8rem 0;
+  padding:10px 14px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:12px;
+  font-weight:700;
+}
+.seal-showcase{
+  background:linear-gradient(180deg,#fff8e8,#fffef9);
+  border:1px solid #f1e2b8;
+  border-radius:28px;
+  padding:28px;
+}
+.seal-showcase img{
+  width:min(100%, 420px);
+  margin:auto;
+}
+
+.tag-cloud{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.tag-cloud span{
+  padding:11px 15px;
+  background:var(--surface);
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-weight:700;
+}
+
+.link-card a{
+  display:inline-block;
+  margin-top:18px;
+  color:var(--accent-strong);
+  font-weight:800;
+  text-decoration:none;
+}
+
+.final-cta{text-align:center}
+.final-cta-box{
+  background:linear-gradient(180deg,#fff8e8,#fffefb);
+  border:1px solid #f1e2b8;
+  border-radius:32px;
+  padding:36px 24px;
+}
+.final-cta p{color:var(--muted);font-size:1.05rem}
+.final-cta .btn{margin-top:12px}
+
+footer{
+  border-top:1px solid rgba(68,37,10,.08);
+  padding:34px 0;
+  background:#f3ecdd;
+}
+.footer-wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+}
+.footer-wrap p{color:var(--muted);margin:.25rem 0 0}
+
+@media (max-width: 920px){
+  .hero-grid,.feature-grid{grid-template-columns:1fr}
+  .cards.three{grid-template-columns:1fr}
+  nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:20px;
+    right:20px;
+    background:var(--surface);
+    padding:18px;
+    border-radius:16px;
+    box-shadow:0 18px 50px rgba(0,0,0,.12);
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  nav.open{display:flex}
+  .menu-btn{display:block}
+}
+
+@media (max-width: 620px){
+  .container{width:min(calc(100% - 28px),var(--max))}
+  .hero{padding-top:56px}
+  h1{font-size:clamp(2.45rem,11vw,3.2rem)}
+  .hero-actions{flex-direction:column}
+  .btn{text-align:center}
+  .footer-wrap{flex-direction:column;align-items:flex-start}
+}
+
+.beginner-guide{
+  margin-top:28px;
+  display:grid;
+  gap:18px;
+}
+.guide-step{
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:20px;
+  align-items:start;
+  background:var(--surface);
+  border:1px solid rgba(68,37,10,.08);
+  border-radius:22px;
+  padding:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.035);
+}
+.guide-number{
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  display:grid;
+  place-items:center;
+  background:#ffe6a8;
+  color:#6b4200;
+  font-weight:800;
+}
+.guide-step h3{
+  margin-bottom:8px;
+  font-size:1.35rem;
+}
+.guide-step p{
+  margin:.3rem 0;
+  color:var(--muted);
+}
+.notice-box{
+  margin-top:24px;
+  padding:20px 22px;
+  border-radius:18px;
+  background:#fff3cf;
+  border:1px solid #efd38a;
+}
+.notice-box strong{
+  display:block;
+  margin-bottom:6px;
+  color:#5d3900;
+}
+.price-note{
+  font-size:.9rem;
+  color:var(--muted);
+  margin-top:10px;
+}
+.simple-path{
+  margin-top:34px;
+  padding:26px;
+  border-radius:24px;
+  background:#2d241b;
+  color:#fff;
+}
+.simple-path h3{
+  font-size:1.5rem;
+  margin-bottom:10px;
+}
+.simple-path p{
+  color:#e8dfd3;
+  margin:0;
+}
+.simple-path .path-line{
+  margin-top:16px;
+  font-weight:800;
+  color:#ffd36b;
+}
+@media (max-width:620px){
+  .guide-step{grid-template-columns:1fr}
+}
+
+/* RUFCOM v4 */
+.brand-logo{
+  height:46px;
+  width:auto;
+  display:block;
+}
+.logo-hero{
+  width:min(100%,560px);
+  margin:0 0 28px;
+}
+.article-hero{padding:46px 0 34px}
+.article-hero-grid{display:grid;grid-template-columns:1fr 280px;gap:42px;align-items:center}
+.article-title{font-size:clamp(2rem,3.2vw,2.625rem);margin-bottom:8px}
+.article-lead{font-size:1.08rem;font-weight:800;color:var(--accent-strong);margin:.15rem 0 12px}
+.article-seal{width:250px;justify-self:end}
+.article-badge{display:inline-block;margin-top:14px;padding:9px 13px;border-radius:999px;background:#ffe6a8;color:#6b4200;font-weight:800}
+.article-body{max-width:920px}
+.article-body h2{margin-top:54px;font-size:clamp(1.9rem,4vw,2.8rem)}
+.article-body > p{color:var(--muted);font-size:1.04rem}
+.article-callout{padding:24px;border-radius:20px;background:#2d241b;color:#fff}
+.article-callout strong{color:#ffd36b;font-size:.85rem;text-transform:uppercase;letter-spacing:.12em}
+.article-callout p{font-size:1.28rem;font-weight:700;margin:8px 0 0}
+.materials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.material-item{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.material-item strong,.material-item span{display:block}
+.material-item span{color:var(--muted);margin-top:4px}
+.plan-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:18px;margin-top:18px}
+.plan-card img{width:min(100%,720px);margin:auto}
+.measure-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.measure-grid div{background:#fff3cf;border:1px solid #efd38a;border-radius:16px;padding:16px}
+.measure-grid span,.measure-grid strong{display:block}
+.measure-grid span{font-size:.85rem;color:#6b5a45}
+.measure-grid strong{font-size:1.2rem;margin-top:4px}
+.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.experience-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.experience-big{display:block;font-size:2.6rem;font-weight:800;color:var(--accent-strong);line-height:1}
+.experience-card p{color:var(--muted);margin-bottom:0}
+.connection-line{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px}
+.connection-line span{padding:10px 13px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-weight:700}
+.connection-line b{color:var(--accent-strong)}
+.article-footer-note{margin-top:50px;display:flex;align-items:center;gap:18px;padding:18px;border:1px solid #efd38a;background:#fff8e8;border-radius:20px}
+.article-footer-note img{width:92px}
+.article-footer-note p{margin:.2rem 0 0;color:var(--muted)}
+.quick-links{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.quick-link{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;font-weight:800}
+.quick-link span{display:block;color:var(--muted);font-weight:500;margin-top:6px}
+.license-steps{display:grid;gap:15px;margin-top:22px}
+.license-step{display:grid;grid-template-columns:52px 1fr;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.license-num{width:44px;height:44px;border-radius:14px;background:#ffe6a8;color:#6b4200;display:grid;place-items:center;font-weight:800}
+.source-note{font-size:.9rem;color:var(--muted);margin-top:22px}
+.source-note a{color:var(--accent-strong);font-weight:700}
+.plan-preview img{max-height:500px}
+@media(max-width:920px){
+  .article-hero-grid{grid-template-columns:1fr}
+  .article-seal{justify-self:start;width:210px}
+  .measure-grid{grid-template-columns:repeat(2,1fr)}
+  .quick-links{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .materials-grid,.experience-grid,.measure-grid{grid-template-columns:1fr}
+  .article-title{font-size:2.6rem}
+  .brand-logo{height:38px}
+}
+
+/* Equipos RUFCOM v5 */
+.equipment-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+.equipment-card{
+  background:var(--surface);
+  border:1px solid rgba(68,37,10,.09);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 10px 34px rgba(0,0,0,.04);
+}
+.featured-equipment{
+  border:2px solid #e8b44c;
+  background:linear-gradient(180deg,#fffaf0,#ffffff);
+}
+.equipment-topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+}
+.equipment-topline img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+}
+.equipment-type{
+  display:inline-block;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#fff0c6;
+  color:#6b4200;
+  font-size:.78rem;
+  font-weight:800;
+}
+.equipment-card h3{
+  font-size:1.55rem;
+  margin-bottom:10px;
+}
+.equipment-summary{
+  color:var(--muted);
+  font-size:1.02rem;
+}
+.equipment-info{
+  margin-top:20px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+}
+.equipment-info p{
+  color:var(--muted);
+  margin:.55rem 0;
+}
+.equipment-info strong{
+  color:var(--ink);
+}
+.programming-box{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:20px;
+  display:grid;
+  gap:10px;
+}
+.programming-row{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  padding:14px;
+  border-radius:13px;
+  background:#faf7ef;
+}
+.programming-row span{
+  color:var(--accent-strong);
+  font-weight:800;
+  text-align:right;
+}
+@media(max-width:800px){
+  .equipment-grid{grid-template-columns:1fr}
+  .programming-row{flex-direction:column;align-items:flex-start}
+  .programming-row span{text-align:left}
+}
+
+/* RUFCOM v6 */
+.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.topic-card,.antenna-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:24px}
+.topic-card p,.antenna-card p{color:var(--muted)}
+.simple-definition{background:#f7f1e6;border-left:4px solid var(--accent);padding:16px 18px;border-radius:0 14px 14px 0;margin:18px 0}
+.tool-warning{margin-top:14px;padding:14px 16px;border-radius:14px;background:#fff0c6;border:1px solid #efd38a;color:#5d3900}
+.accessory-list{display:grid;gap:16px}.accessory-item{display:grid;grid-template-columns:52px 1fr;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}.accessory-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#ffe6a8;font-size:1.4rem}
+.antenna-choice{display:grid;grid-template-columns:1fr 1fr;gap:20px}.spec-list{list-style:none;padding:0;margin:16px 0 0}.spec-list li{margin:.55rem 0;padding:9px 12px;background:#faf7ef;border-radius:10px}
+@media(max-width:800px){.topic-grid,.antenna-choice{grid-template-columns:1fr}}
+
+
+/* =========================================================
+   RUFCOM V7 — radioafición + aventura
+   ========================================================= */
+:root{
+  --ruf-navy:#071b29;
+  --ruf-orange:#f5a313;
+  --ruf-orange-dark:#bf7100;
+  --ruf-cream:#f7f3e8;
+}
+
+/* Menú más compacto para dar cabida a las secciones principales */
+nav{gap:15px;flex-wrap:nowrap}
+nav a{font-size:.86rem;white-space:nowrap}
+
+/* Páginas internas: títulos con jerarquía, pero sin dominar la pantalla */
+.article-hero{padding:46px 0 34px}
+.article-title{
+  font-size:clamp(2.15rem,4.2vw,3.35rem);
+  line-height:1.02;
+  letter-spacing:-.04em;
+  margin-bottom:10px;
+}
+.article-lead{font-size:1.12rem;line-height:1.45}
+.article-body h2{font-size:clamp(1.65rem,3vw,2.25rem);margin-top:48px}
+
+/* Identidad aventurera */
+.adventure-band{
+  background:var(--ruf-navy);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.adventure-band::before{
+  content:"";
+  position:absolute;
+  inset:auto -5% 0 -5%;
+  height:88px;
+  opacity:.22;
+  background:
+    linear-gradient(145deg,transparent 46%,#fff 47% 53%,transparent 54%) 0 35px/180px 90px repeat-x;
+}
+.adventure-band .container{position:relative;z-index:1}
+.adventure-band .eyebrow{color:#ffbf4c}
+.adventure-band h2{color:#fff}
+.adventure-band p{color:#d7e1e7}
+.adventure-band .feature-list li{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);color:#fff}
+
+.identity-kicker{
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  padding:8px 12px;
+  border:1px solid #ead3a7;
+  border-radius:999px;
+  background:#fff8e8;
+  color:#6c4300;
+  font-size:.82rem;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+.adventure-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:28px;
+}
+.adventure-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:22px;
+}
+.adventure-card .icon{font-size:1.7rem;margin-bottom:12px}
+.adventure-card p{color:var(--muted);margin-bottom:0}
+
+.safety-checklist{display:grid;gap:10px;margin-top:22px}
+.safety-checklist div{
+  padding:13px 15px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:13px;
+  font-weight:650;
+}
+
+.socorro-box{
+  background:#fff5db;
+  border:1px solid #edce7e;
+  border-radius:24px;
+  padding:26px;
+  margin-top:28px;
+}
+.socorro-box h3{font-size:1.55rem;margin-bottom:9px}
+.socorro-box p{color:#65543e}
+.socorro-meta{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.socorro-meta span{padding:7px 10px;border-radius:999px;background:#fff;font-weight:800;color:#5d3900;border:1px solid #ecd59c}
+
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin:24px 0 8px;
+}
+.category-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+}
+.category-card.start{border:2px solid #e6aa2e;background:#fffaf0}
+.category-card .cat-step{font-size:.78rem;font-weight:800;color:var(--accent-strong);text-transform:uppercase;letter-spacing:.09em}
+.category-card h3{font-size:1.3rem;margin:7px 0}
+.category-card p{font-size:.94rem;color:var(--muted);margin:0}
+.category-arrow{text-align:center;font-weight:900;color:var(--accent-strong);font-size:1.35rem;margin:10px 0 22px}
+
+.maleta-diagram{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+.maleta-part{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+}
+.maleta-part .part-icon{font-size:1.6rem;margin-bottom:10px}
+.maleta-part p{color:var(--muted);margin-bottom:0}
+.origin-box{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:24px;
+  align-items:center;
+  background:linear-gradient(135deg,#071b29,#12364c);
+  color:#fff;
+  border-radius:26px;
+  padding:28px;
+}
+.origin-box img{width:145px;border-radius:22px}
+.origin-box p{color:#d7e1e7}
+
+.links-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.link-feature{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:23px;
+}
+.link-feature p{color:var(--muted)}
+.link-feature a{color:var(--accent-strong);font-weight:800;text-decoration:none}
+
+.footer-brand{height:44px;width:auto;margin-bottom:8px}
+.footer-tagline{font-size:.88rem}
+
+@media(max-width:1050px){
+  nav{gap:10px}
+  nav a{font-size:.8rem}
+}
+@media(max-width:920px){
+  nav{gap:18px}
+  nav a{font-size:.94rem}
+  .adventure-grid,.category-grid,.maleta-diagram,.links-grid{grid-template-columns:1fr 1fr}
+  .origin-box{grid-template-columns:120px 1fr}
+}
+@media(max-width:620px){
+  .article-title{font-size:2.2rem}
+  .adventure-grid,.category-grid,.maleta-diagram,.links-grid{grid-template-columns:1fr}
+  .origin-box{grid-template-columns:1fr}
+  .origin-box img{width:120px}
+}
+
+/* RUFCOM v8 — páginas internas más compactas */
+.article-hero-grid{gap:30px}
+.article-hero p:not(.eyebrow):not(.article-lead){
+  font-size:1rem;
+  line-height:1.55;
+}
+@media(max-width:620px){
+  .article-title{font-size:2.15rem}
+  .article-hero{padding:36px 0 28px}
+  .article-lead{font-size:1rem}
+}
+
+/* RUFCOM v9 — portada más compacta */
+.hero-grid{gap:34px}
+.hero-panel{padding:22px}
+.trust-inline{margin-top:18px}
+@media (max-width:620px){
+  h1{font-size:clamp(2.05rem,9vw,2.8rem)}
+  .hero{padding:42px 0 40px}
+  .hero-copy{font-size:.98rem}
+}
+
+/* RUFCOM v10 — tamaños finales de títulos */
+@media (max-width:620px){
+  h1{font-size:clamp(2rem,8vw,2.5rem)}
+  .article-title{font-size:2rem}
+}
+
+/* RUFCOM v11 — portada realmente compacta */
+.hero{
+  padding:34px 0 30px !important;
+}
+.hero-grid{
+  gap:24px !important;
+  align-items:center;
+}
+.logo-hero{
+  width:min(100%,420px) !important;
+  margin:0 0 16px !important;
+}
+.hero .eyebrow{
+  margin-bottom:6px !important;
+}
+.hero h1{
+  font-size:clamp(2rem,3vw,2.65rem) !important;
+  line-height:1.02 !important;
+  margin-bottom:12px !important;
+}
+.hero-copy{
+  font-size:.98rem !important;
+  line-height:1.5 !important;
+  margin-bottom:16px !important;
+  max-width:610px !important;
+}
+.hero-actions{
+  gap:8px !important;
+}
+.hero-actions .btn{
+  padding:11px 14px !important;
+}
+.trust-inline{
+  margin-top:12px !important;
+  padding:9px 11px !important;
+}
+.trust-inline img{
+  width:54px !important;
+  height:54px !important;
+}
+.hero-panel{
+  padding:18px !important;
+  border-radius:22px !important;
+}
+.hero-panel img{
+  width:min(100%,260px) !important;
+  margin:0 auto 10px !important;
+}
+.hero-panel h2{
+  font-size:1.6rem !important;
+  margin-bottom:10px !important;
+}
+.hero-panel p{
+  margin-bottom:0 !important;
+}
+.site-header .nav-wrap{
+  min-height:60px !important;
+}
+.brand-logo{
+  height:38px !important;
+}
+
+@media (max-width:620px){
+  .hero{
+    padding:26px 0 24px !important;
+  }
+  .logo-hero{
+    width:min(100%,320px) !important;
+    margin-bottom:12px !important;
+  }
+  .hero h1{
+    font-size:2rem !important;
+  }
+  .hero-copy{
+    font-size:.95rem !important;
+  }
+  .hero-panel img{
+    width:min(100%,220px) !important;
+  }
+}
+
+/* RUFCOM v12 — jerarquía uniforme de títulos */
+
+/* Título principal de portada y títulos principales de secciones:
+   mismo tamaño visual máximo (~42 px) */
+.hero h1,
+.section h2,
+.section-heading h2,
+.feature-copy h2,
+.final-cta h2,
+.article-title,
+.article-body h2 {
+  font-size:clamp(2rem,3vw,2.65rem) !important;
+  line-height:1.08 !important;
+  letter-spacing:-.035em !important;
+}
+
+/* Mantener títulos de tarjetas y bloques pequeños más contenidos */
+.card h3,
+.equipment-card h3,
+.topic-card h3,
+.antenna-card h3,
+.guide-step h3,
+.license-step h3,
+.simple-path h3,
+.hero-panel h2 {
+  font-size:1.45rem !important;
+  line-height:1.15 !important;
+}
+
+/* En móvil, todos los títulos principales quedan compactos */
+@media (max-width:620px){
+  .hero h1,
+  .section h2,
+  .section-heading h2,
+  .feature-copy h2,
+  .final-cta h2,
+  .article-title,
+  .article-body h2 {
+    font-size:2rem !important;
+  }
+}
+
+/* RUFCOM v13 — más aire libre y mejor contraste */
+.adventure-note{
+  background:#fff8ee;
+  color:#24333d;
+  border:1px solid #ead8b5;
+  border-radius:28px;
+  padding:28px;
+  box-shadow:0 14px 34px rgba(0,0,0,.08);
+}
+.adventure-note .eyebrow{color:#c78500}
+.adventure-note p{
+  color:#31424d !important;
+  font-size:1.05rem;
+  line-height:1.65;
+  margin:0;
+}
+.scenic-section{padding:72px 0;}
+.scenic-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.scenic-card{
+  background:var(--surface);
+  border:1px solid rgba(68,37,10,.08);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 14px 34px rgba(0,0,0,.05);
+}
+.scenic-card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;}
+.scenic-copy{padding:20px 22px 24px;}
+.scenic-copy p{color:var(--muted);margin:.55rem 0 0;}
+.index-adventure{background:linear-gradient(180deg,#f7f3e8 0%, #f0eadb 100%);}
+.nature-band{position:relative;overflow:hidden;}
+.nature-band::before{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:84px;
+  opacity:.12;
+  background:linear-gradient(140deg,transparent 45%,#143448 46% 54%,transparent 55%) 0 40px/200px 84px repeat-x;
+}
+.panel-visual img{width:100%;border-radius:22px;display:block;}
+.feature-grid.visual{grid-template-columns:1.05fr .95fr;align-items:center;}
+.link-card a{word-break:break-word;}
+@media(max-width:900px){.scenic-grid,.feature-grid.visual{grid-template-columns:1fr}}
+
+/* RUFCOM v14 — menos dibujos, más claridad */
+.adventure-note{
+  background:#fff8ee !important;
+  color:#23323b !important;
+  border:1px solid #e8d6b2 !important;
+  border-radius:28px !important;
+  padding:30px !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.08) !important;
+}
+.adventure-note .eyebrow{
+  color:#c78500 !important;
+  opacity:1 !important;
+}
+.adventure-note p{
+  color:#31424d !important;
+  opacity:1 !important;
+  font-size:1.08rem !important;
+  font-weight:600 !important;
+  line-height:1.65 !important;
+  margin:0 !important;
+}
+.clean-band{
+  background:linear-gradient(180deg,#f7f3e8 0%,#f1ebde 100%);
+  border:1px solid rgba(68,37,10,.08);
+  border-radius:28px;
+  padding:28px;
+}
+.clean-band p:last-child{margin-bottom:0}
+
+/* RUFCOM v16 — pequeños detalles outdoor */
+.detail-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.detail-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 12px;
+  border-radius:999px;
+  background:#f5efe3;
+  border:1px solid rgba(68,37,10,.12);
+  color:#34444c;
+  font-size:.95rem;
+  font-weight:700;
+}
+.detail-chip .icon{
+  font-size:1rem;
+  line-height:1;
+}
+.detail-chip.dark{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.12);
+  color:#f5f2ea;
+}
+.micro-kicker{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:10px;
+  color:#6d5f50;
+  font-size:.92rem;
+  font-weight:700;
+}
+.micro-kicker span{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+}
+.icon-bullet{
+  display:inline-flex;
+  width:30px;
+  height:30px;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  background:#fff0c6;
+  color:#6b4200;
+  font-size:1rem;
+}
+.note-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:22px;
+}
+.note-pill{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+}
+.note-pill strong{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:6px;
+}
+.note-pill p{
+  color:var(--muted);
+  margin:0;
+  font-size:.96rem;
+}
+@media(max-width:800px){
+  .note-grid{grid-template-columns:1fr}
+}
+
+/* RUFCOM v17 — identidad outdoor sutil, sin chips visibles */
+.detail-strip,
+.micro-kicker,
+.note-grid{
+  display:none !important;
+}
+
+/* Base para fondos decorativos muy tenues */
+.subtle-outdoor{
+  position:relative;
+  overflow:hidden;
+}
+.subtle-outdoor > *{
+  position:relative;
+  z-index:1;
+}
+
+/* Licencias: brújula tenue que acompaña la idea de “tu camino” */
+.license-compass::after{
+  content:"";
+  position:absolute;
+  right:5%;
+  top:36px;
+  width:250px;
+  height:250px;
+  border:2px solid rgba(255,255,255,.28);
+  border-radius:50%;
+  opacity:.34;
+  pointer-events:none;
+  background:
+    linear-gradient(45deg, transparent 48%, rgba(255,255,255,.38) 49% 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(255,255,255,.25) 49% 51%, transparent 52%),
+    radial-gradient(circle at center, rgba(255,255,255,.22) 0 6px, transparent 7px);
+}
+.license-compass::before{
+  content:"N";
+  position:absolute;
+  right:calc(5% + 116px);
+  top:50px;
+  color:rgba(255,255,255,.46);
+  font-weight:800;
+  font-size:1rem;
+  letter-spacing:.12em;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Portada: línea de montañas muy suave */
+.home-mountain::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-4px;
+  height:92px;
+  opacity:.08;
+  background:
+    linear-gradient(135deg, transparent 47%, #173344 48% 52%, transparent 53%) 0 28px/180px 92px repeat-x;
+  pointer-events:none;
+}
+
+/* Radio y aventura: horizonte de montaña discreto */
+.adventure-band.subtle-mountain::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:120px;
+  opacity:.10;
+  background:
+    linear-gradient(145deg, transparent 46%, #ffffff 47% 53%, transparent 54%) 0 44px/220px 110px repeat-x;
+  pointer-events:none;
+}
+
+/* Maleta: ruta punteada muy tenue */
+.route-mark::after{
+  content:"";
+  position:absolute;
+  right:4%;
+  bottom:26px;
+  width:300px;
+  height:120px;
+  opacity:.16;
+  pointer-events:none;
+  background:
+    radial-gradient(circle, rgba(255,255,255,.58) 0 3px, transparent 4px) 0 55%/28px 28px repeat-x;
+  transform:rotate(-8deg);
+}
+
+/* Antenas: ondas RF apenas visibles */
+.rf-mark::after{
+  content:"";
+  position:absolute;
+  right:6%;
+  top:34px;
+  width:180px;
+  height:180px;
+  border:2px solid rgba(204,138,0,.10);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 28px rgba(204,138,0,.06),
+    0 0 0 56px rgba(204,138,0,.035);
+  pointer-events:none;
+}
+
+/* Herramientas: retícula técnica muy suave */
+.tool-grid::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.035;
+  pointer-events:none;
+  background:
+    linear-gradient(#173344 1px, transparent 1px) 0 0/32px 32px,
+    linear-gradient(90deg,#173344 1px, transparent 1px) 0 0/32px 32px;
+}
+
+/* Equipos: silueta minimalista de handy */
+.radio-mark::after{
+  content:"";
+  position:absolute;
+  right:6%;
+  top:42px;
+  width:74px;
+  height:130px;
+  border:2px solid rgba(23,51,68,.08);
+  border-radius:12px;
+  box-shadow:inset 0 0 0 10px rgba(23,51,68,.02);
+  pointer-events:none;
+}
+.radio-mark::before{
+  content:"";
+  position:absolute;
+  right:9.2%;
+  top:12px;
+  width:5px;
+  height:58px;
+  background:rgba(23,51,68,.08);
+  border-radius:4px;
+  transform:rotate(8deg);
+  pointer-events:none;
+}
+
+@media(max-width:900px){
+  .license-compass::after{width:180px;height:180px;right:-30px;top:54px;opacity:.20}
+  .license-compass::before{display:none}
+  .route-mark::after,
+  .rf-mark::after,
+  .radio-mark::after,
+  .radio-mark::before{opacity:.08}
+}
+
+/* RUFCOM v18 — ruta punteada + brújula sutil */
+
+/* Portada y landing con acento de ruta */
+.home-trail{
+  position:relative;
+  overflow:hidden;
+}
+.home-trail::after{
+  content:"";
+  position:absolute;
+  right:28px;
+  bottom:18px;
+  width:min(42vw, 420px);
+  height:150px;
+  background:url("../images/trail-mountain.svg") no-repeat right bottom / contain;
+  opacity:.23;
+  pointer-events:none;
+  z-index:0;
+}
+.home-page .section-heading{
+  position:relative;
+}
+.home-page .section-heading::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:6px;
+  width:140px;
+  height:40px;
+  background:url("../images/trail-short.svg") no-repeat right center / contain;
+  opacity:.18;
+  pointer-events:none;
+}
+.home-page .section,
+.home-page .section.alt{
+  position:relative;
+  overflow:hidden;
+}
+.home-page .section:nth-of-type(odd)::before{
+  content:"";
+  position:absolute;
+  left:-18px;
+  top:26px;
+  width:120px;
+  height:34px;
+  background:url("../images/trail-short.svg") no-repeat left center / contain;
+  opacity:.08;
+  pointer-events:none;
+}
+
+/* Licencias con brújula tenue inclinada */
+.license-compass{
+  position:relative;
+  overflow:hidden;
+}
+.license-compass::after{
+  content:"";
+  position:absolute;
+  right:34px;
+  top:22px;
+  width:min(30vw, 260px);
+  height:min(30vw, 260px);
+  background:url("../images/compass-tilted.svg") no-repeat center / contain;
+  opacity:.50;
+  pointer-events:none;
+  z-index:0;
+}
+.license-compass .article-hero-grid > *{
+  position:relative;
+  z-index:1;
+}
+
+/* Aventura y maleta también usan ruta sutil */
+.subtle-mountain::after{
+  content:"";
+  position:absolute;
+  right:26px;
+  bottom:18px;
+  width:min(32vw, 300px);
+  height:110px;
+  background:url("../images/trail-short.svg") no-repeat right bottom / contain;
+  opacity:.14;
+  pointer-events:none;
+}
+.route-mark::after{
+  content:"";
+  position:absolute;
+  right:24px;
+  bottom:22px;
+  width:min(34vw, 320px);
+  height:120px;
+  background:url("../images/trail-short.svg") no-repeat right bottom / contain;
+  opacity:.16;
+  pointer-events:none;
+}
+
+/* Desactiva adornos anteriores más abstractos */
+.home-mountain::after,
+.rf-mark::after,
+.tool-grid::after,
+.radio-mark::after,
+.radio-mark::before{
+  display:none !important;
+}
+
+@media(max-width:900px){
+  .home-trail::after{
+    width:220px;
+    height:92px;
+    right:10px;
+    bottom:10px;
+    opacity:.18;
+  }
+  .home-page .section-heading::after{
+    width:90px;
+    opacity:.12;
+  }
+  .license-compass::after{
+    width:160px;
+    height:160px;
+    right:-18px;
+    top:16px;
+    opacity:.32;
+  }
+}
+
+/* RUFCOM v19 — decoraciones visibles y sutiles */
+.hero, .article-hero, .section, .section.alt { position: relative; }
+
+.decor-trail,
+.decor-compass,
+.decor-rf{
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+}
+.decor-trail{ right:22px; bottom:18px; width:min(36vw, 360px); height:110px; opacity:.45; }
+.decor-trail img{ width:100%; height:100%; object-fit:contain; display:block; }
+
+.decor-compass{ right:24px; top:28px; width:min(24vw, 220px); height:min(24vw, 220px); opacity:.42; }
+.decor-compass img{ width:100%; height:100%; object-fit:contain; display:block; }
+
+.decor-rf{ right:24px; top:28px; width:min(22vw, 220px); height:130px; opacity:.44; }
+.decor-rf img{ width:100%; height:100%; object-fit:contain; display:block; }
+
+.hero > *, .article-hero > *, .section > *, .section.alt > * { position: relative; z-index:1; }
+
+/* route on landing repeated softly */
+.home-page .section-heading::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:120px;
+  height:34px;
+  background:url("../images/trail-mountain-strong.svg") no-repeat right center / contain;
+  opacity:.10;
+  pointer-events:none;
+}
+
+/* Hide older abstract pseudo-decoration rules if present */
+.home-trail::after,
+.license-compass::after,
+.subtle-mountain::after,
+.route-mark::after,
+.rf-mark::after,
+.tool-grid::after,
+.home-page .section:nth-of-type(odd)::before{
+  display:none !important;
+}
+
+@media (max-width:900px){
+  .decor-trail{ width:200px; height:64px; right:8px; bottom:10px; opacity:.32; }
+  .decor-compass{ width:150px; height:150px; right:-10px; top:20px; opacity:.28; }
+  .decor-rf{ width:150px; height:84px; right:10px; top:20px; opacity:.28; }
+  .home-page .section-heading::after{ width:78px; opacity:.08; }
+}
+
+/* RUFCOM v20 — ruta punteada a todo el ancho del landing */
+.decor-trail-full{
+  position:absolute;
+  left:0;
+  right:0;
+  top:18px;
+  width:100%;
+  height:120px;
+  pointer-events:none;
+  z-index:0;
+  opacity:.52;
+}
+.decor-trail-full img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+.hero .container,
+.hero-grid{
+  position:relative;
+  z-index:1;
+}
+/* oculta la versión pequeña anterior solo en portada */
+.hero .decor-trail{
+  display:none !important;
+}
+@media (max-width:900px){
+  .decor-trail-full{
+    top:10px;
+    height:82px;
+    opacity:.38;
+  }
+}
+
+/* Accessibility and shared spacing */
+img { height: auto; }
+.space-top-18 { margin-top: 18px; }
+.space-top-14 { margin-top: 14px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 1000; padding: 12px; background: #fff; color: #26211b; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 3px solid #164a73; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <g transform="rotate(-18 160 160)" opacity=".34">
+    <circle cx="160" cy="160" r="128" fill="none" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="160" cy="160" r="100" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="160" cy="160" r="18" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <path d="M160 44 L174 146 L160 160 L146 146 Z" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <path d="M160 276 L174 174 L160 160 L146 174 Z" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <path d="M44 160 L146 174 L160 160 L146 146 Z" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <path d="M276 160 L174 174 L160 160 L174 146 Z" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <text x="154" y="26" font-family="Inter,Arial,sans-serif" font-size="24" fill="#ffffff">N</text>
+    <text x="154" y="306" font-family="Inter,Arial,sans-serif" font-size="24" fill="#ffffff">S</text>
+    <text x="12" y="168" font-family="Inter,Arial,sans-serif" font-size="24" fill="#ffffff">W</text>
+    <text x="286" y="168" font-family="Inter,Arial,sans-serif" font-size="24" fill="#ffffff">E</text>
+  </g>
+</svg>
