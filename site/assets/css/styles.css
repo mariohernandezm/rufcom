@@ -1439,3 +1439,9 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .product-approval img { width:88px; height:88px; object-fit:contain; flex:none; }
 #cables-programacion { scroll-margin-top:110px; }
 @media(max-width:700px) { .microphone-grid { grid-template-columns:1fr; } }
+
+.first-contact { margin:48px 0; scroll-margin-top:110px; }
+.first-contact h3 { margin-top:28px; }
+.radio-example { margin:18px 0; padding:18px 24px; border-left:4px solid var(--accent); border-radius:0 14px 14px 0; background:var(--surface); }
+.radio-example p { margin:0; }
+.radio-example p + p { margin-top:14px; }
