@@ -1474,3 +1474,9 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .tool-product-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
 .tool-product-heading h3 { margin:0; min-width:0; }
 .tool-product-heading .tool-approval { margin:0; flex:none; }
+
+/* Keep white cards readable inside the dark adventure section. */
+.adventure-band .card { color:#24333d; }
+.adventure-band .card h3 { color:#172b38; }
+.adventure-band .card p { color:#31424d; }
+.adventure-band .card .eyebrow { color:#875400; }
