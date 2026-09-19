@@ -1498,3 +1498,5 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .flowerpot-photo-hero .antenna-photo img { height:auto; }
 .flowerpot-top-seal { width:100px; height:100px; object-fit:contain; margin-top:16px; }
 @media(max-width:800px) { .antenna-mounts { grid-template-columns:1fr; } }
+
+
