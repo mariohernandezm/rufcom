@@ -1445,3 +1445,15 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .radio-example { margin:18px 0; padding:18px 24px; border-left:4px solid var(--accent); border-radius:0 14px 14px 0; background:var(--surface); }
 .radio-example p { margin:0; }
 .radio-example p + p { margin-top:14px; }
+
+/* Real photographs of the RUFCOM station. */
+.case-hero-grid { grid-template-columns:1.15fr 1fr; gap:48px; }
+.case-photo { margin:0; min-width:0; }
+.case-photo img { width:100%; height:auto; border-radius:18px; }
+.case-photo figcaption { margin-top:10px; font-size:.875rem; line-height:1.5; color:var(--muted); }
+.adventure-band .case-photo figcaption { color:#d7e1e7; }
+.case-story { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; margin:48px 0; }
+.case-story h2 { margin-top:0; }
+.article-body > .case-photo { max-width:440px; margin:24px auto 32px; }
+.case-detail .case-photo { max-width:340px; }
+@media(max-width:700px) { .case-hero-grid,.case-story { grid-template-columns:1fr; gap:24px; } .case-hero-grid .case-photo { max-width:440px; margin:auto; } .case-story .case-photo { max-width:440px; margin:auto; } }
