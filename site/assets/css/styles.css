@@ -1485,3 +1485,16 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .equipment-photo { margin:18px 0; padding:16px; border-radius:14px; background:#fff; }
 .equipment-photo img { display:block; width:100%; height:280px; object-fit:contain; }
 @media(max-width:600px) { .equipment-photo img { height:240px; } }
+
+/* Real antennas and mounting options. */
+.antenna-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.antenna-heading .antenna-approval { width:88px; height:88px; object-fit:contain; margin:0; }
+.antenna-photo { margin:20px 0; }
+.antenna-photo img { display:block; width:100%; height:300px; object-fit:contain; border-radius:14px; background:#fff; }
+.antenna-photo figcaption { margin-top:12px; font-size:.9rem; color:var(--muted); line-height:1.6; }
+.antenna-mounts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.antenna-mounts .antenna-photo img { height:210px; }
+.flowerpot-photo-hero .antenna-photo { max-width:392px; margin:0 auto; }
+.flowerpot-photo-hero .antenna-photo img { height:auto; }
+.flowerpot-top-seal { width:100px; height:100px; object-fit:contain; margin-top:16px; }
+@media(max-width:800px) { .antenna-mounts { grid-template-columns:1fr; } }
