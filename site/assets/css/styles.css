@@ -1500,3 +1500,9 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 @media(max-width:800px) { .antenna-mounts { grid-template-columns:1fr; } }
 
 
+
+/* Homepage introduction to the real RUFCOM station. */
+.home-case-showcase { min-width:0; display:grid; gap:20px; }
+.home-case-photo a { display:block; border-radius:18px; }
+.home-case-photo img { display:block; width:100%; height:auto; max-height:440px; object-fit:contain; background:#eee9dc; }
+.home-case-photo a:focus-visible { outline:3px solid var(--accent-strong); outline-offset:4px; }
