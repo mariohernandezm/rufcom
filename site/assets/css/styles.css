@@ -1480,3 +1480,8 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .adventure-band .card h3 { color:#172b38; }
 .adventure-band .card p { color:#31424d; }
 .adventure-band .card .eyebrow { color:#875400; }
+
+/* Lightweight radio photographs, fully visible without cropping. */
+.equipment-photo { margin:18px 0; padding:16px; border-radius:14px; background:#fff; }
+.equipment-photo img { display:block; width:100%; height:280px; object-fit:contain; }
+@media(max-width:600px) { .equipment-photo img { height:240px; } }
