@@ -1457,3 +1457,20 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .article-body > .case-photo { max-width:440px; margin:24px auto 32px; }
 .case-detail .case-photo { max-width:340px; }
 @media(max-width:700px) { .case-hero-grid,.case-story { grid-template-columns:1fr; gap:24px; } .case-hero-grid .case-photo { max-width:440px; margin:auto; } .case-story .case-photo { max-width:440px; margin:auto; } }
+
+.footer-credit { margin:8px 0 0; font-size:.875rem; color:var(--muted); }
+.footer-credit strong { font-weight:700; }
+
+
+.tools-intro { max-width:var(--max); }
+.tools-intro > div { max-width:760px; }
+.tool-product-photo { margin:20px 0 24px; }
+.tool-product-photo img { width:100%; height:280px; object-fit:contain; background:#fff; border-radius:12px; }
+.tool-product-photo figcaption { margin-top:12px; color:var(--muted); font-size:.9rem; line-height:1.5; }
+.tool-approval { margin-top:20px; }
+.tool-approval img { width:88px; height:88px; object-fit:contain; }
+@media(max-width:600px) { .tool-product-photo img { height:240px; } }
+
+.tool-product-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.tool-product-heading h3 { margin:0; min-width:0; }
+.tool-product-heading .tool-approval { margin:0; flex:none; }
