@@ -1546,3 +1546,39 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
   .section .repeater-card h2 { font-size:1.2rem !important; }
   .repeater-card dl { gap:8px; margin-top:10px; }
 }
+
+/* Consistent compact spacing and readable primary navigation. */
+main > .section, .scenic-section { padding-top:44px; padding-bottom:44px; }
+main > .article-hero { padding:28px 0 14px; }
+main > .article-hero + .section { padding-top:20px; }
+.article-hero-grid:has(> .article-seal) { grid-template-columns:minmax(0,1fr) 180px; gap:24px; }
+.article-hero .article-seal { width:180px; height:auto; }
+.section-heading { margin-bottom:24px; }
+.article-body h2 { margin-top:32px; }
+.case-story { margin:30px 0; }
+.article-footer-note { margin-top:30px; }
+#mainNav { gap:12px; }
+#mainNav a { font-size:1rem; line-height:1.4; }
+@media(max-width:1200px) {
+  .site-header .nav-wrap { justify-content:space-between; }
+  .site-header .menu-btn { display:block; }
+  #mainNav { display:none; position:absolute; top:100%; left:14px; right:14px; width:auto; padding:14px; background:var(--surface); border-radius:16px; box-shadow:0 18px 50px rgba(0,0,0,.12); flex-direction:column; align-items:stretch; gap:0; max-height:calc(100dvh - 90px); overflow-y:auto; }
+  #mainNav.open { display:flex; }
+  #mainNav a { display:flex; align-items:center; min-height:44px; padding:8px 10px; font-size:1.05rem; }
+}
+@media(max-width:700px) {
+  main > .section, .scenic-section { padding-top:28px; padding-bottom:28px; }
+  main > .article-hero { padding:22px 0 12px; }
+  main > .article-hero + .section { padding-top:16px; }
+  .article-hero-grid:has(> .article-seal) { grid-template-columns:minmax(0,1fr) 88px; gap:12px; }
+  .article-hero .article-seal { width:88px; justify-self:end; }
+  .section-heading { margin-bottom:18px; }
+  .article-body h2 { margin-top:26px; }
+  .case-story { margin:24px 0; }
+}
+
+/* Header logo balanced with the larger navigation text. */
+.site-header .brand-logo { height:46px !important; width:auto; }
+@media(max-width:700px) {
+  .site-header .brand-logo { height:42px !important; }
+}
