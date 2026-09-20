@@ -1523,3 +1523,26 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
   .parts-hero .article-seal { width:88px; justify-self:end; }
   .parts-guide { padding-top:16px; }
 }
+
+/* SUBTEL repeater finder */
+.repeater-section { padding-top:24px; }
+.repeater-search { padding:24px; background:var(--surface); border:1px solid var(--line); border-radius:18px; }
+.repeater-search label { display:block; font-weight:700; margin-bottom:10px; }
+.repeater-search input { width:min(100%,560px); padding:14px; font:inherit; border:1px solid #817461; border-radius:10px; margin:0 12px 12px 0; }
+.repeater-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.repeater-card { padding:18px; background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow-wrap:anywhere; }
+/* Override the larger section-heading rules for individual results. */
+.section .repeater-card h2 { font-size:1.3rem !important; line-height:1.2 !important; letter-spacing:-.015em !important; margin:0 0 8px; }
+.repeater-card p { margin:0 0 8px; font-size:.9375rem; line-height:1.4; }
+.repeater-card .eyebrow { font-size:.75rem; margin-bottom:5px; }
+.repeater-card dl { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:12px 0 0; }
+.repeater-card dl > div { min-width:0; }
+.repeater-card dd { margin:4px 0 0; font-size:1rem; line-height:1.3; font-weight:700; font-variant-numeric:tabular-nums; }
+.repeater-card dt { font-size:.75rem; line-height:1.35; }
+.repeater-card[hidden] { display:none; }
+@media(max-width:700px) {
+  .repeater-grid { grid-template-columns:1fr; gap:12px; }
+  .repeater-card { padding:14px; }
+  .section .repeater-card h2 { font-size:1.2rem !important; }
+  .repeater-card dl { gap:8px; margin-top:10px; }
+}
