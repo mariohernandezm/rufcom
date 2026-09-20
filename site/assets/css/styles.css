@@ -1506,3 +1506,20 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .home-case-photo a { display:block; border-radius:18px; }
 .home-case-photo img { display:block; width:100%; height:auto; max-height:440px; object-fit:contain; background:#eee9dc; }
 .home-case-photo a:focus-visible { outline:3px solid var(--accent-strong); outline-offset:4px; }
+
+/* Two basic connectors before the adapter examples. */
+.connector-pair { grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:24px; }
+@media(max-width:700px) { .connector-pair { grid-template-columns:1fr; } }
+
+/* Compact introduction for Partes y piezas. */
+.parts-hero { padding:32px 0 16px; }
+.parts-hero .article-hero-grid { grid-template-columns:minmax(0,1fr) 180px; gap:24px; }
+.parts-hero .article-seal { width:180px; height:auto; }
+.parts-guide { padding-top:20px; }
+.parts-guide .parts-topics + .connector-guide { margin-top:24px; }
+@media(max-width:700px) {
+  .parts-hero { padding:24px 0 12px; }
+  .parts-hero .article-hero-grid { grid-template-columns:minmax(0,1fr) 88px; gap:12px; }
+  .parts-hero .article-seal { width:88px; justify-self:end; }
+  .parts-guide { padding-top:16px; }
+}
