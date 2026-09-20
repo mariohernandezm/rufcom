@@ -1630,3 +1630,12 @@ footer .footer-nav a:hover { text-decoration:underline; text-underline-offset:4p
 /* Contact address shared across page footers. */
 .footer-contact .footer-email { display:inline-block; padding:8px 0; color:var(--ink); font-size:1rem; overflow-wrap:anywhere; user-select:text; cursor:text; }
 .footer-contact { min-width:0; }
+
+/* Optional visitor statistics */
+.analytics-choice {position:fixed;bottom:16px;left:16px;right:16px;z-index:1000;max-width:700px;margin:auto;padding:20px;background:#fff;color:#222;border:1px solid #806021;border-radius:16px;box-shadow:0 8px 32px #0003;font-size:1rem;line-height:1.5;max-height:80vh;overflow:auto;}
+.analytics-choice[hidden] {display:none;}
+.analytics-choice p {color:#222;margin:0 0 14px;}
+.analytics-choice a {color:#684800;text-decoration:underline;}
+.analytics-choice > div {display:flex;gap:12px;flex-wrap:wrap;}
+.analytics-choice button {font:inherit;font-weight:700;min-height:44px;padding:10px 16px;background:#fff;color:#222;border:1px solid #806021;border-radius:8px;cursor:pointer;}
+.analytics-settings {display:block;font:inherit;color:inherit;background:none;border:0;text-decoration:underline;padding:10px 0;cursor:pointer;}
