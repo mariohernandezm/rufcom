@@ -1578,7 +1578,37 @@ main > .article-hero + .section { padding-top:20px; }
 }
 
 /* Header logo balanced with the larger navigation text. */
-.site-header .brand-logo { height:46px !important; width:auto; }
+.site-header .brand-logo { height:52px !important; width:auto; }
 @media(max-width:700px) {
-  .site-header .brand-logo { height:42px !important; }
+  .site-header .brand-logo { height:46px !important; }
+}
+
+/* Larger compass beside the Licencias heading. */
+.license-heading { gap:16px; }
+.license-heading img { width:76px; height:76px; opacity:.85; }
+@media(max-width:700px) {
+  .license-heading { gap:12px; }
+  .license-heading img { width:60px; height:60px; }
+}
+
+/* Restore the original mountain-ended hiking trail. */
+body .home-trail::after {
+  display:block !important;
+}
+
+/* Keep only the original mountain-ended trail in the homepage hero. */
+.home-trail > .decor-trail-full { display:none; }
+
+/* Shared mountain-ended route on internal page introductions. */
+body main > .article-hero::after {
+  content:""; display:block !important; position:absolute;
+  right:28px; bottom:8px; top:auto;
+  width:min(42vw,420px); height:90px;
+  background:url("../images/trail-mountain.svg") no-repeat right bottom / contain;
+  opacity:.23; pointer-events:none; z-index:0;
+}
+@media(max-width:700px) {
+  body main > .article-hero::after {
+    right:14px; bottom:4px; width:190px; height:60px; opacity:.20;
+  }
 }
