@@ -1,0 +1,22 @@
+/* Andean landscape preview: existing colors and copy remain unchanged. */
+body.home-page main > .hero.home-trail { padding-bottom:clamp(200px,26vw,360px) !important; }
+body .home-trail::after {
+  inset:auto 0 0; width:100%; height:clamp(180px,28vw,380px);
+  background:url('assets/images/andes-radio-panorama.png') no-repeat 70% bottom / cover;
+  opacity:1; pointer-events:none; z-index:0;
+  mask-image:linear-gradient(transparent,#000 28%);
+}
+body:has(.subtle-mountain) main > .article-hero { padding-bottom:clamp(200px,26vw,360px); }
+body main > .article-hero.subtle-mountain::after {
+  inset:auto 0 0; width:100%; height:clamp(190px,27vw,360px);
+  background:url('assets/images/andes-radio-panorama.png') no-repeat 75% bottom / cover;
+  opacity:.8; mask-image:linear-gradient(transparent,#000 42%);
+}
+.route-mark .case-photo { position:relative; padding:14px; border:1px dashed #cc8a0066; border-radius:24px; }
+.case-story { position:relative; padding:20px; border:1px solid var(--line); border-radius:24px; background:linear-gradient(115deg,#eadfcb44,transparent 65%); }
+.case-story::before { content:''; position:absolute; left:6px; top:28px; bottom:28px; border-left:2px dashed #cc8a0044; pointer-events:none; }
+.home-case-showcase { padding:16px; border:1px dashed #cc8a0066; border-radius:24px; }
+@media(max-width:700px) {
+  body .home-trail::after { background-position:80% bottom; }
+  .case-story { padding:14px; }
+}
