@@ -1,0 +1,26 @@
+/* Region-based repeater finder. Loaded after the shared site stylesheet. */
+.repeater-fields { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto; align-items:end; gap:18px; }
+.repeater-fields > div { min-width:0; }
+.repeater-search select, .repeater-search input { width:100%; min-height:52px; margin:0; padding:12px 14px; color:var(--ink); background:var(--surface); border:1px solid #817461; border-radius:10px; font:inherit; }
+.repeater-search label { font-size:.9rem; }
+.repeater-fields > .btn { min-height:52px; }
+.repeater-query-wrap { position:relative; }
+.repeater-query-wrap input { padding-right:48px; }
+.repeater-query-wrap input::-webkit-search-cancel-button { -webkit-appearance:none; }
+#repeater-clear { position:absolute; right:4px; top:4px; width:44px; height:44px; border:0; border-radius:8px; background:transparent; color:var(--muted); font-size:1.6rem; cursor:pointer; }
+#repeater-clear:hover { background:var(--surface-2); color:var(--ink); }
+#repeater-help, .repeater-zone-note { color:var(--muted); font-size:.875rem; }
+#repeater-help { margin:12px 0 0; }
+.repeater-text-button { border:0; padding:10px 0; background:transparent; color:var(--brown); text-decoration:underline; text-underline-offset:3px; font:inherit; cursor:pointer; }
+.repeater-search :focus-visible, .repeater-text-button:focus-visible { outline:3px solid var(--brown); outline-offset:3px; }
+.section .repeater-region { padding:0; margin:32px 0; }
+.section .repeater-region > h2 { font-size:1.35rem !important; line-height:1.4 !important; letter-spacing:0 !important; margin:0 0 16px; padding-bottom:12px; border-bottom:1px solid var(--line); }
+.repeater-region-count { font-size:1rem; font-weight:400; color:var(--muted); white-space:nowrap; }
+.section .repeater-card h3 { font-size:1.3rem; line-height:1.2; letter-spacing:-.015em; margin:0 0 8px; }
+.repeater-zone { display:inline-block; padding:2px 8px; margin:4px 0; background:var(--surface-2); border:1px solid var(--line); border-radius:6px; color:var(--brown); font-size:.8rem; font-weight:700; white-space:nowrap; }
+#repeater-count { font-weight:700; }
+#repeater-empty { padding:18px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
+.repeater-section [hidden] { display:none !important; }
+@media (max-width:900px) { .repeater-fields { grid-template-columns:minmax(0,1fr); gap:16px; } .repeater-fields > .btn { justify-self:start; min-width:140px; } }
+@media (max-width:500px) { .repeater-search { padding:18px; } .repeater-fields > .btn { width:100%; } .section .repeater-card h3 { font-size:1.2rem; } }
+
