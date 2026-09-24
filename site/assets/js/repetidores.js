@@ -13,7 +13,14 @@
       return Number(record.tx) === Number(number) || Number(record.rx) === Number(number);
     }
     const haystack = normalize(`${record.name} ${record.geography || ''} ${record.zone ? `zona ${record.zone}` : ''}`);
-    return q.split(' ').every(word => haystack.includes(word));
+    const compactQuery = q.replace(/\s+/g, '');
+    // Treat a callsign as one unit, not as words matching unrelated fields.
+    if (/^(?:ce|ca|cd|xq|xr|cb|3g)\d[a-z]{0,3}(?:\/.*)?$/.test(compactQuery)) {
+      return normalize(record.name).replace(/\s+/g, '').includes(compactQuery);
+    }
+    const compactMatch = [record.name, record.geography].some(field =>
+      normalize(field).replace(/\s+/g, '').includes(compactQuery));
+    return compactMatch || haystack.includes(q);
   };
   // Suggest nearby place names only; never autocorrect a callsign or frequency.
   const distance = (a, b) => {
@@ -41,6 +48,7 @@
   const suggestion = document.getElementById('repeater-suggestion');
   const cards = [...document.querySelectorAll('.repeater-card')];
   const groups = [...document.querySelectorAll('.repeater-region')];
+  const simplex = document.getElementById('simplex-reference');
   let suggestedPlace = '';
   const update = () => {
     let count = 0;
@@ -53,8 +61,11 @@
       group.hidden = visible === 0;
       group.querySelector('.repeater-region-count').textContent = `(${visible})`;
     });
-    document.getElementById('repeater-count').textContent = `${count} de ${cards.length} repetidores${region.value ? ' · ' + region.options[region.selectedIndex].textContent.replace(/ \(\d+\)$/, '') : ''}`;
-    document.getElementById('repeater-empty').hidden = count !== 0;
+    // A simplex reference has no repeater site and is available with any region.
+    const showSimplex = !!simplex && matches(simplex.dataset, input.value);
+    if (simplex) simplex.hidden = !showSimplex;
+    document.getElementById('repeater-count').textContent = `${count} de ${cards.length} repetidores${region.value ? ' · ' + region.options[region.selectedIndex].textContent.replace(/ \(\d+\)$/, '') : ''}${showSimplex ? ' · 1 frecuencia simplex de referencia' : ''}`;
+    document.getElementById('repeater-empty').hidden = count !== 0 || showSimplex;
     clear.hidden = !input.value;
     reset.hidden = !input.value && !region.value;
     const places = cards.filter(card => !region.value || card.dataset.region === region.value).map(card => card.dataset.place).filter(Boolean);
