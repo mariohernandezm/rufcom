@@ -1,10 +1,11 @@
 /* Andean landscape preview: existing colors and copy remain unchanged. */
-body.home-page main > .hero.home-trail { padding-bottom:clamp(200px,26vw,360px) !important; }
+/* Keep the 3:1 panorama proportional; the team stays inside the mobile crop. */
+body.home-page main > .hero.home-trail { padding-bottom:max(280px,26vw) !important; }
 body .home-trail::after {
-  inset:auto 0 0; width:100%; height:clamp(180px,28vw,380px);
-  background:url('assets/images/andes-radio-panorama.png') no-repeat 70% bottom / cover;
+  inset:auto 0 0; width:100%; height:max(280px,33.333333vw);
+  background:url('assets/images/andes-radio-equipo-v4.png') no-repeat right bottom / cover;
   opacity:1; pointer-events:none; z-index:0;
-  mask-image:linear-gradient(transparent,#000 28%);
+  mask-image:linear-gradient(transparent,#000 12%);
 }
 body:has(.subtle-mountain) main > .article-hero { padding-bottom:clamp(200px,26vw,360px); }
 body main > .article-hero.subtle-mountain::after {
@@ -17,6 +18,6 @@ body main > .article-hero.subtle-mountain::after {
 .case-story::before { content:''; position:absolute; left:6px; top:28px; bottom:28px; border-left:2px dashed #cc8a0044; pointer-events:none; }
 .home-case-showcase { padding:16px; border:1px dashed #cc8a0066; border-radius:24px; }
 @media(max-width:700px) {
-  body .home-trail::after { background-position:80% bottom; }
+  body .home-trail::after { background-position:right bottom; }
   .case-story { padding:14px; }
 }
