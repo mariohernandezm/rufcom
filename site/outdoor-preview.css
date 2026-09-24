@@ -7,11 +7,11 @@ body .home-trail::after {
   opacity:1; pointer-events:none; z-index:0;
   mask-image:linear-gradient(transparent,#000 12%);
 }
-body:has(.subtle-mountain) main > .article-hero { padding-bottom:clamp(200px,26vw,360px); }
+body main > .article-hero.subtle-mountain { padding-bottom:max(280px,33.333333vw); }
 body main > .article-hero.subtle-mountain::after {
-  inset:auto 0 0; width:100%; height:clamp(190px,27vw,360px);
-  background:url('assets/images/andes-radio-panorama.png') no-repeat 75% bottom / cover;
-  opacity:.8; mask-image:linear-gradient(transparent,#000 42%);
+  inset:auto 0 0; width:100%; height:max(280px,33.333333vw);
+  background:url('assets/images/andes-radio-equipo-v4.png') no-repeat right bottom / cover;
+  opacity:1; mask-image:linear-gradient(transparent,#000 12%);
 }
 .route-mark .case-photo { position:relative; padding:14px; border:1px dashed #cc8a0066; border-radius:24px; }
 .case-story { position:relative; padding:20px; border:1px solid var(--line); border-radius:24px; background:linear-gradient(115deg,#eadfcb44,transparent 65%); }
