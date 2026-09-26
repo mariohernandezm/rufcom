@@ -1639,3 +1639,17 @@ footer .footer-nav a:hover { text-decoration:underline; text-underline-offset:4p
 .analytics-choice > div {display:flex;gap:12px;flex-wrap:wrap;}
 .analytics-choice button {font:inherit;font-weight:700;min-height:44px;padding:10px 16px;background:#fff;color:#222;border:1px solid #806021;border-radius:8px;cursor:pointer;}
 .analytics-settings {display:block;font:inherit;color:inherit;background:none;border:0;text-decoration:underline;padding:10px 0;cursor:pointer;}
+
+/* Radio Club de Chile: recurso destacado en Links útiles. */
+.club-card{border:2px solid var(--accent-strong)}
+.club-card .club-logo{display:block;width:96px;height:96px;object-fit:contain;margin-bottom:18px}
+.club-card .eyebrow{color:var(--accent-strong);margin:0 0 10px}
+.club-emergency{margin-top:24px;padding-top:18px;border-top:1px solid rgba(68,37,10,.16)}
+.club-emergency h4{font-size:1rem;margin:0}
+.club-emergency a{margin-top:12px}
+#links .cards{align-items:start}
+#links .club-card{display:block}
+#links .club-logo{width:96px;height:96px;margin:0 0 18px}
+#links .resource-icon{display:block;color:var(--accent-strong);margin-bottom:20px}
+#links .link-card h3{margin-top:0}
+#links .club-emergency{margin-top:20px;padding-top:16px}
