@@ -21,3 +21,29 @@ body main > .article-hero.subtle-mountain::after {
   body .home-trail::after { background-position:right bottom; }
   .case-story { padding:14px; }
 }
+
+/* Materials and first-hand experience on the RUFCOM case page. */
+.case-materials { margin:48px 0; }
+.article-body .case-materials h2 { margin-top:8px; }
+.case-materials-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:24px 0; }
+.case-material-card { padding:24px; border:1px solid var(--line); border-radius:20px; background:var(--surface); }
+.case-material-card h3 { margin:8px 0; }
+.case-material-card p:last-child { margin-bottom:0; }
+.case-material-details { margin:12px 0; padding:0 22px; border:1px solid var(--line); border-radius:16px; background:var(--surface); }
+.case-material-details summary { padding:20px 0; cursor:pointer; font-weight:700; }
+.case-material-details summary:focus-visible { outline:3px solid var(--ink); outline-offset:4px; }
+.case-material-details li { margin-bottom:12px; }
+.case-material-details ul { padding-left:20px; margin-top:0; padding-bottom:8px; }
+.case-measurement { display:flex; gap:24px; align-items:center; padding:26px; margin:24px 0; background:var(--surface-2); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:16px; }
+.case-measurement-value { flex-shrink:0; font-size:3rem; font-weight:800; color:var(--brown); }
+.case-measurement h3 { margin:0; }
+.case-measurement p { margin-bottom:0; }
+.case-source-note { padding:0 4px; }
+.case-contact { margin:40px 0; padding:32px; border:1px solid var(--line); border-radius:24px; background:var(--surface-2); text-align:center; }
+.article-body .case-contact h2 { margin-top:8px; }
+.case-contact-email { overflow-wrap:anywhere; font-size:.95rem; }
+@media(max-width:600px) {
+  .case-materials-grid { grid-template-columns:1fr; }
+  .case-measurement { flex-direction:column; align-items:flex-start; gap:8px; padding:22px; }
+  .case-contact { padding:24px 18px; }
+}
