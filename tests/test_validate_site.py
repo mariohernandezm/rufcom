@@ -25,6 +25,18 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
+    def test_legacy_redirect_target(self):
+        path = self.root / 'site/maleta-rufcom.html'
+        path.write_text(path.read_text(encoding='utf-8').replace(
+            '0; url=/base73-mk1.html', '0; url=/index.html'), encoding='utf-8')
+        self.assertTrue(any('invalid permanent HTML redirect' in e for e in validate(self.root)))
+
+    def test_old_url_excluded_from_sitemap(self):
+        path = self.root / 'site/sitemap.xml'
+        path.write_text(path.read_text(encoding='utf-8').replace(
+            '</urlset>', '<url><loc>https://rufcom.cl/maleta-rufcom.html</loc></url></urlset>'), encoding='utf-8')
+        self.assertTrue(any('sitemap does not match' in e for e in validate(self.root)))
+
     def test_missing_link_and_fragment(self):
         self.inject('<a href="missing.html">Missing</a><a href="#unknown">Anchor</a>')
         errors = validate(self.root)

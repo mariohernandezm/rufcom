@@ -23,6 +23,7 @@ class Page(HTMLParser):
         self.csp = self.description = self.viewport = self.title = False
         self.canonical, self.h1 = None, 0
         self.lang = None
+        self.refresh = None
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -43,6 +44,8 @@ class Page(HTMLParser):
         if tag == 'a' and a.get('target') == '_blank' and 'noopener' not in a.get('rel', '').split():
             self.errors.append('external window missing noopener')
         if tag == 'meta':
+            if a.get('http-equiv', '').lower() == 'refresh':
+                self.refresh = a.get('content')
             if a.get('http-equiv', '').lower() == 'content-security-policy':
                 self.csp = a.get('content') == CSP
             if a.get('name') == 'description':
@@ -85,6 +88,13 @@ def validate(root=ROOT):
             if not all([page.csp, page.description, page.viewport, page.title, page.lang == 'es', page.h1 == 1]):
                 errors.append(f'{name}: missing/invalid CSP, language, description, viewport, title or h1')
             expected = 'https://rufcom.cl/' + ('' if name == 'index.html' else name)
+            if name == 'maleta-rufcom.html':
+                expected = 'https://rufcom.cl/base73-mk1.html'
+                if page.refresh != '0; url=/base73-mk1.html':
+                    errors.append(f'{name}: invalid permanent HTML redirect')
+                page.refs.append(('/base73-mk1.html', False))
+            elif page.refresh is not None:
+                errors.append(f'{name}: unexpected HTML redirect')
             if name != '404.html' and page.canonical != expected:
                 errors.append(f'{name}: invalid canonical URL')
 
