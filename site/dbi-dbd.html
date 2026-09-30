@@ -1,0 +1,76 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://rufcom.cl/dbi-dbd.html">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura."><title>dBi y dBd: cómo comparar antenas VHF/UHF | RUFCOM</title><link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" type="image/png" href="assets/images/rufcom-logo-transparent.png">
+<link rel="stylesheet" href="assets/css/dbi-dbd.css"></head><body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav id="mainNav">
+        <a href="/">Inicio</a>
+        <a href="licencias.html">Licencias</a>
+        <a href="dmr.html">DMR</a>
+        <a href="repetidores.html">Repetidores</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="antenas.html">Antenas</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="accesorios.html">Partes y piezas</a>
+        <a href="radio-aventura.html">Aventura</a>
+        <a href="base73-mk1.html">Base73 MK1</a>
+        <a href="/#links">Links</a>
+      </nav>
+    </div>
+  </header><main id="contenido">
+<section class="article-hero subtle-outdoor rf-mark"><div class="container">
+<p class="eyebrow">Para comenzar · VHF y UHF</p>
+<h1 class="article-title">dBi y dBd: cómo comparar la ganancia de una antena</h1>
+<p class="article-lead">No compres una antena mirando solo el número.</p>
+<p>Una guía sencilla para entender los anuncios antes de elegir.</p>
+</div></section>
+<section class="section"><article class="container article-body">
+<p><a href="antenas.html">← Volver a Antenas</a></p>
+<p>Cuando buscas una antena para tu radio VHF o UHF, puedes encontrar anuncios que dicen <strong>8 dBi</strong> y otros <strong>6 dBd</strong>. ¿Cuál tiene más ganancia?</p>
+<p>Aunque 8 parezca mejor que 6, las letras que acompañan al número importan: <strong>dBi y dBd usan referencias distintas para expresar la ganancia.</strong></p>
+<h2>Primero, las dos referencias</h2>
+<p>El <strong>patrón de radiación</strong> es un dibujo que muestra hacia dónde una antena envía más o menos señal. Estas dos formas ayudan a entender las letras:</p>
+<div class="pattern-grid">
+<section class="pattern-card"><p class="pattern-label">La «i» de dBi</p><h3>Isotrópica: una esfera</h3>
+<img src="assets/images/patron-isotropica.svg" width="900" height="720" alt="Patrón tridimensional esférico de una fuente isotrópica: igual radiación en todas las direcciones.">
+<p>Imagina un punto que envía señal <strong>por igual hacia todos lados</strong>: al frente, atrás, arriba y abajo.</p><p>Se llama <strong>antena isotrópica</strong>. Es una referencia teórica, no una antena que puedas comprar. Su ganancia de referencia es <strong>0 dBi</strong>.</p></section>
+<section class="pattern-card"><p class="pattern-label">La «d» de dBd</p><h3>Dipolo vertical: una rosquilla</h3>
+<img src="assets/images/patron-dipolo.svg" width="900" height="720" alt="Patrón tridimensional de un dipolo vertical de media onda: forma de rosquilla alrededor de la antena, con máxima radiación hacia el horizonte y nulos sobre su eje vertical.">
+<p>El dipolo tiene dos brazos alineados. Puesto verticalmente, envía más señal <strong>hacia el horizonte, alrededor de la antena</strong>, y menos al acercarse a sus puntas: justo sobre su eje idealmente no irradia.</p><p>La referencia de dBd es un <strong>dipolo de media onda</strong>: aproximadamente <strong>1 metro de largo total en 144 MHz</strong>, o <strong>33 cm en 433 MHz</strong>.</p></section>
+</div>
+<p class="pattern-note">Dibujos de patrones ideales en espacio libre, cada uno ajustado a su propio máximo para comparar la forma. No representan distancias de alcance ni el tamaño físico de las antenas. El suelo y los objetos cercanos pueden cambiar el patrón real.</p>
+<p>El dipolo ideal concentra más señal hacia el horizonte que la isotrópica. En esa dirección, <strong>0 dBd equivale a 2,15 dBi</strong>. De ahí sale la diferencia entre ambas referencias.</p>
+<div class="article-callout"><strong>Para pasar de dBd a dBi, suma 2,15.</strong><p>La antena no cambia. Solo cambia la referencia con la que expresamos su ganancia.</p></div>
+<h2>El mismo valor, escrito de dos maneras</h2>
+<p>Si una antena anuncia <strong>6 dBd</strong>, podemos expresar esa misma ganancia así:</p>
+<div class="gain-equivalence"><span>6 dBd</span><span aria-label="equivale a">=</span><span>8,15 dBi</span></div>
+<p><strong>Es la misma ganancia, no dos antenas diferentes.</strong> Sumamos 2,15 al valor en dBd para obtener el valor en dBi.</p>
+<p>Ahora volvamos al ejemplo inicial: una antena de <strong>8 dBi</strong> y otra de <strong>6 dBd (8,15 dBi)</strong>, comparadas en la misma banda, declaran ganancias prácticamente iguales. El número más grande del anuncio no basta para elegir.</p>
+<h2>Más ganancia no significa mejor cobertura en todas partes</h2>
+<p>Una antena pasiva, como las que conectamos normalmente a nuestras radios, no crea potencia adicional: distribuye la energía favoreciendo determinadas direcciones.</p>
+<div class="article-callout"><strong>Piensa en una linterna que concentra su luz.</strong><p>Ilumina más intensamente hacia un sector, pero cubre menos ángulo. Con una antena ocurre algo parecido: más ganancia puede favorecer una dirección y reducir la cobertura hacia otras.</p></div>
+<p>Por eso conviene mirar el patrón de radiación y pensar dónde estás y con quién quieres comunicarte.</p>
+<h2>Antes de comprar una antena VHF/UHF</h2>
+<ul><li><strong>Compara la misma banda:</strong> la ganancia indicada para UHF no necesariamente es la misma en VHF.</li><li><strong>Revisa las letras:</strong> si el anuncio solo dice «8 dB», pide que aclaren si son dBi o dBd.</li><li><strong>Consulta la ficha del fabricante:</strong> busca datos que respalden lo que anuncia el vendedor.</li></ul>
+<div class="notice-box"><strong>Consejo RUFCOM:</strong> no elijas solo por el número más grande. Compara la misma banda y la misma referencia, y considera dónde vas a instalar la antena.</div>
+
+<p><a class="btn btn-primary" href="antenas.html">Volver a Antenas</a></p>
+</article></section></main><footer>
+    <div class="container"><nav class="footer-nav" aria-label="Navegación al pie"><a href="/">Inicio</a><a href="licencias.html">Licencias</a><a href="dmr.html">DMR</a><a href="repetidores.html">Repetidores</a><a href="equipos.html">Equipos</a><a href="antenas.html">Antenas</a><a href="herramientas.html">Herramientas</a><a href="accesorios.html">Partes y piezas</a><a href="radio-aventura.html">Aventura</a><a href="base73-mk1.html">Base73 MK1</a><a href="/#links">Links</a></nav></div>
+    <div class="container footer-wrap">
+      <div>
+        <img class="footer-brand" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async">
+        <p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p>
+      </div>
+      <div class="footer-contact"><p>Contacto</p><span class="footer-email">contactorufcom@gmail.com</span><p>rufcom.cl</p><p><a href="privacidad.html">Privacidad</a></p></div>
+    </div>
+  </footer>  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/analytics.js" defer></script>
+</body></html>
+
+
