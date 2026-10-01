@@ -1,0 +1,54 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://rufcom.cl/chirp.html">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Guía sencilla de CHIRP para Baofeng UV-5R: conectar el cable, respaldar la radio, agregar frecuencias y cargar canales paso a paso."><title>Cómo programar un Baofeng UV-5R con CHIRP | RUFCOM</title><link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" type="image/png" href="assets/images/rufcom-logo-transparent.png">
+</head><body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav id="mainNav">
+        <a href="/">Inicio</a>
+        <a href="licencias.html">Licencias</a>
+        <a href="dmr.html">DMR</a>
+        <a href="repetidores.html">Repetidores</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="antenas.html">Antenas</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="accesorios.html">Partes y piezas</a>
+        <a href="radio-aventura.html">Aventura</a>
+        <a href="base73-mk1.html">Base73 MK1</a>
+        <a href="/#links">Links</a>
+      </nav>
+    </div>
+  </header><main id="contenido"><section class="article-hero"><div class="container"><p class="eyebrow">Guía para empezar · Baofeng UV-5R</p><h1 class="article-title">Configura tus canales con CHIRP</h1><p class="article-lead">Conecta, respalda, edita y carga. Una ruta sencilla para ordenar las memorias de tu handy.</p><p>Ejemplo para un UV-5R compatible. Otros modelos y variantes pueden necesitar instrucciones diferentes.</p></div></section><section class="section"><div class="container article-body">
+<div class="tool-warning"><strong>Escuchar primero.</strong> Programar un canal no te autoriza a transmitir. Usa el PTT solo con licencia y en las bandas y condiciones de tu categoría. <a href="licencias.html">Revisa la guía de licencias</a>.</div>
+<h2>Antes de comenzar</h2><ul><li>Radio con batería cargada y su antena instalada.</li><li>Cable USB de programación compatible con el modelo: un cable de audio no sirve.</li><li>Computador y CHIRP-next desde la <a href="https://chirpmyradio.com/projects/chirp/wiki/Download" target="_blank" rel="noopener noreferrer">descarga oficial</a>. Elige tu sistema e instala siguiendo sus instrucciones.</li><li>Confirma el modelo en la <a href="https://chirpmyradio.com/projects/chirp/wiki/Home" target="_blank" rel="noopener noreferrer">lista de equipos compatibles</a>.</li></ul>
+<h2>1. Conecta tu radio</h2><p>Con la radio apagada, conecta el cable firmemente al handy y al USB del computador. Enciende el equipo y sigue las indicaciones de CHIRP para tu modelo. En Windows, el cable aparece como un puerto COM; si no aparece, revisa el controlador del fabricante del cable.</p>
+<h2>2. Lee y guarda el respaldo</h2><p>En <strong>Radio → Download From Radio</strong> (descargar desde la radio), selecciona el puerto, Baofeng y UV-5R solo si corresponde a tu equipo. Espera a que termine. Guarda la imagen original con <strong>File → Save As</strong>, por ejemplo <code>UV5R-respaldo-original.img</code>. Conserva esa copia y trabaja con otra.</p>
+<div class="simple-definition"><strong>La dirección importa:</strong> Download trae la configuración de la radio al computador. Upload envía los cambios del computador a la radio.</div>
+<h2>3. Completa una memoria</h2><p>Usa una fila libre de la imagen que acabas de leer. Este ejemplo sirve para escuchar una frecuencia simplex de encuentro:</p>
+<div class="topic-card"><ul><li><strong>Frequency:</strong> <code>146.520000</code> MHz.</li><li><strong>Name:</strong> <code>ENCUENT</code>, nombre corto para reconocer el canal.</li><li><strong>Duplex:</strong> <code>off</code> para deshabilitar transmisión en ese canal, si tu equipo lo admite. Si tu licencia permite transmitir allí, usa vacío / None para simplex.</li><li><strong>Offset:</strong> <code>0.000000</code> para este ejemplo simplex.</li><li><strong>Tone Mode:</strong> vacío / None; sin filtro de tono para escuchar.</li><li><strong>Mode:</strong> <code>FM</code>.</li></ul></div>
+<p>Comprueba después en el equipo que la inhibición de transmisión funciona. No presiones el PTT para probarla en una frecuencia donde no tienes autorización.</p>
+<h2>¿Y los repetidores?</h2><p>No copies el ejemplo simplex. Un repetidor puede requerir frecuencia de recepción, desplazamiento, signo +/− y tono CTCSS. Toma los datos de una fuente vigente y confirma las condiciones con su responsable. <a href="repetidores.html">Consulta el buscador de repetidores</a>.</p>
+<h2>4. Guarda y carga los cambios</h2><p>Guarda otra imagen, por ejemplo <code>UV5R-canales.img</code>. Con esa pestaña abierta, usa <strong>Radio → Upload To Radio</strong> y sigue las indicaciones. No desconectes el cable ni apagues la radio durante la transferencia. Al terminar, apaga el equipo antes de retirar el cable y vuelve a encenderlo.</p>
+<h2>5. Comprueba en modo canal</h2><p>Selecciona el modo de memorias (MR) con VFO/MR y busca el canal guardado. Comprueba frecuencia, nombre y recepción. Para comprobar lo escrito, también puedes volver a leer la radio con CHIRP y comparar la memoria.</p>
+<h2>Si algo falla</h2><ul><li><strong>No responde:</strong> revisa batería, encendido y conector completamente insertado.</li><li><strong>Puerto ocupado:</strong> cierra otros programas que usen el cable y confirma el COM seleccionado.</li><li><strong>Modelo no compatible:</strong> revisa la variante exacta; no pruebes modelos al azar.</li><li><strong>No escuchas:</strong> revisa volumen, squelch y filtros de tono. Puede no haber actividad.</li></ul>
+<div class="tool-warning"><strong>Una precaución útil:</strong> empieza siempre leyendo tu propia radio. No cargues una imagen completa de otro equipo; importa los canales a la imagen de tu radio. Un CSV es una lista de canales, no un respaldo completo.</div>
+<h2>Documentación para seguir</h2><p>Menús y opciones pueden variar con la versión y el idioma. Guía preparada el 1 de octubre de 2026 a partir de la documentación oficial:</p><ul><li><a href="https://chirpmyradio.com/projects/chirp/wiki/Beginners_Guide" target="_blank" rel="noopener noreferrer">Primeros pasos en CHIRP</a></li><li><a href="https://chirpmyradio.com/projects/chirp/wiki/MemoryEditorColumns" target="_blank" rel="noopener noreferrer">Qué significa cada columna</a></li><li><a href="https://chirpmyradio.com/projects/chirp/wiki/BaofengUV5R" target="_blank" rel="noopener noreferrer">Conexión y problemas del UV-5R</a></li></ul><p>Esta guía explica el procedimiento; no sustituye la verificación de tu modelo ni una prueba con tu equipo.</p></div></section></main><footer>
+    <div class="container"><nav class="footer-nav" aria-label="Navegación al pie"><a href="/">Inicio</a><a href="licencias.html">Licencias</a><a href="dmr.html">DMR</a><a href="repetidores.html">Repetidores</a><a href="equipos.html">Equipos</a><a href="antenas.html">Antenas</a><a href="herramientas.html">Herramientas</a><a href="accesorios.html">Partes y piezas</a><a href="radio-aventura.html">Aventura</a><a href="base73-mk1.html">Base73 MK1</a><a href="/#links">Links</a></nav></div>
+    <div class="container footer-wrap">
+      <div>
+        <img class="footer-brand" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async">
+        <p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p>
+      </div>
+      <div class="footer-contact"><p>Contacto</p><span class="footer-email">contactorufcom@gmail.com</span><p>rufcom.cl</p><p><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></p><p><a href="privacidad.html">Privacidad</a></p></div>
+    </div>
+  </footer>  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/analytics.js" defer></script>
+</body></html>
+
+
+
+
