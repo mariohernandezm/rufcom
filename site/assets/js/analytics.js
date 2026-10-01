@@ -54,7 +54,7 @@
       if (started) location.reload();
     }
   });
-  const footer = document.querySelector('footer .footer-contact') || document.querySelector('footer');
+  const footer = document.querySelector('footer .footer-bottom') || document.querySelector('footer');
   if (footer) {
     const button = document.createElement('button');
     button.type = 'button';
