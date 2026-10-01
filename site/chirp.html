@@ -3,24 +3,12 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://rufcom.cl/chirp.html">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Guía sencilla de CHIRP para Baofeng UV-5R: conectar el cable, respaldar la radio, agregar frecuencias y cargar canales paso a paso."><title>Cómo programar un Baofeng UV-5R con CHIRP | RUFCOM</title><link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" type="image/png" href="assets/images/rufcom-logo-transparent.png">
-<link rel="stylesheet" href="assets/css/chirp-guide.css"></head><body>
+<link rel="stylesheet" href="assets/css/chirp-guide.css"><link rel="stylesheet" href="assets/css/navigation.css"></head><body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav id="mainNav">
-        <a href="/">Inicio</a>
-        <a href="licencias.html">Licencias</a>
-        <a href="dmr.html">DMR</a>
-        <a href="repetidores.html">Repetidores</a>
-        <a href="equipos.html">Equipos</a>
-        <a href="antenas.html">Antenas</a>
-        <a href="herramientas.html">Herramientas</a>
-        <a href="accesorios.html">Partes y piezas</a>
-        <a href="radio-aventura.html">Aventura</a>
-        <a href="base73-mk1.html">Base73 MK1</a>
-        <a href="/#links">Links</a>
-      </nav>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="chirp.html">Programa tu radio con CHIRP</a><a href="dmr.html">Radio digital DMR</a><a href="dbi-dbd.html">Entiende dBi y dBd</a><a href="/#links">Links útiles</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
     </div>
   </header><main id="contenido"><section class="article-hero"><div class="container"><p class="eyebrow">Guía para empezar · Baofeng UV-5R</p><h1 class="article-title">Configura tus canales con CHIRP</h1><p class="article-lead">Conecta, respalda, edita y carga. Una ruta sencilla para ordenar las memorias de tu handy.</p><p>Ejemplo para un UV-5R compatible. Otros modelos y variantes pueden necesitar instrucciones diferentes.</p></div></section><section class="section"><div class="container article-body">
 <div class="tool-warning"><strong>Escuchar primero.</strong> Programar un canal no te autoriza a transmitir. Usa el PTT solo con licencia y en las bandas y condiciones de tu categoría. <a href="licencias.html">Revisa la guía de licencias</a>.</div>
@@ -43,7 +31,7 @@
 <h2>Si algo falla</h2><ul><li><strong>No responde:</strong> revisa batería, encendido y conector completamente insertado.</li><li><strong>Puerto ocupado:</strong> cierra otros programas que usen el cable y confirma el COM seleccionado.</li><li><strong>Modelo no compatible:</strong> revisa la variante exacta; no pruebes modelos al azar.</li><li><strong>No escuchas:</strong> revisa volumen, squelch y filtros de tono. Puede no haber actividad.</li></ul>
 <div class="tool-warning"><strong>Una precaución útil:</strong> empieza siempre leyendo tu propia radio. No cargues una imagen completa de otro equipo; importa los canales a la imagen de tu radio. Un CSV es una lista de canales, no un respaldo completo.</div>
 <h2>Documentación para seguir</h2><p>Menús y opciones pueden variar con la versión y el idioma. Guía preparada el 1 de octubre de 2026 a partir de la documentación oficial:</p><ul><li><a href="https://chirpmyradio.com/projects/chirp/wiki/Beginners_Guide" target="_blank" rel="noopener noreferrer">Primeros pasos en CHIRP</a></li><li><a href="https://chirpmyradio.com/projects/chirp/wiki/MemoryEditorColumns" target="_blank" rel="noopener noreferrer">Qué significa cada columna</a></li><li><a href="https://chirpmyradio.com/projects/chirp/wiki/BaofengUV5R" target="_blank" rel="noopener noreferrer">Conexión y problemas del UV-5R</a></li></ul><p>Esta guía explica el procedimiento; no sustituye la verificación de tu modelo ni una prueba con tu equipo.</p></div></section></main><footer>
-    <div class="container"><nav class="footer-nav" aria-label="Navegación al pie"><a href="/">Inicio</a><a href="licencias.html">Licencias</a><a href="dmr.html">DMR</a><a href="repetidores.html">Repetidores</a><a href="equipos.html">Equipos</a><a href="antenas.html">Antenas</a><a href="herramientas.html">Herramientas</a><a href="accesorios.html">Partes y piezas</a><a href="radio-aventura.html">Aventura</a><a href="base73-mk1.html">Base73 MK1</a><a href="/#links">Links</a></nav></div>
+    <div class="container"><nav class="footer-nav" aria-label="Navegación al pie"><div class="footer-group"><h2>RUFCOM</h2><a href="/">Inicio</a><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div><div class="footer-group"><h2>Empieza aquí</h2><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div><div class="footer-group"><h2>Guías</h2><a href="chirp.html">Programa tu radio con CHIRP</a><a href="dmr.html">Radio digital DMR</a><a href="dbi-dbd.html">Entiende dBi y dBd</a><a href="/#links">Links útiles</a></div><div class="footer-group"><h2>Equipos y antenas</h2><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div><div class="footer-group"><h2>Aventura y proyectos</h2><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></nav></div>
     <div class="container footer-wrap">
       <div>
         <img class="footer-brand" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async">
