@@ -1,0 +1,28 @@
+/* Shared grouped navigation. */
+#mainNav{display:flex;position:static;align-items:center;gap:12px;width:auto;padding:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+#mainNav>a,#mainNav summary{font:inherit;font-size:.95rem;font-weight:700;line-height:1.4;color:#5a4a37;min-height:44px;padding:10px 8px;white-space:nowrap;text-decoration:none;cursor:pointer}
+.nav-group{position:relative}
+#mainNav summary{list-style:none;display:flex;align-items:center;gap:8px}
+#mainNav summary::-webkit-details-marker{display:none}
+#mainNav summary::after{content:"⌄";font-size:1rem}
+#mainNav details[open]>summary{color:var(--accent-strong);background:var(--surface-2);border-radius:10px}
+#mainNav details[open]>summary::after{transform:rotate(180deg)}
+#mainNav .nav-submenu{position:absolute;top:calc(100% + 8px);right:0;min-width:260px;padding:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 35px #0002}
+#mainNav .nav-submenu a{display:block;font-size:1rem;line-height:1.4;min-height:44px;padding:11px 12px;white-space:normal;border-radius:8px}
+#mainNav a:hover,#mainNav a[aria-current="page"]{background:var(--surface-2);color:var(--accent-strong)}
+#mainNav details:has(a[aria-current="page"])>summary{color:var(--accent-strong)}
+#mainNav a:focus-visible,#mainNav summary:focus-visible,.menu-btn:focus-visible{outline:3px solid var(--accent-strong);outline-offset:3px}
+.site-header .menu-btn{display:none}
+footer .footer-nav{display:grid;grid-template-columns:.8fr 1fr 1.2fr 1.2fr 1.2fr;gap:24px;align-items:start;padding:30px 0}
+footer .footer-group h2{font-size:1rem;line-height:1.4;letter-spacing:0;margin:0 0 10px;color:var(--brown)}
+footer .footer-nav a{display:block;min-height:44px;padding:9px 0;font-size:.95rem;white-space:normal}
+@media(max-width:1000px){
+.site-header .menu-btn{display:block;min-width:44px;min-height:44px;cursor:pointer}
+#mainNav{display:none;position:absolute;top:100%;left:14px;right:14px;width:auto;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 35px #0002;flex-direction:column;align-items:stretch;gap:4px;max-height:calc(100dvh - 90px);overflow-y:auto}
+#mainNav.open{display:flex}
+#mainNav>a,#mainNav summary{font-size:1rem;padding:12px;white-space:normal}
+#mainNav summary{justify-content:space-between}
+#mainNav .nav-submenu{position:static;min-width:0;border:0;border-left:2px solid var(--line);margin:4px 12px 8px;padding:0 0 0 8px;border-radius:0;box-shadow:none}
+footer .footer-nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:600px){footer .footer-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}}
