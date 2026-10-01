@@ -25,11 +25,10 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
-    def test_legacy_redirect_target(self):
+    def test_retired_url_not_published(self):
         path = self.root / 'site/maleta-rufcom.html'
-        path.write_text(path.read_text(encoding='utf-8').replace(
-            '0; url=/base73-mk1.html', '0; url=/index.html'), encoding='utf-8')
-        self.assertTrue(any('invalid permanent HTML redirect' in e for e in validate(self.root)))
+        path.write_text((self.root / 'site/base73-mk1.html').read_text(encoding='utf-8'), encoding='utf-8')
+        self.assertTrue(any('retired URL must not be published' in e for e in validate(self.root)))
 
     def test_old_url_excluded_from_sitemap(self):
         path = self.root / 'site/sitemap.xml'
