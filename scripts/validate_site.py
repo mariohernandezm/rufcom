@@ -79,6 +79,8 @@ def validate(root=ROOT):
             errors.append(f'hidden file or symlink in site: {p.relative_to(site)}')
         if p.is_file() and p.suffix.lower() not in allowed:
             errors.append(f'unsupported public file: {p.name}')
+    if 'maleta-rufcom.html' in files:
+        errors.append('retired URL must not be published: maleta-rufcom.html')
     for name, p in files.items():
         if p.suffix == '.html':
             page = Page(name)
@@ -88,12 +90,7 @@ def validate(root=ROOT):
             if not all([page.csp, page.description, page.viewport, page.title, page.lang == 'es', page.h1 == 1]):
                 errors.append(f'{name}: missing/invalid CSP, language, description, viewport, title or h1')
             expected = 'https://rufcom.cl/' + ('' if name == 'index.html' else name)
-            if name == 'maleta-rufcom.html':
-                expected = 'https://rufcom.cl/base73-mk1.html'
-                if page.refresh != '0; url=/base73-mk1.html':
-                    errors.append(f'{name}: invalid permanent HTML redirect')
-                page.refs.append(('/base73-mk1.html', False))
-            elif page.refresh is not None:
+            if page.refresh is not None:
                 errors.append(f'{name}: unexpected HTML redirect')
             if name != '404.html' and page.canonical != expected:
                 errors.append(f'{name}: invalid canonical URL')
