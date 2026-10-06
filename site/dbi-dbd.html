@@ -8,9 +8,9 @@
     <div class="container nav-wrap">
       <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="bandas-radioaficion.html">Bandas y frecuencias</a><a href="codigo-q.html">Código Q y 73</a><a href="morse-sos.html">Morse y SOS</a><a href="indicativos-zonas.html">Indicativos y zonas</a><a href="chirp.html">Programa tu radio con CHIRP</a><a href="dmr.html">Radio digital DMR</a><a href="dbi-dbd.html">Entiende dBi y dBd</a><a href="/#links">Links útiles</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
     </div>
-  </header><main id="contenido">
+  </header><main id="contenido"><div class="container guide-wayfinding"><a href="guias.html">← Todas las guías</a><details class="guide-index"><summary>En esta guía</summary><nav aria-label="Índice de la guía"><ol><li><a href="#guia-seccion-1">Primero, las dos referencias</a></li><li><a href="#guia-seccion-2">El mismo valor, escrito de dos maneras</a></li><li><a href="#guia-seccion-3">Más ganancia no significa mejor cobertura en todas partes</a></li><li><a href="#guia-seccion-4">Antes de comprar una antena VHF/UHF</a></li></ol></nav></details></div>
 <section class="article-hero subtle-outdoor rf-mark"><div class="container">
 <p class="eyebrow">Para comenzar · VHF y UHF</p>
 <h1 class="article-title">dBi y dBd: cómo comparar la ganancia de una antena</h1>
@@ -21,7 +21,7 @@
 <p><a href="antenas.html">← Volver a Antenas</a></p>
 <p>Cuando buscas una antena para tu radio VHF o UHF, puedes encontrar anuncios que dicen <strong>8 dBi</strong> y otros <strong>6 dBd</strong>. ¿Cuál tiene más ganancia?</p>
 <p>Aunque 8 parezca mejor que 6, las letras que acompañan al número importan: <strong>dBi y dBd usan referencias distintas para expresar la ganancia.</strong></p>
-<h2>Primero, las dos referencias</h2>
+<h2 id="guia-seccion-1">Primero, las dos referencias</h2>
 <p>El <strong>patrón de radiación</strong> es un dibujo que muestra hacia dónde una antena envía más o menos señal. Estas dos formas ayudan a entender las letras:</p>
 <div class="pattern-grid">
 <section class="pattern-card"><p class="pattern-label">La «i» de dBi</p><h3>Isotrópica: una esfera</h3>
@@ -34,23 +34,23 @@
 <p class="pattern-note">Dibujos de patrones ideales en espacio libre, cada uno ajustado a su propio máximo para comparar la forma. No representan distancias de alcance ni el tamaño físico de las antenas. El suelo y los objetos cercanos pueden cambiar el patrón real.</p>
 <p>El dipolo ideal concentra más señal hacia el horizonte que la isotrópica. En esa dirección, <strong>0 dBd equivale a 2,15 dBi</strong>. De ahí sale la diferencia entre ambas referencias.</p>
 <div class="article-callout"><strong>Para pasar de dBd a dBi, suma 2,15.</strong><p>La antena no cambia. Solo cambia la referencia con la que expresamos su ganancia.</p></div>
-<h2>El mismo valor, escrito de dos maneras</h2>
+<h2 id="guia-seccion-2">El mismo valor, escrito de dos maneras</h2>
 <p>Si una antena anuncia <strong>6 dBd</strong>, podemos expresar esa misma ganancia así:</p>
 <div class="gain-equivalence"><span>6 dBd</span><span aria-label="equivale a">=</span><span>8,15 dBi</span></div>
 <p><strong>Es la misma ganancia, no dos antenas diferentes.</strong> Sumamos 2,15 al valor en dBd para obtener el valor en dBi.</p>
 <p>Ahora volvamos al ejemplo inicial: una antena de <strong>8 dBi</strong> y otra de <strong>6 dBd (8,15 dBi)</strong>, comparadas en la misma banda, declaran ganancias prácticamente iguales. El número más grande del anuncio no basta para elegir.</p>
-<h2>Más ganancia no significa mejor cobertura en todas partes</h2>
+<h2 id="guia-seccion-3">Más ganancia no significa mejor cobertura en todas partes</h2>
 <p>Una antena pasiva, como las que conectamos normalmente a nuestras radios, no crea potencia adicional: distribuye la energía favoreciendo determinadas direcciones.</p>
 <div class="article-callout"><strong>Piensa en una linterna que concentra su luz.</strong><p>Ilumina más intensamente hacia un sector, pero cubre menos ángulo. Con una antena ocurre algo parecido: más ganancia puede favorecer una dirección y reducir la cobertura hacia otras.</p></div>
 <p>Por eso conviene mirar el patrón de radiación y pensar dónde estás y con quién quieres comunicarte.</p>
-<h2>Antes de comprar una antena VHF/UHF</h2>
+<h2 id="guia-seccion-4">Antes de comprar una antena VHF/UHF</h2>
 <ul><li><strong>Compara la misma banda:</strong> la ganancia indicada para UHF no necesariamente es la misma en VHF.</li><li><strong>Revisa las letras:</strong> si el anuncio solo dice «8 dB», pide que aclaren si son dBi o dBd.</li><li><strong>Consulta la ficha del fabricante:</strong> busca datos que respalden lo que anuncia el vendedor.</li></ul>
 <div class="notice-box"><strong>Consejo RUFCOM:</strong> no elijas solo por el número más grande. Compara la misma banda y la misma referencia, y considera dónde vas a instalar la antena.</div>
 
 <p><a class="btn btn-primary" href="antenas.html">Volver a Antenas</a></p>
 </article></section></main><footer class="compact-footer"><div class="container footer-wrap">
 <div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p></div>
-<nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2>Para seguir explorando</h2><a href="licencias.html">Licencias</a><a href="repetidores.html">Repetidores</a><a href="chirp.html">Guía CHIRP</a><a href="radio-aventura.html">Radio y aventura</a></nav>
+<nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2>Para seguir explorando</h2><a href="guias.html">Todas las guías</a><a href="licencias.html">Licencias</a><a href="repetidores.html">Repetidores</a><a href="chirp.html">Guía CHIRP</a><a href="radio-aventura.html">Radio y aventura</a></nav>
 <div class="footer-contact"><h2>Contacto</h2><span class="footer-email">contactorufcom@gmail.com</span><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
 </div><div class="container footer-bottom"><a href="privacidad.html">Privacidad</a></div></footer>  <script src="assets/js/main.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
