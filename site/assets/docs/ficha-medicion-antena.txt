@@ -1,0 +1,37 @@
+RUFCOM · Ficha de medición de antena
+Completa solo resultados realmente observados. Usa «no medido» cuando falte un dato.
+
+Fecha:
+Persona que midió:
+Antena / versión / dimensiones:
+Instrumento / modelo / firmware:
+Cable / tipo / longitud:
+Conectores y adaptadores:
+Montaje / altura / ubicación general / objetos cercanos:
+
+QUÉ INCLUYE LA MEDICIÓN
+[ ] Conjunto cable de bajada + antena desde la radio
+[ ] Antena en su conector (con cable de prueba calibrado)
+Otro / punto exacto de medición:
+NanoVNA: rango START-STOP / punto de calibración / patrones usados:
+Comprobación con carga LOAD de 50 ohmios:
+SW-33 Plus: radio / modo analógico / potencia seleccionada:
+
+LECTURAS (anota las unidades)
+Frecuencia (MHz) | ROE/SWR | Potencia directa si se midió (W) | Observación
+________________ | _______ | _______________________________ | ___________
+________________ | _______ | _______________________________ | ___________
+________________ | _______ | _______________________________ | ___________
+
+Frecuencia y ROE del mínimo del barrido, si se observó:
+Cambio realizado entre pruebas (una variable por vez):
+Resultado al repetir la medición:
+Fotos asociadas: conexión / montaje / pantalla:
+
+CONCLUSIÓN
+Qué permite afirmar esta prueba:
+Qué falta medir o no se puede concluir:
+
+Una ROE baja no demuestra alcance. Para comparar cables de 4 y 14 m,
+conserva antena, montaje y frecuencia; indica el punto de medición.
+Guía: https://rufcom.cl/herramientas.html
