@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 740" role="img" aria-labelledby="title desc">
+<title id="title">Preparación del coaxial para la Flower Pot VHF</title>
+<desc id="desc">El elemento superior de 457 mm conserva el conductor central y su aislante. Se retiran la cubierta exterior y la malla. Desde el comienzo de la malla se miden 447 mm de coaxial completo hasta el inicio de la bobina. Dibujo sin escala.</desc>
+<defs><style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#44250a}
+.heading{font-size:32px;font-weight:bold}.label{font-size:23px;font-weight:bold}.body{font-size:21px;fill:#5f5549}.small{font-size:19px;fill:#5f5549}
+.guide{stroke:#b46f00;stroke-width:3;fill:none}
+</style></defs>
+<rect x="2" y="2" width="896" height="736" rx="24" fill="#fffaf0" stroke="#eadfcb" stroke-width="2"/>
+<text x="42" y="58" class="heading">ANTES DE MONTAR EL COAXIAL</text>
+<text x="42" y="92" class="body">Una sola pieza de cable · esquema sin escala</text>
+<!-- The core and its dielectric continue through both sections. -->
+<rect x="200" y="350" width="62" height="243" rx="4" fill="#333"/>
+<rect x="208" y="350" width="46" height="243" fill="#92999b"/>
+<path d="M211 351 l40 35 m-40 -7 l40 35 m-40 -7 l40 35 m-40 -7 l40 35 m-40 -7 l40 35 m-40 -7 l40 35 m-40 -7 l40 35 m-40 -7 l40 35" stroke="#c4c8c9" stroke-width="3"/>
+<rect x="217" y="160" width="28" height="433" rx="4" fill="#f1d696" stroke="#b7934b" stroke-width="2"/>
+<rect x="227" y="160" width="8" height="433" rx="2" fill="#b76b19"/>
+<!-- Dimension references share the start of the intact braid. -->
+<path d="M146 160 h-24 v190 h24 M122 160 h20 M122 350 h20" class="guide"/>
+<text x="42" y="255" class="label">457 mm</text>
+<path d="M146 350 h-24 v243 h24 M122 593 h20" class="guide"/>
+<text x="42" y="480" class="label">447 mm</text>
+<path d="M252 210 h57" class="guide"/>
+<text x="333" y="199" class="label">Elemento superior</text>
+<text x="333" y="235" class="body">Retira la cubierta exterior y la malla.</text>
+<text x="333" y="267" class="body">Conserva el conductor y su aislante.</text>
+<path d="M266 350 h43" class="guide"/>
+<circle cx="266" cy="350" r="5" fill="#b46f00"/>
+<text x="333" y="344" class="label">Aquí comienza la malla</text>
+<text x="333" y="379" class="body">Desde aquí mide los 447 mm.</text>
+<path d="M266 470 h43" class="guide"/>
+<text x="333" y="459" class="label">Sección inferior</text>
+<text x="333" y="494" class="body">Conserva el coaxial completo.</text>
+<path d="M195 593 h90" stroke="#b46f00" stroke-width="5"/>
+<text x="333" y="587" class="label">Marca: inicio de la bobina</text>
+<text x="333" y="622" class="body">Las 9 vueltas comienzan aquí.</text>
+<text x="42" y="694" class="small">Colores didácticos: las capas reales pueden tener otro aspecto.</text>
+</svg>
