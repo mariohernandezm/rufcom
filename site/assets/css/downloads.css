@@ -1,0 +1,15 @@
+.download-section{scroll-margin-top:90px}
+.download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:24px 0}
+.download-card{padding:28px;border:1px solid var(--line);border-top:4px solid var(--accent-strong);border-radius:16px;background:var(--surface)}
+.download-card h3{font-size:1.6rem;line-height:1.25;margin:8px 0 18px}
+.download-card p,.download-card li,.download-help li{line-height:1.7}
+.download-card .btn{display:block;width:100%;white-space:normal;text-align:center;margin:22px 0 0}
+.download-card details{margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+.download-card summary{cursor:pointer;font-weight:700;padding:12px 0;min-height:44px}
+.download-card details p{margin:14px 0}
+.download-card ol,.download-help ol{padding-left:24px}
+.download-card li,.download-help li{margin:10px 0}
+.download-card summary:focus-visible{outline:3px solid var(--accent-strong);outline-offset:4px}
+.download-help{padding:24px;background:var(--surface-2);border-radius:14px;margin:28px 0}
+.download-help h3{margin-top:0}
+@media(max-width:700px){.download-grid{grid-template-columns:1fr}.download-card{padding:22px}.download-card h3{font-size:1.35rem}}
