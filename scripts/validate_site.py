@@ -11,6 +11,7 @@ import re
 import posixpath
 import sys
 import xml.etree.ElementTree as ET
+from zipfile import ZipFile, BadZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 CSP = "default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"
@@ -73,7 +74,7 @@ def validate(root=ROOT):
     for name in ('index.html', '404.html', 'robots.txt', 'sitemap.xml'):
         if name not in files:
             errors.append(f'missing required file: {name}')
-    allowed = {'.html', '.css', '.js', '.svg', '.webp', '.png', '.jpg', '.ico', '.woff2', '.txt', '.xml'}
+    allowed = {'.html', '.css', '.js', '.svg', '.webp', '.png', '.jpg', '.ico', '.woff2', '.txt', '.xml', '.xlsx'}
     for p in site.rglob('*'):
         if p.is_symlink() or any(part.startswith('.') for part in p.relative_to(site).parts):
             errors.append(f'hidden file or symlink in site: {p.relative_to(site)}')
@@ -82,6 +83,24 @@ def validate(root=ROOT):
     if 'maleta-rufcom.html' in files:
         errors.append('retired URL must not be published: maleta-rufcom.html')
     for name, p in files.items():
+        if p.suffix == '.xlsx':
+            try:
+                with ZipFile(p) as archive:
+                    members = archive.namelist()
+                    if not {'[Content_Types].xml', 'xl/workbook.xml'}.issubset(members):
+                        errors.append(f'{name}: invalid XLSX package')
+                    for member in members:
+                        lower = member.lower()
+                        if any(token in lower for token in ('vbaproject', 'activex/', 'embeddings/', 'externallinks/')):
+                            errors.append(f'{name}: active or external XLSX content')
+                        if member == '[Content_Types].xml' and 'macroenabled' in archive.read(member).decode('utf-8').lower():
+                            errors.append(f'{name}: macro-enabled XLSX content')
+                        if member.endswith('.rels'):
+                            rels = ET.fromstring(archive.read(member))
+                            if any(rel.get('TargetMode') == 'External' for rel in rels):
+                                errors.append(f'{name}: external XLSX relationship')
+            except (BadZipFile, OSError, ET.ParseError, UnicodeDecodeError):
+                errors.append(f'{name}: invalid XLSX package')
         if p.suffix == '.html':
             page = Page(name)
             page.feed(p.read_text(encoding='utf-8'))
