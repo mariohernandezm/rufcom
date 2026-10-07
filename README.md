@@ -36,6 +36,13 @@ adaptar dominio, repositorio y configuración de Pages.
 
 ## Contenido y descargables
 
+La audiencia principal son personas que empiezan. Cada descargable debe abrir
+con pasos breves, nombres de campos explicados, celdas de entrada visibles y un
+ejemplo claramente separado de los datos reales. Mostrar las descargas en
+Inicio y al comienzo de Guías; no esconderlas al final de una guía extensa.
+Mantener las rutas existentes para que los botones sigan funcionando.
+
+
 Las guías deben explicar el procedimiento completo dentro de RUFCOM. En los
 nuevos contenidos técnicos, identificar las fuentes como texto con el documento,
 su versión cuando exista y la fecha de consulta, evitando enlaces externos a los
