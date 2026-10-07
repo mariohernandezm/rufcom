@@ -1653,3 +1653,8 @@ footer .footer-nav a:hover { text-decoration:underline; text-underline-offset:4p
 #links .resource-icon{display:block;color:var(--accent-strong);margin-bottom:20px}
 #links .link-card h3{margin-top:0}
 #links .club-emergency{margin-top:20px;padding-top:16px}
+
+/* Keep the construction diagrams proportional on smaller screens. */
+.plan-card img { height:auto; }
+figure.plan-card { margin:18px 0 0; }
+.plan-card figcaption { margin-top:12px; font-size:.9rem; color:var(--muted); line-height:1.5; }
