@@ -34,6 +34,19 @@ commit. Los forks pueden usar el código y ejecutar CI; el despliegue está
 restringido explícitamente a `mariohernandezm/rufcom`. Para publicar un fork,
 adaptar dominio, repositorio y configuración de Pages.
 
+## Contenido y descargables
+
+Las guías deben explicar el procedimiento completo dentro de RUFCOM. En los
+nuevos contenidos técnicos, identificar las fuentes como texto con el documento,
+su versión cuando exista y la fecha de consulta, evitando enlaces externos a los
+que el visitante tenga que recurrir para completar la guía. Mantener la navegación
+interna y alojar los descargables en el propio sitio.
+
+Las plantillas Excel se distribuyen vacías, sin macros ni conexiones externas.
+La ficha de antena contiene las condiciones del ensayo y una tabla de lecturas.
+El libro de guardia contiene el registro de QSO y sus instrucciones. No publicar
+mediciones ni contactos ficticios como si fueran resultados reales.
+
 ## Seguridad
 
 El repositorio será público: todo lo que se suba, incluida su historia, será
