@@ -1,0 +1,24 @@
+.measurement-guide section[id],.measurement-guide h2[id]{scroll-margin-top:100px}
+.measurement-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
+.measurement-options a{display:block;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none}
+.measurement-options a:hover{border-color:var(--accent-strong)}
+.measurement-options span{display:block;margin-top:8px;color:var(--muted)}
+.measurement-procedure{margin-top:48px;padding-top:24px;border-top:1px solid var(--line)}
+.measurement-diagram{margin:24px 0;padding:20px;background:var(--surface-2);border:1px solid var(--line);border-radius:16px}
+.connection-flow{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.connection-flow li{position:relative;padding:16px 12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;text-align:center;min-width:0;overflow-wrap:anywhere}
+.connection-flow li+li:before{content:'→';position:absolute;left:-24px;top:calc(50% - 14px);font-size:24px;color:var(--brown)}
+.connection-flow span{display:block;margin-top:6px;font-size:.92rem;color:var(--muted)}
+.measurement-diagram figcaption{margin-top:16px;color:var(--muted);font-size:.94rem}
+.measurement-steps{padding-left:26px}
+.measurement-steps li{padding-left:8px;margin:18px 0}
+.measurement-steps li::marker{font-weight:800;color:var(--brown)}
+.measurement-help{padding:16px 20px;border:1px solid var(--line);border-radius:12px}
+.measurement-help summary{cursor:pointer;font-weight:700}
+.measurement-readings{display:grid;gap:12px}
+.measurement-readings div{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.measurement-readings dt{font-weight:800}
+.measurement-readings dd{margin:8px 0 0}
+.measurement-guide a:focus-visible{outline:3px solid var(--accent-strong);outline-offset:4px}
+@media(max-width:640px){.measurement-options,.connection-flow{grid-template-columns:1fr}.connection-flow li+li:before{content:'↓';left:calc(50% - 8px);top:-30px}.measurement-diagram{padding:16px}.measurement-guide .btn{white-space:normal;text-align:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
