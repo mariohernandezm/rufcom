@@ -26,6 +26,10 @@ jobs:
       - name: Validate public files, local links and security policy
         run: python scripts/validate_site.py
       - name: Validate JavaScript syntax
-        run: node --check site/assets/js/main.js
+        run: |
+          node --check site/assets/js/main.js
+          node --check site/assets/js/repetidores.js
+      - name: Check repeater settings and shared searches
+        run: node --test tests/repetidores.test.cjs
       - name: Check validation rejects unsafe changes
         run: python -m unittest discover -s tests -v
