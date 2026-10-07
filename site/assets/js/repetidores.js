@@ -38,7 +38,19 @@
     const ranked = [...new Set(places)].map(place => ({ place, score: distance(q, normalize(place)) })).filter(item => item.score > 0 && item.score <= 1).sort((a, b) => a.score - b.score);
     return ranked.length === 1 ? ranked[0].place : '';
   };
-  if (typeof module !== 'undefined') module.exports = { matches, suggest };
+  const readFilters = (search, regions) => {
+    const params = new URLSearchParams(search);
+    const region = params.get('region') || '';
+    return { region: regions.includes(region) ? region : '', query: (params.get('q') || '').slice(0, 200) };
+  };
+  const searchLink = (base, region, query) => {
+    const url = new URL(base);
+    url.search = ''; url.hash = '';
+    if (region) url.searchParams.set('region', region);
+    if (query) url.searchParams.set('q', query);
+    return url.href;
+  };
+  if (typeof module !== 'undefined') module.exports = { matches, suggest, readFilters, searchLink };
   if (typeof document === 'undefined') return;
   const input = document.getElementById('repeater-query');
   if (!input) return;
@@ -49,8 +61,14 @@
   const cards = [...document.querySelectorAll('.repeater-card')];
   const groups = [...document.querySelectorAll('.repeater-region')];
   const simplex = document.getElementById('simplex-reference');
+  const share = document.getElementById('repeater-share');
+  const status = document.getElementById('repeater-share-status');
   let suggestedPlace = '';
+  const filters = readFilters(location.search, [...region.options].map(option => option.value));
+  input.value = filters.query; region.value = filters.region;
   const update = () => {
+    share.href = searchLink(location.href, region.value, input.value);
+    status.textContent = '';
     let count = 0;
     cards.forEach(card => {
       card.hidden = !matches(card.dataset, input.value, region.value);
@@ -81,5 +99,14 @@
   clear.addEventListener('click', () => { input.value = ''; update(); input.focus(); });
   reset.addEventListener('click', () => { input.value = ''; region.value = ''; update(); region.focus(); });
   suggestion.addEventListener('click', () => { input.value = suggestedPlace; update(); input.focus(); });
+  document.getElementById('repeater-copy').addEventListener('click', async () => {
+    const link = share.href;
+    try {
+      await navigator.clipboard.writeText(link);
+      status.textContent = 'Enlace copiado con los filtros actuales.';
+    } catch (_) {
+      status.textContent = 'Para compartir, copia la dirección de «Enlace a esta búsqueda».';
+    }
+  });
   update();
 })();

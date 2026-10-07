@@ -38,3 +38,13 @@
 @media (max-width:900px) { .repeater-fields { grid-template-columns:minmax(0,1fr); gap:16px; } .repeater-fields > .btn { justify-self:start; min-width:140px; } }
 @media (max-width:500px) { .repeater-search { padding:18px; } .repeater-fields > .btn { width:100%; } .section .repeater-card h3 { font-size:1.2rem; } }
 
+
+.repeater-search-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px 22px; }
+.repeater-share-status { min-height:1.4em; margin:0; font-size:.875rem; color:var(--muted); }
+.repeater-settings { border-top:1px solid var(--line); margin-top:12px; padding-top:10px; }
+.repeater-settings summary { cursor:pointer; font-weight:700; color:var(--brown); }
+.repeater-settings summary span { display:block; font-size:.75rem; font-weight:400; color:var(--muted); margin-left:16px; }
+.repeater-card .repeater-settings dl { grid-template-columns:repeat(2,minmax(0,1fr)); margin:12px 0; }
+.repeater-settings p, .repeater-settings a { font-size:.8rem; line-height:1.5; }
+.repeater-settings a { display:inline-block; padding:6px 0; color:var(--brown); font-weight:700; }
+.repeater-settings summary:focus-visible { outline:3px solid var(--brown); outline-offset:3px; }
