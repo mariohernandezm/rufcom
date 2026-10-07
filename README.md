@@ -41,6 +41,12 @@ con pasos breves, nombres de campos explicados, celdas de entrada visibles y un
 ejemplo claramente separado de los datos reales. Mostrar las descargas en
 Inicio y al comienzo de Guías; no esconderlas al final de una guía extensa.
 Mantener las rutas existentes para que los botones sigan funcionando.
+Usar el logo RUFCOM en la cabecera, fondo blanco, encabezados suaves y líneas
+horizontales tenues; evitar colorear o cuadricular toda la tabla. En el libro
+de guardia para principiantes, usar Fecha y Hora del reloj local y explicarlo
+en las instrucciones. No etiquetar esos datos como UTC ni convertirlos sin
+una opción expresa del usuario.
+
 
 
 Las guías deben explicar el procedimiento completo dentro de RUFCOM. En los
