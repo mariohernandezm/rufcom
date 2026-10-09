@@ -76,6 +76,24 @@ class ValidationTests(unittest.TestCase):
         (self.root / 'sample.txt').write_text('gh' + 'p_' + 'a' * 36, encoding='utf-8')
         self.assertTrue(any('possible secret' in e for e in validate(self.root)))
 
+    def test_xlsx_logo_link_is_limited_to_rufcom(self):
+        cases = [
+            ('xl/drawings/_rels/drawing1.xml.rels', 'hyperlink', 'https://rufcom.cl/', False),
+            ('xl/drawings/_rels/drawing1.xml.rels', 'hyperlink', 'https://example.com/', True),
+            ('xl/drawings/_rels/drawing1.xml.rels', 'hyperlink', 'https://rufcom.cl.evil.test/', True),
+            ('xl/drawings/_rels/drawing1.xml.rels', 'image', 'https://rufcom.cl/', True),
+            ('xl/_rels/workbook.xml.rels', 'hyperlink', 'https://rufcom.cl/', True),
+        ]
+        for member, kind, target, rejected in cases:
+            with self.subTest(member=member, kind=kind, target=target):
+                with ZipFile(self.root / 'site/link.xlsx', 'w') as archive:
+                    archive.writestr('[Content_Types].xml', '<Types/>')
+                    archive.writestr('xl/workbook.xml', '<workbook/>')
+                    archive.writestr(member, '<Relationships><Relationship TargetMode="External" '
+                        f'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/{kind}" '
+                        f'Target="{target}"/></Relationships>')
+                self.assertEqual(any('link.xlsx: external XLSX relationship' in e for e in validate(self.root)), rejected)
+
 
 if __name__ == '__main__':
     unittest.main()

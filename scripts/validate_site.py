@@ -97,7 +97,13 @@ def validate(root=ROOT):
                             errors.append(f'{name}: macro-enabled XLSX content')
                         if member.endswith('.rels'):
                             rels = ET.fromstring(archive.read(member))
-                            if any(rel.get('TargetMode') == 'External' for rel in rels):
+                            if any(
+                                rel.get('TargetMode') == 'External' and not (
+                                    member.startswith('xl/drawings/_rels/')
+                                    and rel.get('Type') == 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink'
+                                    and rel.get('Target') == 'https://rufcom.cl/'
+                                ) for rel in rels
+                            ):
                                 errors.append(f'{name}: external XLSX relationship')
             except (BadZipFile, OSError, ET.ParseError, UnicodeDecodeError):
                 errors.append(f'{name}: invalid XLSX package')
