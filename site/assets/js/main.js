@@ -2,6 +2,13 @@
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 if (menuBtn && mainNav) {
+  const firstSteps = mainNav.querySelector('a[href="licencias.html"]');
+  if (firstSteps && !mainNav.querySelector('a[href="buscador-licencias.html"]')) {
+    const licenseSearch = document.createElement('a');
+    licenseSearch.href = 'buscador-licencias.html';
+    licenseSearch.textContent = 'Buscador de licencias en Chile';
+    firstSteps.after(licenseSearch);
+  }
   const groups = [...mainNav.querySelectorAll("details")];
   const closeGroups = () => groups.forEach(group => { group.open = false; });
   const setOpen = (open) => {
