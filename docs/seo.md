@@ -44,3 +44,17 @@ y consultas. Con pocas impresiones, no atribuir una caída a una penalización.
 
 Las mejoras y las solicitudes no garantizan indexación, posición ni resultados
 enriquecidos. Registrar el resultado real de Google sin prometer plazos.
+
+## Comprobación de publicación
+
+El validador exige un único script de estadísticas con consentimiento en cada
+página canónica y rechaza líneas de autoría duplicadas. No copiar una segunda
+autoría al preparar una guía: el generador SEO conserva el bloque único.
+
+El despliegue comprueba todas las URLs del sitemap contra el HTML del commit
+validado, incluidas las guías nuevas. No basta con comprobar la portada.
+
+Al optimizar imágenes, conservar la identidad, la transparencia y las rutas de
+los originales. Las variantes WebP sin pérdida incorporadas el 12/10/2026 se
+compararon píxel por píxel con los PNG. Los ajustes de formato o compresión no
+renuevan las fechas editoriales ni requieren repetir solicitudes de indexación.
