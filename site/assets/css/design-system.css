@@ -64,6 +64,40 @@ body :is(main, .site-header, .compact-footer, .analytics-choice) :is(a, button, 
   outline: 3px solid var(--color-secondary); outline-offset: 3px;
 }
 
+
+/* Brand motif: the same contours across editorial, library and utility templates.
+   Keep the middle clear; opaque cards and diagrams retain clean surfaces. */
+body main.guide-library, body main.container, body main > .outdoor-hero {
+  position: relative; isolation: isolate;
+}
+body :is(.hero, .article-hero)::before,
+body main > .section::before,
+body main.guide-library::before,
+body main.container::before,
+body main > .outdoor-hero::before {
+  content: ""; display: block; position: absolute; inset: 0;
+  width: auto; height: auto; z-index: 0; pointer-events: none;
+  background: url("../images/topographic.svg?v=2") repeat center top / 900px auto;
+  mask-image: linear-gradient(90deg, #000, transparent 32%, transparent 68%, #000);
+  opacity: .16;
+}
+body main.guide-library > *, body main.container > *, body main > .outdoor-hero > * {
+  position: relative; z-index: 1;
+}
+/* A contained utility page already has a motif; avoid a second overlapping layer. */
+body main.container > .section::before { background-image: none; }
+/* Legacy home rules hid odd sections with !important; keep their contours. */
+body.home-page main > .section:nth-of-type(odd)::before { display: block !important; }
+@media (max-width: 600px) {
+  body :is(.hero, .article-hero)::before,
+  body main > .section::before,
+  body main.guide-library::before,
+  body main.container::before,
+  body main > .outdoor-hero::before {
+    background-size: 620px auto; opacity: .12;
+  }
+}
+
 /* Atoms: primary, secondary and text actions use the same dimensions. */
 body .btn, body .rf-button {
   display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
