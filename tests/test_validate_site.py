@@ -26,6 +26,16 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
+    def test_new_page_without_shared_design_is_rejected(self):
+        path = self.root / 'site/radios-en-montana.html'
+        path.write_text(path.read_text(encoding='utf-8').replace(
+            '<link rel="stylesheet" href="assets/css/design-system.css">', ''), encoding='utf-8')
+        self.assertTrue(any('shared design stylesheet required' in e for e in validate(self.root)))
+
+    def test_page_styles_cannot_override_shared_design_order(self):
+        self.inject('<link rel="stylesheet" href="assets/css/styles.css">')
+        self.assertTrue(any('shared design stylesheet required' in e for e in validate(self.root)))
+
     def test_missing_analytics_on_new_guide_is_rejected(self):
         path = self.root / 'site/radios-en-montana.html'
         path.write_text(path.read_text(encoding='utf-8').replace(
