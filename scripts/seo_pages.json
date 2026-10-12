@@ -1,0 +1,107 @@
+{
+  "accesorios.html": {
+    "type": "Article",
+    "image": "assets/images/conector-pl259.webp",
+    "modified": "2026-10-11"
+  },
+  "antenas.html": {
+    "type": "Article",
+    "image": "assets/images/flowerpot-ca3hmm.webp",
+    "modified": "2026-10-05"
+  },
+  "bandas-radioaficion.html": {
+    "type": "Article",
+    "image": "assets/images/bandas-entornos.png",
+    "modified": "2026-10-05"
+  },
+  "base73-mk1.html": {
+    "type": "Article",
+    "image": "assets/images/maleta-abierta-960.webp",
+    "modified": "2026-10-12"
+  },
+  "buscador-licencias.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent.png"
+  },
+  "chirp.html": {
+    "type": "Article",
+    "image": "assets/images/chirp-inicio.png",
+    "modified": "2026-10-12"
+  },
+  "codigo-q.html": {
+    "type": "Article",
+    "image": "assets/images/codigo-q/qap-web.png",
+    "modified": "2026-10-12"
+  },
+  "dbi-dbd.html": {
+    "type": "Article",
+    "image": "assets/images/rufcom-logo-transparent.png",
+    "modified": "2026-10-05"
+  },
+  "dmr.html": {
+    "type": "Article",
+    "image": "assets/images/rufcom-logo-transparent.png",
+    "modified": "2026-10-05"
+  },
+  "equipos.html": {
+    "type": "Article",
+    "image": "assets/images/baofeng-uv5r.webp",
+    "modified": "2026-10-05"
+  },
+  "flowerpot.html": {
+    "type": "Article",
+    "image": "assets/images/flowerpot-ca3hmm.webp",
+    "modified": "2026-10-11"
+  },
+  "guias.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent.png"
+  },
+  "herramientas.html": {
+    "type": "Article",
+    "image": "assets/images/surecom-sw33-plus.png",
+    "modified": "2026-10-11"
+  },
+  "index.html": {
+    "type": "WebPage",
+    "image": "assets/images/maleta-abierta-960.webp"
+  },
+  "indicativos-zonas.html": {
+    "type": "Article",
+    "image": "assets/images/indicativos/02-web.png",
+    "modified": "2026-10-05"
+  },
+  "licencias.html": {
+    "type": "Article",
+    "image": "assets/images/rufcom-logo-transparent.png",
+    "modified": "2026-10-12"
+  },
+  "morse-sos.html": {
+    "type": "Article",
+    "image": "assets/images/morse-sos/01-sos.png",
+    "modified": "2026-10-12"
+  },
+  "pl259-rg58.html": {
+    "type": "Article",
+    "image": "assets/images/pl259-foto-13.png",
+    "modified": "2026-10-11"
+  },
+  "privacidad.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent.png"
+  },
+  "radio-aventura.html": {
+    "type": "Article",
+    "image": "assets/images/rufcom-logo-transparent.png",
+    "modified": "2026-10-12"
+  },
+  "repetidores.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent.png"
+  },
+  "seguridad-cerros-parques.html": {
+    "type": "Article",
+    "image": "assets/images/salida-portada.png",
+    "modified": "2026-10-12"
+  }
+}
