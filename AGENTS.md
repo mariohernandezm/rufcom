@@ -5,6 +5,10 @@ indexación en cada nueva guía o página, desde su creación.
 
 - Leer `docs/seo.md` y conservar el estilo, las fuentes y los límites técnicos
   del contenido existente.
+- Leer `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
+  botones y componentes de `assets/css/design-system.css`, cargado después de
+  las hojas específicas. No añadir otra escala global de títulos ni recuperar
+  los bloques promocionales de tamaño de portada.
 - Crear título y descripción únicos, un H1 descriptivo, canónica HTTPS sin
   `www`, idioma español, imágenes con alt y diseño móvil.
 - Enlazar desde Guías cuando sea una guía y desde páginas relacionadas con
