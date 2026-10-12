@@ -27,9 +27,12 @@ class Page(HTMLParser):
         self.refresh = None
         self.analytics = 0
         self.bylines = 0
+        self.stylesheets = []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == 'link' and a.get('rel') == 'stylesheet':
+            self.stylesheets.append(a.get('href', ''))
         if tag == 'script' and a.get('src') == 'assets/js/analytics.js':
             self.analytics += 1
         if tag == 'p' and 'article-byline' in a.get('class', '').split():
@@ -129,6 +132,9 @@ def validate(root=ROOT):
                 errors.append(f'{name}: exactly one consent-based analytics script required')
             if page.bylines > 1:
                 errors.append(f'{name}: duplicate article byline')
+            design_sheet = '/assets/css/design-system.css' if name == '404.html' else 'assets/css/design-system.css'
+            if page.stylesheets.count(design_sheet) != 1 or page.stylesheets[-1:] != [design_sheet]:
+                errors.append(f'{name}: shared design stylesheet required once after page-specific styles')
 
     def check_ref(name, ref, resource):
         url = urlsplit(ref)
