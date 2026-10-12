@@ -11,7 +11,7 @@
   },
   "bandas-radioaficion.html": {
     "type": "Article",
-    "image": "assets/images/bandas-entornos.png",
+    "image": "assets/images/bandas-entornos-lossless.webp",
     "modified": "2026-10-05T22:34:40-03:00"
   },
   "base73-mk1.html": {
@@ -21,7 +21,7 @@
   },
   "buscador-licencias.html": {
     "type": "WebPage",
-    "image": "assets/images/rufcom-logo-transparent.png"
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "chirp.html": {
     "type": "Article",
@@ -30,17 +30,17 @@
   },
   "codigo-q.html": {
     "type": "Article",
-    "image": "assets/images/codigo-q/qap-web.png",
+    "image": "assets/images/codigo-q/qap-web-lossless.webp",
     "modified": "2026-10-12T11:04:45-03:00"
   },
   "dbi-dbd.html": {
     "type": "Article",
-    "image": "assets/images/rufcom-logo-transparent.png",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
     "modified": "2026-10-05T22:34:40-03:00"
   },
   "dmr.html": {
     "type": "Article",
-    "image": "assets/images/rufcom-logo-transparent.png",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
     "modified": "2026-10-05T22:34:40-03:00"
   },
   "equipos.html": {
@@ -55,7 +55,7 @@
   },
   "guias.html": {
     "type": "WebPage",
-    "image": "assets/images/rufcom-logo-transparent.png"
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "herramientas.html": {
     "type": "Article",
@@ -68,40 +68,40 @@
   },
   "indicativos-zonas.html": {
     "type": "Article",
-    "image": "assets/images/indicativos/02-web.png",
+    "image": "assets/images/indicativos/02-web-lossless.webp",
     "modified": "2026-10-05T22:34:40-03:00"
   },
   "licencias.html": {
     "type": "Article",
-    "image": "assets/images/rufcom-logo-transparent.png",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
     "modified": "2026-10-12T11:04:45-03:00"
   },
   "morse-sos.html": {
     "type": "Article",
-    "image": "assets/images/morse-sos/01-sos.png",
+    "image": "assets/images/morse-sos/01-sos-lossless.webp",
     "modified": "2026-10-12T11:04:45-03:00"
   },
   "pl259-rg58.html": {
     "type": "Article",
-    "image": "assets/images/pl259-foto-13.png",
+    "image": "assets/images/pl259-foto-13-lossless.webp",
     "modified": "2026-10-11T13:19:24-03:00"
   },
   "privacidad.html": {
     "type": "WebPage",
-    "image": "assets/images/rufcom-logo-transparent.png"
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "radio-aventura.html": {
     "type": "Article",
-    "image": "assets/images/rufcom-logo-transparent.png",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
     "modified": "2026-10-12T11:04:45-03:00"
   },
   "repetidores.html": {
     "type": "WebPage",
-    "image": "assets/images/rufcom-logo-transparent.png"
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "seguridad-cerros-parques.html": {
     "type": "Article",
-    "image": "assets/images/salida-portada.png",
+    "image": "assets/images/salida-portada-lossless.webp",
     "modified": "2026-10-12T11:04:45-03:00"
   },
   "radios-en-montana.html": {

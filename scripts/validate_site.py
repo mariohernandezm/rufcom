@@ -25,9 +25,15 @@ class Page(HTMLParser):
         self.canonical, self.h1 = None, 0
         self.lang = None
         self.refresh = None
+        self.analytics = 0
+        self.bylines = 0
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == 'script' and a.get('src') == 'assets/js/analytics.js':
+            self.analytics += 1
+        if tag == 'p' and 'article-byline' in a.get('class', '').split():
+            self.bylines += 1
         if tag == 'html':
             self.lang = a.get('lang')
         if 'id' in a:
@@ -119,6 +125,10 @@ def validate(root=ROOT):
                 errors.append(f'{name}: unexpected HTML redirect')
             if name != '404.html' and page.canonical != expected:
                 errors.append(f'{name}: invalid canonical URL')
+            if name != '404.html' and page.analytics != 1:
+                errors.append(f'{name}: exactly one consent-based analytics script required')
+            if page.bylines > 1:
+                errors.append(f'{name}: duplicate article byline')
 
     def check_ref(name, ref, resource):
         url = urlsplit(ref)
