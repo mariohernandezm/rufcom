@@ -76,6 +76,19 @@ Las hojas específicas siguen controlando los esquemas, fotografías, tablas y
 funcionamiento de cada herramienta. No se usa tamaño fijo para la altura de
 tarjetas; deben admitir contenido largo sin recortarlo.
 
+## Identidad topográfica
+
+Las curvas del recurso original `assets/images/topographic.svg` son parte del
+lenguaje de RUFCOM: radioafición, cerros, parques y exploración. La regla común
+de `design-system.css` las incluye en portada, artículos, Guías, cabecera de
+salidas y páginas de utilidad, incluida la 404. No dependen solo de `.section`.
+
+Usar opacidad 0,16 en escritorio y 0,12 en móvil, con el centro desvanecido.
+Las curvas son decorativas: no añaden contenido accesible ni capturan clics.
+Las tarjetas, fotografías y diagramas conservan sus superficies limpias.
+Una página de utilidad contenida no repite una segunda capa en sus secciones.
+Conservar este motivo al crear plantillas; no quitarlo al compactar componentes.
+
 ## Mantenimiento
 
 Modificar primero el componente compartido, no añadir otra versión global
@@ -83,8 +96,8 @@ de H2 al final de `styles.css`. Usar los tokens al ampliar el sistema.
 Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
-Las URLs de `styles.css` y `design-system.css` usan la versión
-`?v=atomic-20261012`. Al modificar una hoja compartida, cambiar su versión
+La URL de `styles.css` usa `?v=atomic-20261012`; la de
+`design-system.css` usa `?v=topografia-20261012`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
