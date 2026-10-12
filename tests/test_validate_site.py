@@ -26,6 +26,18 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
+    def test_missing_analytics_on_new_guide_is_rejected(self):
+        path = self.root / 'site/radios-en-montana.html'
+        path.write_text(path.read_text(encoding='utf-8').replace(
+            '<script src="assets/js/analytics.js" defer></script>', ''), encoding='utf-8')
+        self.assertTrue(any('analytics script required' in e for e in validate(self.root)))
+
+    def test_duplicate_author_line_is_rejected(self):
+        path = self.root / 'site/radios-en-montana.html'
+        path.write_text(path.read_text(encoding='utf-8').replace(
+            '</h1>', '</h1><p class="article-byline">Por RUFCOM</p>', 1), encoding='utf-8')
+        self.assertTrue(any('duplicate article byline' in e for e in validate(self.root)))
+
     def test_retired_url_not_published(self):
         path = self.root / 'site/maleta-rufcom.html'
         path.write_text((self.root / 'site/base73-mk1.html').read_text(encoding='utf-8'), encoding='utf-8')
