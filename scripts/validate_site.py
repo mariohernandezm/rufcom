@@ -32,7 +32,7 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == 'link' and a.get('rel') == 'stylesheet':
-            self.stylesheets.append(a.get('href', ''))
+            self.stylesheets.append(urlsplit(a.get('href', '')).path)
         if tag == 'script' and a.get('src') == 'assets/js/analytics.js':
             self.analytics += 1
         if tag == 'p' and 'article-byline' in a.get('class', '').split():

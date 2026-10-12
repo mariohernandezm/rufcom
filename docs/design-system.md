@@ -83,6 +83,11 @@ de H2 al final de `styles.css`. Usar los tokens al ampliar el sistema.
 Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
+Las URLs de `styles.css` y `design-system.css` usan la versión
+`?v=atomic-20261012`. Al modificar una hoja compartida, cambiar su versión
+en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
+El validador comprueba la ruta y el orden sin depender del valor de la versión.
+
 Comprobar contraste de texto, foco por teclado, botones con etiquetas largas,
 menú móvil, buscadores y gráficos técnicos antes de integrar. Ejecutar los
 controles del README. No renovar fechas de artículos por este cambio visual

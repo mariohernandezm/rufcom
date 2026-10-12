@@ -1,5 +1,6 @@
 """Negative cases ensure the deployment gate actually rejects regressions."""
 from pathlib import Path
+import re
 import shutil
 import sys
 import tempfile
@@ -28,8 +29,9 @@ class ValidationTests(unittest.TestCase):
 
     def test_new_page_without_shared_design_is_rejected(self):
         path = self.root / 'site/radios-en-montana.html'
-        path.write_text(path.read_text(encoding='utf-8').replace(
-            '<link rel="stylesheet" href="assets/css/design-system.css">', ''), encoding='utf-8')
+        path.write_text(re.sub(
+            r'<link rel="stylesheet" href="assets/css/design-system\.css(?:\?[^\"]*)?">',
+            '', path.read_text(encoding='utf-8')), encoding='utf-8')
         self.assertTrue(any('shared design stylesheet required' in e for e in validate(self.root)))
 
     def test_page_styles_cannot_override_shared_design_order(self):
