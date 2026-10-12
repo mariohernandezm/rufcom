@@ -25,6 +25,8 @@ jobs:
           node-version: '22'
       - name: Validate public files, local links and security policy
         run: python scripts/validate_site.py
+      - name: Validate SEO for every canonical page
+        run: python scripts/seo.py --check
       - name: Validate JavaScript syntax
         run: |
           node --check site/assets/js/main.js
