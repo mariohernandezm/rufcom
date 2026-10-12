@@ -74,7 +74,9 @@ body :is(.hero, .article-hero)::before,
 body main > .section::before,
 body main.guide-library::before,
 body main.container::before,
-body main > .outdoor-hero::before {
+body main > .outdoor-hero::before,
+body.home-page main > .section:nth-of-type(odd)::before,
+body.home-page main.container.section::before {
   content: ""; display: block; position: absolute; inset: 0;
   width: auto; height: auto; z-index: 0; pointer-events: none;
   background: url("../images/topographic.svg?v=2") repeat center top / 900px auto;
@@ -85,15 +87,19 @@ body main.guide-library > *, body main.container > *, body main > .outdoor-hero 
   position: relative; z-index: 1;
 }
 /* A contained utility page already has a motif; avoid a second overlapping layer. */
-body main.container > .section::before { background-image: none; }
+body main.container > .section::before,
+body.home-page main.container > .section:nth-of-type(odd)::before { background-image: none; }
 /* Legacy home rules hid odd sections with !important; keep their contours. */
-body.home-page main > .section:nth-of-type(odd)::before { display: block !important; }
+body.home-page main > .section:nth-of-type(odd)::before,
+body.home-page main.container.section::before { display: block !important; }
 @media (max-width: 600px) {
   body :is(.hero, .article-hero)::before,
   body main > .section::before,
   body main.guide-library::before,
   body main.container::before,
-  body main > .outdoor-hero::before {
+  body main > .outdoor-hero::before,
+  body.home-page main > .section:nth-of-type(odd)::before,
+  body.home-page main.container.section::before {
     background-size: 620px auto; opacity: .12;
   }
 }
