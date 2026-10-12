@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://rufcom.cl/dbi-dbd.html">
-<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura."><title>dBi y dBd: cómo comparar antenas VHF/UHF | RUFCOM</title><link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" type="image/png" href="assets/images/rufcom-logo-transparent.png">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura."><title>dBi y dBd: cómo comparar antenas VHF/UHF | RUFCOM</title><link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
 <link rel="stylesheet" href="assets/css/dbi-dbd.css"><link rel="stylesheet" href="assets/css/navigation.css"><!-- SEO:HEAD -->
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="RUFCOM">
@@ -10,19 +10,19 @@
 <meta property="og:title" content="dBi y dBd: cómo comparar antenas VHF/UHF | RUFCOM">
 <meta property="og:description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura.">
 <meta property="og:url" content="https://rufcom.cl/dbi-dbd.html">
-<meta property="og:image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent.png">
+<meta property="og:image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent-lossless.webp">
 <meta property="og:image:alt" content="dBi y dBd: cómo comparar antenas VHF/UHF">
 <meta property="article:modified_time" content="2026-10-05T22:34:40-03:00">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="dBi y dBd: cómo comparar antenas VHF/UHF | RUFCOM">
 <meta name="twitter:description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura.">
-<meta name="twitter:image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent.png">
+<meta name="twitter:image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent-lossless.webp">
 <meta name="twitter:image:alt" content="dBi y dBd: cómo comparar antenas VHF/UHF">
 <!-- /SEO:HEAD -->
 </head><body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
+      <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
     </div>
@@ -31,7 +31,7 @@
 <meta itemprop="headline" content="dBi y dBd: cómo comparar antenas VHF/UHF">
 <meta itemprop="description" content="Aprende a comparar la ganancia de antenas VHF/UHF con ejemplos sencillos: dBi, dBd y por qué más ganancia no siempre significa mejor cobertura.">
 <meta itemprop="url" content="https://rufcom.cl/dbi-dbd.html">
-<meta itemprop="image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent.png">
+<meta itemprop="image" content="https://rufcom.cl/assets/images/rufcom-logo-transparent-lossless.webp">
 <meta itemprop="inLanguage" content="es-CL">
 <!-- /SEO:SCHEMA -->
 <div class="container guide-wayfinding"><a href="guias.html">← Todas las guías</a><details class="guide-index"><summary>En esta guía</summary><nav aria-label="Índice de la guía"><ol><li><a href="#guia-seccion-1">Primero, las dos referencias</a></li><li><a href="#guia-seccion-2">El mismo valor, escrito de dos maneras</a></li><li><a href="#guia-seccion-3">Más ganancia no significa mejor cobertura en todas partes</a></li><li><a href="#guia-seccion-4">Antes de comprar una antena VHF/UHF</a></li></ol></nav></details></div>
@@ -73,7 +73,7 @@
 
 <p><a class="btn btn-primary" href="antenas.html">Volver a Antenas</a></p>
 </article></section></main><footer class="compact-footer"><div class="container footer-wrap">
-<div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent.png" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p></div>
+<div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p></div>
 <nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2>Para seguir explorando</h2><a href="guias.html">Todas las guías</a><a href="licencias.html">Licencias</a><a href="repetidores.html">Repetidores</a><a href="chirp.html">Guía CHIRP</a><a href="radio-aventura.html">Radio y aventura</a></nav>
 <div class="footer-contact"><h2>Contacto</h2><span class="footer-email">contactorufcom@gmail.com</span><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
 </div><div class="container footer-bottom"><a href="privacidad.html">Privacidad</a></div></footer>  <script src="assets/js/main.js" defer></script>
