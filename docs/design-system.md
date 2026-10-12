@@ -87,6 +87,8 @@ Usar opacidad 0,16 en escritorio y 0,12 en móvil, con el centro desvanecido.
 Las curvas son decorativas: no añaden contenido accesible ni capturan clics.
 Las tarjetas, fotografías y diagramas conservan sus superficies limpias.
 Una página de utilidad contenida no repite una segunda capa en sus secciones.
+Las reglas comunes prevalecen también sobre las antiguas decoraciones de
+secciones impares en páginas con clase `home-page`, incluida Privacidad.
 Conservar este motivo al crear plantillas; no quitarlo al compactar componentes.
 
 ## Mantenimiento
@@ -97,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=topografia-20261012`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=topografia-20261012-2`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
