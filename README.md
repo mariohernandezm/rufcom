@@ -17,11 +17,16 @@ para comprobar la CSP con el mismo modelo de origen que en producción.
 
 ```sh
 python scripts/validate_site.py
+python scripts/seo.py --check
 node --check site/assets/js/main.js
 python -m unittest discover -s tests -v
 ```
 
 ## Organización
+
+Para crear o actualizar páginas, seguir [la pauta SEO](docs/seo.md) y
+`AGENTS.md`. Generar los metadatos con `python scripts/seo.py`; CI comprueba
+que cada canónica mantenga metadatos, imagen, autoría y enlaces coherentes.
 
 - `site/`: único directorio incluido en el artefacto de Pages.
 - `scripts/`: validaciones offline, sin dependencias externas.
