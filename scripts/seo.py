@@ -5,7 +5,7 @@ dates are explicit in seo_pages.json and never refreshed automatically.
 """
 from pathlib import Path
 from html import escape, unescape
-from datetime import date
+from datetime import date, datetime
 import argparse
 import json
 import re
@@ -53,7 +53,7 @@ def render(text, name, info):
     schema += '<!-- /SEO:SCHEMA -->\n'
     text = re.sub(r'<main\b([^>]*)>', lambda m: f'<main{m[1]} itemscope itemtype="https://schema.org/{info["type"]}">\n'+schema, text, count=1)
     if article:
-        modified = date.fromisoformat(info['modified'])
+        modified = datetime.fromisoformat(info['modified'])
         label = f'{modified.day} de {MONTHS[modified.month-1]} de {modified.year}'
         byline = ('<!-- SEO:BYLINE --><p class="article-byline">Por '
                   '<span itemprop="author" itemscope itemtype="https://schema.org/Organization">'
@@ -82,8 +82,9 @@ def run(root=ROOT, check=True):
             image.relative_to(site.resolve())
             if not image.is_file(): raise ValueError('missing sharing image')
             if info['type']=='Article':
-                modified = date.fromisoformat(info['modified'])
-                if modified > date.today(): raise ValueError('future editorial date')
+                modified = datetime.fromisoformat(info['modified'])
+                if modified.date() > date.today(): raise ValueError('future editorial date')
+                if modified.tzinfo is None: raise ValueError('editorial date needs time and timezone')
             expected = render(text, name, info)
         except (KeyError, ValueError, TypeError) as exc:
             issues.append(f'{name}: invalid SEO settings ({exc})'); continue
