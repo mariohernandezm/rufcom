@@ -3,7 +3,7 @@
 Preferencias explícitas del propietario, confirmadas el 12 de octubre de 2026.
 Aplican a nuevas guías y revisiones junto con las pautas SEO y de diseño.
 
-- Recomendar equipos y usar «Aprobado por Ruffis» solo cuando RUFCOM los haya
+- Recomendar equipos y usar «Aprobado por Rufis» solo cuando RUFCOM los haya
   probado. No ampliar el catálogo con modelos que el autor no conoce ni
   presentar especificaciones de fabricante como pruebas propias.
 - Conservar los modelos que el autor ha probado. Una ampliación de contenido
@@ -40,3 +40,5 @@ Aplican a nuevas guías y revisiones junto con las pautas SEO y de diseño.
 Las nuevas explicaciones conservan la identidad topográfica, los componentes
 compartidos y el recorrido para principiantes. Consultar `docs/design-system.md`
 y `docs/seo.md`; registrar fechas reales solo de contenido modificado.
+
+- El nombre de la mascota y del sello es «Rufis», con una sola f.

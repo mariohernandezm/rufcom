@@ -87,7 +87,7 @@ modificación, redistribución y uso comercial conservando el aviso de autoría
 y la licencia. Las contribuciones de código se reciben bajo la misma licencia.
 
 La licencia del código no concede derechos de marca sobre el nombre RUFCOM,
-logotipos ni el sello «Aprobado por Ruffis», ni implica respaldo de RUFCOM a un
+logotipos ni el sello «Aprobado por Rufis», ni implica respaldo de RUFCOM a un
 fork. Los recursos gráficos en `site/assets/images/` no se incluyen en la
 licencia MIT del código; verificar sus permisos antes de reutilizarlos fuera
 del proyecto. Antes de publicar, el titular debe confirmar que puede distribuir
