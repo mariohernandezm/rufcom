@@ -6,7 +6,7 @@ DISEÑO
 - títulos de páginas internas reducidos;
 - menú principal unificado;
 - navegación móvil habilitada también en páginas internas;
-- identidad RUFCOM reforzada con azul oscuro, naranja, logo y sello de Ruffis;
+- identidad RUFCOM reforzada con azul oscuro, naranja, logo y sello de Rufis;
 - textos internos de desarrollo eliminados.
 
 LICENCIAS
@@ -75,7 +75,7 @@ RUFCOM v11 — Encabezado compacto
 - logo principal más pequeño;
 - menos espacio vertical;
 - botones más compactos;
-- tarjeta/sello de Ruffis más pequeña;
+- tarjeta/sello de Rufis más pequeña;
 - barra superior ligeramente más baja;
 - más contenido visible antes de hacer scroll;
 - sin sección de contacto por ahora.
