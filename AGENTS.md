@@ -3,6 +3,8 @@
 La petición del propietario del 12 de octubre de 2026 es incorporar SEO e
 indexación en cada nueva guía o página, desde su creación.
 
+- Leer `docs/editorial.md`: recomendar solo equipos probados por RUFCOM,
+  diferenciar experiencia y medición, y mantener sencillas las guías iniciales.
 - Leer `docs/seo.md` y conservar el estilo, las fuentes y los límites técnicos
   del contenido existente.
 - Leer `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
