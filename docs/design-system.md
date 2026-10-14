@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=ux-20261014`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=ux-20261014-repair`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -110,28 +110,20 @@ ni enviar solicitudes de indexación por modificaciones de CSS.
 
 ## Composición y UX
 
-Criterio revisado el 14 de octubre de 2026.
+La portada conserva los textos publicados completos: cinco pasos, licencias,
+equipos, medidas de la Flower Pot, herramientas y explicaciones de Rufis.
+Se añaden accesos directos al comienzo y se compactan los componentes existentes.
+El paisaje y las curvas permanecen. Rufis aparece en la presentación y en su
+explicación, proporcionado al contenido. Las fotografías de los cuatro equipos
+sustituyen una repetición del sello; no amplían las recomendaciones.
 
-## Portada y biblioteca
+Guías conserva los títulos y descripciones de sus 14 entradas originales y
+reúne los seis recursos existentes que faltaban. Las 20 miniaturas usan imágenes
+existentes. La búsqueda ignora acentos y permite recuperar el catálogo; elegir
+un tema limpia el filtro antes de navegar. Sin JavaScript permanecen los enlaces.
+Las descargas directas siguen al comienzo; los ejemplos completos conservan
+#descargas. Los índices de artículos y el buscador de licencias se mantienen.
 
-La portada conserva la voz de RUFCOM y la explicación para principiantes,
-con accesos directos a los temas. El paisaje original permanece en una franja
-más breve; Rufis se usa como sello proporcionado junto a las recomendaciones.
-Equipos y sello comparten sección, y herramientas y accesorios comparten rejilla.
-No ampliar bloques decorativos para llenar columnas.
-
-Guías utiliza imágenes existentes y títulos como un único enlace por tarjeta.
-Las miniaturas contienen los productos y láminas completos. La búsqueda local
-ignora acentos y acepta los términos de cada guía. Sin JavaScript permanecen
-todos los recursos y enlaces; solo se oculta el control que depende del script.
-Al elegir un tema se limpia el filtro para que el ancla siempre tenga destino
-visible. Las descargas directas siguen al comienzo; los ejemplos y la ayuda
-completa están enlazados y conservan el ancla #descargas.
-
-Los índices y enlaces relacionados de las guías permanecen visibles en móvil.
-El buscador de licencias distingue consulta vacía, sin resultados y fallo de
-datos; limpiar restablece el estado y devuelve el foco al campo. Al editar se
-ocultan los resultados anteriores.
-
-Las URL, canónicas, metadatos y fechas de artículos se mantienen. Esta revisión
-requiere una nueva comprobación visual antes de autorizar producción.
+Verificar la conservación literal del contenido publicado, referencias, SEO y
+controladores. La revisión técnica corresponde al responsable del cambio.
+Conservar las fechas editoriales y comprobar el aspecto antes de producción.
