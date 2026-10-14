@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=atomic-20261012">
 <link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
   <link rel="stylesheet" href="outdoor-preview.css">
-<link rel="stylesheet" href="assets/css/navigation.css"><link rel="stylesheet" href="assets/css/downloads.css"><link rel="stylesheet" href="assets/css/design-system.css?v=topografia-20261012-2">
+<link rel="stylesheet" href="assets/css/navigation.css"><link rel="stylesheet" href="assets/css/downloads.css"><link rel="stylesheet" href="assets/css/design-system.css?v=ux-20261013">
 <!-- SEO:HEAD -->
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="RUFCOM">
@@ -32,13 +32,13 @@
 <meta name="twitter:image:alt" content="Radioaficionado en Chile: guía para empezar">
 <!-- /SEO:HEAD -->
 </head>
-<body class="home-page">
+<body class="home-page home-organized">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="buscador-licencias.html">Buscador de licencias</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
     </div>
   </header>
 
@@ -62,30 +62,25 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#empezar">No compres nada todavía. Empieza aquí.</a>
+            <a class="btn btn-primary" href="licencias.html">Empieza aquí</a>
             <a class="btn btn-secondary" href="radio-aventura.html">Radio y aventura</a>
-            <a class="btn btn-secondary" href="#descargas-inicio">Descargar Excel para empezar</a>
+            <a class="rf-button rf-button--text" href="#descargas-inicio">Descargar Excel para empezar</a>
           </div>
 <div class="trust-inline">
             <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Sello Aprobado por Rufis" width="1000" height="1000" decoding="async">
             <div>
-              <strong>Aprobado por Rufis</strong>
+              <a href="#ruffis"><strong>Aprobado por Rufis</strong></a>
               <p>Solo para cosas realmente probadas por RUFCOM.</p>
             </div>
           </div>
         </div>
 
-        <aside class="hero-panel">
-          <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Sello Aprobado por Rufis" width="1000" height="1000" decoding="async">
-          <div class="panel-copy">
-            <p class="eyebrow">Sello oficial</p>
-            <h2>Lo probamos de verdad.</h2>
-            <p>
-              Si un equipo, antena o accesorio tiene este sello,
-              es porque RUFCOM lo usó y considera que sí vale la pena.
-            </p>
-          </div>
-        </aside>
+        <aside class="hero-panel journey-panel" aria-labelledby="home-routes-title">
+<p class="eyebrow">Elige tu punto de partida</p><h2 id="home-routes-title">¿Qué quieres hacer?</h2>
+<a class="journey-link" href="licencias.html"><strong>Empezar desde cero</strong><span>Licencia, primera radio y primer contacto →</span></a>
+<a class="journey-link" href="repetidores.html"><strong>Preparar mi radio</strong><span>Encuentra repetidores y sus ajustes →</span></a>
+<a class="journey-link" href="seguridad-cerros-parques.html"><strong>Preparar una salida</strong><span>Organiza la ruta y la comunicación →</span></a>
+</aside>
       </div>
     </section>
 
@@ -94,164 +89,36 @@
 <article class="download-card"><h3>Guarda la prueba de tu antena</h3><p>Si ya tienes un medidor, anota sus lecturas y cómo montaste la antena para comparar después.</p><a class="btn btn-primary" href="assets/docs/ficha-medicion-antena-rufcom.xlsx" download>Descargar ficha de antena (Excel)</a></article>
 </div><p><a href="guias.html#descargas">Ver ejemplos y cómo abrir los archivos →</a></p></div></section>
 
-    <section class="section" id="empezar">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Tu punto de partida</p>
-          <h2>¿Recién te estás interesando en la radioafición?</h2>
-          <p>No necesitas gastar mucho para saber si este hobby es para ti. La mejor forma de empezar es simple: aprender, escuchar y recién después mejorar el equipo.</p>
-        </div>
-
-        <div class="beginner-guide">
-          <article class="guide-step">
-            <div class="guide-number">1</div>
-            <div>
-              <h3>Parte por la licencia de Aspirante</h3>
-              <p>En Chile, la categoría Aspirante es el punto de entrada a la radioafición. La licencia no tiene costo, pero debes inscribirte, rendir y aprobar el examen de SUBTEL.</p>
-              <p>Mientras estudias para el examen, ya puedes comenzar a conocer cómo funciona la radio.</p>
-            </div>
-          </article>
-
-          <article class="guide-step">
-            <div class="guide-number">2</div>
-            <div>
-              <h3>Compra algo simple para escuchar</h3>
-              <p>No necesitas partir con una radio cara. Un Baofeng UV-5R puede servir como primer equipo para aprender a programar canales y escuchar actividad en VHF.</p>
-              <p>Su precio suele ser bajo, aproximadamente entre $14.000 y $20.000 según vendedor y versión.</p>
-              <p class="price-note">Precio referencial. Puede cambiar y existen distintas versiones del UV-5R.</p>
-            </div>
-          </article>
-
-          <article class="guide-step">
-            <div class="guide-number">3</div>
-            <div>
-              <h3>Programa los repetidores de tu zona</h3>
-              <p>Puedes cargar las frecuencias de los repetidores VHF publicados por SUBTEL y comenzar simplemente escuchando.</p>
-              <p>Escuchar conversaciones reales te ayudará a entender cómo llaman los radioaficionados, cómo se identifican y cómo funciona un comunicado.</p>
-            </div>
-          </article>
-
-          <article class="guide-step">
-            <div class="guide-number">4</div>
-            <div>
-              <h3>Cuando llegue tu licencia, comienza a comunicar</h3>
-              <p>Una vez que tu licencia esté emitida, podrás comenzar a hacer tus propios comunicados respetando las frecuencias y condiciones permitidas para tu categoría.</p>
-              <p>Al principio no necesitas hacer nada complicado. Escucha, aprende cómo se presentan otros operadores y prueba poco a poco.</p>
-            </div>
-          </article>
-
-          <article class="guide-step">
-            <div class="guide-number">5</div>
-            <div>
-              <h3>Después decides si quieres invertir más</h3>
-              <p>Durante esas primeras semanas vas a descubrir antenas, radios móviles, equipos digitales, fuentes, baterías, conectores y una cantidad enorme de accesorios.</p>
-              <p>También vas a descubrir algo más importante: si realmente te gusta la radioafición y qué parte de ella te interesa.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="notice-box">
-          <strong>Importante mientras esperas tu licencia</strong>
-          Puedes usar la radio para escuchar. Evita transmitir hasta que tu licencia de radioaficionado esté emitida y sepas qué frecuencias y condiciones corresponden a tu categoría.
-        </div>
-
-        <div class="simple-path ui-callout">
-          <h3>La idea RUFCOM</h3>
-          <p>No partir comprando el equipo más caro. Parte con algo sencillo, aprende qué necesitas de verdad y recién entonces da el salto a un equipo de mejor calidad.</p>
-          <div class="path-line">Licencia → escuchar → aprender → probar → decidir → mejorar</div>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="empezar"><div class="container">
+<div class="section-heading"><p class="eyebrow">Tu punto de partida</p><h2>Empieza simple, paso a paso.</h2><p>Aprende lo esencial antes de invertir más. La guía principal explica este recorrido completo.</p></div>
+<div class="beginner-guide home-steps">
+<article class="guide-step" id="licencias"><div class="guide-number">1</div><div><h3>Conoce la licencia</h3><p>Revisa los pasos para comenzar como Aspirante y preparar el examen.</p><a href="licencias.html#pasos">Cómo obtener tu primera licencia →</a></div></article>
+<article class="guide-step"><div class="guide-number">2</div><div><h3>Elige tu primera radio</h3><p>Conoce los equipos que RUFCOM ha usado y qué necesidad cubre cada uno.</p><a href="equipos.html">Compara los equipos probados →</a></div></article>
+<article class="guide-step"><div class="guide-number">3</div><div><h3>Prepara y escucha</h3><p>Busca los repetidores de tu zona y aprende a cargar tus canales.</p><a href="repetidores.html">Encuentra tus repetidores →</a></div></article>
+<article class="guide-step"><div class="guide-number">4</div><div><h3>Haz tu primer contacto</h3><p>Cuando tu licencia esté emitida, usa tu indicativo y las condiciones de tu categoría.</p><a href="licencias.html#first-contact-title">Mira un ejemplo de comunicado →</a></div></article>
+</div>
+<div class="notice-box"><strong>Mientras esperas tu licencia</strong> Puedes preparar el equipo y escuchar. Evita transmitir hasta que tu licencia esté emitida y conozcas las condiciones de tu categoría.</div>
+</div></section>
 
 
-    <section class="section alt" id="licencias">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <p class="eyebrow">Licencias en Chile</p>
-          <h2>Si partes desde cero, comienzas como Aspirante.</h2>
-          <p>Aspirante es la categoría de entrada a la radioafición en Chile. No tiene costo y requiere aprobar el examen correspondiente de SUBTEL. Luego podrás avanzar a Novicio, General y Superior cumpliendo sus requisitos.</p>
-          <ul class="feature-list">
-            <li>✔ Inscripción en línea</li>
-            <li>✔ Examen de SUBTEL</li>
-            <li>✔ Categoría Aspirante sin costo</li>
-            <li>✔ Después de obtenerla, comienzas tus primeros comunicados</li>
-          </ul>
-          <a class="btn btn-primary" href="licencias.html">Cómo empezar en radioafición</a>
-        </div>
-        <div class="card">
-          <p class="eyebrow">Ruta simple</p>
-          <h3>Aspirante → examen → licencia → indicativo → primeros comunicados</h3>
-          <p>Mientras esperas tu licencia puedes programar un equipo, cargar repetidores y comenzar escuchando.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="equipos">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <p class="eyebrow">Equipos recomendados</p>
-          <h2>Desde tu primera radio hasta el salto a algo mejor.</h2>
-          <p>RUFCOM recomienda cuatro equipos según la etapa en la que estés: Baofeng UV-5R, Baofeng UV-17 Pro GPS, AnyTone AT-D878UVII Plus y AnyTone AT-778UV de 25 W.</p>
-          <ul class="feature-list">
-            <li>✔ UV-5R para partir simple y barato</li>
-            <li>✔ UV-17 Pro GPS para una opción Baofeng más completa</li>
-            <li>✔ AT-D878UVII Plus para dar el salto de calidad</li>
-            <li>✔ AT-778UV para una estación fija compacta de 25 W</li>
-          </ul>
-          <a class="btn btn-primary" href="equipos.html">Ver equipos Baofeng y AnyTone</a>
-        </div>
-
-        <div class="seal-showcase">
-          <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Todos los equipos recomendados están Aprobados por Rufis" width="1000" height="1000" decoding="async">
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ruffis">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <p class="eyebrow">Aprobado por Rufis</p>
-          <h2>El sello de confianza de RUFCOM.</h2>
-          <p>
-            Este sello aparecerá solo en productos, accesorios o ideas que realmente hayan sido probadas por nosotros.
-            Así el visitante entiende al tiro qué fue experiencia real y qué todavía está en evaluación.
-          </p>
-
-          <ul class="feature-list">
-            <li>✔ Recomendaciones con uso real</li>
-            <li>✔ Lenguaje simple</li>
-            <li>✔ Menos marketing y más práctica</li>
-            <li>✔ Ideal para quienes parten desde cero</li>
-          </ul>
-        </div>
-
-        <div class="seal-showcase">
-          <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Sello Aprobado por Rufis grande" width="1000" height="1000" decoding="async">
-        </div>
-      </div>
-    </section>
 
 
-    <section class="section" id="antenas-simples">
-      <div class="container feature-grid">
-        <div class="feature-copy">
-          <p class="eyebrow">Antenas</p>
-          <h2>Flower Pot VHF: simple, económica y confiable.</h2>
-          <p>Una antena muy recomendable para aprender y mejorar una estación sin gastar demasiado. RUFCOM ha fabricado versiones con 4 metros y 14 metros de cable, ambas con excelente desempeño.</p>
-          <ul class="feature-list">
-            <li>✔ Tubo de PVC de aproximadamente 1 metro</li>
-            <li>✔ 25 mm de diámetro</li>
-            <li>✔ Sección superior de 457 mm</li>
-            <li>✔ Sección inferior de 447 mm</li>
-            <li>✔ Bobina de choque de 9 vueltas</li>
-          </ul>
-          <a class="btn btn-primary" href="flowerpot.html">Ver guía Flower Pot</a>
-        </div>
-        <div class="seal-showcase plan-preview">
-          <img src="assets/images/flowerpot-plano-rufcom.svg" alt="Plano RUFCOM de la antena Flower Pot VHF">
-        </div>
-      </div>
-    </section>
+    <section class="section alt" id="equipos"><div class="container">
+<div class="section-heading"><p class="eyebrow">Equipos recomendados</p><h2>Una radio para cada etapa.</h2><p>Cuatro equipos probados por RUFCOM, según lo que necesitas hacer.</p></div>
+<ul class="feature-list home-equipment-list"><li>✔ <strong>Baofeng UV-5R:</strong> para comenzar con algo sencillo y económico.</li><li>✔ <strong>Baofeng UV-17 Pro GPS:</strong> una opción Baofeng más completa.</li><li>✔ <strong>AnyTone AT-D878UVII Plus:</strong> para avanzar a un handy con analógico y DMR.</li><li>✔ <strong>AnyTone AT-778UV:</strong> para una estación compacta de 25 W.</li></ul>
+<a class="btn btn-primary" href="equipos.html">Ver equipos Baofeng y AnyTone</a>
+</div></section>
+
+    <section class="section" id="ruffis"><div class="container trust-section">
+<div class="feature-copy"><p class="eyebrow">Aprobado por Rufis</p><h2>Recomendaciones desde la experiencia.</h2><p>El sello identifica equipos, accesorios o ideas que RUFCOM ha probado. En las guías contamos qué usamos, qué observamos y qué medimos.</p><p>Lenguaje simple y experiencia real para ayudarte a decidir.</p></div>
+<img class="trust-seal" src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Sello Aprobado por Rufis" width="1000" height="1000" loading="lazy" decoding="async">
+</div></section>
+
+
+    <section class="section" id="antenas-simples"><div class="container feature-grid">
+<div class="feature-copy"><p class="eyebrow">Antenas</p><h2>Construye tu Flower Pot VHF.</h2><p>Un proyecto para aprender haciendo. RUFCOM ha construido versiones con 4 y 14 metros de cable; la guía reúne el plano, el montaje y el registro de una prueba.</p><a class="btn btn-primary" href="flowerpot.html">Ver guía Flower Pot</a></div>
+<a class="seal-showcase plan-preview" href="flowerpot.html#plano" aria-label="Ver el plano y las medidas de la Flower Pot"><img src="assets/images/flowerpot-plano-rufcom.svg?v=20261013-rufis" alt="Plano RUFCOM de la Flower Pot VHF" loading="lazy" decoding="async"></a>
+</div></section>
 
 
     <section class="section adventure-band" id="aventura">
@@ -291,7 +158,6 @@
           <a class="btn btn-primary" href="base73-mk1.html">Conocer Base73 MK1</a>
         </div>
         <div class="home-case-showcase"><div class="origin-box">
-          <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Aprobado por Rufis" width="1000" height="1000" decoding="async">
           <div><strong>Una estación hecha para usarla.</strong><p>La idea no es llenar una caja de equipos: es llevar lo necesario de forma práctica y confiable.</p></div>
         </div><figure class="case-photo home-case-photo"><a href="base73-mk1.html" aria-label="Conocer Base73 MK1, la maleta de comunicaciones de RUFCOM"><img src="assets/images/maleta-abierta-960.webp" srcset="assets/images/maleta-abierta-480.webp 480w, assets/images/maleta-abierta-960.webp 960w" sizes="(max-width: 800px) 90vw, 520px" width="960" height="1280" alt="Base73 MK1 abierta, con la radio y sus componentes en el interior" loading="lazy" decoding="async"></a><figcaption>La estación que dio origen a RUFCOM. En casa o en terreno.</figcaption></figure></div>
       </div>
@@ -362,7 +228,7 @@
         <p class="eyebrow">RUFCOM</p>
         <h2>La aventura también se comunica.</h2>
         <p>Empieza simple, aprende en el camino y lleva la radio contigo cuando salgas a explorar.</p>
-        <a class="btn btn-primary" href="#inicio">Volver arriba</a>
+        <a class="btn btn-primary" href="guias.html">Explorar todas las guías</a><a class="rf-button rf-button--text" href="#inicio">Volver arriba ↑</a>
       </div>
     </section>
   </main>
@@ -370,7 +236,7 @@
   <footer class="compact-footer"><div class="container footer-wrap">
 <div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p></div>
 <nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2>Para seguir explorando</h2><a href="guias.html">Todas las guías</a><a href="licencias.html">Licencias</a><a href="repetidores.html">Repetidores</a><a href="chirp.html">Guía CHIRP</a><a href="radio-aventura.html">Radio y aventura</a></nav>
-<div class="footer-contact"><h2>Contacto</h2><span class="footer-email">contactorufcom@gmail.com</span><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
+<div class="footer-contact"><h2>Contacto</h2><a class="footer-email" href="mailto:contactorufcom@gmail.com">contactorufcom@gmail.com</a><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
 </div><div class="container footer-bottom"><a href="privacidad.html">Privacidad</a></div></footer>
 
   <script src="assets/js/main.js" defer></script>
