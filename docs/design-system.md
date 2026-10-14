@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=ux-20261013`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=ux-20261014`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -110,22 +110,28 @@ ni enviar solicitudes de indexación por modificaciones de CSS.
 
 ## Composición y UX
 
-La revisión del 13 de octubre completa la composición sobre este mismo sistema.
-La portada presenta una ruta principal; los bloques resumen y enlazan las guías.
-Conservar un sello pequeño en la introducción y una explicación con el sello en
-su propia sección. No repetir paneles grandes con el mismo sello y mensaje.
-Las recomendaciones conservan los cuatro modelos probados; no ampliar el catálogo
-ni inventar resultados para completar una tarjeta.
+Criterio revisado el 14 de octubre de 2026.
 
-Guías reúne todos los recursos educativos y de consulta actuales, incluido
-Base73. Las descargas permanecen visibles al comienzo de Inicio y Guías.
-Los artículos extensos incluyen índice y enlaces útiles para continuar. No
-añadir otra promoción de la misma guía junto a su enlace relacionado existente.
-La navegación incluye el buscador de licencias en el HTML, también sin JavaScript.
-El buscador distingue consulta vacía, sin resultados y fallo de datos; limpiar
-restablece el estado y devuelve el foco al campo. Al editar, se ocultan resultados
-anteriores hasta ejecutar la nueva consulta.
+## Portada y biblioteca
 
-Ejecutar `python scripts/validate_ux.py` y `node --test tests/*.test.cjs` junto
-con los controles del README. Estos controles no sustituyen la comprobación
-visual ni las pruebas con personas que empiezan: documentar su estado real.
+La portada conserva la voz de RUFCOM y la explicación para principiantes,
+con accesos directos a los temas. El paisaje original permanece en una franja
+más breve; Rufis se usa como sello proporcionado junto a las recomendaciones.
+Equipos y sello comparten sección, y herramientas y accesorios comparten rejilla.
+No ampliar bloques decorativos para llenar columnas.
+
+Guías utiliza imágenes existentes y títulos como un único enlace por tarjeta.
+Las miniaturas contienen los productos y láminas completos. La búsqueda local
+ignora acentos y acepta los términos de cada guía. Sin JavaScript permanecen
+todos los recursos y enlaces; solo se oculta el control que depende del script.
+Al elegir un tema se limpia el filtro para que el ancla siempre tenga destino
+visible. Las descargas directas siguen al comienzo; los ejemplos y la ayuda
+completa están enlazados y conservan el ancla #descargas.
+
+Los índices y enlaces relacionados de las guías permanecen visibles en móvil.
+El buscador de licencias distingue consulta vacía, sin resultados y fallo de
+datos; limpiar restablece el estado y devuelve el foco al campo. Al editar se
+ocultan los resultados anteriores.
+
+Las URL, canónicas, metadatos y fechas de artículos se mantienen. Esta revisión
+requiere una nueva comprobación visual antes de autorizar producción.
