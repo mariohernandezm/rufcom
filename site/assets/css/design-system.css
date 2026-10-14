@@ -231,6 +231,10 @@ body main .download-help summary {
   min-height: 44px; padding-block: var(--space-3); cursor: pointer;
   color: var(--color-secondary); font-weight: 700;
 }
+body main :is(.guide-next, .guide-wayfinding > nav) {
+  display: block; position: static; inset: auto; width: auto; padding: 0;
+  background: transparent; border-radius: 0; box-shadow: none;
+}
 body main .guide-next { max-width: var(--width-reading); }
 body main .guide-next h2 { font-size: var(--text-card); margin-top: 0; }
 body main .guide-next ul {
@@ -238,6 +242,7 @@ body main .guide-next ul {
   list-style: none; padding: 0; margin: 0;
 }
 body main .guide-next a { display: inline-flex; align-items: center; min-height: 44px; }
+body main .guide-wayfinding > nav a { display: inline-flex; align-items: center; min-height: 44px; }
 body main .license-search .table-wrap { max-width: 100%; }
 body main .license-search .table-wrap:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 3px; }
 body .footer-contact .footer-email { overflow-wrap: anywhere; }
