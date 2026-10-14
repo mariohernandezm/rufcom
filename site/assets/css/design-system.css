@@ -248,7 +248,7 @@ body main .license-search .table-wrap:focus-visible { outline: 3px solid var(--c
 body .footer-contact .footer-email { overflow-wrap: anywhere; }
 /* Compact the published home components while preserving all editorial copy. */
 body.home-restored main > .hero.home-trail { padding: var(--space-5) 0 clamp(110px, 12vw, 170px) !important; }
-body.home-restored .home-trail::after { height: clamp(110px, 12vw, 170px); }
+body.home-restored .home-trail::after { height: clamp(110px, 12vw, 170px); background-size: contain; }
 body.home-restored .hero-grid { gap: var(--space-5); }
 body.home-restored .hero-panel { padding: var(--space-4) !important; border-radius: var(--radius-card) !important; box-shadow: none; }
 body.home-restored .hero-panel > img { width: 200px !important; margin: 0 auto var(--space-3) !important; }
