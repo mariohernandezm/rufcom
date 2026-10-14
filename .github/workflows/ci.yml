@@ -27,11 +27,14 @@ jobs:
         run: python scripts/validate_site.py
       - name: Validate SEO for every canonical page
         run: python scripts/seo.py --check
+      - name: Validate UX routes and resource coverage
+        run: python scripts/validate_ux.py
       - name: Validate JavaScript syntax
         run: |
           node --check site/assets/js/main.js
           node --check site/assets/js/repetidores.js
+          node --check site/assets/js/buscador-licencias.js
       - name: Check repeater settings and shared searches
-        run: node --test tests/repetidores.test.cjs
+        run: node --test tests/*.test.cjs
       - name: Check validation rejects unsafe changes
         run: python -m unittest discover -s tests -v
