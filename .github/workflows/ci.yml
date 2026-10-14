@@ -34,6 +34,7 @@ jobs:
           node --check site/assets/js/main.js
           node --check site/assets/js/repetidores.js
           node --check site/assets/js/buscador-licencias.js
+          node --check site/assets/js/guide-library.js
       - name: Check repeater settings and shared searches
         run: node --test tests/*.test.cjs
       - name: Check validation rejects unsafe changes
