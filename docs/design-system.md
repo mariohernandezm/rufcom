@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=topografia-20261012-2`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=ux-20261013`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -107,3 +107,25 @@ Comprobar contraste de texto, foco por teclado, botones con etiquetas largas,
 menú móvil, buscadores y gráficos técnicos antes de integrar. Ejecutar los
 controles del README. No renovar fechas de artículos por este cambio visual
 ni enviar solicitudes de indexación por modificaciones de CSS.
+
+## Composición y UX
+
+La revisión del 13 de octubre completa la composición sobre este mismo sistema.
+La portada presenta una ruta principal; los bloques resumen y enlazan las guías.
+Conservar un sello pequeño en la introducción y una explicación con el sello en
+su propia sección. No repetir paneles grandes con el mismo sello y mensaje.
+Las recomendaciones conservan los cuatro modelos probados; no ampliar el catálogo
+ni inventar resultados para completar una tarjeta.
+
+Guías reúne todos los recursos educativos y de consulta actuales, incluido
+Base73. Las descargas permanecen visibles al comienzo de Inicio y Guías.
+Los artículos extensos incluyen índice y enlaces útiles para continuar. No
+añadir otra promoción de la misma guía junto a su enlace relacionado existente.
+La navegación incluye el buscador de licencias en el HTML, también sin JavaScript.
+El buscador distingue consulta vacía, sin resultados y fallo de datos; limpiar
+restablece el estado y devuelve el foco al campo. Al editar, se ocultan resultados
+anteriores hasta ejecutar la nueva consulta.
+
+Ejecutar `python scripts/validate_ux.py` y `node --test tests/*.test.cjs` junto
+con los controles del README. Estos controles no sustituyen la comprobación
+visual ni las pruebas con personas que empiezan: documentar su estado real.
