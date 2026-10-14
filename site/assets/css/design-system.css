@@ -216,7 +216,6 @@ body .adventure-band .btn-secondary { color: var(--color-secondary); }
 }
 
 /* Complete page composition using the same atoms and component scale. */
-html { scroll-padding-top: 6rem; }
 body main :is(section[id], article[id], h2[id], h3[id]) { scroll-margin-top: 6rem; }
 body main :is(.library-categories a, .library-read, .guide-step a, .guide-next a) {
   color: var(--color-secondary); text-decoration: underline; text-underline-offset: .2em;
