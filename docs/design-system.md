@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=ux-20261014-repair`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=ux-20261016-review`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -123,6 +123,17 @@ existentes. La búsqueda ignora acentos y permite recuperar el catálogo; elegir
 un tema limpia el filtro antes de navegar. Sin JavaScript permanecen los enlaces.
 Las descargas directas siguen al comienzo; los ejemplos completos conservan
 #descargas. Los índices de artículos y el buscador de licencias se mantienen.
+
+La revisión preliminar del 16/10 conserva todos los textos y reúne la explicación
+del sello en su sección original. La portada usa directamente la ilustración
+`andes-radio-equipo-v4.png`, con los tres personajes intactos. El título mide
+32 px en escritorio y 28 px en móvil; el logo de cabecera mide 200 y 180 px.
+Solo Inicio y Guías usan Georgia para sus encabezados, según la referencia
+editorial elegida. Las demás páginas conservan su tipografía.
+
+La cabecera ofrece seis destinos explícitos y pasa al menú móvil a 1100 px.
+Sin JavaScript mantiene los enlaces visibles. Guías conserva cuatro temas
+principales, todos sus recursos y las anclas anteriores de consultas y proyectos.
 
 Verificar la conservación literal del contenido publicado, referencias, SEO y
 controladores. La revisión técnica corresponde al responsable del cambio.
