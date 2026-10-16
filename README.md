@@ -18,8 +18,6 @@ para comprobar la CSP con el mismo modelo de origen que en producción.
 ```sh
 python scripts/validate_site.py
 python scripts/seo.py --check
-python scripts/validate_ux.py
-node --test tests/*.test.cjs
 node --check site/assets/js/main.js
 python -m unittest discover -s tests -v
 ```
