@@ -247,14 +247,21 @@ body main .license-search .table-wrap { max-width: 100%; }
 body main .license-search .table-wrap:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 3px; }
 body .footer-contact .footer-email { overflow-wrap: anywhere; }
 /* Compact the published home components while preserving all editorial copy. */
-body.home-restored main > .hero.home-trail { padding: var(--space-5) 0 clamp(110px, 12vw, 170px) !important; }
-body.home-restored .home-trail::after { height: clamp(110px, 12vw, 170px); background-size: contain; }
-body.home-restored .hero-grid { gap: var(--space-5); }
-body.home-restored .hero-panel { padding: var(--space-4) !important; border-radius: var(--radius-card) !important; box-shadow: none; }
-body.home-restored .hero-panel > img { width: 200px !important; margin: 0 auto var(--space-3) !important; }
-body.home-restored .hero-panel h2 { margin-top: 0; }
-body.home-restored .trust-inline { display: block; box-shadow: none; }
-body.home-restored .logo-hero { width: min(100%, 300px); margin-bottom: var(--space-4); }
+body.home-restored main > .hero.home-trail { position: relative; isolation: isolate; padding: var(--space-5) 0 var(--space-6) !important; overflow: hidden; }
+body.home-restored .home-trail::after { display: none !important; }
+body.home-restored .hero-grid { display: block; min-height: 360px; }
+body.home-restored .hero-grid > div { position: relative; z-index: 2; max-width: 58%; padding-bottom: var(--space-5); }
+body.home-restored .home-team { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: right bottom; z-index: -1; }
+body.home-restored .hero-copy { color: var(--color-text); background: linear-gradient(90deg, #fbf8efee 85%, transparent); }
+body.home-restored .hero h1 { font-size: 2rem; line-height: 1.15; letter-spacing: -.02em; }
+body.home-restored main :is(h1, h2), body main.guide-library :is(h1, h2) { font-family: Georgia, "Times New Roman", serif; }
+body.home-restored .hero-actions { align-items: center; }
+body.home-restored .home-action-link { display: inline-flex; align-items: center; min-height: 44px; padding: var(--space-2); color: var(--color-secondary); text-decoration: underline; text-underline-offset: .2em; }
+body.home-restored .home-trust-copy h2 { font-family: inherit; font-size: var(--text-card); margin-top: var(--space-3); }
+body.home-restored .home-trust-copy .trust-inline { border: 0; padding: 0 !important; background: transparent; box-shadow: none; }
+body.home-restored .home-topics { margin-top: var(--space-2); }
+body.home-restored .home-downloads-quick { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-4); padding-block: var(--space-2); border-block: 1px solid var(--line); }
+body.home-restored .home-downloads-quick a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-secondary); text-underline-offset: .2em; }
 body.home-restored main > .section { padding-block: var(--space-5); }
 body.home-restored .section-heading { margin-bottom: var(--space-4); }
 body.home-restored .section-heading h2 { margin-top: 0; }
@@ -351,4 +358,47 @@ body main .guide-catalog [hidden], body main .library-empty[hidden], body main .
   body main .library-card h3 { font-size: 1.125rem; }
   body main .library-item { grid-template-columns: 88px minmax(0, 1fr); }
   body main .library-thumbnail { width: 88px; height: 112px; }
+}
+
+/* Review navigation: explicit destinations and a logo with room to breathe. */
+body .site-header .brand-logo { width: 200px; height: auto; }
+body .site-header .brand { flex: 0 0 auto; }
+body #mainNav { gap: 4px; }
+body #mainNav > a { padding-inline: 8px; font-size: .9rem; }
+body main.guide-library .library-intro { grid-template-columns: minmax(0, 1fr) 230px; }
+body main.guide-library .library-intro-image { height: 130px; object-fit: contain; background: transparent; }
+body main.guide-library h1 { font-size: 2rem; line-height: 1.2; }
+body main .library-card { background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+body main .library-item { padding: var(--space-2) 0; grid-template-columns: 96px minmax(0, 1fr); }
+body main .library-thumbnail { width: 96px; height: 112px; background: transparent; }
+body main .library-topic { border-top: 1px solid var(--line); }
+body main .library-subtopic { font-size: var(--text-card); margin-block: var(--space-4) var(--space-2); }
+body main .library-subsection { scroll-margin-top: 6rem; }
+body main .library-utilities { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); }
+body main .library-utilities a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-secondary); text-underline-offset: .2em; }
+body main .library-categories a { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; text-decoration: underline; }
+@media (max-width: 1100px) {
+  body .site-header .brand-logo { width: 180px; }
+  html:not(.nav-ready) .site-header .nav-wrap { flex-wrap: wrap; }
+  html:not(.nav-ready) #mainNav { display: flex; position: static; flex-direction: row; flex-wrap: wrap; max-height: none; box-shadow: none; border: 0; padding: 0; }
+  html:not(.nav-ready) .site-header .menu-btn { display: none; }
+  body #mainNav > a { font-size: 1rem; }
+}
+@media (max-width: 700px) {
+  body.home-restored main > .hero.home-trail { padding: var(--space-4) 0 0 !important; }
+  body.home-restored .hero-grid { min-height: 0; }
+  body.home-restored .hero-grid > div { max-width: none; padding-bottom: var(--space-3); }
+  body.home-restored .hero h1 { font-size: 1.75rem; }
+  body.home-restored .hero-copy { background: transparent; }
+  body.home-restored .home-team { display: block; position: relative; inset: auto; height: clamp(160px, 42vw, 220px); object-fit: cover; object-position: right bottom; z-index: 0; }
+  body.home-restored .home-topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.home-restored .home-topics > strong { grid-column: 1 / -1; }
+  body.home-restored .home-downloads-quick > strong { width: 100%; }
+  body.home-restored .beginner-guide { display: block; }
+  body.home-restored .guide-step { border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; padding: var(--space-3) 0; }
+  body main.guide-library .library-intro { grid-template-columns: minmax(0, 1fr); }
+  body main.guide-library .library-intro-image { height: 88px; }
+  body main.guide-library h1 { font-size: 1.75rem; }
+  body main .library-item { grid-template-columns: 88px minmax(0, 1fr); }
+  body main .library-thumbnail { width: 88px; }
 }
