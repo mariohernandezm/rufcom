@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="assets/css/styles.css?v=atomic-20261012">
 <link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
-<link rel="stylesheet" href="assets/css/navigation.css?v=ux-20261016-review"><link rel="stylesheet" href="assets/css/design-system.css?v=ux-20261016-review">
+<link rel="stylesheet" href="assets/css/navigation.css"><link rel="stylesheet" href="assets/css/design-system.css?v=topografia-20261012-2">
 <!-- SEO:HEAD -->
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="RUFCOM">
@@ -38,7 +38,7 @@
     <div class="container nav-wrap">
       <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><a href="licencias.html">Empieza aquí</a><a href="guias.html">Guías</a><a href="repetidores.html">Repetidores</a><a href="buscador-licencias.html">Buscar indicativo</a><a href="radio-aventura.html">Radio y aventura</a></nav>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
     </div>
   </header>
   <main id="contenido" itemscope itemtype="https://schema.org/Article">
@@ -135,7 +135,7 @@
         <div class="notice-box"><strong>La radio no garantiza cobertura</strong>El terreno y la ubicación influyen mucho. En la montaña debes seguir usando planificación, navegación, teléfono y otros medios de seguridad.</div>
         <a class="btn btn-primary space-top-14" href="radio-aventura.html">Ver Radio y aventura</a>
 
-
+        
         <h2 id="comunidad">Dónde encontrar clubes y ayuda local</h2>
         <p>Un radio club o una estación con experiencia puede ayudarte a estudiar, revisar los parámetros de un repetidor y acompañarte en el primer contacto. En <a href="index.html#links">los recursos de RUFCOM</a> encontrarás el Radio Club de Chile (CE3AA) y otras organizaciones que ya referenciamos.</p>
         <p>Para buscar ayuda cerca de ti, pregunta por actividades o cursos en tu región. Cuenta que estás empezando, qué equipo tienes —si tienes uno— y qué quieres aprender. Confirma directamente las fechas y condiciones de participación.</p>
@@ -156,7 +156,7 @@
         <p class="source-note">Fuentes oficiales: SUBTEL, Servicios de Radioaficionados (calendario y procedimiento vigente); Guía del procedimiento para rendir el examen en línea para radioaficionados, versión 2025; y ficha Rendir examen de Radioaficionados (requisitos). Para fechas y modalidad se utilizó el calendario actual y el instructivo enlazado desde Servicios de Radioaficionados.</p>
       </div>
     </section>
-  <section class="section"><div class="container"><nav class="guide-next" aria-label="Guías relacionadas"><h2 id="guia-seccion-6">Elige tu siguiente paso</h2><ul>
+  <section class="section"><div class="container"><nav aria-label="Guías relacionadas"><h2 id="guia-seccion-6">Elige tu siguiente paso</h2><ul>
 <li><a href="indicativos-zonas.html">Entender tu indicativo y las zonas de Chile</a></li>
 <li><a href="repetidores.html">Consultar frecuencias de repetidores en tu región</a></li>
 <li><a href="codigo-q.html">Entender el código Q y el saludo 73</a></li>
@@ -167,9 +167,9 @@
   <footer class="compact-footer"><div class="container footer-wrap">
 <div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit">Un proyecto de <strong>CA3HMM</strong>.</p></div>
 <nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2>Para seguir explorando</h2><a href="guias.html">Todas las guías</a><a href="licencias.html">Licencias</a><a href="repetidores.html">Repetidores</a><a href="chirp.html">Guía CHIRP</a><a href="radio-aventura.html">Radio y aventura</a></nav>
-<div class="footer-contact"><h2>Contacto</h2><a class="footer-email" href="mailto:contactorufcom@gmail.com">contactorufcom@gmail.com</a><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
+<div class="footer-contact"><h2>Contacto</h2><span class="footer-email">contactorufcom@gmail.com</span><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
 </div><div class="container footer-bottom"><a href="privacidad.html">Privacidad</a></div></footer>
-  <script src="assets/js/main.js?v=ux-20261016-review" defer></script>
+  <script src="assets/js/main.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
 </body>
 </html>

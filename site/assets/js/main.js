@@ -2,7 +2,6 @@
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 if (menuBtn && mainNav) {
-  document.documentElement.classList.add("nav-ready");
   const firstSteps = mainNav.querySelector('a[href="licencias.html"]');
   if (firstSteps && !mainNav.querySelector('a[href="buscador-licencias.html"]')) {
     const licenseSearch = document.createElement('a');
