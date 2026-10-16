@@ -51,8 +51,8 @@ def validate(root=ROOT):
         if name not in {'index.html', 'guias.html', 'privacidad.html'} and name not in library.links:
             errors.append(f'{name}: resource missing from the guide library')
     home = (root / 'site/index.html').read_text(encoding='utf-8')
-    if home.count('src="assets/images/ruffis-seal-transparent-lossless.webp') != 2:
-        errors.append('index.html: use one small seal and one explanatory seal')
+    if home.count('src="assets/images/ruffis-seal-transparent-lossless.webp') != 1:
+        errors.append('index.html: keep one explanatory seal; the hero uses the original team illustration')
     if 'id="descargas-inicio"' not in home or 'id="descargas"' not in (root / 'site/guias.html').read_text(encoding='utf-8'):
         errors.append('downloads must remain visible in Home and Guides')
     return errors
