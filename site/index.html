@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=atomic-20261012">
 <link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
   <link rel="stylesheet" href="outdoor-preview.css">
-<link rel="stylesheet" href="assets/css/navigation.css"><link rel="stylesheet" href="assets/css/downloads.css"><link rel="stylesheet" href="assets/css/design-system.css?v=ux-20261014-repair">
+<link rel="stylesheet" href="assets/css/navigation.css?v=ux-20261016-review"><link rel="stylesheet" href="assets/css/downloads.css"><link rel="stylesheet" href="assets/css/design-system.css?v=ux-20261016-review">
 <!-- SEO:HEAD -->
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="RUFCOM">
@@ -38,7 +38,7 @@
     <div class="container nav-wrap">
       <a class="brand" href="/" aria-label="RUFCOM inicio"><img class="brand-logo" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
       <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><details class="nav-group"><summary>Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html">Licencias y primeros pasos</a><a href="buscador-licencias.html">Buscador de licencias</a><a href="repetidores.html">Repetidores de tu zona</a></div></details><details class="nav-group"><summary>Guías</summary><div class="nav-submenu"><a href="guias.html">Todas las guías</a><a href="guias.html#primeros-pasos">Primeros pasos</a><a href="guias.html#comunicacion">Comunicación</a><a href="guias.html#radio-antenas">Radio y antenas</a><a href="guias.html#cerros-parques">Cerros y parques</a></div></details><details class="nav-group"><summary>Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="flowerpot.html">Construye una Flower Pot</a><a href="herramientas.html">Herramientas de medición</a><a href="accesorios.html">Partes y piezas</a></div></details><details class="nav-group"><summary>Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html">Radio y aventura</a><a href="base73-mk1.html">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/">Inicio</a><a href="licencias.html">Empieza aquí</a><a href="guias.html">Guías</a><a href="repetidores.html">Repetidores</a><a href="buscador-licencias.html">Buscar indicativo</a><a href="radio-aventura.html">Radio y aventura</a></nav>
     </div>
   </header>
 
@@ -50,14 +50,10 @@
 <meta itemprop="image" content="https://rufcom.cl/assets/images/maleta-abierta-960.webp">
 <meta itemprop="inLanguage" content="es-CL">
 <!-- /SEO:SCHEMA -->
-<nav class="container home-topics" aria-label="Accesos directos a los temas de RUFCOM">
-<a href="#empezar">Primeros pasos</a><a href="repetidores.html">Repetidores</a><a href="#equipos">Radios y equipos</a><a href="#antenas-simples">Antenas</a><a href="#herramientas">Medición</a><a href="#partes">Partes y piezas</a><a href="guias.html">Todas las guías →</a>
-</nav>
 <section class="hero subtle-outdoor home-trail" id="inicio">
   <div class="decor-trail-full" aria-hidden="true"><img src="assets/images/trail-wide.svg" alt=""></div>
 <div class="container hero-grid">
         <div>
-          <img class="logo-hero" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async">
           <p class="eyebrow">Radioafición explicada fácil</p>
           <h1>Radioafición en Chile.<br>Empieza bien.<br>Disfruta la radio.</h1>
           <p class="hero-copy">
@@ -65,37 +61,18 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#empezar">No compres nada todavía. Empieza aquí.</a>
-            <a class="btn btn-secondary" href="radio-aventura.html">Radio y aventura</a>
-            <a class="btn btn-secondary" href="#descargas-inicio">Descargar Excel para empezar</a>
+            <a class="btn btn-primary" href="licencias.html">No compres nada todavía. Empieza aquí.</a>
+            <a class="home-action-link" href="radio-aventura.html">Radio y aventura</a>
+            <a class="home-action-link" href="#descargas-inicio">Descargar Excel para empezar</a>
           </div>
-<div class="trust-inline">
 
-            <div>
-              <strong>Aprobado por Rufis</strong>
-              <p>Solo para cosas realmente probadas por RUFCOM.</p>
-            </div>
-          </div>
         </div>
 
-        <aside class="hero-panel">
-          <img src="assets/images/ruffis-seal-transparent-lossless.webp?v=20261013-rufis" alt="Sello Aprobado por Rufis" width="1000" height="1000" decoding="async">
-          <div class="panel-copy">
-            <p class="eyebrow">Sello oficial</p>
-            <h2>Lo probamos de verdad.</h2>
-            <p>
-              Si un equipo, antena o accesorio tiene este sello,
-              es porque RUFCOM lo usó y considera que sí vale la pena.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </section>
 
-    <section class="section download-section" id="descargas-inicio" aria-labelledby="home-download-title"><div class="container"><p class="eyebrow">TUS PRIMEROS REGISTROS</p><h2 id="home-download-title">Dos Excel para aprender haciendo</h2><p>Instrucciones al abrir, tablas claras para completar y ejemplos explicados.</p><div class="download-grid">
-<article class="download-card"><h3>Anota tus contactos por radio</h3><p>El libro de guardia guarda con quién hablaste, cuándo y en qué frecuencia. Una fila por conversación.</p><p><strong>Ahora con nombre automático.</strong> Escribe el indicativo y el Excel completará el nombre si aparece en el listado chileno de SUBTEL incluido. Funciona sin internet. Si no lo encuentra, puedes escribir el nombre manualmente.</p><a class="btn btn-primary" href="assets/docs/libro-de-guardia-rufcom.xlsx" download>Descargar libro de guardia (Excel)</a></article>
-<article class="download-card"><h3>Guarda la prueba de tu antena</h3><p>Si ya tienes un medidor, anota sus lecturas y cómo montaste la antena para comparar después.</p><a class="btn btn-primary" href="assets/docs/ficha-medicion-antena-rufcom.xlsx" download>Descargar ficha de antena (Excel)</a></article>
-</div><p><a href="guias.html#descargas">Ver ejemplos y cómo abrir los archivos →</a></p></div></section>
+      </div>
+    <img class="home-team" src="assets/images/andes-radio-equipo-v4.png" alt="Rufis con audífonos y radio, junto a un hombre y una mujer radioaficionados, contemplando los Andes" width="2172" height="724" decoding="async" fetchpriority="high"></section><nav class="container home-topics" aria-label="Accesos directos a los temas de RUFCOM"><strong>¿Buscas algo concreto?</strong><a href="equipos.html">Radios y equipos</a><a href="antenas.html">Antenas</a><a href="herramientas.html">Medición</a><a href="accesorios.html">Partes y piezas</a><a href="guias.html">Todas las guías →</a></nav><div class="container home-downloads-quick" aria-label="Descargas Excel"><strong>Excel para aprender haciendo</strong><a href="assets/docs/libro-de-guardia-rufcom.xlsx" download>Libro de guardia (Excel)</a><a href="assets/docs/ficha-medicion-antena-rufcom.xlsx" download>Ficha de antena (Excel)</a><a href="guias.html#descargas">Ejemplos y ayuda</a></div>
+
+
 
     <section class="section" id="empezar">
       <div class="container">
@@ -167,6 +144,11 @@
     </section>
 
 
+    <section class="section download-section" id="descargas-inicio" aria-labelledby="home-download-title"><div class="container"><p class="eyebrow">TUS PRIMEROS REGISTROS</p><h2 id="home-download-title">Dos Excel para aprender haciendo</h2><p>Instrucciones al abrir, tablas claras para completar y ejemplos explicados.</p><div class="download-grid">
+<article class="download-card"><h3>Anota tus contactos por radio</h3><p>El libro de guardia guarda con quién hablaste, cuándo y en qué frecuencia. Una fila por conversación.</p><p><strong>Ahora con nombre automático.</strong> Escribe el indicativo y el Excel completará el nombre si aparece en el listado chileno de SUBTEL incluido. Funciona sin internet. Si no lo encuentra, puedes escribir el nombre manualmente.</p><a class="btn btn-primary" href="assets/docs/libro-de-guardia-rufcom.xlsx" download>Descargar libro de guardia (Excel)</a></article>
+<article class="download-card"><h3>Guarda la prueba de tu antena</h3><p>Si ya tienes un medidor, anota sus lecturas y cómo montaste la antena para comparar después.</p><a class="btn btn-primary" href="assets/docs/ficha-medicion-antena-rufcom.xlsx" download>Descargar ficha de antena (Excel)</a></article>
+</div><p><a href="guias.html#descargas">Ver ejemplos y cómo abrir los archivos →</a></p></div></section>
+
     <section class="section alt" id="licencias">
       <div class="container feature-grid">
         <div class="feature-copy">
@@ -223,7 +205,20 @@
             Así el visitante entiende al tiro qué fue experiencia real y qué todavía está en evaluación.
           </p>
 
-          <ul class="feature-list">
+          <div class="home-trust-copy">
+            <p class="eyebrow">Sello oficial</p>
+            <h2>Lo probamos de verdad.</h2>
+            <p>
+              Si un equipo, antena o accesorio tiene este sello,
+              es porque RUFCOM lo usó y considera que sí vale la pena.
+            </p>
+          <div class="trust-inline">
+
+            <div>
+              <strong>Aprobado por Rufis</strong>
+              <p>Solo para cosas realmente probadas por RUFCOM.</p>
+            </div>
+          </div></div><ul class="feature-list">
             <li>✔ Recomendaciones con uso real</li>
             <li>✔ Lenguaje simple</li>
             <li>✔ Menos marketing y más práctica</li>
@@ -379,7 +374,7 @@
 <div class="footer-contact"><h2>Contacto</h2><a class="footer-email" href="mailto:contactorufcom@gmail.com">contactorufcom@gmail.com</a><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer">Instagram · @rufcom.cl</a></div>
 </div><div class="container footer-bottom"><a href="privacidad.html">Privacidad</a></div></footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=ux-20261016-review" defer></script>
   <script src="assets/js/analytics.js" defer></script>
 </body>
 </html>
