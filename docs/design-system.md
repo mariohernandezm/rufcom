@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=topografia-20261012-2`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=ux-20261016-review`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -107,3 +107,34 @@ Comprobar contraste de texto, foco por teclado, botones con etiquetas largas,
 menú móvil, buscadores y gráficos técnicos antes de integrar. Ejecutar los
 controles del README. No renovar fechas de artículos por este cambio visual
 ni enviar solicitudes de indexación por modificaciones de CSS.
+
+## Composición y UX
+
+La portada conserva los textos publicados completos: cinco pasos, licencias,
+equipos, medidas de la Flower Pot, herramientas y explicaciones de Rufis.
+Se añaden accesos directos al comienzo y se compactan los componentes existentes.
+El paisaje y las curvas permanecen. Rufis aparece en la presentación y en su
+explicación, proporcionado al contenido. Las fotografías de los cuatro equipos
+sustituyen una repetición del sello; no amplían las recomendaciones.
+
+Guías conserva los títulos y descripciones de sus 14 entradas originales y
+reúne los seis recursos existentes que faltaban. Las 20 miniaturas usan imágenes
+existentes. La búsqueda ignora acentos y permite recuperar el catálogo; elegir
+un tema limpia el filtro antes de navegar. Sin JavaScript permanecen los enlaces.
+Las descargas directas siguen al comienzo; los ejemplos completos conservan
+#descargas. Los índices de artículos y el buscador de licencias se mantienen.
+
+La revisión preliminar del 16/10 conserva todos los textos y reúne la explicación
+del sello en su sección original. La portada usa directamente la ilustración
+`andes-radio-equipo-v4.png`, con los tres personajes intactos. El título mide
+32 px en escritorio y 28 px en móvil; el logo de cabecera mide 200 y 180 px.
+Solo Inicio y Guías usan Georgia para sus encabezados, según la referencia
+editorial elegida. Las demás páginas conservan su tipografía.
+
+La cabecera ofrece seis destinos explícitos y pasa al menú móvil a 1100 px.
+Sin JavaScript mantiene los enlaces visibles. Guías conserva cuatro temas
+principales, todos sus recursos y las anclas anteriores de consultas y proyectos.
+
+Verificar la conservación literal del contenido publicado, referencias, SEO y
+controladores. La revisión técnica corresponde al responsable del cambio.
+Conservar las fechas editoriales y comprobar el aspecto antes de producción.
