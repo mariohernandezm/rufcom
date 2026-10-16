@@ -7,6 +7,7 @@
   if (!search || !input || !status || !catalog) return;
 
   const sections = [...catalog.querySelectorAll(".library-topic")];
+  const subsections = [...catalog.querySelectorAll(".library-subsection")];
   const cards = [...catalog.querySelectorAll(".library-card")];
   const empty = document.querySelector(".library-empty");
   const normalize = value => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -20,6 +21,9 @@
       if (!card.hidden) count += 1;
     });
     sections.forEach(section => {
+      section.hidden = ![...section.querySelectorAll(".library-card")].some(card => !card.hidden);
+    });
+    subsections.forEach(section => {
       section.hidden = ![...section.querySelectorAll(".library-card")].some(card => !card.hidden);
     });
     if (empty) empty.hidden = count !== 0;
