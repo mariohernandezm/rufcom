@@ -30,7 +30,7 @@ function library() {
   const cards = sections.flatMap(section => section.cards);
   const elements = Object.fromEntries(['.library-search', '#guide-query', '#guide-search-status', '.library-empty', '#show-all-guides', '#clear-guide-search'].map(id => [id, new Element()]));
   const links = [new Element()];
-  const catalog = { querySelectorAll: selector => selector === '.library-topic' ? sections : cards };
+  const catalog = { querySelectorAll: selector => selector === '.library-topic' ? sections : selector === '.library-subsection' ? [] : cards };
   const document = {
     querySelector: selector => elements[selector],
     getElementById: id => id === 'guide-catalog' ? catalog : elements[`#${id}`],
@@ -73,7 +73,7 @@ test('no-match recovery and clearing restore all categories and input focus', ()
 test('choosing a topic restores hidden sections before the native anchor navigation', () => {
   const l = library();
   l.query('chirp');
-  assert.equal(l.sections.filter(section => section.hidden).length, 5);
+  assert.equal(l.sections.filter(section => section.hidden).length, l.sections.length - 1);
   l.links[0].emit('click');
   assert.equal(l.sections.some(section => section.hidden), false);
   assert.equal(l.visible().length, 20);
