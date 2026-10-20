@@ -296,3 +296,11 @@ body.rf-site .site-header .brand-logo { width:180px; height:auto; }
 @media(max-width:700px) {
  body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card,.notice-box,.article-callout,.simple-path,.ui-callout) { padding:var(--space-4); }
 }
+
+/* Inline text inherits its semantic component, never a page-local scale. */
+body.rf-site main { font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6; }
+body.rf-site main :is(a,span,small,strong,em,b,i,code,summary,dt,dd,td,th):not([data-rf-role]) {
+ font-family:inherit; font-size:inherit;
+}
+/* These are metadata badges, not title/body fragments. */
+body.rf-site main :is(.repeater-zone,.repeater-region-count,.repeater-settings summary span) { font-size:var(--text-small); }
