@@ -44,9 +44,9 @@ https://atomicdesign.bradfrost.com/chapter-2/, consultado el 12/10/2026.
 Pila de sistema del manual: `system-ui, -apple-system, BlinkMacSystemFont,
 "Segoe UI", sans-serif`. No se añaden fuentes remotas.
 
-- Cuerpo: 16 px, interlineado 1,6; entradilla: 18 px, peso 500.
-- Título de página: 30–40 px; título de sección: 24–30 px.
-- Título de tarjeta o aviso: 20 px. Su tamaño depende del componente,
+- Cuerpo y entradilla: 16 px, interlineado 1,6, peso 400.
+- Títulos de página y sección: 22–26 px, peso 700, como la nueva portada aprobada el 20/10/2026.
+- Título de tarjeta o aviso: 18 px. Su tamaño depende del componente,
   aunque el elemento semántico sea H2; no se aplana la jerarquía HTML.
 - Notas y autoría: 14 px. El cuerpo de las guías sigue siendo de 16 px.
 - Espacios: 4, 8, 12, 16, 24, 32 y 48 px.
@@ -99,7 +99,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=topografia-20261012-2`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=rufcom-atomic-20261020`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -107,3 +107,26 @@ Comprobar contraste de texto, foco por teclado, botones con etiquetas largas,
 menú móvil, buscadores y gráficos técnicos antes de integrar. Ejecutar los
 controles del README. No renovar fechas de artículos por este cambio visual
 ni enviar solicitudes de indexación por modificaciones de CSS.
+
+## Contrato de componentes — portada de referencia 20/10/2026
+
+La portada nueva es la referencia de toda la web. Mantiene el manual de marca,
+logo original, colores, fuente de sistema, curvas topográficas y fotografías reales.
+La escala de interfaz fue ajustada con el propietario: 22–26 / 18 / 16 / 14 px.
+
+Cada texto de `main` recibe `data-rf-role`: `page-title`, `section-title`,
+`card-title`, `body`, `control`, `eyebrow` o `note`. El nivel semántico HTML se
+conserva; un H2 dentro de una tarjeta usa la molécula de título de tarjeta.
+`design-system.css` es la única autoridad visual de esos roles. Las hojas de
+página controlan posición, diagramas, datos técnicos e interacciones, no crean
+escalas alternativas de títulos. La revisión de roles abarca las 24 páginas.
+
+Los átomos son tokens, texto, enlaces, controles e iconos; las moléculas son
+cabeceras con icono, campos con etiqueta, tarjetas y avisos; los organismos son
+cabecera, pie, rejillas, listas de recursos y buscadores. Las plantillas son
+portada, artículo, biblioteca y herramienta. Todos consumen el mismo contrato.
+
+No modificar datos de licencias, repetidores, frecuencias, scripts de búsqueda,
+canónicas o direcciones para adoptar el diseño. No actualizar fechas editoriales
+por ajustes de apariencia. Una nueva página debe declarar sus roles y cargar la
+hoja común al final. No añadir excepciones tipográficas al final de `styles.css`.

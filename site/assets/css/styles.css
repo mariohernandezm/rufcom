@@ -69,20 +69,20 @@ nav a:hover{color:var(--accent-strong)}
 }
 .eyebrow{
   text-transform:uppercase;
-  letter-spacing:.14em;
-  font-size:.78rem;
-  font-weight:800;
+  
+  
+  
   color:var(--accent-strong);
   margin:0 0 10px;
 }
-h1,h2,h3{line-height:1.12;margin-top:0}
-h1{font-size:clamp(2.1rem,3.5vw,2.9rem);line-height:1.04;letter-spacing:-.04em;margin-bottom:16px}
+h1,h2,h3{margin-top:0}
+h1{margin-bottom:16px}
 h2{
-  font-size:clamp(2rem,4vw,3.4rem);
-  letter-spacing:-.04em;
+  
+  
   margin-bottom:18px;
 }
-h3{font-size:1.2rem;margin-bottom:10px}
+h3{margin-bottom:10px}
 .hero-copy{font-size:1.02rem;color:var(--muted);max-width:650px;margin-bottom:22px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
 .btn{
@@ -264,7 +264,7 @@ footer{
 @media (max-width: 620px){
   .container{width:min(calc(100% - 28px),var(--max))}
   .hero{padding-top:56px}
-  h1{font-size:clamp(2.45rem,11vw,3.2rem)}
+  h1{}
   .hero-actions{flex-direction:column}
   .btn{text-align:center}
   .footer-wrap{flex-direction:column;align-items:flex-start}
@@ -298,7 +298,7 @@ footer{
 }
 .guide-step h3{
   margin-bottom:8px;
-  font-size:1.35rem;
+  
 }
 .guide-step p{
   margin:.3rem 0;
@@ -329,7 +329,7 @@ footer{
   color:#fff;
 }
 .simple-path h3{
-  font-size:1.5rem;
+  
   margin-bottom:10px;
 }
 .simple-path p{
@@ -357,12 +357,12 @@ footer{
 }
 .article-hero{padding:46px 0 34px}
 .article-hero-grid{display:grid;grid-template-columns:1fr 280px;gap:42px;align-items:center}
-.article-title{font-size:clamp(2rem,3.2vw,2.625rem);margin-bottom:8px}
-.article-lead{font-size:1.08rem;font-weight:800;color:var(--accent-strong);margin:.15rem 0 12px}
+.article-title{margin-bottom:8px}
+.article-lead{color:var(--accent-strong);margin:.15rem 0 12px}
 .article-seal{width:250px;justify-self:end}
 .article-badge{display:inline-block;margin-top:14px;padding:9px 13px;border-radius:999px;background:#ffe6a8;color:#6b4200;font-weight:800}
 .article-body{max-width:920px}
-.article-body h2{margin-top:54px;font-size:clamp(1.9rem,4vw,2.8rem)}
+.article-body h2{margin-top:54px;}
 .article-body > p{color:var(--muted);font-size:1.04rem}
 .article-callout{padding:24px;border-radius:20px;background:#2d241b;color:#fff}
 .article-callout strong{color:#ffd36b;font-size:.85rem;text-transform:uppercase;letter-spacing:.12em}
@@ -405,7 +405,7 @@ footer{
 }
 @media(max-width:620px){
   .materials-grid,.experience-grid,.measure-grid{grid-template-columns:1fr}
-  .article-title{font-size:2.6rem}
+  .article-title{}
   .brand-logo{height:38px}
 }
 
@@ -448,7 +448,7 @@ footer{
   font-weight:800;
 }
 .equipment-card h3{
-  font-size:1.55rem;
+  
   margin-bottom:10px;
 }
 .equipment-summary{
@@ -523,13 +523,13 @@ nav a{font-size:.86rem;white-space:nowrap}
 /* Páginas internas: títulos con jerarquía, pero sin dominar la pantalla */
 .article-hero{padding:46px 0 34px}
 .article-title{
-  font-size:clamp(2.15rem,4.2vw,3.35rem);
-  line-height:1.02;
-  letter-spacing:-.04em;
+  
+  
+  
   margin-bottom:10px;
 }
-.article-lead{font-size:1.12rem;line-height:1.45}
-.article-body h2{font-size:clamp(1.65rem,3vw,2.25rem);margin-top:48px}
+.article-lead{}
+.article-body h2{margin-top:48px}
 
 /* Identidad aventurera */
 .adventure-band{
@@ -598,7 +598,7 @@ nav a{font-size:.86rem;white-space:nowrap}
   padding:26px;
   margin-top:28px;
 }
-.socorro-box h3{font-size:1.55rem;margin-bottom:9px}
+.socorro-box h3{margin-bottom:9px}
 .socorro-box p{color:#65543e}
 .socorro-meta{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
 .socorro-meta span{padding:7px 10px;border-radius:999px;background:#fff;font-weight:800;color:#5d3900;border:1px solid #ecd59c}
@@ -617,7 +617,7 @@ nav a{font-size:.86rem;white-space:nowrap}
 }
 .category-card.start{border:2px solid #e6aa2e;background:#fffaf0}
 .category-card .cat-step{font-size:.78rem;font-weight:800;color:var(--accent-strong);text-transform:uppercase;letter-spacing:.09em}
-.category-card h3{font-size:1.3rem;margin:7px 0}
+.category-card h3{margin:7px 0}
 .category-card p{font-size:.94rem;color:var(--muted);margin:0}
 .category-arrow{text-align:center;font-weight:900;color:var(--accent-strong);font-size:1.35rem;margin:10px 0 22px}
 
@@ -672,7 +672,7 @@ nav a{font-size:.86rem;white-space:nowrap}
   .origin-box{grid-template-columns:120px 1fr}
 }
 @media(max-width:620px){
-  .article-title{font-size:2.2rem}
+  .article-title{}
   .adventure-grid,.category-grid,.maleta-diagram,.links-grid{grid-template-columns:1fr}
   .origin-box{grid-template-columns:1fr}
   .origin-box img{width:120px}
@@ -681,13 +681,13 @@ nav a{font-size:.86rem;white-space:nowrap}
 /* RUFCOM v8 — páginas internas más compactas */
 .article-hero-grid{gap:30px}
 .article-hero p:not(.eyebrow):not(.article-lead){
-  font-size:1rem;
-  line-height:1.55;
+  
+  
 }
 @media(max-width:620px){
-  .article-title{font-size:2.15rem}
+  .article-title{}
   .article-hero{padding:36px 0 28px}
-  .article-lead{font-size:1rem}
+  .article-lead{}
 }
 
 /* RUFCOM v9 — portada más compacta */
@@ -695,15 +695,15 @@ nav a{font-size:.86rem;white-space:nowrap}
 .hero-panel{padding:22px}
 .trust-inline{margin-top:18px}
 @media (max-width:620px){
-  h1{font-size:clamp(2.05rem,9vw,2.8rem)}
+  h1{}
   .hero{padding:42px 0 40px}
   .hero-copy{font-size:.98rem}
 }
 
 /* RUFCOM v10 — tamaños finales de títulos */
 @media (max-width:620px){
-  h1{font-size:clamp(2rem,8vw,2.5rem)}
-  .article-title{font-size:2rem}
+  h1{}
+  .article-title{}
 }
 
 /* RUFCOM v11 — portada realmente compacta */
@@ -722,8 +722,8 @@ nav a{font-size:.86rem;white-space:nowrap}
   margin-bottom:6px !important;
 }
 .hero h1{
-  font-size:clamp(2rem,3vw,2.65rem);
-  line-height:1.02;
+  
+  
   margin-bottom:12px !important;
 }
 .hero-copy{
@@ -755,7 +755,7 @@ nav a{font-size:.86rem;white-space:nowrap}
   margin:0 auto 10px !important;
 }
 .hero-panel h2{
-  font-size:1.6rem;
+  
   margin-bottom:10px !important;
 }
 .hero-panel p{
@@ -777,7 +777,7 @@ nav a{font-size:.86rem;white-space:nowrap}
     margin-bottom:12px !important;
   }
   .hero h1{
-    font-size:2rem;
+    
   }
   .hero-copy{
     font-size:.95rem;
@@ -798,9 +798,9 @@ nav a{font-size:.86rem;white-space:nowrap}
 .final-cta h2,
 .article-title,
 .article-body h2 {
-  font-size:clamp(2rem,3vw,2.65rem);
-  line-height:1.08;
-  letter-spacing:-.035em;
+  
+  
+  
 }
 
 /* Mantener títulos de tarjetas y bloques pequeños más contenidos */
@@ -812,8 +812,8 @@ nav a{font-size:.86rem;white-space:nowrap}
 .license-step h3,
 .simple-path h3,
 .hero-panel h2 {
-  font-size:1.45rem;
-  line-height:1.15;
+  
+  
 }
 
 /* En móvil, todos los títulos principales quedan compactos */
@@ -825,7 +825,7 @@ nav a{font-size:.86rem;white-space:nowrap}
   .final-cta h2,
   .article-title,
   .article-body h2 {
-    font-size:2rem;
+    
   }
 }
 
@@ -889,7 +889,7 @@ nav a{font-size:.86rem;white-space:nowrap}
   color:#31424d !important;
   opacity:1 !important;
   font-size:1.08rem;
-  font-weight:600 !important;
+  font-weight:600 ;
   line-height:1.65;
   margin:0 !important;
 }
@@ -1404,7 +1404,7 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 }
 /* Beginner connector guide */
 .connector-guide { margin-top:36px; scroll-margin-top:110px; }
-.connector-guide > h3 { font-size:clamp(1.5rem,3vw,2rem); margin:0 0 8px; }
+.connector-guide > h3 {  margin:0 0 8px; }
 .connector-intro { color:var(--muted); max-width:65ch; }
 .connector-basics { display:flex; flex-wrap:wrap; gap:16px 40px; padding:18px 22px; margin:24px 0; border-left:3px solid var(--accent); background:rgba(255,255,255,.75); border-radius:0 12px 12px 0; }
 .connector-basics p { margin:0; flex:1 1 240px; }
@@ -1413,9 +1413,9 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .connector-photo { height:230px; background:#fff; padding:24px; display:flex; align-items:center; justify-content:center; }
 .connector-photo img { width:100%; height:100%; object-fit:contain; }
 .connector-copy { padding:24px; }
-.connector-copy h4 { font-size:1.3rem; line-height:1.3; margin:8px 0; }
+.connector-copy h4 {   margin:8px 0; }
 .connector-copy p { font-size:1rem; }
-.connector-copy .eyebrow { font-size:.78rem; margin:0; }
+.connector-copy .eyebrow {  margin:0; }
 .connector-name { font-weight:700; color:var(--brown); }
 .connector-tip { border-top:1px solid var(--line); padding-top:16px; color:var(--muted); }
 .tag-cloud a { display:inline-block; padding:12px 16px; border:1px solid var(--line); border-radius:999px; background:#fff; font-weight:700; text-decoration:none; }
@@ -1426,8 +1426,8 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 /* Growing parts reference, with in-page topic navigation. */
 .parts-topics { display:flex; flex-wrap:wrap; gap:12px; position:static; padding:0; background:transparent; box-shadow:none; width:auto; }
 .parts-topics a { display:block; padding:10px 16px; border:1px solid var(--line); border-radius:999px; background:var(--surface); white-space:normal; font-size:.95rem; }
-.connector-guide > h2 { font-size:clamp(1.5rem,3vw,2rem); margin:0 0 8px; }
-.connector-copy h3 { font-size:1.3rem; line-height:1.3; margin:8px 0; }
+.connector-guide > h2 {  margin:0 0 8px; }
+.connector-copy h3 {   margin:8px 0; }
 .parts-summary { max-width:70ch; }
 .parts-summary .btn { margin-top:12px; }
 #accesorios-practicos { scroll-margin-top:110px; }
@@ -1532,9 +1532,9 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 .repeater-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
 .repeater-card { padding:18px; background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow-wrap:anywhere; }
 /* Override the larger section-heading rules for individual results. */
-.section .repeater-card h2 { font-size:1.3rem; line-height:1.2; letter-spacing:-.015em; margin:0 0 8px; }
+.section .repeater-card h2 {    margin:0 0 8px; }
 .repeater-card p { margin:0 0 8px; font-size:.9375rem; line-height:1.4; }
-.repeater-card .eyebrow { font-size:.75rem; margin-bottom:5px; }
+.repeater-card .eyebrow {  margin-bottom:5px; }
 .repeater-card dl { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:12px 0 0; }
 .repeater-card dl > div { min-width:0; }
 .repeater-card dd { margin:4px 0 0; font-size:1rem; line-height:1.3; font-weight:700; font-variant-numeric:tabular-nums; }
@@ -1543,7 +1543,7 @@ nav a[aria-current="page"] { color:var(--accent-strong); text-decoration:underli
 @media(max-width:700px) {
   .repeater-grid { grid-template-columns:1fr; gap:12px; }
   .repeater-card { padding:14px; }
-  .section .repeater-card h2 { font-size:1.2rem; }
+  .section .repeater-card h2 {  }
   .repeater-card dl { gap:8px; margin-top:10px; }
 }
 
@@ -1645,7 +1645,7 @@ footer .footer-nav a:hover { text-decoration:underline; text-underline-offset:4p
 .club-card .club-logo{display:block;width:96px;height:96px;object-fit:contain;margin-bottom:18px}
 .club-card .eyebrow{color:var(--accent-strong);margin:0 0 10px}
 .club-emergency{margin-top:24px;padding-top:18px;border-top:1px solid rgba(68,37,10,.16)}
-.club-emergency h4{font-size:1rem;margin:0}
+.club-emergency h4{margin:0}
 .club-emergency a{margin-top:12px}
 #links .cards{align-items:start}
 #links .club-card{display:block}
