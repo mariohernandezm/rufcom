@@ -55,7 +55,7 @@ def render(text, name, info):
     if article:
         modified = datetime.fromisoformat(info['modified'])
         label = f'{modified.day} de {MONTHS[modified.month-1]} de {modified.year}'
-        byline = ('<!-- SEO:BYLINE --><p class="article-byline">Por '
+        byline = ('<!-- SEO:BYLINE --><p class="article-byline" data-rf-role="note">Por '
                   '<span itemprop="author" itemscope itemtype="https://schema.org/Organization">'
                   '<a itemprop="url" href="/"><span itemprop="name">RUFCOM</span></a></span>'
                   f' · Última edición: <time itemprop="dateModified" datetime="{info["modified"]}">{label}</time>'

@@ -18,7 +18,7 @@
 .repeater-region-count {  font-weight:400; color:var(--muted); white-space:nowrap; }
 .section .repeater-card h3 {    margin:0 0 8px; }
 .repeater-zone { display:inline-block; padding:2px 8px; margin:4px 0; background:var(--surface-2); border:1px solid var(--line); border-radius:6px; color:var(--brown);  font-weight:700; white-space:nowrap; }
-#repeater-count { font-weight:700; }
+#repeater-count {  }
 #repeater-empty { padding:18px; border:1px solid var(--line); border-radius:12px; background:var(--surface); }
 .repeater-section [hidden] { display:none !important; }
 .simplex-reference { margin:12px 0 18px; padding:12px 16px; background:var(--surface-2); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:12px; }

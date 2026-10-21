@@ -1,9 +1,6 @@
 # Sistema de interfaz RUFCOM
 
-Aplicación web del Manual de marca RUFCOM, versión 1.0 del 4 de octubre de
-2026. Su fuente se conserva en el manual preparado para Mario Hernández.
-Esta implementación del 12 de octubre ordena los componentes del sitio
-existente; no modifica el logo ni las fuentes editoriales.
+Aplicación web del [Manual de marca Rufcom v1.1](manual-de-marca.md), del 20 de octubre de 2026. El manual es la referencia normativa; esta guía explica su implementación.
 
 ## Base y funciones
 
@@ -99,7 +96,7 @@ Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
 La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=rufcom-atomic-20261020`. Al modificar una hoja compartida, cambiar su versión
+`design-system.css` usa `?v=rufcom-manual-v11-20261020`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 
@@ -130,3 +127,8 @@ No modificar datos de licencias, repetidores, frecuencias, scripts de búsqueda,
 canónicas o direcciones para adoptar el diseño. No actualizar fechas editoriales
 por ajustes de apariencia. Una nueva página debe declarar sus roles y cargar la
 hoja común al final. No añadir excepciones tipográficas al final de `styles.css`.
+
+
+## Revisión por función
+
+Los roles se aplican también a cabecera y pie. Los H2 que abren las secciones de Salida segura son títulos de sección; el nombre de clase `guide-step` no los convierte en tarjetas. Las fuentes, autorías y notas usan `note`. Los enlaces dentro de títulos o notas heredan su tamaño. Navegación, tablas, desplegables y estados de búsqueda se comprueban abiertos. El manual y esta guía se conservan con el código; la revisión visual se registra por separado.

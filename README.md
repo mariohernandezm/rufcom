@@ -17,6 +17,7 @@ para comprobar la CSP con el mismo modelo de origen que en producción.
 
 ```sh
 python scripts/validate_site.py
+python scripts/validate_brand.py
 python scripts/seo.py --check
 node --check site/assets/js/main.js
 python -m unittest discover -s tests -v
