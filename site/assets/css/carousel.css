@@ -27,5 +27,5 @@ body .rf-carousel__controls {
   margin-top: var(--space-4);
 }
 body .rf-carousel__controls .rf-button { min-width: 44px; padding-inline: var(--space-3); }
-body .rf-carousel__controls .rf-carousel__toggle { padding-inline: var(--space-2); }
+body .rf-carousel__controls .rf-carousel__toggle { flex: 0 0 44px; width: 44px; padding-inline: var(--space-2); }
 body .rf-carousel__position { min-width: 4ch; text-align: center; }
