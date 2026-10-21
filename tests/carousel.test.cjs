@@ -132,7 +132,7 @@ test('manual navigation and keyboard focus pause until resumed with the rotation
   c.next.emit('click');
   clock.advance(18000);
   assert.deepEqual(visible(c), [false, true]);
-  assert.equal(c.toggle.textContent, 'Reanudar');
+  assert.equal(c.toggle.attributes['aria-label'], 'Reanudar carrusel');
   c.toggle.emit('click');
   clock.advance(6000);
   assert.deepEqual(visible(c), [true, false]);
@@ -147,7 +147,7 @@ test('clicking pause preserves its intent when focusin arrives before the click'
   c.emit('focusin');
   c.toggle.emit('click');
   clock.advance(12000);
-  assert.equal(c.toggle.textContent, 'Reanudar');
+  assert.equal(c.toggle.attributes['aria-label'], 'Reanudar carrusel');
   assert.deepEqual(visible(c), [true, false]);
   c.toggle.emit('pointerdown');
   c.emit('focusin');
@@ -170,5 +170,5 @@ test('background tabs do not accumulate ticks, and reduced motion starts paused'
   const d = carousel(), reduced = setup([d], true);
   reduced.advance(18000);
   assert.deepEqual(visible(d), [true, false]);
-  assert.equal(d.toggle.textContent, 'Reanudar');
+  assert.equal(d.toggle.attributes['aria-label'], 'Reanudar carrusel');
 });
