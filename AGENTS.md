@@ -7,7 +7,7 @@ indexación en cada nueva guía o página, desde su creación.
   diferenciar experiencia y medición, y mantener sencillas las guías iniciales.
 - Leer `docs/seo.md` y conservar el estilo, las fuentes y los límites técnicos
   del contenido existente.
-- Leer `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
+- Leer primero `docs/manual-de-marca.md` (v1.1) y después `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
   botones y componentes de `assets/css/design-system.css`, cargado después de
   las hojas específicas. No añadir otra escala global de títulos ni recuperar
   los bloques promocionales de tamaño de portada.
@@ -26,3 +26,5 @@ indexación en cada nueva guía o página, desde su creación.
 - Después de publicar una URL nueva o una mejora sustantiva, inspeccionarla
   y solicitar indexación una vez si hay acceso autorizado a Search Console.
   Si no hay acceso, informar exactamente qué quedó pendiente.
+
+- Verificar la función de cada texto además del tamaño: navegación, pie, tablas, resultados y paneles abiertos, en escritorio y móvil. Registrar evidencia y pendientes; una lista de tamaños permitidos no certifica cumplimiento.
