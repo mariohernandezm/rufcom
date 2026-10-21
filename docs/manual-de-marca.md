@@ -294,3 +294,20 @@ Los iconos de títulos usan una familia coherente, caja de 24 × 24 px y grosor 
 Versión 1.0, 04/10/2026: identidad, activos, principios editoriales, paleta y criterios generales.
 
 Versión 1.1, 20/10/2026: jerarquía de la nueva portada, ocho colores web por función, diseño atómico, componentes, medidas y revisión por rol. Se normaliza el nombre Rufis. Se conservan las reglas de logo, fotografía, sello, impresión y voz editorial. La revisión visual completa de las páginas sigue siendo una tarea de implementación independiente del manual.
+
+### Ampliación 1.3.1 · 21/10/2026: carrusel de portada
+
+A solicitud del propietario, el panel de portada alterna la ilustración del trío
+y el Rufis original cada 6 segundos. Conserva su ubicación, los originales completos,
+los roles tipográficos y los tokens de botones de esta edición.
+
+El cursor detiene temporalmente la rotación; al retirarlo comienza un intervalo
+completo de 6 segundos. Usar las flechas, deslizar o entrar con el teclado detiene
+la rotación hasta pulsar «Reanudar». Un control visible «Pausar / Reanudar» permite
+elegir. Las pestañas ocultas no acumulan cambios; al regresar se reinicia el intervalo.
+Con preferencia de movimiento reducido, comienza detenido. Los cambios automáticos
+no se anuncian repetidamente mediante el lector de pantalla. Sin JavaScript queda
+visible la ilustración del trío y se ocultan los controles inactivos.
+
+Esta ampliación reemplaza la primera propuesta del componente sin rotación automática.
+No modifica la paleta, la escala tipográfica ni las reglas generales del manual 1.3.

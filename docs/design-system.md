@@ -136,3 +136,25 @@ hoja común al final. No añadir excepciones tipográficas al final de `styles.c
 ## Revisión por función
 
 Los roles se aplican también a cabecera y pie. Los H2 que abren las secciones de Salida segura son títulos de sección; el nombre de clase `guide-step` no los convierte en tarjetas. Las fuentes, autorías y notas usan `note`. Los enlaces dentro de títulos o notas heredan su tamaño. Navegación, tablas, desplegables y estados de búsqueda se comprueban abiertos. El manual y esta guía se conservan con el código; la revisión visual se registra por separado.
+
+## Carrusel de portada — componente v1.1 · 21/10/2026
+
+Extensión del sistema v1.3 solicitada por el propietario: la ilustración actual
+del trío y la ilustración original de Rufis comparten el mismo panel de portada.
+`carousel.css` controla únicamente la distribución; se carga antes de la hoja
+compartida. Los controles reutilizan `.rf-button`, el rol `control` y los tokens
+del manual. El contador es una nota de 14 px. No cambia la escala ni la paleta.
+
+El marco conserva proporción 3:2 y muestra las imágenes completas, sin recorte
+ni deformación. Flechas de 44 px como mínimo, teclado y gesto horizontal en
+pantallas táctiles permiten cambiar de imagen. Por petición del propietario,
+alterna cada 6 segundos, sin animación. El cursor pausa temporalmente; al retirarlo
+comienza otro intervalo completo. La navegación manual, el gesto táctil y el foco
+de teclado detienen la rotación hasta pulsar «Reanudar». El botón «Pausar / Reanudar»
+usa la misma molécula de control. No se anuncian al lector de pantalla los cambios
+automáticos. Con movimiento reducido inicia detenido y la pestaña oculta no acumula
+cambios. Sin JavaScript sigue visible el trío y se ocultan los controles. Las imágenes
+originales no se alteran; recuperar el sello de Rufis no añade aprobaciones a productos.
+
+Componente v1.1 · 21/10/2026: reemplaza el comportamiento manual de v1.0 por el
+intervalo de 6 segundos aprobado. Regla registrada en la ampliación 1.3.1 del manual.
