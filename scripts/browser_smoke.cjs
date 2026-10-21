@@ -68,15 +68,15 @@ async function carousel(page, label) {
   await page.screenshot({path:path.join(output, `inicio-${label}-rufis.png`)});
   await page.getByRole('button',{name:'Ver imagen siguiente',exact:true}).click();
   assert.equal(await position.textContent(),'1 / 2');
-  assert.equal(await page.getByRole('button',{name:'Reanudar carrusel',exact:true}).isVisible(),true);
-  await page.mouse.move(0,0);
-  await page.waitForTimeout(6200);
-  assert.equal(await position.textContent(),'1 / 2', 'Manual interaction must stop automatic rotation');
+  assert.equal(await page.locator('[data-carousel-toggle]').count(),0);
+  // Keep focus and cursor on the arrow: neither may freeze the carousel.
+  await page.waitForFunction(() => document.querySelector('[data-carousel-position]').textContent === '2 / 2', undefined, {timeout:8000});
+  assert.equal(await page.getByRole('button',{name:'Ver imagen siguiente',exact:true}).evaluate(el=>el===document.activeElement),true);
   const controls = await page.locator('.rf-carousel__controls button').evaluateAll(items => items.map(el=>({w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height})));
   assert(controls.every(el=>el.w>=44 && el.h>=44), 'Carousel touch targets must be at least 44px');
-  await audit(page,'inicio',label,'manual-pause');
+  await audit(page,'inicio',label,'autoplay-after-manual');
   await page.screenshot({path:path.join(output, `inicio-${label}-trio.png`)});
-  report.carousel.push({viewport:label,state:'manual-pause-after-six-seconds',controls});
+  report.carousel.push({viewport:label,state:'autoplay-after-manual-with-focus-and-hover',controls});
 }
 
 (async () => {
