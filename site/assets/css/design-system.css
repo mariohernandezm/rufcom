@@ -1,11 +1,14 @@
-/* RUFCOM interface system. Brand manual v1.1, 20 October 2026.
+/* RUFCOM interface system. Brand manual v1.3, 20 October 2026.
    This file owns shared typography, controls, cards and page rhythm.
    Page-specific files own diagrams, photographs and tool layouts. */
 
 /* Atoms: brand tokens and a single responsive type/spacing scale. */
 :root {
-  --color-primary: #cc8a00;
+  --color-primary: #fff3cf;
+  --color-action-border: #b26f00;
   --color-primary-hover: #b26f00;
+  --color-accent: #fd9e01;
+  --color-accent-support: #cc8a00;
   --color-secondary: #082330;
   --color-background: #f7f3e8;
   --color-surface: #ffffff;
@@ -34,20 +37,20 @@
   --surface: var(--color-surface);
   --ink: var(--color-text);
   --muted: var(--color-text-muted);
-  --accent: var(--color-primary);
+  --accent: var(--color-accent-support);
   --accent-strong: var(--color-primary-hover);
   --line: var(--color-border);
   --max: var(--width-page);
   --ruf-navy: var(--color-secondary);
 }
 body main :is(h1, .article-title) {
-    
+
   margin: 0 0 var(--space-4);  max-width: 28ch;
 }
 body main h2,
 body main :is(.section, .article-body, .section-heading, .feature-copy, .final-cta, .library-topic, .library-start) h2 {
-    
-  margin: var(--space-6) 0 var(--space-4); 
+
+  margin: var(--space-6) 0 var(--space-4);
 }
 body main .article-lead {     color:var(--color-text); }
 body main .article-body > p {   color: var(--ink); }
@@ -103,20 +106,23 @@ body.home-page main.container.section::before { display: block !important; }
 /* Atoms: primary, secondary and text actions use the same dimensions. */
 body .btn, body .rf-button {
   display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
-  min-height: 44px; max-width: 100%; padding: .625rem 1rem; border: 1px solid var(--color-secondary);
-  border-radius: var(--radius-control); background: var(--surface); color: var(--color-secondary);
+  min-height: 44px; max-width: 100%; padding: .625rem 1rem; border: 1px solid var(--color-action-border);
+  border-radius: var(--radius-control); background: var(--color-primary); color: var(--ink);
    text-align: center; white-space: normal;
   text-decoration: none; overflow-wrap: anywhere; cursor: pointer;
   transition: background-color .15s ease, border-color .15s ease;
 }
 body :is(.btn-primary, .rf-button--primary) {
-  background: var(--color-primary); border-color: var(--color-primary); color: var(--ink);
+  background: var(--color-primary); border-color: var(--color-action-border); color: var(--ink);
 }
 body :is(.btn-primary, .rf-button--primary):hover {
   background: var(--color-primary); border-color: var(--color-secondary); color: var(--ink); transform: none;
 }
+body :is(.btn-secondary, .rf-button--secondary) {
+  background: var(--color-primary); border-color: var(--color-action-border); color: var(--ink);
+}
 body :is(.btn-secondary, .rf-button--secondary):hover {
-  background: var(--bg); border-color: var(--color-secondary); color: var(--color-secondary); transform: none;
+  background: var(--color-primary); border-color: var(--color-secondary); color: var(--ink); transform: none;
 }
 body .rf-button--text {
   padding-inline: 0; border-color: transparent; background: transparent;
@@ -126,11 +132,11 @@ body :is(.btn, .rf-button):disabled { cursor: default; opacity: .65; }
 body .hero-actions .btn { padding: .625rem 1rem; }
 body :is(.license-search, .repeater-search) :is(input, select) {
   min-height: 48px; padding: .625rem .875rem; border: 1px solid #817461;
-  border-radius: var(--radius-control); background: var(--surface); color: var(--ink); 
+  border-radius: var(--radius-control); background: var(--surface); color: var(--ink);
 }
 body .license-search .rf-button { padding: .625rem 1rem; }
-body .license-search .rf-button--primary { background: var(--color-primary); color: var(--ink); border: 1px solid var(--color-primary); }
-body .license-search .rf-button--secondary { background: var(--surface); color: var(--color-secondary); border: 1px solid var(--color-secondary); }
+body .license-search .rf-button--primary { background: var(--color-primary); color: var(--ink); border: 1px solid var(--color-action-border); }
+body .license-search .rf-button--secondary { background: var(--color-primary); color: var(--ink); border: 1px solid var(--color-action-border); }
 body .license-search .rf-button--primary:hover { border-color: var(--color-secondary); }
 body .license-search th { background: var(--bg); color: var(--ink); }
 body .license-search :is(th, td) { border-color: var(--line); }
@@ -139,16 +145,16 @@ body .license-search [role="search"] { align-items: end; }
 /* Molecules: a compact information card, separate from a section heading. */
 body main .ui-callout {
   margin: var(--space-5) 0; padding: 1.25rem 1.5rem;
-  border: 1px solid var(--line); border-left: 4px solid var(--color-primary);
+  border: 1px solid var(--line); border-left: 4px solid var(--color-accent-support);
   border-radius: var(--radius-card); background: var(--surface); color: var(--ink);
   box-shadow: none;
 }
 body main .ui-callout :is(h2, h3) {
-  margin: 0 0 var(--space-2);  
+  margin: 0 0 var(--space-2);
    color: var(--color-secondary);
 }
 body main .ui-callout > strong {
-  display: block; margin-bottom: var(--space-2); 
+  display: block; margin-bottom: var(--space-2);
     color: var(--color-secondary);
 }
 body main .ui-callout strong { color: inherit;    }
@@ -158,7 +164,7 @@ body main .ui-callout p { margin: 0; }
 body main .ui-callout p + p { margin-top: var(--space-3); }
 body main .ui-callout .path-line { color: var(--color-secondary);   margin-top: var(--space-3); }
 body main .ui-callout .rf-button { margin-top: var(--space-4); }
-body main .ui-callout .btn { color: var(--color-secondary); }
+body main .ui-callout .btn { color: var(--ink); }
 body main .ui-callout .btn-primary { color: var(--ink); }
 
 /* Molecules: shared card hierarchy without changing specialised diagrams. */
@@ -192,7 +198,7 @@ body main .first-contact { margin-block: var(--space-6); }
 body main .license-heading img { width: 44px; height: 44px; }
 body .site-header .brand-logo { width: 180px; height: auto; }
 body .compact-footer .footer-brand { width: 140px; height: auto; }
-body .adventure-band .btn-secondary { color: var(--color-secondary); }
+body .adventure-band .btn-secondary { color: var(--ink); }
 
 @media (max-width: 700px) {
   body main > .section, body main .scenic-section { padding-block: var(--space-5); }
@@ -248,7 +254,7 @@ body.rf-site main :is(.card,.library-card,.category-card,.equipment-card,.antenn
 }
 body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card) { padding:var(--space-5); }
 body.rf-site main :is(.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) {
- border:1px solid var(--color-border); border-left:4px solid var(--color-primary); border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-text); box-shadow:none; padding:var(--space-5);
+ border:1px solid var(--color-border); border-left:4px solid var(--color-accent-support); border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-text); box-shadow:none; padding:var(--space-5);
 }
 body.rf-site main :is(.library-card,.download-card,.topic-card) { display:flex; flex-direction:column; align-items:flex-start; }
 body.rf-site main :is(.library-card,.download-card,.topic-card) > :is(.btn,.rf-button,.library-read) { margin-top:auto; }
@@ -286,7 +292,7 @@ body.rf-site :is(a,span,small,strong,em,b,i,code,summary,dt,dd,td,th):not([data-
  font-family:inherit; font-size:inherit;
 }
 body.rf-site :is(strong,b) { font-weight:700; }
-body.rf-site main :is(a,[data-rf-role="card-title"] a):not(.btn):not(.rf-button) { color:var(--color-secondary); }
+body.rf-site main :is(a,[data-rf-role="card-title"] a):not(.btn):not(.rf-button):not(.library-categories a):not(.read-guide) { color:var(--color-secondary); }
 body.rf-site main :is([data-rf-role="note"],[data-rf-role="eyebrow"]) a:not(.btn):not(.rf-button) { color:inherit; font-weight:inherit; }
 body.rf-site main :is(.article-lead,.hero-copy) { color:var(--color-text); font-weight:400; }
 body.rf-site main :is(label,button,input,select,textarea),
@@ -298,7 +304,8 @@ body.rf-site main :is(dt,dd,td,th,caption) { font-size:var(--text-body); line-he
 body.rf-site main :is(dt,dd,td,caption) { font-weight:400; }
 body.rf-site main th { font-weight:600; }
 body.rf-site :is(.btn-primary,.rf-button--primary) { color:var(--color-text); }
-body.rf-site :is(.btn-secondary,.rf-button--secondary,.rf-button--text) { color:var(--color-secondary); }
+body.rf-site :is(.btn-secondary,.rf-button--secondary) { color:var(--color-text); }
+body.rf-site .rf-button--text { color:var(--color-secondary); }
 body.rf-site main :is(.repeater-zone,.repeater-region-count,.repeater-settings summary span) {
  font-size:var(--text-small); font-weight:400; line-height:1.55; color:var(--color-text-muted);
 }
@@ -314,5 +321,6 @@ body.rf-site .compact-footer [data-rf-role="note"] { font-size:var(--text-small)
 body.rf-site .analytics-choice { background:var(--color-surface); color:var(--color-text); border-color:var(--color-border); }
 body.rf-site .analytics-choice p { color:var(--color-text); font:400 var(--text-body)/1.6 var(--font-ui); }
 body.rf-site .analytics-choice a { color:var(--color-secondary); }
-body.rf-site .analytics-choice button { font:600 var(--text-body)/1.4 var(--font-ui); color:var(--color-secondary); border-color:var(--color-secondary); }
+body.rf-site .analytics-choice button { font:600 var(--text-body)/1.4 var(--font-ui); background:var(--color-primary); color:var(--color-text); border-color:var(--color-action-border); }
+body.rf-site .analytics-choice button:hover { background:var(--color-primary); color:var(--color-text); border-color:var(--color-secondary); }
 body.rf-site .compact-footer .footer-email { overflow-wrap:anywhere; }
