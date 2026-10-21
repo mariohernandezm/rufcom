@@ -311,3 +311,14 @@ visible la ilustración del trío y se ocultan los controles inactivos.
 
 Esta ampliación reemplaza la primera propuesta del componente sin rotación automática.
 No modifica la paleta, la escala tipográfica ni las reglas generales del manual 1.3.
+
+### Ampliación 1.3.2 · 21/10/2026: carrusel sin reproducción/pausa
+
+Por indicación del propietario se retira el botón de reproducir/pausar. La
+rotación continúa cada 6 segundos aunque el cursor o el foco estén en el panel.
+Las flechas, el teclado y el gesto horizontal cambian la imagen y reinician un
+intervalo completo; no dejan el carrusel detenido. Las pestañas ocultas suspenden
+el reloj y, al regresar, comienza otro intervalo. Se respeta la preferencia de
+movimiento reducido: en ese caso las flechas siguen disponibles sin rotación.
+Esta regla reemplaza las pausas y el botón de la ampliación 1.3.1; conserva el
+marco, los originales, la paleta y los roles compartidos.

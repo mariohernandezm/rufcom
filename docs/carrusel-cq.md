@@ -53,3 +53,11 @@ rotación real y pausa, menús y paneles abiertos, roles calculados, imágenes y
 desbordamiento. Guarda capturas y `report.json` en el artefacto `browser-review`.
 El resultado de cada ejecución debe revisarse antes de integrar. Esta cobertura
 se limita a las tres páginas afectadas y sus estados; no certifica toda la web.
+
+## Corrección posterior · 21/10/2026
+
+El propietario pidió quitar el botón de reproducción/pausa porque el carrusel
+quedaba detenido. Se eliminan la pausa por cursor y la pausa persistente por
+foco o navegación; las flechas reinician seis segundos. Se conserva movimiento
+reducido y suspensión en pestañas ocultas. La prueba real comprueba que vuelve
+a cambiar después de pulsar una flecha manteniendo cursor y foco en ella.
