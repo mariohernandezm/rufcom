@@ -384,7 +384,7 @@ footer{
 .experience-card p{color:var(--muted);margin-bottom:0}
 .connection-line{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px}
 .connection-line span{padding:10px 13px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-weight:700}
-.connection-line b{color:var(--accent-strong)}
+.connection-line b{color:var(--color-secondary)}
 .article-footer-note{margin-top:50px;display:flex;align-items:center;gap:18px;padding:18px;border:1px solid #efd38a;background:#fff8e8;border-radius:20px}
 .article-footer-note img{width:92px}
 .article-footer-note p{margin:.2rem 0 0;color:var(--muted)}
@@ -830,21 +830,9 @@ nav a{white-space:nowrap}
 }
 
 /* RUFCOM v13 — más aire libre y mejor contraste */
-.adventure-note{
-  background:#fff8ee;
-  color:#24333d;
-  border:1px solid #ead8b5;
-  border-radius:28px;
-  padding:28px;
-  box-shadow:0 14px 34px rgba(0,0,0,.08);
-}
-.adventure-note .eyebrow{color:#c78500}
-.adventure-note p{
-  color:#31424d !important;
-  
-  line-height:1.65;
-  margin:0;
-}
+
+
+
 .scenic-section{padding:72px 0;}
 .scenic-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
 .scenic-card{
@@ -873,26 +861,9 @@ nav a{white-space:nowrap}
 @media(max-width:900px){.scenic-grid,.feature-grid.visual{grid-template-columns:1fr}}
 
 /* RUFCOM v14 — menos dibujos, más claridad */
-.adventure-note{
-  background:#fff8ee !important;
-  color:#23323b !important;
-  border:1px solid #e8d6b2 !important;
-  border-radius:28px !important;
-  padding:30px !important;
-  box-shadow:0 10px 24px rgba(0,0,0,.08) !important;
-}
-.adventure-note .eyebrow{
-  color:#c78500 !important;
-  opacity:1 !important;
-}
-.adventure-note p{
-  color:#31424d !important;
-  opacity:1 !important;
-  
-  font-weight:600 ;
-  line-height:1.65;
-  margin:0 !important;
-}
+
+
+
 .clean-band{
   background:linear-gradient(180deg,#f7f3e8 0%,#f1ebde 100%);
   border:1px solid rgba(68,37,10,.08);

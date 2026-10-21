@@ -1,4 +1,4 @@
-/* RUFCOM interface system. Brand manual v1.0, 04 October 2026.
+/* RUFCOM interface system. Brand manual v1.1, 20 October 2026.
    This file owns shared typography, controls, cards and page rhythm.
    Page-specific files own diagrams, photographs and tool layouts. */
 
@@ -40,23 +40,19 @@
   --max: var(--width-page);
   --ruf-navy: var(--color-secondary);
 }
-
-body { font-family: var(--font-ui); font-size: var(--text-body); line-height: 1.6; }
-button, input, select, textarea { font: inherit; }
 body main :is(h1, .article-title) {
-  font-size: var(--text-page); line-height: 1.15; letter-spacing: -.025em;
-  margin: 0 0 var(--space-4); font-weight: 750; max-width: 28ch;
+    
+  margin: 0 0 var(--space-4);  max-width: 28ch;
 }
 body main h2,
 body main :is(.section, .article-body, .section-heading, .feature-copy, .final-cta, .library-topic, .library-start) h2 {
-  font-size: var(--text-section); line-height: 1.25; letter-spacing: -.015em;
-  margin: var(--space-6) 0 var(--space-4); font-weight: 700;
+    
+  margin: var(--space-6) 0 var(--space-4); 
 }
-body main :is(h3, h4) { font-size: var(--text-card); line-height: 1.35; letter-spacing: 0; font-weight: 700; }
-body main .article-lead { font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6; font-weight:400; color:var(--color-text); }
-body main .article-body > p { font-size: var(--text-body); line-height: 1.65; color: var(--ink); }
-body main :is(.article-byline, .source-note, figcaption) { font-size: var(--text-small); line-height: 1.55; color: var(--muted); }
-body main .eyebrow { font-family:var(--font-ui); font-size:var(--text-small); line-height:1.5; letter-spacing:.03em; font-weight:600; color:var(--color-text-muted); }
+body main .article-lead {     color:var(--color-text); }
+body main .article-body > p {   color: var(--ink); }
+body main :is(.article-byline, .source-note, figcaption) {   color: var(--muted); }
+body main .eyebrow {      color:var(--color-text-muted); }
 body main :is(.article-body, .ui-callout) a:not(.btn):not(.rf-button) {
   color: var(--color-secondary); text-decoration: underline; text-underline-offset: .2em;
 }
@@ -109,7 +105,7 @@ body .btn, body .rf-button {
   display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
   min-height: 44px; max-width: 100%; padding: .625rem 1rem; border: 1px solid var(--color-secondary);
   border-radius: var(--radius-control); background: var(--surface); color: var(--color-secondary);
-  font: 600 var(--text-body)/1.4 var(--font-ui); text-align: center; white-space: normal;
+   text-align: center; white-space: normal;
   text-decoration: none; overflow-wrap: anywhere; cursor: pointer;
   transition: background-color .15s ease, border-color .15s ease;
 }
@@ -130,7 +126,7 @@ body :is(.btn, .rf-button):disabled { cursor: default; opacity: .65; }
 body .hero-actions .btn { padding: .625rem 1rem; }
 body :is(.license-search, .repeater-search) :is(input, select) {
   min-height: 48px; padding: .625rem .875rem; border: 1px solid #817461;
-  border-radius: var(--radius-control); background: var(--surface); color: var(--ink); font-size: 1rem;
+  border-radius: var(--radius-control); background: var(--surface); color: var(--ink); 
 }
 body .license-search .rf-button { padding: .625rem 1rem; }
 body .license-search .rf-button--primary { background: var(--color-primary); color: var(--ink); border: 1px solid var(--color-primary); }
@@ -148,19 +144,19 @@ body main .ui-callout {
   box-shadow: none;
 }
 body main .ui-callout :is(h2, h3) {
-  margin: 0 0 var(--space-2); font-size: var(--text-card); line-height: 1.35;
-  letter-spacing: 0; color: var(--color-secondary);
+  margin: 0 0 var(--space-2);  
+   color: var(--color-secondary);
 }
 body main .ui-callout > strong {
-  display: block; margin-bottom: var(--space-2); font-size: var(--text-card);
-  font-weight: 700; line-height: 1.35; color: var(--color-secondary);
+  display: block; margin-bottom: var(--space-2); 
+    color: var(--color-secondary);
 }
-body main .ui-callout strong { color: inherit; font-size: inherit; text-transform: none; letter-spacing: 0; }
-body main .ui-callout > strong { color: var(--color-secondary); font-size: var(--text-card); }
-body main .ui-callout :is(p, li) { color: var(--ink); font-size: var(--text-body); font-weight: 400; line-height: 1.6; }
+body main .ui-callout strong { color: inherit;    }
+body main .ui-callout > strong { color: var(--color-secondary);  }
+body main .ui-callout :is(p, li) { color: var(--ink);    }
 body main .ui-callout p { margin: 0; }
 body main .ui-callout p + p { margin-top: var(--space-3); }
-body main .ui-callout .path-line { color: var(--color-secondary); font-size: var(--text-body); font-weight: 600; margin-top: var(--space-3); }
+body main .ui-callout .path-line { color: var(--color-secondary);   margin-top: var(--space-3); }
 body main .ui-callout .rf-button { margin-top: var(--space-4); }
 body main .ui-callout .btn { color: var(--color-secondary); }
 body main .ui-callout .btn-primary { color: var(--ink); }
@@ -170,15 +166,11 @@ body main :is(.card, .equipment-card, .topic-card, .antenna-card, .category-card
   border-radius: var(--radius-card); padding: var(--space-5); box-shadow: none;
 }
 body main :is(.card, .equipment-card, .topic-card, .antenna-card, .category-card, .library-card, .download-card, .guide-step, .license-step, .hero-panel) :is(h2, h3) {
-  font-size: var(--text-card); line-height: 1.35; letter-spacing: 0; margin: 0 0 var(--space-3);
+     margin: 0 0 var(--space-3);
 }
-body main :is(.card, .library-card, .download-card) > p { font-size: var(--text-body); line-height: 1.6; }
 body main .download-card .btn { margin-top: var(--space-4); }
-body main .q-card h2 { font-size: var(--text-section); margin: 0 0 var(--space-2); }
-body main .repeater-card h3 { font-size: var(--text-card); line-height: 1.35; margin: 0 0 var(--space-2); }
-body main .repeater-region > h2 { font-size: var(--text-section); line-height: 1.3; }
-body main .simplex-reference h2 { font-size: var(--text-card); line-height: 1.35; }
-body main .source-note h2 { font-size: var(--text-card); }
+body main .q-card h2 {  margin: 0 0 var(--space-2); }
+body main .repeater-card h3 {   margin: 0 0 var(--space-2); }
 
 /* Organisms and templates: reading width and a regular section rhythm. */
 body main .article-body { max-width: var(--width-reading); }
@@ -196,12 +188,10 @@ body main .resource-grid .rf-button { margin-top: auto; align-self: flex-start; 
 body main .resource-grid .ui-callout > p { margin-bottom: var(--space-4); }
 body main :is(.library-grid, .download-grid, .cards) { gap: var(--space-4); }
 body main .library-intro { padding-block: var(--space-6) var(--space-5); }
-body main .library-intro > p { font-size: var(--text-lead); }
 body main .first-contact { margin-block: var(--space-6); }
 body main .license-heading img { width: 44px; height: 44px; }
 body .site-header .brand-logo { width: 180px; height: auto; }
 body .compact-footer .footer-brand { width: 140px; height: auto; }
-body .compact-footer h2 { font-size: 1rem; line-height: 1.4; }
 body .adventure-band .btn-secondary { color: var(--color-secondary); }
 
 @media (max-width: 700px) {
@@ -219,7 +209,6 @@ body .adventure-band .btn-secondary { color: var(--color-secondary); }
 /* Resource identity links: reusable icon and destination label. */
 body main .rf-resource-link { display:flex; align-items:center; gap:var(--space-3); min-height:56px; margin-block:var(--space-2); }
 body main .rf-resource-icon { flex:0 0 44px; width:44px; height:44px; object-fit:contain; }
-body main .rf-resource-link a { font-size:var(--text-body); line-height:1.4; }
 
 /* Icon heading molecule: consistent title + decorative icon. */
 body main .rf-icon-heading { display:flex; align-items:flex-start; gap:var(--space-2); }
@@ -241,43 +230,19 @@ body.home-page #accesos .card > .rf-button, body.home-page [aria-labelledby="des
 /* Resource list row rhythm */
 body.home-page #links .rf-resource-link { padding-block:var(--space-2); margin:0; }
 
-body.home-page #links .card > .source-note { margin-top:var(--space-4); font-size:var(--text-small); color:var(--color-text-muted); }
+body.home-page #links .card > .source-note { margin-top:var(--space-4);  color:var(--color-text-muted); }
 
 /* Shared text roles for tool templates */
 body main :is(.repeater-search,.license-search) label {
- font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6; font-weight:600; color:var(--color-text);
-}
-body main :is(.repeater-card,.simplex-reference) :is(p,dt,dd,summary,a) {
- font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6;
+     color:var(--color-text);
 }
 body main :is(#repeater-help,.repeater-zone-note,.repeater-share-status,.simplex-source,.repeater-settings summary span) {
- font-family:var(--font-ui); font-size:var(--text-small); line-height:1.55; font-weight:400; color:var(--color-text-muted);
+     color:var(--color-text-muted);
 }
-body main .repeater-region-count, body main .repeater-zone { font-size:var(--text-small); line-height:1.5; font-weight:400; }
-body main .repeater-text-button { font-family:var(--font-ui); font-size:var(--text-body); font-weight:400; line-height:1.6; color:var(--color-secondary); }
+body main .repeater-text-button {     color:var(--color-secondary); }
 
-/* Authoritative semantic text roles: home reference, applied to every template. */
-body.rf-site { font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6; color:var(--color-text); background:var(--color-background); }
-body.rf-site main [data-rf-role] { font-family:var(--font-ui); }
-body.rf-site main [data-rf-role="page-title"], body.rf-site main [data-rf-role="section-title"] {
- font-size:var(--text-section); font-weight:700; line-height:1.3; letter-spacing:-.015em; color:var(--color-text); text-transform:none;
-}
-body.rf-site main [data-rf-role="page-title"] { max-width:40ch; margin:0 0 var(--space-4); }
-body.rf-site main [data-rf-role="section-title"] { margin:var(--space-6) 0 var(--space-4); }
-body.rf-site main [data-rf-role="card-title"] {
- font-size:var(--text-card); font-weight:700; line-height:1.35; letter-spacing:0; text-transform:none; margin:0 0 var(--space-3); color:var(--color-secondary);
-}
-body.rf-site main [data-rf-role="body"], body.rf-site main [data-rf-role="control"] {
- font-size:var(--text-body); font-weight:400; line-height:1.6; letter-spacing:0; text-transform:none; color:inherit;
-}
-body.rf-site main label[data-rf-role="control"] { font-weight:600; }
-body.rf-site main [data-rf-role="eyebrow"] {
- font-size:var(--text-small); font-weight:600; line-height:1.5; letter-spacing:.03em; color:var(--color-text-muted); margin:0 0 var(--space-3);
-}
-body.rf-site main [data-rf-role="note"] {
- font-size:var(--text-small); font-weight:400; line-height:1.55; letter-spacing:0; color:var(--color-text-muted);
-}
-body.rf-site main :is(.article-lead,.hero-copy) { color:var(--color-text); font-weight:400; }
+
+/* Shared surfaces belong to components, independent of their page template. */
 body.rf-site main :is(.card,.library-card,.category-card,.equipment-card,.antenna-card,.topic-card,.download-card,.link-card,.connector-card,.experience-card,.case-material-card,.plan-card,.pattern-card,.q-card,.adventure-card,.repeater-card) {
  background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); border-radius:var(--radius-card); box-shadow:none;
 }
@@ -285,22 +250,69 @@ body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-
 body.rf-site main :is(.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) {
  border:1px solid var(--color-border); border-left:4px solid var(--color-primary); border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-text); box-shadow:none; padding:var(--space-5);
 }
-body.rf-site main .adventure-band { background:var(--color-background); color:var(--color-text); }
-body.rf-site main .adventure-band :is(p,h2,h3,figcaption) { color:var(--color-text); }
-body.rf-site main :is(.btn,.rf-button) { font:600 var(--text-body)/1.4 var(--font-ui); }
 body.rf-site main :is(.library-card,.download-card,.topic-card) { display:flex; flex-direction:column; align-items:flex-start; }
 body.rf-site main :is(.library-card,.download-card,.topic-card) > :is(.btn,.rf-button,.library-read) { margin-top:auto; }
-body.rf-site main :is(.library-read,.related-guide-action) { font:600 var(--text-body)/1.4 var(--font-ui); color:var(--color-secondary); }
-body.rf-site main :is(.article-body,.library-intro) { max-width:var(--width-reading); }
-body.rf-site .site-header .brand-logo { width:180px; height:auto; }
 @media(max-width:700px) {
- body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card,.notice-box,.article-callout,.simple-path,.ui-callout) { padding:var(--space-4); }
+ body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card,.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) { padding:var(--space-4); }
 }
 
-/* Inline text inherits its semantic component, never a page-local scale. */
-body.rf-site main { font-family:var(--font-ui); font-size:var(--text-body); line-height:1.6; }
-body.rf-site main :is(a,span,small,strong,em,b,i,code,summary,dt,dd,td,th):not([data-rf-role]) {
+/* Editorial heroes share the light reading surface of the approved home. */
+body.rf-site main .adventure-band { background:var(--color-background); color:var(--color-text); }
+
+/* Typography contract — Manual de marca Rufcom v1.1.
+   Roles describe function; inline fragments inherit the component's size. */
+body.rf-site { font:400 var(--text-body)/1.6 var(--font-ui); color:var(--color-text); background:var(--color-background); }
+body.rf-site :is(main,.site-header,.compact-footer,.analytics-choice) { font:inherit; }
+body.rf-site [data-rf-role] { font-family:var(--font-ui); text-transform:none; letter-spacing:0; }
+body.rf-site :is([data-rf-role="page-title"],[data-rf-role="section-title"]) {
+ font-size:var(--text-section); font-weight:700; line-height:1.3; letter-spacing:-.015em; color:var(--color-text);
+}
+body.rf-site [data-rf-role="card-title"] {
+ font-size:var(--text-card); font-weight:700; line-height:1.35; color:var(--color-secondary);
+}
+body.rf-site [data-rf-role="page-title"] { max-width:40ch; margin:0 0 var(--space-4); }
+body.rf-site [data-rf-role="section-title"] { margin:var(--space-6) 0 var(--space-4); }
+body.rf-site [data-rf-role="card-title"] { margin:0 0 var(--space-3); }
+body.rf-site :is([data-rf-role="body"],[data-rf-role="control"]) {
+ font-size:var(--text-body); font-weight:400; line-height:1.6; color:var(--color-text);
+}
+body.rf-site [data-rf-role="note"] {
+ font-size:var(--text-small); font-weight:400; line-height:1.55; color:var(--color-text-muted);
+}
+body.rf-site [data-rf-role="eyebrow"] {
+ font-size:var(--text-small); font-weight:600; line-height:1.5; letter-spacing:.03em; color:var(--color-text-muted); margin:0 0 var(--space-3);
+}
+body.rf-site :is(a,span,small,strong,em,b,i,code,summary,dt,dd,td,th):not([data-rf-role]) {
  font-family:inherit; font-size:inherit;
 }
-/* These are metadata badges, not title/body fragments. */
-body.rf-site main :is(.repeater-zone,.repeater-region-count,.repeater-settings summary span) { font-size:var(--text-small); }
+body.rf-site :is(strong,b) { font-weight:700; }
+body.rf-site main :is(a,[data-rf-role="card-title"] a):not(.btn):not(.rf-button) { color:var(--color-secondary); }
+body.rf-site main :is([data-rf-role="note"],[data-rf-role="eyebrow"]) a:not(.btn):not(.rf-button) { color:inherit; font-weight:inherit; }
+body.rf-site main :is(.article-lead,.hero-copy) { color:var(--color-text); font-weight:400; }
+body.rf-site main :is(label,button,input,select,textarea),
+body.rf-site :is(.btn,.rf-button,.read-guide) { font-family:var(--font-ui); font-size:var(--text-body); line-height:1.4; }
+body.rf-site :is(label,button,.btn,.rf-button,.read-guide) { font-weight:600; }
+body.rf-site button[data-rf-role="control"] { line-height:1.4; }
+body.rf-site main summary[data-rf-role="control"] { font-weight:600; color:var(--color-secondary); }
+body.rf-site main :is(dt,dd,td,th,caption) { font-size:var(--text-body); line-height:1.6; color:var(--color-text); }
+body.rf-site main :is(dt,dd,td,caption) { font-weight:400; }
+body.rf-site main th { font-weight:600; }
+body.rf-site :is(.btn-primary,.rf-button--primary) { color:var(--color-text); }
+body.rf-site :is(.btn-secondary,.rf-button--secondary,.rf-button--text) { color:var(--color-secondary); }
+body.rf-site main :is(.repeater-zone,.repeater-region-count,.repeater-settings summary span) {
+ font-size:var(--text-small); font-weight:400; line-height:1.55; color:var(--color-text-muted);
+}
+body.rf-site .site-header #mainNav :is(a,summary) {
+ font-family:var(--font-ui); font-size:var(--text-body); font-weight:400; line-height:1.6; color:var(--color-secondary);
+}
+body.rf-site .site-header #mainNav :is(a:hover,a[aria-current="page"],details[open]>summary) { color:var(--color-secondary); background:var(--color-background); }
+body.rf-site .site-header #mainNav summary::after { font:inherit; }
+body.rf-site .compact-footer :is(a,.analytics-settings) {
+ font-family:var(--font-ui); font-size:var(--text-body); font-weight:400; line-height:1.6; color:var(--color-secondary);
+}
+body.rf-site .compact-footer [data-rf-role="note"] { font-size:var(--text-small); }
+body.rf-site .analytics-choice { background:var(--color-surface); color:var(--color-text); border-color:var(--color-border); }
+body.rf-site .analytics-choice p { color:var(--color-text); font:400 var(--text-body)/1.6 var(--font-ui); }
+body.rf-site .analytics-choice a { color:var(--color-secondary); }
+body.rf-site .analytics-choice button { font:600 var(--text-body)/1.4 var(--font-ui); color:var(--color-secondary); border-color:var(--color-secondary); }
+body.rf-site .compact-footer .footer-email { overflow-wrap:anywhere; }
