@@ -114,49 +114,28 @@ test('automatic rotation changes at six seconds, wraps, and does not announce ev
   assert.deepEqual(visible(c), [true, false]);
 });
 
-test('hover pauses temporarily and restarts a complete six-second interval on exit', () => {
+test('hover and focus do not freeze automatic rotation', () => {
   const c = carousel(), clock = load(c);
+  c.emit('pointerenter', {pointerType:'mouse'});
+  c.emit('focusin');
+  clock.advance(6000);
+  assert.deepEqual(visible(c), [false, true]);
+  clock.advance(6000);
+  assert.deepEqual(visible(c), [true, false]);
+});
+
+test('manual navigation restarts six seconds without requiring a play button', () => {
+  const c = carousel(); c.toggle = null;
+  const clock = load(c);
   clock.advance(5000);
-  c.emit('pointerenter', {pointerType: 'mouse'});
-  clock.advance(12000);
-  assert.deepEqual(visible(c), [true, false]);
-  c.emit('pointerleave', {pointerType: 'mouse'});
-  clock.advance(5999);
-  assert.deepEqual(visible(c), [true, false]);
-  clock.advance(1);
-  assert.deepEqual(visible(c), [false, true]);
-});
-
-test('manual navigation and keyboard focus pause until resumed with the rotation button', () => {
-  const c = carousel(), clock = load(c);
   c.next.emit('click');
-  clock.advance(18000);
+  clock.advance(5999);
   assert.deepEqual(visible(c), [false, true]);
-  assert.equal(c.toggle.attributes['aria-label'], 'Reanudar carrusel');
-  c.toggle.emit('click');
-  clock.advance(6000);
-  assert.deepEqual(visible(c), [true, false]);
-  c.emit('focusin');
-  clock.advance(12000);
+  clock.advance(1);
   assert.deepEqual(visible(c), [true, false]);
 });
 
-test('clicking pause preserves its intent when focusin arrives before the click', () => {
-  const c = carousel(), clock = load(c);
-  c.toggle.emit('pointerdown');
-  c.emit('focusin');
-  c.toggle.emit('click');
-  clock.advance(12000);
-  assert.equal(c.toggle.attributes['aria-label'], 'Reanudar carrusel');
-  assert.deepEqual(visible(c), [true, false]);
-  c.toggle.emit('pointerdown');
-  c.emit('focusin');
-  c.toggle.emit('click');
-  clock.advance(6000);
-  assert.deepEqual(visible(c), [false, true]);
-});
-
-test('background tabs do not accumulate ticks, and reduced motion starts paused', () => {
+test('hidden tabs suspend rotation and reduced motion remains manual', () => {
   const c = carousel(), clock = load(c);
   clock.advance(5000);
   clock.doc.hidden = true; clock.doc.emit('visibilitychange');
@@ -170,5 +149,9 @@ test('background tabs do not accumulate ticks, and reduced motion starts paused'
   const d = carousel(), reduced = setup([d], true);
   reduced.advance(18000);
   assert.deepEqual(visible(d), [true, false]);
-  assert.equal(d.toggle.attributes['aria-label'], 'Reanudar carrusel');
+  d.next.emit('click');
+  assert.deepEqual(visible(d), [false, true]);
+  reduced.motion.matches = false; reduced.motion.emit('change');
+  reduced.advance(6000);
+  assert.deepEqual(visible(d), [true, false]);
 });

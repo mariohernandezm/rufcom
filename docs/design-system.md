@@ -158,3 +158,11 @@ originales no se alteran; recuperar el sello de Rufis no añade aprobaciones a p
 
 Componente v1.1 · 21/10/2026: reemplaza el comportamiento manual de v1.0 por el
 intervalo de 6 segundos aprobado. Regla registrada en la ampliación 1.3.1 del manual.
+
+## Carrusel de portada — componente v1.2 · 21/10/2026
+
+Reemplaza las pausas de v1.1: sin botón de reproducción/pausa. Alterna cada
+6 segundos incluso con cursor o foco dentro del panel; navegar manualmente
+reinicia el intervalo. Con movimiento reducido solo cambia mediante las flechas
+o gestos; las pestañas ocultas suspenden el reloj. Los cambios automáticos no
+se anuncian. Conserva el diseño y los tokens existentes. Manual: ampliación 1.3.2.
