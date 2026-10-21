@@ -1,11 +1,16 @@
 # RUFCOM | Manual de marca
-Versión 1.1 · 20 octubre 2026
+Versión 1.3 · 20 octubre 2026
 
 ## Manual de marca
 Radioafición, aventura y experiencia compartida. Primera edición para web, redes y material impreso.
 
 ### Alcance de esta edición
 Conserva la identidad del manual del 4 de octubre de 2026 e incorpora las reglas web acordadas a partir de la nueva portada. Esta versión es la referencia para cambios posteriores en toda la web. Las propuestas de impresión y activos pendientes conservan su estado original.
+
+### Historial de cambios
+**Versión 1.2 · 20 octubre 2026.** Se unificaron los botones con el dorado/naranja del logo (#FD9E01). La revisión visual mostró que ese tono se percibe demasiado intenso al cubrir superficies grandes; la regla queda reemplazada por la versión 1.3.
+
+**Versión 1.3 · 20 octubre 2026.** A solicitud del propietario, los botones de acción toman el amarillo suave de las fichas de Flower Pot (#FFF3CF), con borde ocre fuerte (#B26F00) y texto tinta (#26211B). El naranja del logo (#FD9E01) conserva su función de acento puntual y el archivo del logo no se modifica. Menús y acciones que son enlaces de texto mantienen su tratamiento.
 
 ## La idea de Rufcom
 Ayudar a empezar, aprender haciendo y salir a comunicar.
@@ -84,8 +89,10 @@ La web aporta tonos cálidos; los impresos suman azul profundo y amarillo.
 Arena web: #F7F3E8; RGB (247, 243, 232); Fondo general
 Blanco: #FFFFFF; RGB (255, 255, 255); Superficies / QR
 Tinta web: #26211B; RGB (38, 33, 27); Texto principal
-Ocre web: #CC8A00; RGB (204, 138, 0); Acento / botones
+Ocre web: #CC8A00; RGB (204, 138, 0); Acento de apoyo
 Ocre fuerte: #B26F00; RGB (178, 111, 0); Acento de apoyo
+Amarillo cálido de fichas: #FFF3CF; RGB (255, 243, 207); Fondo de botones de acción
+Dorado/naranja del logo Rufcom: #FD9E01; RGB (253, 158, 1); Acento puntual y color original del logo
 Azul profundo: #082330; RGB (8, 35, 48); Placas / identidad
 Tinta impresa: #102D39; RGB (16, 45, 57); Texto en impresos
 Amarillo impreso: #FFBD14; RGB (255, 189, 20); Detalles / líneas
@@ -187,7 +194,7 @@ Elegir el gafete oficial. Preparar un logo vectorial fiel al original. Diseñar 
 Sitio público: https://rufcom.cl/, consultado el 04/10/2026.<br/>Archivos locales del proyecto: styles.css, logo transparente y sello de Rufis.<br/>Piezas previas: gafetes, tarjetas y láminas; scripts de composición con paleta y tipografía.
 
 ### Estado del manual
-Versión 1.1: referencia de marca y diseño web solicitada por Mario Hernández. La portada aprobada orienta la aplicación visual. Este manual define reglas; no certifica por sí solo que todas las páginas ya las cumplan. No implica registro de marca ni certificaciones externas.
+Versión 1.3: referencia de marca y diseño web solicitada por Mario Hernández. La portada aprobada orienta la aplicación visual. Este manual define reglas; no certifica por sí solo que todas las páginas ya las cumplan. No implica registro de marca ni certificaciones externas.
 
 
 ## Sistema web compartido
@@ -206,12 +213,14 @@ Ante una diferencia entre CSS y manual, corregir la implementación conforme a e
 | Superficie de tarjetas y campos | #FFFFFF | --color-surface |
 | Texto principal tinta | #26211B | --color-text |
 | Texto secundario | #6F6558 | --color-text-muted |
-| Acción principal y acentos ocre | #CC8A00 | --color-primary |
-| Acento de apoyo ocre fuerte | #B26F00 | --color-primary-hover |
-| Enlaces, títulos de tarjeta, bordes de botones y foco | #082330 | --color-secondary |
+| Fondo de botones de acción | #FFF3CF | --color-primary |
+| Borde de botones y ocre fuerte | #B26F00 | --color-action-border |
+| Acento ocre de apoyo | #CC8A00 | --color-accent-support |
+| Dorado/naranja original del logo | #FD9E01 | --color-accent |
+| Enlaces, títulos de tarjeta, bordes de hover y foco | #082330 | --color-secondary |
 | Bordes suaves | #D8CDB9 | --color-border |
 
-El ocre no convierte todos los párrafos en texto destacado. Los botones principales llevan texto tinta sobre ocre; los secundarios, texto y borde azul profundo sobre blanco. En hover conservar el fondo ocre y reforzar el borde azul. El ocre fuerte es de apoyo, no una sustitución automática del fondo de botón con texto pequeño. Los colores del logo original no se alteran para igualar estos tokens. Los colores de impresión siguen en su sección propia.
+Todos los botones de acción con relleno, principales y secundarios, usan fondo #FFF3CF, borde #B26F00 y texto tinta #26211B. El contraste del texto con el fondo es 14,42:1; el borde mantiene 4,06:1 respecto de una superficie blanca. En hover se conserva el fondo y se refuerza el borde azul profundo. La prioridad de una acción se comunica con su posición, etiqueta y contexto, no con un relleno distinto. El dorado/naranja #FD9E01 se reserva para el logo y acentos pequeños; el ocre #CC8A00 continúa como acento auxiliar. Los controles de menú y las acciones presentadas como enlaces de texto mantienen sus variantes transparentes. No recolorear el archivo original del logo; los colores de impresión siguen en su sección propia.
 
 ### Una escala con funciones explícitas
 

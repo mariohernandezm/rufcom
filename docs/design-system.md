@@ -1,6 +1,6 @@
 # Sistema de interfaz RUFCOM
 
-Aplicación web del [Manual de marca Rufcom v1.1](manual-de-marca.md), del 20 de octubre de 2026. El manual es la referencia normativa; esta guía explica su implementación.
+Aplicación web del [Manual de marca Rufcom v1.3](manual-de-marca.md), del 20 de octubre de 2026. El manual es la referencia normativa; esta guía explica su implementación.
 
 ## Base y funciones
 
@@ -10,16 +10,20 @@ en las 24 páginas, incluida la 404 con una ruta absoluta.
 
 | Función | Token | Valor del manual |
 | --- | --- | --- |
-| Acción primaria y detalles | `--color-primary` | Ocre `#CC8A00` |
-| Acento de apoyo | `--color-primary-hover` | Ocre fuerte `#B26F00` |
-| Acción secundaria, títulos de tarjeta y foco | `--color-secondary` | Azul profundo `#082330` |
+| Fondo de botones de acción | `--color-primary` | Amarillo cálido `#FFF3CF` |
+| Borde de botones y ocre fuerte | `--color-action-border` | Ocre `#B26F00` |
+| Acento ocre de apoyo | `--color-accent-support` | Ocre `#CC8A00` |
+| Naranja original del logo | `--color-accent` | Naranja `#FD9E01` |
+| Enlaces, títulos de tarjeta, bordes de hover y foco | `--color-secondary` | Azul profundo `#082330` |
 | Fondo | `--color-background` | Arena `#F7F3E8` |
 | Superficies | `--color-surface` | Blanco `#FFFFFF` |
 | Texto | `--color-text` | Tinta `#26211B` |
 
-La asignación primaria/secundaria es una función de interfaz adoptada aquí
-a partir de los usos de ocre y azul del manual. El logo conserva sus colores
-originales. Los tonos auxiliares de borde y texto secundario vienen de la web.
+El amarillo cálido de las fichas de Flower Pot unifica los fondos de los
+botones; el ocre fuerte refuerza su borde y el texto tinta conserva la lectura.
+El azul profundo identifica enlaces y títulos, y marca los estados de foco y
+hover. El logo conserva sus colores originales; el naranja se reserva para
+acentos puntuales.
 
 ## Diseño atómico
 
@@ -53,11 +57,12 @@ Pila de sistema del manual: `system-ui, -apple-system, BlinkMacSystemFont,
 
 ## Componentes y estados
 
-`.btn` y `.rf-button` comparten dimensiones. La primaria usa ocre con texto
-tinta; la secundaria usa blanco con texto y borde azul. Un enlace de texto
-conserva subrayado y foco. Hover refuerza el borde azul, sin desplazar el botón
-ni oscurecer el fondo ocre: el ocre fuerte con tinta no alcanza 4,5:1 para
-texto normal. El par ocre/tinta sí lo alcanza y se conserva en ambos estados.
+`.btn` y `.rf-button` comparten dimensiones. Todos los botones de acción, sean
+primarios o secundarios, usan relleno `#FFF3CF`, borde `#B26F00` y texto tinta
+`#26211B`; el contraste del texto es 14,42:1. La prioridad se distingue por la
+ubicación, la etiqueta y el contexto de la acción. Hover mantiene el mismo
+relleno y refuerza el borde azul, sin desplazar el control. Los enlaces de texto conservan subrayado y foco;
+el menú y los controles solo de icono mantienen su tratamiento transparente.
 Los controles de búsqueda respetan sus ID, etiquetas y estados `hidden`.
 
 `.ui-callout` identifica un aviso o bloque de apoyo con fondo blanco, borde
@@ -95,8 +100,7 @@ de H2 al final de `styles.css`. Usar los tokens al ampliar el sistema.
 Las reglas históricas de tipografía en esa hoja pierden `!important` para
 permitir que esta jerarquía común gobierne las páginas.
 
-La URL de `styles.css` usa `?v=atomic-20261012`; la de
-`design-system.css` usa `?v=rufcom-manual-v11-20261020`. Al modificar una hoja compartida, cambiar su versión
+La URL de `styles.css` y `design-system.css` usa `?v=rufcom-manual-v13-20261020`. Al modificar una hoja compartida, cambiar su versión
 en todas las páginas: evita mezclar CSS antiguo en caché con HTML nuevo.
 El validador comprueba la ruta y el orden sin depender del valor de la versión.
 

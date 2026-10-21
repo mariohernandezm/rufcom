@@ -93,9 +93,9 @@ h3{margin-bottom:10px}
   text-decoration:none;
   transition:.2s ease;
 }
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:var(--accent-strong);transform:translateY(-1px)}
-.btn-secondary{background:var(--surface);border:1px solid var(--line)}
+.btn-primary{background:var(--accent);color:var(--ink)}
+.btn-primary:hover{background:var(--accent);transform:translateY(-1px)}
+.btn-secondary{background:var(--accent);color:var(--ink);border:1px solid var(--accent)}
 .btn-secondary:hover{transform:translateY(-1px)}
 
 .trust-inline{
@@ -1608,7 +1608,7 @@ footer .footer-nav a:hover { text-decoration:underline; text-underline-offset:4p
 .analytics-choice p {color:#222;margin:0 0 14px;}
 .analytics-choice a {color:#684800;text-decoration:underline;}
 .analytics-choice > div {display:flex;gap:12px;flex-wrap:wrap;}
-.analytics-choice button {font:inherit;font-weight:700;min-height:44px;padding:10px 16px;background:#fff;color:#222;border:1px solid #806021;border-radius:8px;cursor:pointer;}
+.analytics-choice button {font:inherit;font-weight:700;min-height:44px;padding:10px 16px;background:#fff3cf;color:#26211b;border:1px solid #b26f00;border-radius:8px;cursor:pointer;}
 .analytics-settings {display:block;font:inherit;color:inherit;background:none;border:0;text-decoration:underline;padding:10px 0;cursor:pointer;}
 
 /* Radio Club de Chile: recurso destacado en Links útiles. */
