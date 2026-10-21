@@ -7,7 +7,7 @@ indexación en cada nueva guía o página, desde su creación.
   diferenciar experiencia y medición, y mantener sencillas las guías iniciales.
 - Leer `docs/seo.md` y conservar el estilo, las fuentes y los límites técnicos
   del contenido existente.
-- Leer primero `docs/manual-de-marca.md` (v1.1) y después `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
+- Leer primero `docs/manual-de-marca.md` (v1.3) y después `docs/design-system.md` al crear o cambiar interfaces. Reutilizar tokens,
   botones y componentes de `assets/css/design-system.css`, cargado después de
   las hojas específicas. No añadir otra escala global de títulos ni recuperar
   los bloques promocionales de tamaño de portada.
