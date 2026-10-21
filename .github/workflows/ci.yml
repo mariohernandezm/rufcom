@@ -33,7 +33,26 @@ jobs:
         run: |
           node --check site/assets/js/main.js
           node --check site/assets/js/repetidores.js
-      - name: Check repeater settings and shared searches
-        run: node --test tests/repetidores.test.cjs
+          node --check site/assets/js/carousel.js
+          node --check scripts/browser_smoke.cjs
+      - name: Check carousel, repeater settings and shared searches
+        run: node --test tests/*.test.cjs
       - name: Check validation rejects unsafe changes
         run: python -m unittest discover -s tests -v
+      - name: Install isolated browser test runtime
+        run: |
+          npm install --prefix "$RUNNER_TEMP/rufcom-browser" --no-package-lock --ignore-scripts --no-audit --no-fund playwright@1.58.2
+          "$RUNNER_TEMP/rufcom-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Check affected pages on desktop and mobile
+        env:
+          RUFCOM_PLAYWRIGHT_MODULE: ${{ runner.temp }}/rufcom-browser/node_modules/playwright
+          RUFCOM_BROWSER_ARTIFACTS: ${{ runner.temp }}/rufcom-browser-review
+        run: node scripts/browser_smoke.cjs
+      - name: Save browser review evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: browser-review
+          path: ${{ runner.temp }}/rufcom-browser-review
+          if-no-files-found: ignore
+          retention-days: 7
