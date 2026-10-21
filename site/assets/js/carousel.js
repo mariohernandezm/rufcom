@@ -29,8 +29,9 @@
       clearTimeout(timer);
       timer = null;
       if (toggle) {
-        toggle.textContent = paused ? 'Reanudar' : 'Pausar';
+        toggle.textContent = paused ? '▶' : 'Ⅱ';
         toggle.setAttribute('aria-label', paused ? 'Reanudar carrusel' : 'Pausar carrusel');
+        toggle.setAttribute('title', paused ? 'Reanudar carrusel' : 'Pausar carrusel');
       }
       if (!toggle || paused || hovered || document.hidden) return;
       timer = setTimeout(() => {
