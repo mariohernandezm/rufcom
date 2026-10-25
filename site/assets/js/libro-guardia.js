@@ -22,21 +22,16 @@ const names=new Map([...sourceNames].map(([call,name])=>[call,givenNamesFirst(na
 const fields=['date','time','call','name','city','notes','frequency','mode'];
 const labels=['Fecha','Hora','Indicativo','Nombre y apellidos','Comuna','Notas','Frecuencia MHz','Modo'];
 const blank=()=>Object.fromEntries(fields.map(f=>[f,'']));
-let book={version:1,operator:'',zone:Intl.DateTimeFormat().resolvedOptions().timeZone,rows:[blank()]},blocked=false;
-try{
- const saved=localStorage.getItem(key);
- if(saved){const b=JSON.parse(saved);if(b.version!==1||!Array.isArray(b.rows)||!b.rows.every(r=>r&&fields.every(f=>typeof r[f]==='string'))||typeof b.operator!=='string')throw Error();book=b;}
-}catch{blocked=true;status.textContent='No se pudo leer el guardado anterior. Descarga este libro antes de cerrar; no se reemplazará el guardado anterior.';}
-// Update only old automatic names, preserving any personal corrections.
-for(const row of book.rows){
- if(row.name && row.name===sourceNames.get(row.call))row.name=names.get(row.call);
-}
+let book={version:1,operator:'',zone:Intl.DateTimeFormat().resolvedOptions().timeZone,rows:[blank()]};
+let downloaded='';
+const contents=()=>JSON.stringify({operator:book.operator,rows:book.rows.filter(r=>fields.some(f=>r[f]))});
+try{localStorage.removeItem(key);}catch{}
 function save(){
- if(blocked)return;
- try{localStorage.setItem(key,JSON.stringify(book));status.textContent='Guardado en este navegador · '+book.rows.filter(r=>r.call).length+' registros. Descarga tu libro como respaldo.';}
- catch{status.textContent='No se pudo guardar en este navegador. Descarga el libro antes de cerrar esta página.';}
+ const count=book.rows.filter(r=>r.call).length;
+ status.textContent=count+' '+(count===1?'registro':'registros')+' · Solo en esta página. Descarga el Excel antes de salir.';
 }
-window.addEventListener('storage',e=>{if(e.key===key){blocked=true;status.textContent='El libro cambió en otra pestaña. Descarga esta copia antes de recargar para evitar perder cambios.';}});
+window.addEventListener('beforeunload',e=>{if(book.rows.some(r=>fields.some(f=>r[f]))&&contents()!==downloaded){e.preventDefault();e.returnValue='';}});
+window.addEventListener('pageshow',e=>{if(e.persisted){book={version:1,operator:'',zone:Intl.DateTimeFormat().resolvedOptions().timeZone,rows:[blank()]};downloaded='';operator.value='';render();save();}});
 function ensureEmptyRow(){
  if(!book.rows.length || fields.some(f=>book.rows[book.rows.length-1][f])){
   const row=blank();book.rows.push(row);appendRow(row,book.rows.length-1);
@@ -52,6 +47,7 @@ function appendRow(row,index){
   fields.forEach((field,j)=>{
    const td=document.createElement('td'),input=document.createElement('input');
    input.type=field==='date'?'date':field==='time'?'time':'text';input.value=row[field];input.dataset.field=field;input.maxLength=field==='notes'?1000:150;input.autocomplete='off';
+   const label=document.createElement('label');label.className='guard-field-label';label.textContent=labels[j];input.id='registro-'+index+'-'+field;label.htmlFor=input.id;td.append(label);
    input.setAttribute('aria-label',labels[j]+', fila '+(index+1));input.dataset.rfRole='control';
    input.addEventListener('input',()=>{
     let value=input.value;
@@ -76,8 +72,8 @@ document.querySelector('#descargar').addEventListener('click',()=>{
  const rows=book.rows.filter(r=>fields.some(f=>r[f]));
  if(!rows.length){status.textContent='Escribe un indicativo para comenzar tu libro.';return;}
  if(rows.some(r=>!r.call)){status.textContent='Hay una fila con datos sin indicativo. Complétala o elimínala antes de descargar.';return;}
- const url=URL.createObjectURL(window.libroExcel(rows,book.operator,book.zone)),a=document.createElement('a');a.href=url;a.download='libro-de-guardia-rufcom.xlsx';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);
+ const url=URL.createObjectURL(window.libroExcel(rows,book.operator,book.zone)),a=document.createElement('a');a.href=url;a.download='libro-de-guardia-rufcom.xlsx';a.click();downloaded=contents();status.textContent='Descarga iniciada. Verifica que el Excel se haya guardado antes de salir.';setTimeout(()=>URL.revokeObjectURL(url),30000);
 });
-render();if(!blocked)save();
+render();save();
 })();
 
