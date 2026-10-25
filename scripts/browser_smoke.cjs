@@ -91,15 +91,41 @@ async function carousel(page, label) {
       await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
       page = await context.newPage();
       const errors=[]; page.on('pageerror', error=>errors.push(error.message));
-      for (const [name, url] of [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html']]) {
+      for (const [name, url] of [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html']]) {
         await page.goto(base+url,{waitUntil:'networkidle'});
         const reject = page.getByRole('button',{name:'Rechazar',exact:true});
         if (await reject.isVisible()) await reject.click();
         await audit(page,name,viewport.label,'initial');
         if (name === 'inicio') await carousel(page,viewport.label);
+        if (name === 'libro') {
+          await page.clock.install({time:new Date('2026-10-25T14:30:00Z')});
+          const field=f=>page.locator('[data-field="'+f+'"]').first();
+          await field('call').pressSequentially('ca3 hmm');
+          assert.equal(await page.locator('#registros tr').count(),2);
+          assert.equal(await field('call').evaluate(el=>el===document.activeElement),true);
+          assert.equal(await page.locator('[data-field="time"]').nth(1).inputValue(),'');
+          assert.equal(await field('call').inputValue(),'CA3HMM');
+          assert.equal(await field('name').inputValue(),'MARIO HERNANDEZ MONTES');
+          assert.notEqual(await field('city').inputValue(),'');
+          const stamp=await field('time').inputValue();
+          assert.match(stamp,/^[0-9]{2}:[0-9]{2}$/);
+          await page.clock.fastForward(120000);
+          await field('name').fill('josé pérez');
+          await field('city').fill('ñuñoa');
+          assert.equal(await field('name').inputValue(),'JOSÉ PÉREZ');
+          assert.equal(await field('city').inputValue(),'ÑUÑOA');
+          assert.equal(await field('time').inputValue(),stamp);
+          await page.reload();
+          assert.equal(await field('time').inputValue(),stamp);
+          assert.equal(await field('city').inputValue(),'ÑUÑOA');
+          const download=page.waitForEvent('download');
+          await page.locator('#descargar').click();
+          await (await download).saveAs(path.join(output,'libro-'+viewport.label+'.xlsx'));
+          await audit(page,name,viewport.label,'completed-book');
+        }
         await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:true});
         await menus(page,name,viewport.label);
-        if (name !== 'inicio') {
+        if (name !== 'inicio' && name !== 'libro') {
           await page.locator('.guide-index summary').click();
           await audit(page,name,viewport.label,'guide-index-open');
           await page.locator('.guide-index summary').click();
@@ -116,7 +142,7 @@ async function carousel(page, label) {
       assert.deepEqual(errors,[],'JavaScript page errors');
       await context.close();
     }
-    console.log('PASS: three affected pages, desktop/mobile, menus, panels, roles, images and carousel rotation/pause');
+    console.log('PASS: four affected pages and guard log, desktop/mobile, menus, panels, roles, images and carousel rotation/pause');
   } catch (error) {
     report.error = error.stack;
     if (page && !page.isClosed()) await page.screenshot({path:path.join(output,'failure.png'),fullPage:true}).catch(()=>{});
