@@ -15,7 +15,7 @@
  .guard-table td{display:block;min-width:0;padding:0;border:0}
  .guard-table td:nth-child(4),.guard-table td:nth-child(6){grid-column:span 2}
  .guard-table td:last-child{align-self:end}
- .guard-table td input{min-width:0;width:100%;box-sizing:border-box}
+ .guard-table td:nth-child(n) input{min-width:0;width:100%;box-sizing:border-box}
  .guard-field-label{display:block;margin-bottom:8px;font-weight:600}
  .guard-table caption{display:block;padding:0 0 16px}
 }
