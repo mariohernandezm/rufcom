@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="assets/css/styles.css?v=rufcom-manual-v13-20261020">
 <link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
-<link rel="stylesheet" href="assets/css/navigation.css?v=rufcom-manual-v13-20261020"><link rel="stylesheet" href="assets/css/libro-guardia.css?v=rufcom-manual-v13-20261020"><link rel="stylesheet" href="assets/css/design-system.css?v=rufcom-manual-v13-20261020">
+<link rel="stylesheet" href="assets/css/navigation.css?v=rufcom-manual-v13-20261020"><link rel="stylesheet" href="assets/css/libro-guardia.css?v=20261025-amplio"><link rel="stylesheet" href="assets/css/design-system.css?v=rufcom-manual-v13-20261020">
 
 <!-- SEO:HEAD -->
 <meta property="og:locale" content="es_CL">
@@ -50,14 +50,14 @@
 <meta itemprop="inLanguage" content="es-CL">
 <!-- /SEO:SCHEMA -->
 <section class="article-hero"><div class="container"><p class="eyebrow" data-rf-role="eyebrow">Herramienta RUFCOM</p><h1 data-rf-role="page-title">Libro de guardia web</h1><p data-rf-role="body">Escribe el indicativo: se completan fecha y hora, y aparece una nueva fila lista para el siguiente contacto.</p></div></section>
-<section class="section"><div class="container">
+<section class="section"><div class="container guard-workspace">
 <div class="guard-help"><p data-rf-role="body">La hora local de tu dispositivo queda fija al empezar a escribir. Puedes corregirla si registras un contacto anterior. Indicativo, nombre y comuna se convierten a MAYÚSCULAS; el indicativo queda sin espacios.</p>
 <p class="source-note" data-rf-role="note">Nombre y comuna se buscan en los listados de SUBTEL de junio de 2026. La comuna corresponde al registro de la otra estación; corrígela si transmite desde otro lugar. Si no hay coincidencia, completa los campos manualmente.</p></div>
 <div class="guard-controls"><label for="estacion" data-rf-role="control">Mi indicativo (opcional)</label><input id="estacion" type="text" maxlength="40" autocomplete="off" data-rf-role="control"></div>
 <p class="source-note" id="estado-libro" role="status" aria-live="polite" data-rf-role="note">Preparando el libro…</p>
-<div class="guard-table" role="region" aria-label="Libro de guardia, desliza horizontalmente para ver todas las columnas" tabindex="0"><table><caption data-rf-role="body">Mi libro de guardia · En pantallas pequeñas, desliza para ver todas las columnas.</caption><thead><tr><th scope="col">Fecha</th><th scope="col">Hora local</th><th scope="col">Indicativo</th><th scope="col">Nombre y apellidos</th><th scope="col">Comuna</th><th scope="col">Notas</th><th scope="col">Frecuencia (MHz)</th><th scope="col">Modo</th><th scope="col">Acciones</th></tr></thead><tbody id="registros"></tbody></table></div>
+<div class="guard-table" role="region" aria-label="Libro de guardia" tabindex="0"><table><caption data-rf-role="body">Mi libro de guardia</caption><thead><tr><th scope="col">Fecha</th><th scope="col">Hora local</th><th scope="col">Indicativo</th><th scope="col">Nombre y apellidos</th><th scope="col">Comuna</th><th scope="col">Notas</th><th scope="col">Frecuencia (MHz)</th><th scope="col">Modo</th><th scope="col">Acciones</th></tr></thead><tbody id="registros"></tbody></table></div>
 <div class="guard-controls"><button id="agregar" type="button" class="rf-button rf-button--secondary" data-rf-role="control">Ir a la siguiente fila</button><button id="descargar" type="button" class="rf-button rf-button--primary" data-rf-role="control">Descargar mi libro de guardia en Excel</button></div>
-<p class="source-note" data-rf-role="note">El libro se guarda solo en este navegador y dispositivo. Borrar los datos del navegador o usar modo privado puede eliminarlo. Descarga tu libro como respaldo: incluye todas las filas completadas y sus horas fijas, sin macros.</p>
+<p class="source-note" data-rf-role="note">Cada apertura o recarga comienza con un libro vacío. Descarga tu libro antes de cerrar o recargar: incluye todas las filas completadas y sus horas fijas, sin macros.</p>
 <aside class="ui-callout"><h2 data-rf-role="card-title">¿Prefieres completar el libro en Excel?</h2><p data-rf-role="body">Conservamos la plantilla para trabajar sin internet y sin macros. La fecha y la hora se completan manualmente.</p><a href="assets/docs/libro-de-guardia-rufcom.xlsx" download class="rf-button rf-button--secondary" data-rf-role="control">Descargar plantilla Excel sin macros</a></aside>
 <p class="source-note" data-rf-role="note">Creado por RUFCOM · 25 de octubre de 2026. <a href="buscador-licencias.html">Consultar el buscador de radioaficionados</a> · <a href="licencias.html">Licencias y primeros pasos</a></p>
 <noscript><p data-rf-role="body">Activa JavaScript para usar el libro web. También puedes descargar la plantilla Excel sin macros.</p></noscript>
@@ -68,7 +68,7 @@
 </div><div class="container footer-bottom"><a href="privacidad.html" data-rf-role="control">Privacidad</a></div></footer>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/analytics.js" defer></script>
-<script src="assets/js/licencias-datos.js" defer></script><script src="assets/js/libro-comunas.js" defer></script><script src="assets/js/libro-excel.js" defer></script><script src="assets/js/libro-guardia.js" defer></script></body>
+<script src="assets/js/licencias-datos.js" defer></script><script src="assets/js/libro-comunas.js" defer></script><script src="assets/js/libro-excel.js" defer></script><script src="assets/js/libro-guardia.js?v=20261025-sesion" defer></script></body>
 </html>
 
 
