@@ -115,13 +115,15 @@ async function carousel(page, label) {
           assert.equal(await field('name').inputValue(),'JOSÉ PÉREZ');
           assert.equal(await field('city').inputValue(),'ÑUÑOA');
           assert.equal(await field('time').inputValue(),stamp);
-          await page.reload();
-          assert.equal(await field('time').inputValue(),stamp);
-          assert.equal(await field('city').inputValue(),'ÑUÑOA');
           const download=page.waitForEvent('download');
           await page.locator('#descargar').click();
           await (await download).saveAs(path.join(output,'libro-'+viewport.label+'.xlsx'));
           await audit(page,name,viewport.label,'completed-book');
+          assert.equal(await page.locator('.guard-table').evaluate(el=>el.scrollWidth<=el.clientWidth+1),true);
+          await page.reload();
+          assert.equal(await field('call').inputValue(),'');
+          assert.equal(await field('time').inputValue(),'');
+          assert.equal(await page.locator('#registros tr').count(),1);
         }
         await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:true});
         await menus(page,name,viewport.label);
