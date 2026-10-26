@@ -99,7 +99,8 @@ async function carousel(page, label) {
         if (name === 'inicio') await carousel(page,viewport.label);
         if (name === 'libro') {
           await page.clock.install({time:new Date('2026-10-25T14:30:00Z')});
-          const field=f=>page.locator('[data-field="'+f+'"]').first();
+          const compact=viewport.width<=1100;
+          const field=f=>compact?page.locator('#mobile-'+f):page.locator('[data-field="'+f+'"]').first();
           await field('call').pressSequentially('ca3 hmm');
           assert.equal(await page.locator('#registros tr').count(),2);
           assert.equal(await field('call').evaluate(el=>el===document.activeElement),true);
@@ -115,6 +116,23 @@ async function carousel(page, label) {
           assert.equal(await field('name').inputValue(),'JOSÉ PÉREZ');
           assert.equal(await field('city').inputValue(),'ÑUÑOA');
           assert.equal(await field('time').inputValue(),stamp);
+          if(compact){
+            await page.locator('#guard-form button[type=submit]').click();
+            for(let i=2;i<=20;i++){
+              await field('call').fill('DEMO'+i);
+              await page.locator('#guard-form button[type=submit]').click();
+            }
+            assert.equal(await page.locator('#guard-list button').count(),5);
+            assert.equal(await page.locator('#guard-count').innerText(),'20 contactos');
+            await page.locator('#guard-next').click();
+            assert.equal(await page.locator('#guard-page').innerText(),'6–10 de 20');
+            await page.locator('#guard-list button').first().click();
+            await field('city').fill('concon');
+            await page.locator('#guard-form button[type=submit]').click();
+            assert.equal(await page.locator('#guard-count').innerText(),'20 contactos');
+            assert.equal(await field('call').evaluate(el=>el===document.activeElement),true);
+            assert.equal(await page.locator('.guard-mobile').evaluate(el=>el.scrollWidth<=el.clientWidth+1),true);
+          }
           const download=page.waitForEvent('download');
           await page.locator('#descargar').click();
           await (await download).saveAs(path.join(output,'libro-'+viewport.label+'.xlsx'));
