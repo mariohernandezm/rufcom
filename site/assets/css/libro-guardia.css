@@ -24,3 +24,7 @@
  .guard-table td:nth-child(3),.guard-table td:nth-child(4),.guard-table td:nth-child(5),.guard-table td:nth-child(6),.guard-table td:last-child{grid-column:1/-1}
  .guard-controls button{width:100%}
 }
+
+/* Keep the row action readable instead of splitting its label. */
+.guard-table th:last-child,.guard-table td:last-child{min-width:112px}
+.guard-table td:last-child button{min-width:104px;white-space:nowrap;word-break:normal;overflow-wrap:normal}
