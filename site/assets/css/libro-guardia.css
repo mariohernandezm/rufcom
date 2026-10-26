@@ -28,3 +28,21 @@
 /* Keep the row action readable instead of splitting its label. */
 .guard-table th:last-child,.guard-table td:last-child{min-width:112px}
 .guard-table td:last-child button{min-width:104px;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+
+.guard-mobile{display:none}
+@media(max-width:1100px){
+ .guard-mobile{display:block;max-width:720px;margin:16px auto}
+ .guard-table,#agregar{display:none}
+ .guard-mobile form{padding:16px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface);margin-bottom:24px}
+ .guard-mobile-heading,.guard-mobile-pages{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+ .guard-mobile-heading h2{margin:0}
+ .guard-mobile label{display:block;margin:12px 0}
+ .guard-mobile input{display:block;box-sizing:border-box;width:100%;min-width:0;min-height:48px;padding:10px;margin-top:4px;border:1px solid var(--color-border);border-radius:8px;background:var(--color-surface);color:var(--color-text)}
+ .guard-mobile summary{padding:12px 0;cursor:pointer}
+ .guard-mobile form button{margin:8px 8px 0 0}
+ .guard-mobile form button[type=submit]{width:100%;margin-right:0}
+ .guard-contact{display:grid;grid-template-columns:52px minmax(0,1fr);gap:12px;width:100%;text-align:left;padding:12px 0;border:0;border-bottom:1px solid var(--color-border);background:transparent;color:var(--color-text);cursor:pointer;min-height:56px}
+ .guard-contact-info{display:block;overflow-wrap:anywhere;margin-top:4px}
+ .guard-mobile-pages{margin-top:16px}
+ .guard-help{max-width:none}
+}
