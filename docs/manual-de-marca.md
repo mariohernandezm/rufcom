@@ -322,3 +322,12 @@ el reloj y, al regresar, comienza otro intervalo. Se respeta la preferencia de
 movimiento reducido: en ese caso las flechas siguen disponibles sin rotación.
 Esta regla reemplaza las pausas y el botón de la ampliación 1.3.1; conserva el
 marco, los originales, la paleta y los roles compartidos.
+
+### Ampliación 1.3.3 · 28/10/2026: filas compactas del libro de guardia
+
+Por solicitud del propietario, el libro de guardia de escritorio presenta un
+contacto por línea, con celdas de 4 px de relleno y campos y acciones de 36 px
+de alto mínimo para ratón y teclado. Esta excepción de densidad se limita
+a la tabla del libro; conserva texto de 16 px, foco visible y colores comunes.
+Los dispositivos con puntero táctil conservan campos de 48 px y botones de
+44 px como mínimo. El formulario móvil mantiene sus controles y disposición.
