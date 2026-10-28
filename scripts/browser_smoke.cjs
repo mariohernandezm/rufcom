@@ -108,6 +108,20 @@ async function carousel(page, label) {
           assert.equal(await field('call').inputValue(),'CA3HMM');
           assert.equal(await field('name').inputValue(),'MARIO HERNANDEZ MONTES');
           assert.notEqual(await field('city').inputValue(),'');
+          // Condition shortcuts replace a previous choice at any cursor position.
+          await field('condition').press('p');
+          assert.equal(await field('condition').inputValue(),'PORTÁTIL');
+          await field('condition').press('End');
+          await field('condition').press('m');
+          assert.equal(await field('condition').inputValue(),'MÓVIL');
+          await field('condition').press('Home');
+          await field('condition').press('f');
+          assert.equal(await field('condition').inputValue(),'FIJA');
+          await field('condition').press('Backspace');
+          assert.equal(await field('condition').inputValue(),'');
+          await field('condition').click();
+          await field('condition').press('p');
+          assert.equal(await field('condition').inputValue(),'PORTÁTIL');
           const stamp=await field('time').inputValue();
           assert.match(stamp,/^[0-9]{2}:[0-9]{2}$/);
           await page.clock.fastForward(120000);
