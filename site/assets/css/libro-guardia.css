@@ -11,8 +11,8 @@
 .guard-table input:focus{outline:2px solid var(--color-secondary);outline-offset:1px}
 .guard-table .guard-date{width:140px}
 .guard-table .guard-time{width:100px}
-.guard-table .guard-city{width:11%}
-.guard-table .guard-condition{width:100px}
+.guard-table .guard-city{width:10%}
+.guard-table .guard-condition{width:140px}
 .guard-table .guard-call{width:100px}
 .guard-table .guard-notes{width:10%}
 .guard-table .guard-frequency{width:112px}
@@ -61,3 +61,5 @@
  #guard-main-fields label:has(#mobile-city),#guard-main-fields label:has(#mobile-name),#guard-main-fields label:has(#mobile-notes),#guard-main-fields label:has(#mobile-expiry){grid-column:1/-1}
 }
 @media(max-width:600px){.guard-defaults label{max-width:none;flex-basis:100%}}
+
+@media(min-width:1600px){.guard-table .guard-name{width:24%}.guard-table .guard-notes{width:auto}}
