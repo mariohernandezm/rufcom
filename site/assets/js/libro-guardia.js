@@ -87,7 +87,21 @@ function licenseText(row){return !row.call?'':model.licenseState(row.expiry)+(ro
 function paintLicense(input,row){input.value=licenseText(row);input.classList.toggle('guard-expired',model.licenseState(row.expiry)==='Vencida');}
 function configureInput(input,field){
  if(field==='expiry'){input.readOnly=true;input.placeholder='Según listado SUBTEL';}
- if(field==='condition'){input.setAttribute('list','condiciones-estacion');input.placeholder='P, F o M';input.setAttribute('aria-describedby','ayuda-autocompletar');}
+ if(field==='condition'){
+  input.setAttribute('list','condiciones-estacion');input.placeholder='P, F o M';input.setAttribute('aria-describedby','ayuda-autocompletar');
+  // A station shortcut replaces the whole condition, wherever the cursor is.
+  // beforeinput also covers the on-screen keyboard on phones.
+  input.addEventListener('beforeinput',e=>{
+   if(e.isComposing)return;
+   const shortcut=e.inputType==='insertText'&&/^[pfm]$/i.test(e.data||'');
+   const clear=e.inputType.startsWith('delete')&&['PORTÁTIL','FIJA','MÓVIL'].includes(input.value);
+   if(!e.cancelable||!shortcut&&!clear)return;
+   e.preventDefault();input.value=shortcut?e.data:'';
+   input.dispatchEvent(new Event('input',{bubbles:true}));
+  });
+  input.addEventListener('focus',()=>input.select());
+  input.addEventListener('click',()=>input.select());
+ }
  if(field==='city'){input.placeholder='Comuna o iniciales';input.setAttribute('aria-describedby','ayuda-autocompletar');}
  if(field==='frequency')input.inputMode='decimal';
  if(field==='mode')input.setAttribute('list','modos-radio');
