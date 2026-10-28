@@ -15,8 +15,8 @@ function zip(files){
  return new Blob([...parts,...dir,end.buffer],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
 }
 window.libroExcel=(rows,operator,zone)=>{
- const fields=['date','time','call','name','city','notes','frequency','mode'];
- const values=[['','','LIBRO DE GUARDIA · RUFCOM'],['Estación: '+operator],['Hora local del dispositivo. Zona al crear el libro: '+zone],['Fecha','Hora','Indicativo','Nombre y apellidos','Comuna','Notas','Frecuencia (MHz)','Modo'],...rows.map(r=>fields.map(f=>r[f]))];
+ const fields=['date','time','city','condition','call','name','notes','frequency','mode','expiry','licenseState'];
+ const values=[['','','LIBRO DE GUARDIA · RUFCOM'],['Estación: '+operator],['Hora local del dispositivo. Zona al crear el libro: '+zone],['Fecha','Hora','Comuna','Condición','Indicativo','Nombre y apellidos','Notas','Frecuencia (MHz)','Modo','Vencimiento de licencia','Vigencia según listado'],...rows.map(r=>fields.map(f=>f==='licenseState'?window.libroModelo.licenseState(r.expiry):r[f]))];
  const sheet=values.map((row,i)=>'<row r="'+(i+1)+'"'+(i===0?' ht="60" customHeight="1"':'')+'>'+row.map((v,j)=>{
   const ref=String.fromCharCode(65+j)+(i+1);
   if(i>=4 && j===0 && /^\d{4}-\d{2}-\d{2}$/.test(v)){
@@ -26,7 +26,7 @@ window.libroExcel=(rows,operator,zone)=>{
     return '<c r="'+ref+'" s="2"><v>'+serial+'</v></c>';
    }
   }
-  return '<c r="'+ref+'" t="inlineStr" s="'+(i===0||i===3?1:0)+'"><is><t xml:space="preserve">'+esc(v)+'</t></is></c>';
+  return '<c r="'+ref+'" t="inlineStr" s="'+(i===0||i===3?1:i>=4&&j>=9&&window.libroModelo.licenseState(rows[i-4].expiry)==='Vencida'?3:0)+'"><is><t xml:space="preserve">'+esc(v)+'</t></is></c>';
  }).join('')+'</row>').join('');
  const ns='http://schemas.openxmlformats.org/spreadsheetml/2006/main';
  return zip({
@@ -38,8 +38,8 @@ window.libroExcel=(rows,operator,zone)=>{
  '_rels/.rels':'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>',
  'xl/workbook.xml':'<workbook xmlns="'+ns+'" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Libro de guardia" sheetId="1" r:id="rId1"/></sheets></workbook>',
  'xl/_rels/workbook.xml.rels':'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>',
- 'xl/styles.xml':'<styleSheet xmlns="'+ns+'"><numFmts count="1"><numFmt numFmtId="164" formatCode="dd-mm-yyyy"/></numFmts><fonts count="2"><font><sz val="11"/><name val="Arial"/></font><font><b/><sz val="11"/><name val="Arial"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1"><xf/></cellStyleXfs><cellXfs count="3"><xf fontId="0"/><xf fontId="1" applyFont="1" applyAlignment="1"><alignment vertical="center"/></xf><xf fontId="0" numFmtId="164" applyNumberFormat="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>',
- 'xl/worksheets/sheet1.xml':'<worksheet xmlns="'+ns+'" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheetViews><sheetView workbookViewId="0" topLeftCell="A1"><selection activeCell="A5" sqref="A5"/></sheetView></sheetViews><cols><col min="1" max="3" width="16" customWidth="1"/><col min="4" max="5" width="35" customWidth="1"/><col min="6" max="6" width="45" customWidth="1"/><col min="7" max="8" width="18" customWidth="1"/></cols><sheetData>'+sheet+'</sheetData><autoFilter ref="A4:H'+values.length+'"/><mergeCells count="3"><mergeCell ref="C1:H1"/><mergeCell ref="A2:H2"/><mergeCell ref="A3:H3"/></mergeCells><pageSetup orientation="landscape" paperSize="9"/><drawing r:id="rId1"/></worksheet>'
+ 'xl/styles.xml':'<styleSheet xmlns="'+ns+'"><numFmts count="1"><numFmt numFmtId="164" formatCode="dd-mm-yyyy"/></numFmts><fonts count="3"><font><sz val="11"/><name val="Arial"/></font><font><b/><sz val="11"/><name val="Arial"/></font><font><sz val="11"/><color rgb="FFB42318"/><name val="Arial"/></font></fonts><fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1"><xf/></cellStyleXfs><cellXfs count="4"><xf fontId="0"/><xf fontId="1" applyFont="1" applyAlignment="1"><alignment vertical="center"/></xf><xf fontId="0" numFmtId="164" applyNumberFormat="1"/><xf fontId="2" applyFont="1"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>',
+ 'xl/worksheets/sheet1.xml':'<worksheet xmlns="'+ns+'" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheetViews><sheetView workbookViewId="0" topLeftCell="A1"><selection activeCell="A5" sqref="A5"/></sheetView></sheetViews><cols><col min="1" max="2" width="16" customWidth="1"/><col min="3" max="3" width="26" customWidth="1"/><col min="4" max="5" width="16" customWidth="1"/><col min="6" max="7" width="40" customWidth="1"/><col min="8" max="9" width="20" customWidth="1"/><col min="10" max="11" width="26" customWidth="1"/></cols><sheetData>'+sheet+'</sheetData><autoFilter ref="A4:K'+values.length+'"/><mergeCells count="3"><mergeCell ref="C1:K1"/><mergeCell ref="A2:K2"/><mergeCell ref="A3:K3"/></mergeCells><pageSetup orientation="landscape" paperSize="9"/><drawing r:id="rId1"/></worksheet>'
  });
 };
 })();
