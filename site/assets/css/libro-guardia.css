@@ -1,33 +1,32 @@
-.guard-controls{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:1rem 0}.guard-controls input{padding:.65rem;border:1px solid #B26F00;border-radius:6px;max-width:100%}.guard-table{overflow:auto;max-width:100%;margin:1rem 0;border:1px solid #B26F00;border-radius:8px}.guard-table table{border-collapse:collapse;width:100%;min-width:1600px}.guard-table th,.guard-table td{padding:.5rem;text-align:left;border-bottom:1px solid #ddd}.guard-table th{background:#FFF3CF;color:#082330}.guard-table input{width:100%;min-width:110px;padding:.65rem;border:1px solid #aaa;border-radius:4px;background:#fff;color:#26211B}.guard-table td[data-column="name"] input{min-width:360px}.guard-table td[data-column="city"] input,.guard-table td[data-column="notes"] input{min-width:180px}.guard-table input:focus{outline:2px solid #082330;outline-offset:2px}.guard-table caption{text-align:left;padding:.75rem}.guard-help{max-width:80ch}
-
-/* The log is a working surface: use the available screen, not article width. */
-#contenido .guard-workspace{width:calc(100% - 32px);max-width:1800px}
-.guard-table input{min-height:56px}
-.guard-table td{padding:.75rem .5rem}
-@media(min-width:1600px){#contenido .guard-workspace{width:calc(100% - 64px)}}
-
+.guard-controls{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin:1rem 0}
+.guard-controls input{padding:.65rem;border:1px solid var(--color-action-border);border-radius:6px;max-width:100%}
+/* Compact desktop ledger: one contact per line, with space shared by the text columns. */
+#contenido .guard-workspace{width:calc(100% - 32px);max-width:none}
+.guard-table{overflow:auto;max-width:100%;margin:1rem 0;border:1px solid var(--color-action-border);border-radius:8px}
+.guard-table table{border-collapse:collapse;table-layout:fixed;width:100%;min-width:1310px}
+.guard-table th,.guard-table td{padding:4px;text-align:left;border-bottom:1px solid var(--color-border);vertical-align:middle}
+.guard-table th{background:var(--color-primary);color:var(--color-text);white-space:nowrap}
+.guard-table caption{text-align:left;padding:8px}
+.guard-table input{box-sizing:border-box;width:100%;min-width:0;min-height:36px;padding:4px 6px;border:1px solid var(--color-border);border-radius:4px;background:var(--color-surface);color:var(--color-text)}
+.guard-table input:focus{outline:2px solid var(--color-secondary);outline-offset:1px}
+.guard-table .guard-date{width:140px}
+.guard-table .guard-time{width:100px}
+.guard-table .guard-city{width:11%}
+.guard-table .guard-condition{width:100px}
+.guard-table .guard-call{width:100px}
+.guard-table .guard-notes{width:10%}
+.guard-table .guard-frequency{width:112px}
+.guard-table .guard-mode{width:72px}
+.guard-table .guard-expiry{width:202px}
+.guard-table .guard-actions{width:84px}
+#contenido .guard-table .rf-button{box-sizing:border-box;width:100%;min-height:36px;padding:4px 6px;white-space:nowrap}
 .guard-field-label{display:none}
-@media(max-width:1699px){
- .guard-table{border:0;overflow:visible}
- .guard-table table,.guard-table tbody{display:block;min-width:0;width:100%}
- .guard-table thead{display:none}
- .guard-table tr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:16px;padding:16px;border:1px solid var(--color-action-border);border-radius:12px;background:var(--color-surface)}
- .guard-table td{display:block;min-width:0;padding:0;border:0}
- .guard-table td[data-column="name"],.guard-table td[data-column="notes"]{grid-column:span 2}
- .guard-table td:last-child{align-self:end}
- .guard-table td:nth-child(n) input{min-width:0;width:100%;box-sizing:border-box}
- .guard-field-label{display:block;margin-bottom:8px;font-weight:600}
- .guard-table caption{display:block;padding:0 0 16px}
+.guard-help{max-width:80ch}
+@media(pointer:coarse){
+ .guard-table input{min-height:48px}
+ #contenido .guard-table .rf-button{min-height:44px}
 }
-@media(max-width:600px){
- .guard-table tr{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px}
- .guard-table td[data-column="call"],.guard-table td[data-column="name"],.guard-table td[data-column="city"],.guard-table td[data-column="notes"],.guard-table td:last-child{grid-column:1/-1}
- .guard-controls button{width:100%}
-}
-
-/* Keep the row action readable instead of splitting its label. */
-.guard-table th:last-child,.guard-table td:last-child{min-width:112px}
-.guard-table td:last-child button{min-width:104px;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+@media(max-width:600px){.guard-controls button{width:100%}}
 
 .guard-mobile{display:none}
 @media(max-width:1100px){
@@ -50,8 +49,6 @@
 .guard-defaults{align-items:end}
 .guard-defaults label{display:block;flex:1 1 190px;max-width:300px}
 .guard-defaults input{display:block;box-sizing:border-box;width:100%;min-height:48px;margin-top:4px}
-.guard-table td[data-column="expiry"] input{min-width:230px}
-.guard-table td[data-column="condition"] input{min-width:140px}
 #contenido .guard-expired{color:#B42318;background:#FFF1F0;border-color:#B42318}
 .guard-mobile button[hidden]{display:none}
 .guard-suggestions{max-height:240px;overflow-y:auto;border:1px solid var(--color-secondary);border-radius:8px;background:var(--color-surface);margin-top:4px}
