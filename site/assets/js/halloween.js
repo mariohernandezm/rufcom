@@ -11,7 +11,7 @@ if(typeof document!=='undefined'){
  function updateHalloween(){
   if(halloweenActive()){
    if(strip)return;
-   css=document.createElement('link');css.rel='stylesheet';css.href='/assets/css/halloween.css?v=20261028';document.head.append(css);
+   css=document.createElement('link');css.rel='stylesheet';css.href='/assets/css/halloween.css?v=20261029-contraste';document.head.append(css);
    strip=document.createElement('div');strip.className='rf-halloween';
    strip.innerHTML='<span aria-hidden="true" class="rf-halloween-art">🎃</span><span data-rf-role="control">Halloween en frecuencia <span aria-hidden="true">·</span> ¡Buenos contactos y pocos sustos!</span><span aria-hidden="true" class="rf-halloween-art">🦇</span>';
    const header=document.querySelector('.site-header');if(header)header.after(strip);else document.body.prepend(strip);
@@ -26,3 +26,4 @@ if(typeof document!=='undefined'){
  document.addEventListener('visibilitychange',updateHalloween);
  window.addEventListener('pageshow',updateHalloween);
 }
+
