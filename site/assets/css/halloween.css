@@ -4,3 +4,7 @@
 .rf-halloween-active .site-header{border-bottom-color:var(--color-accent)}
 @media(max-width:600px){.rf-halloween{gap:8px}}
 @media print{.rf-halloween{display:none}}
+
+
+/* Keep control text readable against the seasonal dark background. */
+.rf-halloween [data-rf-role="control"],.rf-halloween [data-rf-role="control"] span{color:var(--color-background,#fff8e7)}
