@@ -6,5 +6,8 @@
 @media print{.rf-halloween{display:none}}
 
 
+
+
 /* Keep control text readable against the seasonal dark background. */
-.rf-halloween [data-rf-role="control"],.rf-halloween [data-rf-role="control"] span{color:var(--color-background,#fff8e7)}
+body.rf-site .rf-halloween [data-rf-role="control"],body.rf-site .rf-halloween [data-rf-role="control"] span{color:var(--color-background,#fff8e7)}
+
