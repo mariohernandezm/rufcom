@@ -77,13 +77,45 @@ function appendRow(row,index){
     }
     ensureEmptyRow();
     save();
-   });td.append(input);if(field==='city')attachCommune(input);tr.append(td);
+   });td.append(input);if(field==='city')attachCommune(input);if(field==='name')attachName(input,()=>row);tr.append(td);
   });
   const td=document.createElement('td'),remove=document.createElement('button');remove.type='button';remove.textContent='Eliminar';remove.className='rf-button rf-button--secondary';remove.dataset.rfRole='control';remove.setAttribute('aria-label','Eliminar fila '+(index+1));
   remove.addEventListener('click',()=>{if(hasData(row)&&!confirm('¿Eliminar esta fila del libro?'))return;book.rows.splice(index,1);if(!book.rows.length)book.rows.push(blank());render();save();});td.append(remove);tr.append(td);tbody.append(tr);
  }
 
 function licenseText(row){return !row.call?'':model.licenseState(row.expiry)+(row.expiry?' · '+row.expiry:'');}
+function attachName(input,getRow){
+ const box=document.createElement('div');box.className='guard-suggestions';box.id=input.id+'-people';box.setAttribute('role','listbox');box.setAttribute('aria-label','Radioaficionados encontrados');box.hidden=true;input.after(box);
+ input.placeholder='Nombre o apellidos';input.setAttribute('role','combobox');input.setAttribute('aria-autocomplete','list');input.setAttribute('aria-controls',box.id);input.setAttribute('aria-expanded','false');
+ let matches=[],active=-1;
+ const close=()=>{box.hidden=true;input.setAttribute('aria-expanded','false');input.removeAttribute('aria-activedescendant');active=-1;};
+ function choose(person){
+  const row=getRow(),tr=tbody.children[book.rows.indexOf(row)],call=tr.querySelector('[data-field=call]');
+  call.value=normalize(person.indicativo);call.dispatchEvent(new Event('input',{bubbles:true}));
+  // Use the selected record, including when SUBTEL repeats a callsign.
+  row.name=givenNamesFirst(person.nombre);row.expiry=person.vencimiento;
+  tr.querySelector('[data-field=name]').value=row.name;paintLicense(tr.querySelector('[data-field=expiry]'),row);
+  close();save();input.value=row.name;input.focus();
+ }
+ input.addEventListener('input',()=>{
+  matches=model.nameMatches(input.value,window.licenciasDatos.registros).slice(0,20);box.replaceChildren();active=-1;input.removeAttribute('aria-activedescendant');
+  if(!matches.length){close();return;}
+  matches.forEach((person,i)=>{
+   const option=document.createElement('div');option.id=box.id+'-'+i;option.setAttribute('role','option');option.setAttribute('aria-selected','false');option.dataset.rfRole='control';
+   option.textContent=givenNamesFirst(person.nombre)+' · '+person.indicativo+' · '+person.vencimiento;
+   option.addEventListener('pointerdown',e=>e.preventDefault());option.addEventListener('click',()=>choose(person));box.append(option);
+  });box.hidden=false;input.setAttribute('aria-expanded','true');
+ });
+ input.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){close();return;}if(box.hidden)return;
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+   e.preventDefault();active=(active+(e.key==='ArrowDown'?1:-1)+matches.length)%matches.length;
+   [...box.children].forEach((el,i)=>el.setAttribute('aria-selected',String(i===active)));input.setAttribute('aria-activedescendant',box.children[active].id);box.children[active].scrollIntoView({block:'nearest'});
+  }
+  if(e.key==='Enter'){e.preventDefault();if(active>=0||matches.length===1)choose(matches[active>=0?active:0]);}
+ });
+ input.addEventListener('blur',close);
+}
 function paintLicense(input,row){input.value=licenseText(row);input.classList.toggle('guard-expired',model.licenseState(row.expiry)==='Vencida');}
 function configureInput(input,field){
  if(field==='expiry'){input.readOnly=true;input.placeholder='Según listado SUBTEL';}
@@ -172,6 +204,7 @@ for(const f of fields){
   if(f==='condition'&&initial.length===1)input.setSelectionRange(1,input.value.length);
  });
  if(f==='city')attachCommune(input);
+ if(f==='name')attachName(input,()=>mobileRow);
 }
 function refreshMobile(){
  if(!book.rows.includes(mobileRow))mobileRow=book.rows[book.rows.length-1];

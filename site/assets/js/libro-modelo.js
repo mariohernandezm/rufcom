@@ -29,6 +29,12 @@ const libroModelo = (() => {
   const q = fold(value);
   return ({P:'PORTÁTIL',F:'FIJA',M:'MÓVIL',PORTATIL:'PORTÁTIL',FIJA:'FIJA',MOVIL:'MÓVIL'})[q] || value.toUpperCase();
  }
+ function nameMatches(value, records) {
+  const query=fold(value);
+  if(query.length<2)return [];
+  const words=query.split(/\s+/);
+  return records.filter(r=>words.every(word=>fold(r.nombre).includes(word)));
+ }
  const fields = ['date','time','city','condition','call','name','notes','frequency','mode','expiry'];
  function blank(defaults) { return {...Object.fromEntries(fields.map(f=>[f,''])),...defaults,_manual:{}}; }
  function hasData(row) { return fields.some(f=>!['frequency','mode','expiry'].includes(f) && row[f]) || ['frequency','mode'].some(f=>row._manual[f] && row[f]); }
@@ -36,7 +42,7 @@ const libroModelo = (() => {
   defaults[field] = value;
   for (const row of rows) if (!row._manual[field]) row[field] = value;
  }
- return {fold,today,expiryISO,licenseState,communeMatches,condition,fields,blank,hasData,applyDefaults};
+ return {fold,today,expiryISO,licenseState,communeMatches,nameMatches,condition,fields,blank,hasData,applyDefaults};
 })();
 if (typeof module !== 'undefined') module.exports = libroModelo;
 if (typeof window !== 'undefined') window.libroModelo = libroModelo;

@@ -156,6 +156,21 @@ async function carousel(page, label) {
           assert.equal(await field('call').inputValue(),'');
           assert.equal(await field('time').inputValue(),'');
           assert.equal(await page.locator('#registros tr').count(),1);
+          await field('name').fill('wilson garrido');
+          await field('name').press('ArrowDown');
+          await field('name').press('Enter');
+          assert.equal(await field('call').inputValue(),'CE3WAR');
+          assert.equal(await field('city').inputValue(),'SANTIAGO');
+          assert.match(await field('expiry').inputValue(),/25\/09\/2029/);
+          await field('name').fill('hernan gomez');
+          const person=page.getByRole('option',{name:/HERNÁN ALEJANDRO OLIVERA GÓMEZ · CE3HOG/});
+          await person.filter({visible:true}).click();
+          assert.equal(await field('call').inputValue(),'CE3HOG');
+          assert.equal(await field('city').inputValue(),'RENCA');
+          await audit(page,name,viewport.label,'name-lookup');
+          await page.screenshot({path:path.join(output,'libro-nombre-'+viewport.label+'.png'),fullPage:true});
+          page.once('dialog',dialog=>dialog.accept());
+          await page.reload();
         }
         await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:true});
         await menus(page,name,viewport.label);

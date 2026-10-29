@@ -1,4 +1,8 @@
 "use strict";
+// A dated campaign, not an annually recurring theme.
+const halloweenScript=document.createElement('script');
+halloweenScript.src='/assets/js/halloween.js?v=20261028';
+document.head.append(halloweenScript);
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 if (menuBtn && mainNav) {

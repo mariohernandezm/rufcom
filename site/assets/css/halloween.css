@@ -1,0 +1,6 @@
+/* Temporary 2026 decoration; activation and expiry use Chile's calendar. */
+.rf-halloween{display:flex;justify-content:center;align-items:center;gap:16px;padding:8px 16px;background:var(--color-secondary);color:var(--color-background);border-bottom:2px solid var(--color-accent);text-align:center}
+.rf-halloween-art{flex:none;line-height:1}
+.rf-halloween-active .site-header{border-bottom-color:var(--color-accent)}
+@media(max-width:600px){.rf-halloween{gap:8px}}
+@media print{.rf-halloween{display:none}}
