@@ -3,6 +3,22 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const m=require('../site/assets/js/libro-modelo.js');
+test('name lookup matches unordered words and accents without choosing a homonym',()=>{
+ const records=[{nombre:'GARRIDO GONZALEZ WILSON ANTONIO',indicativo:'CE3WAR'},{nombre:'PEREZ GONZALEZ WILSON',indicativo:'TEST'},{nombre:'OLIVERA GÓMEZ HERNÁN ALEJANDRO',indicativo:'CE3HOG'}];
+ assert.deepEqual(m.nameMatches('wilson garr',records),[records[0]]);
+ assert.equal(m.nameMatches('wilson',records).length,2);
+ assert.deepEqual(m.nameMatches('hernan gomez',records),[records[2]]);
+ assert.deepEqual(m.nameMatches('',records),[]);
+ assert.deepEqual(m.nameMatches('zzzzzz',records),[]);
+});
+test('Halloween ends at midnight in Chile and never returns in 2027',()=>{
+ const {halloweenActive}=require('../site/assets/js/halloween.js');
+ assert.equal(halloweenActive(new Date('2026-10-28T02:59:59Z')),false);
+ assert.equal(halloweenActive(new Date('2026-10-28T03:00:00Z')),true);
+ assert.equal(halloweenActive(new Date('2026-11-01T02:59:59Z')),true);
+ assert.equal(halloweenActive(new Date('2026-11-01T03:00:00Z')),false);
+ assert.equal(halloweenActive(new Date('2027-10-31T12:00:00Z')),false);
+});
 test('expiry is inclusive and unknown or invalid dates are never expired',()=>{
  assert.equal(m.licenseState('27/10/2026','2026-10-27'),'Vigente');
  assert.equal(m.licenseState('26/10/2026','2026-10-27'),'Vencida');
