@@ -331,3 +331,22 @@ de alto mínimo para ratón y teclado. Esta excepción de densidad se limita
 a la tabla del libro; conserva texto de 16 px, foco visible y colores comunes.
 Los dispositivos con puntero táctil conservan campos de 48 px y botones de
 44 px como mínimo. El formulario móvil mantiene sus controles y disposición.
+
+### Ampliación 1.3.4 · 8/11/2026: composición compacta
+
+Por solicitud del propietario se reduce el espacio usado por navegación,
+tarjetas y cabeceras de guías en toda la web. Se conservan tipografía,
+colores, imágenes y texto legible: cuerpo de 16 px y controles de 44 px.
+
+La tarjeta de recurso (`resource-card`) usa el título como enlace principal,
+una descripción breve, altura natural y relleno de 16 px en escritorio y
+12 px en móvil. No repite un segundo enlace al mismo destino ni empuja la
+acción al pie para llenar la tarjeta. Las rejillas alinean sus elementos al
+inicio, con 12 px de separación. Las descargas mantienen visibles sus acciones;
+las explicaciones y ejemplos siguen en sus paneles de ayuda.
+
+Las secciones usan 24 px de espacio en escritorio y 16 px en móvil. Las
+cabeceras editoriales y sus índices usan el ancho de lectura y separaciones
+breves. No se reduce una captura técnica para compensar espacio de navegación.
+Estas reglas sustituyen el relleno general anterior de 24/16 px para tarjetas.
+La revisión debe comprobar altura real y acceso al contenido, además de roles.

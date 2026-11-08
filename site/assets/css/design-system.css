@@ -29,6 +29,8 @@
   --space-5: 1.5rem;
   --space-6: 2rem;
   --space-7: 3rem;
+  --card-padding: var(--space-4);
+  --section-spacing: var(--space-5);
   --radius-control: .5rem;
   --radius-card: .75rem;
   --width-page: 70rem;
@@ -50,7 +52,7 @@ body main :is(h1, .article-title) {
 body main h2,
 body main :is(.section, .article-body, .section-heading, .feature-copy, .final-cta, .library-topic, .library-start) h2 {
 
-  margin: var(--space-6) 0 var(--space-4);
+  margin: var(--space-5) 0 var(--space-3);
 }
 body main .article-lead {     color:var(--color-text); }
 body main .article-body > p {   color: var(--ink); }
@@ -144,7 +146,7 @@ body .license-search [role="search"] { align-items: end; }
 
 /* Molecules: a compact information card, separate from a section heading. */
 body main .ui-callout {
-  margin: var(--space-5) 0; padding: 1.25rem 1.5rem;
+  margin: var(--space-4) 0; padding: var(--card-padding);
   border: 1px solid var(--line); border-left: 4px solid var(--color-accent-support);
   border-radius: var(--radius-card); background: var(--surface); color: var(--ink);
   box-shadow: none;
@@ -169,7 +171,7 @@ body main .ui-callout .btn-primary { color: var(--ink); }
 
 /* Molecules: shared card hierarchy without changing specialised diagrams. */
 body main :is(.card, .equipment-card, .topic-card, .antenna-card, .category-card, .library-card, .download-card) {
-  border-radius: var(--radius-card); padding: var(--space-5); box-shadow: none;
+  border-radius: var(--radius-card); padding: var(--card-padding); box-shadow: none;
 }
 body main :is(.card, .equipment-card, .topic-card, .antenna-card, .category-card, .library-card, .download-card, .guide-step, .license-step, .hero-panel) :is(h2, h3) {
      margin: 0 0 var(--space-3);
@@ -180,9 +182,9 @@ body main .repeater-card h3 {   margin: 0 0 var(--space-2); }
 
 /* Organisms and templates: reading width and a regular section rhythm. */
 body main .article-body { max-width: var(--width-reading); }
-body main > .section, body main .scenic-section { padding-block: var(--space-6); }
-body main > .article-hero { padding-block: var(--space-6) var(--space-4); }
-body main > .article-hero + .section { padding-top: var(--space-4); }
+body main > .section, body main .scenic-section { padding-block: var(--section-spacing); }
+body main > .article-hero { padding-block: var(--space-4) var(--space-2); }
+body main > .article-hero + .section { padding-top: var(--space-2); }
 body main :is(.section-heading, .feature-copy, .final-cta, .library-topic, .library-start) > h2,
 body main .article-body > h2:first-child { margin-top: 0; }
 body main .resource-section { padding-top: var(--space-4); }
@@ -192,20 +194,21 @@ body main .resource-grid {
 body main .resource-grid > .ui-callout { margin: 0; display: flex; flex-direction: column; align-items: flex-start; }
 body main .resource-grid .rf-button { margin-top: auto; align-self: flex-start; }
 body main .resource-grid .ui-callout > p { margin-bottom: var(--space-4); }
-body main :is(.library-grid, .download-grid, .cards) { gap: var(--space-4); }
-body main .library-intro { padding-block: var(--space-6) var(--space-5); }
-body main .first-contact { margin-block: var(--space-6); }
+body main :is(.library-grid, .download-grid, .cards) { gap: var(--space-3); align-items:start; }
+body main .library-intro { padding-block: var(--space-4); }
+body main .first-contact { margin-block: var(--space-5); }
 body main .license-heading img { width: 44px; height: 44px; }
 body .site-header .brand-logo { width: 180px; height: auto; }
 body .compact-footer .footer-brand { width: 140px; height: auto; }
 body .adventure-band .btn-secondary { color: var(--ink); }
 
 @media (max-width: 700px) {
-  body main > .section, body main .scenic-section { padding-block: var(--space-5); }
-  body main > .article-hero { padding-top: var(--space-5); }
+  :root { --card-padding:var(--space-3); --section-spacing:var(--space-4); }
+  body main > .section, body main .scenic-section { padding-block: var(--section-spacing); }
+  body main > .article-hero { padding-top: var(--space-4); }
   body main .resource-grid { grid-template-columns: minmax(0, 1fr); }
-  body main :is(.ui-callout, .card, .library-card, .download-card) { padding: var(--space-4); }
-  body main .library-intro { padding-top: var(--space-5); }
+  body main :is(.ui-callout, .card, .library-card, .download-card) { padding: var(--card-padding); }
+  body main .library-intro { padding-top: var(--space-4); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -223,15 +226,6 @@ body main .rf-heading-icon { flex:0 0 24px; width:24px; height:24px; object-fit:
 
 /* Home section spacing: related resources retain a clear separation. */
 body.home-page #links { margin-top:var(--space-6); }
-body.home-page #accesos .card, body.home-page [aria-labelledby="destacados-titulo"] .cards > .card {
- display:flex; flex-direction:column; align-items:flex-start;
-}
-body.home-page #accesos .card > p, body.home-page [aria-labelledby="destacados-titulo"] .cards > .card > p {
- margin:0 0 var(--space-4);
-}
-body.home-page #accesos .card > .rf-button, body.home-page [aria-labelledby="destacados-titulo"] .cards > .card > .rf-button {
- margin-top:auto;
-}
 
 /* Resource list row rhythm */
 body.home-page #links .rf-resource-link { padding-block:var(--space-2); margin:0; }
@@ -250,17 +244,64 @@ body main .repeater-text-button {     color:var(--color-secondary); }
 
 /* Shared surfaces belong to components, independent of their page template. */
 body.rf-site main :is(.card,.library-card,.category-card,.equipment-card,.antenna-card,.topic-card,.download-card,.link-card,.connector-card,.experience-card,.case-material-card,.plan-card,.pattern-card,.q-card,.adventure-card,.repeater-card) {
- background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); border-radius:var(--radius-card); box-shadow:none;
+ background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); border-radius:var(--radius-card); box-shadow:none; padding:var(--card-padding);
 }
-body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card) { padding:var(--space-5); }
+body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card) { padding:var(--card-padding); }
 body.rf-site main :is(.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) {
- border:1px solid var(--color-border); border-left:4px solid var(--color-accent-support); border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-text); box-shadow:none; padding:var(--space-5);
+ border:1px solid var(--color-border); border-left:4px solid var(--color-accent-support); border-radius:var(--radius-card); background:var(--color-surface); color:var(--color-text); box-shadow:none; padding:var(--card-padding);
 }
 body.rf-site main :is(.library-card,.download-card,.topic-card) { display:flex; flex-direction:column; align-items:flex-start; }
 body.rf-site main :is(.library-card,.download-card,.topic-card) > :is(.btn,.rf-button,.library-read) { margin-top:auto; }
 @media(max-width:700px) {
- body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card,.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) { padding:var(--space-4); }
+ body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card,.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) { padding:var(--card-padding); }
 }
+
+/* Compact resource molecule: the title is the single primary link. */
+body.rf-site main .resource-card { padding:var(--card-padding); min-height:0; height:auto; display:block; }
+body.rf-site main .resource-card > h3 { margin:0 0 var(--space-1); }
+body.rf-site main .resource-card > h3 a { display:flex; align-items:center; min-height:44px; text-decoration:underline; text-underline-offset:3px; }
+body.rf-site main .resource-card > p { margin:0; }
+body.rf-site main .resource-card > .rf-icon-heading { display:flex; align-items:center; gap:var(--space-2); }
+body.rf-site main .resource-card > .rf-icon-heading a { flex:1; }
+body.rf-site main .related-guide { padding:var(--card-padding); box-shadow:none; border:1px solid var(--color-border); border-radius:var(--radius-card); background:var(--color-surface); }
+body.rf-site main .related-guide > :is(h3,p) { margin:0 0 var(--space-2); }
+body.rf-site main .related-guide-grid { gap:var(--space-3); align-items:start; margin-top:var(--space-3); }
+body.rf-site main .resource-grid { align-items:start; gap:var(--space-3); }
+body.rf-site main .resource-grid .ui-callout > p { margin-bottom:var(--space-2); }
+body.rf-site main .section-heading { margin-bottom:var(--space-3); }
+body.rf-site main .section-heading > :last-child { margin-bottom:0; }
+
+/* Editorial entry and library use the same small section rhythm. */
+body.rf-site main .article-hero p { margin-block:var(--space-2); }
+body.rf-site main:has(.article-body) > .article-hero > .container:not(.article-hero-grid),
+body.rf-site main:has(.article-body) > .guide-wayfinding { max-width:var(--width-reading); }
+body.rf-site main .guide-wayfinding { display:flex; flex-wrap:wrap; align-items:center; gap:var(--space-2) var(--space-4); padding-block:var(--space-2); }
+body.rf-site main .guide-wayfinding > a { margin:0; padding-block:var(--space-2); }
+body.rf-site main .guide-index { flex:0 1 auto; max-width:100%; border:0; background:transparent; }
+body.rf-site main .guide-index summary { min-height:44px; padding:var(--space-2) var(--space-3); border:1px solid var(--color-border); border-radius:var(--radius-control); background:var(--color-surface); }
+body.rf-site main .guide-index[open] { flex-basis:100%; }
+body.rf-site main .guide-index nav { padding:var(--space-2) var(--space-3); }
+body.rf-site main .library-intro > h1 { margin:0 0 var(--space-2); }
+body.rf-site main .library-intro > p { margin:0 0 var(--space-2); }
+body.rf-site main .library-categories { margin-top:var(--space-3); gap:var(--space-2); }
+body.rf-site main .library-categories a { min-height:44px; padding:var(--space-2) var(--space-3); }
+body.rf-site main .library-topic { padding-block:var(--space-3); }
+body.rf-site main .library-topic > h2 { margin:0 0 var(--space-2); }
+body.rf-site main .library-start { padding:var(--space-3) var(--space-4); margin-block:var(--space-2); }
+body.rf-site main .library-start > p { margin:0; }
+body.rf-site main .download-grid { margin:var(--space-3) 0; }
+body.rf-site main .download-card { display:block; }
+body.rf-site main .download-card > p { margin:0 0 var(--space-2); }
+body.rf-site main .download-card > h3 { margin-bottom:var(--space-2); }
+body.rf-site main .download-actions { display:flex; flex-wrap:wrap; gap:var(--space-2); }
+body.rf-site main .download-actions > :is(.btn,.rf-button) { display:inline-flex; width:auto; margin:0; }
+body.rf-site main .download-card details { margin-top:var(--space-2); padding-top:0; }
+body.rf-site main .download-card summary { padding-block:var(--space-2); }
+body.rf-site main .download-help { padding:0; margin-block:var(--space-2); background:transparent; }
+body.rf-site main .download-help > summary { min-height:44px; padding-block:var(--space-2); cursor:pointer; }
+body.rf-site main .article-body > .tool-warning:first-child { margin-top:0; }
+body.rf-site main .article-body > :is(.tool-warning,.tool-callout,.simple-definition) { margin-block:var(--space-4); padding:var(--card-padding); }
+body.rf-site main .article-body > figure { margin-block:var(--space-4); }
 
 /* Editorial heroes share the light reading surface of the approved home. */
 body.rf-site main .adventure-band { background:var(--color-background); color:var(--color-text); }
@@ -276,8 +317,8 @@ body.rf-site :is([data-rf-role="page-title"],[data-rf-role="section-title"]) {
 body.rf-site [data-rf-role="card-title"] {
  font-size:var(--text-card); font-weight:700; line-height:1.35; color:var(--color-secondary);
 }
-body.rf-site [data-rf-role="page-title"] { max-width:40ch; margin:0 0 var(--space-4); }
-body.rf-site [data-rf-role="section-title"] { margin:var(--space-6) 0 var(--space-4); }
+body.rf-site [data-rf-role="page-title"] { max-width:40ch; margin:0 0 var(--space-2); }
+body.rf-site [data-rf-role="section-title"] { margin:var(--space-5) 0 var(--space-3); }
 body.rf-site [data-rf-role="card-title"] { margin:0 0 var(--space-3); }
 body.rf-site :is([data-rf-role="body"],[data-rf-role="control"]) {
  font-size:var(--text-body); font-weight:400; line-height:1.6; color:var(--color-text);
