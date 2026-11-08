@@ -1,0 +1,18 @@
+/* Illustrated RX/TX comparison; typography comes from the shared brand roles. */
+.radio-basics { margin:var(--space-5) 0; }
+.radio-basics .rufis-guide { display:grid; grid-template-columns:128px minmax(0,1fr); gap:var(--space-4); align-items:center; margin-bottom:var(--space-4); }
+.radio-basics .rufis-guide-mascot { width:128px; height:128px; object-fit:contain; margin:0; }
+.radio-basics .rufis-guide h2 { margin:var(--space-1) 0; }
+.radio-basics-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-4); }
+.radio-basics .topic-card { min-width:0; margin:0; background:var(--color-surface); border:1px solid var(--color-border); }
+.radio-basics figure { margin:0; }
+.radio-basics figure img { aspect-ratio:16/9; object-fit:contain; background:var(--color-background); border-radius:var(--radius-control); }
+.radio-basics img { display:block; width:100%; height:auto; margin:0 0 var(--space-3); }
+.radio-basics p { margin:var(--space-2) 0; }
+.radio-basics dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-3); margin:var(--space-4) 0 0; }
+.radio-basics dl div { min-width:0; }
+.radio-basics dt { color:var(--color-text-muted); }
+.radio-basics dd { margin:0; font-variant-numeric:tabular-nums; }
+.radio-basics details { margin-top:var(--space-4); }
+.radio-basics summary { padding-block:var(--space-2); color:var(--color-secondary); cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+@media(max-width:600px) { .radio-basics-grid { grid-template-columns:minmax(0,1fr); } .radio-basics .rufis-guide { grid-template-columns:88px minmax(0,1fr); gap:var(--space-3); } .radio-basics .rufis-guide-mascot { width:88px; height:104px; } }
