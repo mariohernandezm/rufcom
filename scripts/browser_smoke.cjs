@@ -91,12 +91,43 @@ async function carousel(page, label) {
       await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
       page = await context.newPage();
       const errors=[]; page.on('pageerror', error=>errors.push(error.message));
-      for (const [name, url] of [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html']]) {
+      for (const [name, url] of [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html']]) {
         await page.goto(base+url,{waitUntil:'networkidle'});
         const reject = page.getByRole('button',{name:'Rechazar',exact:true});
         if (await reject.isVisible()) await reject.click();
         await audit(page,name,viewport.label,'initial');
         if (name === 'inicio') await carousel(page,viewport.label);
+        if (name === 'repetidores') {
+          const input = page.locator('#repeater-query');
+          const summary = page.locator('#repeater-count');
+          assert.equal(await page.locator('.repeater-card:visible').count(),178);
+          assert.equal(await page.locator('#simplex-reference').isVisible(),false);
+          await input.fill('CE1CA');
+          const beforeTyping = await page.evaluate(() => scrollY);
+          await input.pressSequentially(' ');
+          assert.equal(await input.evaluate(el=>el===document.activeElement),true);
+          assert.equal(await page.evaluate(() => scrollY),beforeTyping);
+          await input.press('Enter');
+          assert.equal(await summary.evaluate(el=>el===document.activeElement),true);
+          assert.equal(await page.locator('.repeater-card:visible').count(),3);
+          const visibleResults = await page.locator('.repeater-card:visible').first().boundingBox();
+          assert(visibleResults.y >= 0 && visibleResults.y < viewport.height - 60, 'First search result must be in view');
+          await audit(page,name,viewport.label,'search-results');
+          await page.screenshot({path:path.join(output, `repetidores-${viewport.label}-busqueda.png`)});
+          await input.fill('zzzzzz');
+          await page.locator('#repeater-submit').click();
+          assert.equal(await page.locator('#repeater-empty').isVisible(),true);
+          const empty = await page.locator('#repeater-empty').boundingBox();
+          assert(empty.y >= 0 && empty.y < viewport.height - 60, 'Empty search feedback must be in view');
+          await input.fill('146.520');
+          await input.press('Enter');
+          assert.equal(await page.locator('#simplex-reference').isVisible(),true);
+          await page.locator('#repeater-reset').click();
+          await page.locator('#repeater-region').selectOption('metropolitana');
+          assert.equal(await page.locator('.repeater-card:visible').count(),15);
+          await page.locator('.repeater-settings:visible').first().locator('summary').click();
+          await audit(page,name,viewport.label,'radio-settings-open');
+        }
         if (name === 'libro') {
           await page.clock.install({time:new Date('2026-10-25T14:30:00Z')});
           const compact=viewport.width<=1100;
