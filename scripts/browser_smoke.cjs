@@ -205,7 +205,7 @@ async function carousel(page, label) {
         }
         await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:true});
         await menus(page,name,viewport.label);
-        if (name !== 'inicio' && name !== 'libro') {
+        if (name === 'licencias' || name === 'codigo-q') {
           await page.locator('.guide-index summary').click();
           await audit(page,name,viewport.label,'guide-index-open');
           await page.locator('.guide-index summary').click();
@@ -222,7 +222,7 @@ async function carousel(page, label) {
       assert.deepEqual(errors,[],'JavaScript page errors');
       await context.close();
     }
-    console.log('PASS: four affected pages and guard log, desktop/mobile, menus, panels, roles, images and carousel rotation/pause');
+    console.log('PASS: six pages, desktop/mobile, repeater results and empty state, guard log, menus, panels, roles, images and carousel');
   } catch (error) {
     report.error = error.stack;
     if (page && !page.isClosed()) await page.screenshot({path:path.join(output,'failure.png'),fullPage:true}).catch(()=>{});
