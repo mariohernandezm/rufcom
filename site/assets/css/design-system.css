@@ -244,7 +244,7 @@ body main .repeater-text-button {     color:var(--color-secondary); }
 
 /* Shared surfaces belong to components, independent of their page template. */
 body.rf-site main :is(.card,.library-card,.category-card,.equipment-card,.antenna-card,.topic-card,.download-card,.link-card,.connector-card,.experience-card,.case-material-card,.plan-card,.pattern-card,.q-card,.adventure-card,.repeater-card) {
- background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); border-radius:var(--radius-card); box-shadow:none;
+ background:var(--color-surface); color:var(--color-text); border:1px solid var(--color-border); border-radius:var(--radius-card); box-shadow:none; padding:var(--card-padding);
 }
 body.rf-site main :is(.card,.library-card,.equipment-card,.topic-card,.download-card,.antenna-card,.category-card,.link-card) { padding:var(--card-padding); }
 body.rf-site main :is(.notice-box,.article-callout,.simple-path,.adventure-note,.ui-callout) {
