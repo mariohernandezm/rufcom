@@ -112,5 +112,10 @@
   "libro-de-guardia.html": {
     "type": "WebPage",
     "image": "assets/images/rufcom-logo-transparent-lossless.webp"
+  },
+  "simplex-repetidor.html": {
+    "type": "Article",
+    "image": "assets/images/radio-simplex-rufis.webp",
+    "modified": "2026-11-08T14:41:00-03:00"
   }
 }

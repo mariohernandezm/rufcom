@@ -80,7 +80,7 @@
       group.querySelector('.repeater-region-count').textContent = `(${visible})`;
     });
     // A simplex reference has no repeater site and is available with any region.
-    const showSimplex = !!simplex && matches(simplex.dataset, input.value);
+    const showSimplex = !!simplex && !!input.value.trim() && matches(simplex.dataset, input.value);
     if (simplex) simplex.hidden = !showSimplex;
     document.getElementById('repeater-count').textContent = `${count} de ${cards.length} repetidores${region.value ? ' · ' + region.options[region.selectedIndex].textContent.replace(/ \(\d+\)$/, '') : ''}${showSimplex ? ' · 1 frecuencia simplex de referencia' : ''}`;
     document.getElementById('repeater-empty').hidden = count !== 0 || showSimplex;
@@ -92,10 +92,16 @@
     suggestion.hidden = !suggestedPlace;
     suggestion.textContent = suggestedPlace ? `¿Quisiste decir ${suggestedPlace}?` : '';
   };
+  const showResults = () => {
+    update();
+    const summary = document.getElementById('repeater-count');
+    summary.scrollIntoView({ block: 'start', behavior: 'instant' });
+    summary.focus({ preventScroll: true });
+  };
   input.addEventListener('input', update);
-  input.addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); update(); } });
+  input.addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); showResults(); } });
   region.addEventListener('change', update);
-  document.getElementById('repeater-submit').addEventListener('click', update);
+  document.getElementById('repeater-submit').addEventListener('click', showResults);
   clear.addEventListener('click', () => { input.value = ''; update(); input.focus(); });
   reset.addEventListener('click', () => { input.value = ''; region.value = ''; update(); region.focus(); });
   suggestion.addEventListener('click', () => { input.value = suggestedPlace; update(); input.focus(); });
