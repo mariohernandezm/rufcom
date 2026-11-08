@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://rufcom.cl/simplex-repetidor.html">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende con Rufis cómo se comunican dos radios en simplex y mediante un repetidor. Compara RX y TX en la misma memoria de tu equipo.">
+  <title>Simplex y repetidor: Rufis te explica la diferencia | RUFCOM</title>
+
+
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=rufcom-manual-v13-20261020">
+<link rel="icon" type="image/webp" href="assets/images/rufcom-logo-transparent-lossless.webp">
+<link rel="stylesheet" href="assets/css/radio-basics.css?v=20261108-escenas">
+<link rel="stylesheet" href="assets/css/navigation.css?v=rufcom-manual-v13-20261020"><link rel="stylesheet" href="assets/css/design-system.css?v=rufcom-manual-v13-20261020">
+<!-- SEO:HEAD -->
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="RUFCOM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simplex y repetidor: Rufis te explica la diferencia | RUFCOM">
+<meta property="og:description" content="Aprende con Rufis cómo se comunican dos radios en simplex y mediante un repetidor. Compara RX y TX en la misma memoria de tu equipo.">
+<meta property="og:url" content="https://rufcom.cl/simplex-repetidor.html">
+<meta property="og:image" content="https://rufcom.cl/assets/images/radio-simplex-rufis.webp">
+<meta property="og:image:alt" content="Simplex y repetidor: Rufis te explica la diferencia">
+<meta property="article:modified_time" content="2026-11-08T14:41:00-03:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Simplex y repetidor: Rufis te explica la diferencia | RUFCOM">
+<meta name="twitter:description" content="Aprende con Rufis cómo se comunican dos radios en simplex y mediante un repetidor. Compara RX y TX en la misma memoria de tu equipo.">
+<meta name="twitter:image" content="https://rufcom.cl/assets/images/radio-simplex-rufis.webp">
+<meta name="twitter:image:alt" content="Simplex y repetidor: Rufis te explica la diferencia">
+<!-- /SEO:HEAD -->
+</head>
+<body class="rf-site">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="RUFCOM inicio" data-rf-role="control"><img class="brand-logo" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-label="Abrir menú" aria-expanded="false" data-rf-role="control">☰</button>
+      <nav id="mainNav" aria-label="Navegación principal"><a href="/" data-rf-role="control">Inicio</a><details class="nav-group"><summary data-rf-role="control">Empieza aquí</summary><div class="nav-submenu"><a href="licencias.html" data-rf-role="control">Licencias y primeros pasos</a><a href="repetidores.html" data-rf-role="control">Repetidores de tu zona</a></div></details><details class="nav-group"><summary data-rf-role="control">Guías</summary><div class="nav-submenu"><a href="guias.html" data-rf-role="control">Todas las guías</a><a href="guias.html#primeros-pasos" data-rf-role="control">Primeros pasos</a><a href="guias.html#comunicacion" data-rf-role="control">Comunicación</a><a href="guias.html#radio-antenas" data-rf-role="control">Radio y antenas</a><a href="guias.html#cerros-parques" data-rf-role="control">Cerros y parques</a></div></details><details class="nav-group"><summary data-rf-role="control">Equipos y antenas</summary><div class="nav-submenu"><a href="equipos.html" data-rf-role="control">Radios y equipos</a><a href="antenas.html" data-rf-role="control">Antenas</a><a href="flowerpot.html" data-rf-role="control">Construye una Flower Pot</a><a href="herramientas.html" data-rf-role="control">Herramientas de medición</a><a href="accesorios.html" data-rf-role="control">Partes y piezas</a></div></details><details class="nav-group"><summary data-rf-role="control">Aventura y proyectos</summary><div class="nav-submenu"><a href="radio-aventura.html" data-rf-role="control">Radio y aventura</a><a href="base73-mk1.html" data-rf-role="control">Base73 MK1 · Maleta RUFCOM</a></div></details></nav>
+    </div>
+  </header>
+
+<main id="contenido" itemscope itemtype="https://schema.org/Article">
+<!-- SEO:SCHEMA -->
+<meta itemprop="headline" content="Simplex y repetidor: Rufis te explica la diferencia">
+<meta itemprop="description" content="Aprende con Rufis cómo se comunican dos radios en simplex y mediante un repetidor. Compara RX y TX en la misma memoria de tu equipo.">
+<meta itemprop="url" content="https://rufcom.cl/simplex-repetidor.html">
+<meta itemprop="image" content="https://rufcom.cl/assets/images/radio-simplex-rufis.webp">
+<meta itemprop="inLanguage" content="es-CL">
+<!-- /SEO:SCHEMA -->
+<div class="container guide-wayfinding"><a href="repetidores.html" data-rf-role="control">← Volver al buscador de repetidores</a><a href="guias.html" data-rf-role="control">Todas las guías</a></div>
+<div class="container"><section class="radio-basics" aria-labelledby="simplex-repetidor">
+<div class="rufis-guide"><img class="rufis-guide-mascot" src="assets/images/rufis-guia-radio.webp" alt="Rufis sostiene su radio y señala la explicación" width="384" height="401" loading="lazy"><div><p class="eyebrow" data-rf-role="eyebrow">Rufis te lo explica</p><h1 id="simplex-repetidor" data-rf-role="page-title">¿Directo o por repetidor?</h1><!-- SEO:BYLINE --><p class="article-byline" data-rf-role="note">Por <span itemprop="author" itemscope itemtype="https://schema.org/Organization"><a itemprop="url" href="/"><span itemprop="name">RUFCOM</span></a></span> · Última edición: <time itemprop="dateModified" datetime="2026-11-08T14:41:00-03:00">8 de noviembre de 2026</time></p><!-- /SEO:BYLINE --></div></div>
+<div class="radio-basics-grid">
+<article class="topic-card">
+<h2 data-rf-role="card-title">Simplex · de radio a radio</h2>
+<figure><img src="assets/images/radio-simplex-rufis.webp" alt="Rufis y el chico hablan directamente por radio con la chica, sin repetidor" width="768" height="384" loading="lazy"></figure><p data-rf-role="body">La misma frecuencia para escuchar y hablar.</p>
+<dl><div><dt data-rf-role="body">Escuchas · RX</dt><dd data-rf-role="body">146.520 MHz</dd></div><div><dt data-rf-role="body">Hablas · TX</dt><dd data-rf-role="body">146.520 MHz</dd></div></dl>
+</article>
+<article class="topic-card">
+<h2 data-rf-role="card-title">Repetidor · un equipo hace de puente</h2>
+<figure><img src="assets/images/radio-repetidor-rufis.webp" alt="Rufis y la chica hablan por radio con el chico a través de un repetidor situado en un cerro" width="768" height="432" loading="lazy"></figure><p data-rf-role="body"><strong>Amplía el alcance:</strong> puedes hablar y escuchar a estaciones más lejanas.</p><p data-rf-role="body">Escuchas por una frecuencia y hablas por otra.</p>
+<dl><div><dt data-rf-role="body">Escuchas · RX</dt><dd data-rf-role="body">146.820 MHz</dd></div><div><dt data-rf-role="body">Hablas · TX</dt><dd data-rf-role="body">146.220 MHz</dd></div></dl>
+</article>
+</div>
+<aside class="ui-callout"><h3 data-rf-role="card-title">«¡Mira los números, no solo el nombre!»</h3><p data-rf-role="body">Muestra las frecuencias de la memoria. Al hablar, muchos equipos muestran TX al presionar PTT: compárala con RX.</p></aside>
+<p data-rf-role="body">Cambia la visualización de la misma memoria, sin pasar a frecuencia libre (VFO). Mostrar TX depende del modelo; también puedes revisar RX/TX en el menú o en CHIRP, sin transmitir.</p>
+<p data-rf-role="body">Los números del ejemplo están vistos desde tu radio. RX y TX distintos indican la configuración habitual para repetidor VHF/UHF; confirma los datos en su ficha.</p>
+<aside id="simplex-reference" class="ui-callout" aria-labelledby="simplex-title">
+<p class="eyebrow" data-rf-role="eyebrow">Encuentro y escucha · VHF / FM</p>
+<h2 id="simplex-title" data-rf-role="card-title">146.520 MHz <span class="repeater-zone">Simplex</span></h2>
+<p data-rf-role="body">Punto de encuentro entre radioaficionados, también utilizado por CE3SER. Comunicación directa, sin repetidor.</p>
+<p class="simplex-source" data-rf-role="note">No garantiza atención permanente ante emergencias.</p>
+<p data-rf-role="body">Que una memoria se llame «SER» es solo una etiqueta.</p>
+</aside>
+<nav aria-label="Para seguir aprendiendo"><p data-rf-role="body"><a class="btn" href="repetidores.html" data-rf-role="control">Buscar repetidores de tu zona</a></p><p data-rf-role="body"><a href="chirp.html" data-rf-role="control">Revisar las memorias con CHIRP →</a></p></nav>
+</section></div></main>
+<footer class="compact-footer"><div class="container footer-wrap">
+<div class="footer-identity"><img class="footer-brand" src="assets/images/rufcom-logo-transparent-lossless.webp" alt="RUFCOM" width="1000" height="333" decoding="async"><p class="footer-tagline" data-rf-role="body">Radioafición · aventura · equipos probados de verdad.</p><p class="footer-credit" data-rf-role="note">Un proyecto de <strong>CA3HMM</strong>.</p></div>
+<nav class="footer-nav" aria-label="Enlaces útiles al pie"><h2 data-rf-role="card-title">Para seguir explorando</h2><a href="guias.html" data-rf-role="control">Todas las guías</a><a href="licencias.html" data-rf-role="control">Licencias</a><a href="repetidores.html" data-rf-role="control">Repetidores</a><a href="chirp.html" data-rf-role="control">Guía CHIRP</a><a href="radio-aventura.html" data-rf-role="control">Radio y aventura</a></nav>
+<div class="footer-contact"><h2 data-rf-role="card-title">Contacto</h2><span class="footer-email" data-rf-role="body">contactorufcom@gmail.com</span><a href="https://www.instagram.com/rufcom.cl/" target="_blank" rel="noopener noreferrer" data-rf-role="control">Instagram · @rufcom.cl</a></div>
+</div><div class="container footer-bottom"><a href="privacidad.html" data-rf-role="control">Privacidad</a></div></footer>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/analytics.js" defer></script>
+</body>
+</html>
+
+
