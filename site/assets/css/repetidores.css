@@ -48,3 +48,21 @@
 .repeater-settings p, .repeater-settings a {  line-height:1.5; }
 .repeater-settings a { display:inline-block; padding:6px 0; color:var(--brown); font-weight:700; }
 .repeater-settings summary:focus-visible { outline:3px solid var(--brown); outline-offset:3px; }
+
+/* Consultation layout: keep search feedback and matching cards together. */
+body.rf-site main > .repeater-hero { padding-block:var(--space-5) var(--space-2); }
+.repeater-hero h1 { margin-bottom:var(--space-2); }
+.repeater-hero .article-lead { margin-block:0 var(--space-2); }
+.repeater-hero .source-note { margin-block:0; }
+body.rf-site main > .repeater-hero + .repeater-section { padding-top:var(--space-3); }
+.repeater-search-actions { margin-top:var(--space-2); }
+.repeater-share-status:empty { display:none; }
+#repeater-count { margin:var(--space-4) 0 var(--space-2); scroll-margin-top:6rem; }
+#repeater-count:focus-visible { outline:3px solid var(--color-secondary); outline-offset:4px; border-radius:var(--radius-control); }
+.repeater-list-note { margin-top:var(--space-6); }
+.repeater-list-note > h2 { margin-bottom:var(--space-3); }
+@media(max-width:900px) {
+  .repeater-fields { gap:var(--space-3); }
+  .repeater-search-actions { gap:0 var(--space-4); }
+  .repeater-search-actions > a:last-child { padding-block:var(--space-2); }
+}
