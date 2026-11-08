@@ -98,6 +98,8 @@ async function carousel(page, label) {
         await audit(page,name,viewport.label,'initial');
         if (name === 'inicio') await carousel(page,viewport.label);
         if (name === 'repetidores') {
+          const initialCard = await page.locator('.repeater-card').first().boundingBox();
+          assert(initialCard.y < viewport.height - 100, 'The directory must show the first card on entry');
           const input = page.locator('#repeater-query');
           const summary = page.locator('#repeater-count');
           assert.equal(await page.locator('.repeater-card:visible').count(),178);
