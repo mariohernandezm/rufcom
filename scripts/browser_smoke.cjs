@@ -7,7 +7,10 @@ const { chromium } = require(process.env.RUFCOM_PLAYWRIGHT_MODULE || 'playwright
 const site = path.resolve(__dirname, '../site');
 const output = process.env.RUFCOM_BROWSER_ARTIFACTS || path.resolve(__dirname, '../browser-review');
 const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json'};
-const report = { pages: [], carousel: [], error: null };
+const report = { pages: [], carousel: [], density: [], error: null };
+const primaryPages = [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html'],['guias','/guias.html'],['chirp','/chirp.html']];
+const covered = new Set(primaryPages.map(([,url])=>url === '/' ? 'index.html' : url.slice(1)));
+const pages = [...primaryPages, ...Object.keys(require('./seo_pages.json')).filter(name=>!covered.has(name)).map(name=>[name.replace('.html',''),'/'+name]), ['404','/404.html']];
 
 const server = http.createServer(async (req, res) => {
   try {
@@ -91,12 +94,43 @@ async function carousel(page, label) {
       await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
       page = await context.newPage();
       const errors=[]; page.on('pageerror', error=>errors.push(error.message));
-      for (const [name, url] of [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html']]) {
+      for (const [name, url] of pages) {
         await page.goto(base+url,{waitUntil:'networkidle'});
         const reject = page.getByRole('button',{name:'Rechazar',exact:true});
         if (await reject.isVisible()) await reject.click();
         await audit(page,name,viewport.label,'initial');
-        if (name === 'inicio') await carousel(page,viewport.label);
+        if (name === 'inicio') {
+          const heights = await page.locator('#accesos .resource-card').evaluateAll(items=>items.map(el=>el.getBoundingClientRect().height));
+          assert.equal(heights.length,6);
+          assert(heights.every(height=>height<220), `Home resource cards: ${heights}`);
+          await carousel(page,viewport.label);
+        }
+        if (name === 'guias') {
+          const density = await page.evaluate(()=>({
+            firstCard:document.querySelector('.library-card').getBoundingClientRect().top + scrollY,
+            chirpCard:document.querySelector('.library-card a[href="chirp.html"]').closest('article').getBoundingClientRect().top + scrollY,
+            cardHeights:[...document.querySelectorAll('.library-card')].map(el=>el.getBoundingClientRect().height),
+            downloadHeight:document.querySelector('.download-section').getBoundingClientRect().height
+          }));
+          report.density.push({name,viewport:viewport.label,...density});
+          assert(density.cardHeights.every(height=>height<190), `Guide cards too tall: ${density.cardHeights}`);
+          assert(density.firstCard < (viewport.width>700 ? 1000 : 1400), `First guide at ${density.firstCard}px`);
+          if(viewport.width>700) assert(density.chirpCard<1450, `CHIRP guide at ${density.chirpCard}px`);
+          assert.equal(await page.locator('.library-card .library-read').count(),0);
+          for(const panel of await page.locator('.download-card details,.download-help').all()) {
+            await panel.locator('summary').click();
+            await audit(page,name,viewport.label,'download-help-open');
+            await panel.locator('summary').click();
+          }
+        }
+        if (name === 'chirp') {
+          const step = await page.locator('#guia-seccion-2').evaluate(el=>el.getBoundingClientRect().top + scrollY);
+          report.density.push({name,viewport:viewport.label,firstStep:step});
+          assert(step<(viewport.width>700 ? 800 : 1150), `CHIRP first step at ${step}px`);
+          await page.locator('.guide-index summary').click();
+          await audit(page,name,viewport.label,'guide-index-open');
+          await page.locator('.guide-index summary').click();
+        }
         if (name === 'repetidores') {
           const initialCard = await page.locator('.repeater-card').first().boundingBox();
           assert(initialCard.y < viewport.height - 100, 'The directory must show the first card on entry');
@@ -205,8 +239,8 @@ async function carousel(page, label) {
           page.once('dialog',dialog=>dialog.accept());
           await page.reload();
         }
-        await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:true});
-        await menus(page,name,viewport.label);
+        await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:primaryPages.some(([key])=>key===name)});
+        if(await page.locator('#mainNav').count()) await menus(page,name,viewport.label);
         if (name === 'licencias' || name === 'codigo-q') {
           await page.locator('.guide-index summary').click();
           await audit(page,name,viewport.label,'guide-index-open');
@@ -224,7 +258,7 @@ async function carousel(page, label) {
       assert.deepEqual(errors,[],'JavaScript page errors');
       await context.close();
     }
-    console.log('PASS: six pages, desktop/mobile, repeater results and empty state, guard log, menus, panels, roles, images and carousel');
+    console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, guard log, menus, panels, roles, images and carousel');
   } catch (error) {
     report.error = error.stack;
     if (page && !page.isClosed()) await page.screenshot({path:path.join(output,'failure.png'),fullPage:true}).catch(()=>{});
