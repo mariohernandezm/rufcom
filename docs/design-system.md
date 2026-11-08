@@ -166,3 +166,12 @@ Reemplaza las pausas de v1.1: sin botón de reproducción/pausa. Alterna cada
 reinicia el intervalo. Con movimiento reducido solo cambia mediante las flechas
 o gestos; las pestañas ocultas suspenden el reloj. Los cambios automáticos no
 se anuncian. Conserva el diseño y los tokens existentes. Manual: ampliación 1.3.2.
+
+## Composición compacta · 8/11/2026
+
+La ampliación 1.3.4 del manual establece `--card-padding` (16/12 px),
+`--section-spacing` (24/16 px) y la molécula `.resource-card` para Inicio y
+Guías. El título es su enlace, la descripción sigue inmediatamente y la
+altura depende del contenido. `design-system.css` sigue siendo la autoridad
+compartida. Las cabeceras, índices y descargas usan la misma pauta de espacios.
+No se cambian fechas editoriales por esta revisión visual.
