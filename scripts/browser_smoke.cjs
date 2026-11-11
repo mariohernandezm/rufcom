@@ -12,6 +12,64 @@ const primaryPages = [['inicio','/'],['licencias','/licencias.html'],['codigo-q'
 const covered = new Set(primaryPages.map(([,url])=>url === '/' ? 'index.html' : url.slice(1)));
 const pages = [...primaryPages, ...Object.keys(require('./seo_pages.json')).filter(name=>!covered.has(name)).map(name=>[name.replace('.html',''),'/'+name]), ['404','/404.html']];
 
+async function studyQuiz(browser, base, viewport) {
+  const context = await browser.newContext({viewport:viewport==='movil'?{width:390,height:844}:{width:1366,height:900},hasTouch:viewport==='movil'});
+  await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
+  const quiz = await context.newPage();
+  const errors = [];
+  quiz.on('pageerror', error => errors.push(error.message));
+  await quiz.clock.install({time:new Date('2026-11-11T18:00:00Z')});
+  for (const [category, legal, technical] of [['aspirante',18,12],['novicio',15,15],['general',12,18],['superior',6,24]]) {
+    await quiz.goto(base+'/practicar-examen.html?categoria='+category);
+    assert.equal(await quiz.locator('#quiz-category').inputValue(),category);
+    await quiz.locator('#quiz-mode').selectOption('simulacro');
+    assert.equal(await quiz.locator('#quiz-topic').isDisabled(),true);
+    await quiz.locator('#quiz-start').click();
+    assert.equal(await quiz.locator('#quiz-nav button').count(),30);
+    assert.match(await quiz.locator('#quiz-clock').innerText(),/45:00/);
+    await quiz.locator('#quiz-choices input').first().check();
+    assert.equal(await quiz.locator('#quiz-feedback').isVisible(),false);
+    await quiz.locator('#quiz-next').click();
+    await quiz.locator('#quiz-previous').click();
+    assert.equal(await quiz.locator('#quiz-choices input:checked').count(),1);
+    await quiz.locator('#quiz-finish').click();
+    assert.match(await quiz.locator('#quiz-confirm-text').innerText(),/29 preguntas sin responder/);
+    await quiz.locator('#quiz-keep').click();
+    assert.equal(await quiz.locator('#quiz-results').isVisible(),false);
+    await audit(quiz,'practicar-examen',viewport,'simulacro-'+category);
+    await quiz.clock.fastForward(45*60*1000);
+    assert.equal(await quiz.locator('#quiz-results').isVisible(),true);
+    assert.match(await quiz.locator('#quiz-result-summary').innerText(),/Se agotaron los 45 minutos/);
+    assert.match(await quiz.locator('#quiz-result-summary').innerText(),/29 sin responder/);
+    assert.match(await quiz.locator('#quiz-result-scores').innerText(),new RegExp('de '+legal));
+    assert.match(await quiz.locator('#quiz-result-scores').innerText(),new RegExp('de '+technical));
+    await audit(quiz,'practicar-examen',viewport,'resultado-'+category);
+  }
+  await quiz.locator('#quiz-restart').click();
+  await quiz.locator('#quiz-mode').selectOption('repaso');
+  await quiz.locator('#quiz-topic').selectOption('electronica');
+  await quiz.locator('#quiz-start').click();
+  await quiz.locator('#quiz-choices input').first().check();
+  assert.equal(await quiz.locator('#quiz-feedback').isVisible(),true);
+  assert.equal(await quiz.locator('#quiz-choices input:disabled').count(),4);
+  await audit(quiz,'practicar-examen',viewport,'repaso-explicado');
+  await quiz.screenshot({path:path.join(output,'estudio-'+viewport+'-repaso.png'),fullPage:true});
+  await quiz.locator('#quiz-finish').click();
+  await quiz.locator('#quiz-confirm-finish').click();
+  assert.equal(await quiz.locator('#quiz-retry-errors').isVisible(),true);
+  await quiz.locator('#quiz-review summary').first().click();
+  await audit(quiz,'practicar-examen',viewport,'revision-abierta');
+  await quiz.locator('#quiz-retry-errors').click();
+  assert.equal(await quiz.locator('#quiz-clock').isVisible(),false);
+  assert((await quiz.locator('#quiz-nav button').count())>=9);
+  await quiz.goto(base+'/practicar-examen.html?categoria=__proto__&tema=constructor');
+  assert.equal(await quiz.locator('#quiz-category').inputValue(),'aspirante');
+  assert.equal(await quiz.locator('#quiz-topic').inputValue(),'todos');
+  assert.deepEqual(errors,[],'Quiz JavaScript errors');
+  await quiz.close();
+  await context.close();
+}
+
 const server = http.createServer(async (req, res) => {
   try {
     let relative = decodeURIComponent(new URL(req.url, 'http://127.0.0.1').pathname);
@@ -256,6 +314,7 @@ async function carousel(page, label) {
         }
       }
       assert.deepEqual(errors,[],'JavaScript page errors');
+      await studyQuiz(browser,base,viewport.label);
       await context.close();
     }
     console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, guard log, menus, panels, roles, images and carousel');
