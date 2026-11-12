@@ -72,7 +72,7 @@ body.rf-site :is(#quiz-choices,.course-bank-question) .quiz-option[data-result="
 .quiz-review-answer{padding:var(--space-3);border-left:4px solid var(--color-border);border-radius:var(--radius-control)}
 .quiz-review-answer[data-result="correct"]{background:#e8f5ec;border-color:#24723f;color:#15572d}
 .quiz-review-answer[data-result="incorrect"]{background:#fdeceb;border-color:#b3302b;color:#85221e}
-@media(max-width:600px){.quiz-option:has(.quiz-answer-status){flex-wrap:wrap}.quiz-answer-status{flex-basis:100%;margin-left:44px}}
+@media(max-width:600px){.quiz-option:has(.quiz-answer-status){flex-wrap:wrap}.quiz-answer-status{flex-basis:calc(100% - 44px);margin-left:44px}}
 .quiz-figure{display:block;max-width:100%;height:auto;margin:var(--space-3) auto;object-fit:contain}
 .quiz-question-map{margin-block:var(--space-4)}.quiz-question-map>summary{cursor:pointer;min-height:44px;padding-block:var(--space-3)}
 .quiz-session{scroll-margin-top:80px}
