@@ -1,9 +1,22 @@
 # Estudio y práctica de radioafición
 
-La sección reúne rutas por categoría (estudiar-radioaficion.html), una guía
-con ocho materias y ejemplos propios (materias-radioaficion.html) y el
-simulador con preguntas oficiales (practicar-examen.html). Se enlaza desde
-Inicio, Guías y Licencias. La guía permite imprimir o guardar como PDF.
+La sección reúne orientación y requisitos (estudiar-radioaficion.html), un
+catálogo por licencia (materias-radioaficion.html), cuatro recorridos separados
+(estudiar-aspirante/novicio/general/superior.html), 16 lecciones y un simulador
+con preguntas oficiales (practicar-examen.html). Se enlaza desde Inicio,
+Guías, Licencias y el menú compartido «Estudio y exámenes».
+
+Cada lección incluye seis explicaciones, un esquema original, dos ejemplos
+resueltos, una autoevaluación desplegable y las preguntas del tema, con figuras
+y claves consultables sin abrir un PDF. El banco de consulta se pagina de ocho
+en ocho. La categoría elegida se conserva en anterior/siguiente, regreso a su
+recorrido, preguntas y práctica. General y Superior tienen 16 temas; Novicio,
+15; Aspirante, 13 con orientación de profundidad por categoría.
+
+estudio-cobertura.json asigna los 708 identificadores a las 16 lecciones.
+Los generadores locales scripts/build_study_course.py y study_course_content.py
+conservan el contenido editorial. No publican: después de regenerar hay que
+ejecutar seo.py y los controles, y revisar la vista previa.
 
 ## Fuentes y banco oficial
 
@@ -34,12 +47,22 @@ lineal de la fracción de C-1, pregunta 43. Las 85 figuras son recortes
 renderizados de los PDF. Se comprobó visualmente su asociación: el símbolo
 de C-1, pregunta 58, aparece antes de su enunciado y se asocia expresamente a ella.
 
-Dos registros se conservan con excluded y no se seleccionan para calificar:
-D-1, pregunta 16, y E-2, pregunta 94. El PDF repite en ambos el texto de la
-alternativa correcta en otra alternativa. Hay 706 preguntas seleccionables.
-La fuente completa sigue disponible y esta diferencia se explica en la página.
-La herramienta muestra la clave del solucionario de SUBTEL, con enlaces al
-original y al solucionario; las explicaciones de conceptos son de RUFCOM.
+Hay 688 preguntas seleccionables. Se conservan sin calificar dos preguntas
+con alternativas duplicadas (D1-16 y E2-94) y 18 incidencias adicionales,
+registradas con su motivo concreto en estudio-incidencias.json: contradicciones
+entre clave y normativa o conceptos, unidades ambiguas o datos insuficientes.
+Es una revisión editorial de RUFCOM, no una corrección confirmada por SUBTEL.
+Las claves publicadas no se sustituyen por otras; junto a cada registro excluido
+se muestran la clave histórica, la incidencia y los documentos originales.
+
+E1-20 repite rótulos A/B dentro de los datos del enunciado. Se revisó visualmente
+la página 9 para separar esos datos de las cuatro alternativas finales. Su clave
+también queda excluida: la opción B termina en 200 Ω mientras el cálculo de R1
+con 100 V y 50 mA da 2.000 Ω. Los PDF y sus hashes no se modifican.
+
+Conservar una transcripción y una clave oficial no certifica que la clave sea
+físicamente correcta. Las explicaciones y cálculos del curso son de RUFCOM;
+las incidencias futuras deben contrastarse y documentarse antes de calificarlas.
 
 ## Configuración y evaluación
 
@@ -65,6 +88,15 @@ Solo el simulacro con la distribución exacta aplica mínimo de 60% ponderado y
 cuentan como incorrectas. Se confirma en la página antes de finalizar parcialmente.
 La revisión permite practicar errores y preguntas en blanco.
 
+Al terminar aparece Rufis, usando el activo original rufis-guia-radio.webp.
+Felicita cuando se cumplen los mínimos del simulacro; anima a repasar cuando
+no se cumplen, aun con un promedio alto. En tandas de práctica celebra desde
+80% sin declarar aprobado un examen. Un intento vacío recibe un mensaje propio.
+Los enlaces de repaso proponen hasta tres lecciones con más respuestas
+incorrectas u omitidas, sin duplicar y conservando la categoría, para ofrecer
+un siguiente paso abordable. La revisión completa permanece debajo.
+No hay audio ni animación.
+
 El reloj usa una fecha límite absoluta y comprueba el tiempo al recuperar la
 visibilidad. Ocultar la pestaña no gana tiempo. Al agotarse finaliza la práctica.
 Las respuestas se mantienen solo en memoria, sin cuentas ni envío a un servidor.
@@ -73,10 +105,15 @@ Las respuestas se mantienen solo en memoria, sin cuentas ni envío a un servidor
 
 - Pruebas unitarias: procedencia y hashes, preguntas, claves, figuras y rutas,
   exclusiones, selección, orden de alternativas, ponderaciones, mínimos y reloj.
-- Chromium: cuatro categorías en escritorio y móvil, configuración, 270 preguntas
-  de Novicio al elegir todas, entrenamiento, teclado, navegación, respuestas
+- Chromium (script para CI): cuatro categorías en escritorio y móvil, configuración,
+  todas las preguntas habilitadas de Novicio, entrenamiento, teclado, navegación, respuestas
   conservadas, expiración, revisión, errores y práctica personalizada.
 - Validadores existentes: sitio, seguridad, marca y SEO.
+
+Publicación autorizada por el propietario el 11/11/2026, después de revisar
+la vista previa. La entrega se integra mediante PR y solo se fusiona después
+de aprobar CI. Después del despliegue se verifican las URL públicas y se
+gestiona la indexación, distinguiendo solicitudes de indexación confirmada.
 
 Para actualizar, descargar desde SUBTEL, conservar versión y hash y contrastar
 claves por enunciado y alternativas. Revisar figuras, fórmulas y ambigüedades.
