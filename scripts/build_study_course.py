@@ -6,7 +6,7 @@ from study_course_content import LESSONS, ROUTES
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'site'
 VERSION='20261111-curso-rufis-v8'
-REVIEW_VERSION='20261112-respuestas-v1'
+REVIEW_VERSION='20261112-respuestas-v2'
 PREFIXES={'aspirante':'CD','novicio':'CA','general':'CE','superior':'XQ'}
 def read(p): return p.read_text(encoding='utf-8')
 def write(p,s): p.write_text(s,encoding='utf-8',newline='')
