@@ -8,12 +8,15 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import re
+import json
+import hashlib
 import posixpath
 import sys
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile, BadZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
+SUBTEL_PDFS = json.loads(Path(__file__).with_name('study_pdfs.json').read_text(encoding='utf-8'))
 CSP = "default-src 'none'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'"
 
 
@@ -87,11 +90,15 @@ def validate(root=ROOT):
     for p in site.rglob('*'):
         if p.is_symlink() or any(part.startswith('.') for part in p.relative_to(site).parts):
             errors.append(f'hidden file or symlink in site: {p.relative_to(site)}')
-        if p.is_file() and p.suffix.lower() not in allowed:
+        if p.is_file() and p.suffix.lower() not in allowed and p.relative_to(site).as_posix() not in SUBTEL_PDFS:
             errors.append(f'unsupported public file: {p.name}')
     if 'maleta-rufcom.html' in files:
         errors.append('retired URL must not be published: maleta-rufcom.html')
     for name, p in files.items():
+        if name in SUBTEL_PDFS:
+            data = p.read_bytes()
+            if not data.startswith(b'%PDF-') or hashlib.sha256(data).hexdigest() != SUBTEL_PDFS[name]:
+                errors.append(f'{name}: PDF differs from reviewed SUBTEL source')
         if p.suffix == '.xlsx':
             try:
                 with ZipFile(p) as archive:
