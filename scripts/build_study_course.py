@@ -6,6 +6,7 @@ from study_course_content import LESSONS, ROUTES
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'site'
 VERSION='20261111-curso-rufis-v8'
+REVIEW_VERSION='20261112-respuestas-v1'
 PREFIXES={'aspirante':'CD','novicio':'CA','general':'CE','superior':'XQ'}
 def read(p): return p.read_text(encoding='utf-8')
 def write(p,s): p.write_text(s,encoding='utf-8',newline='')
@@ -24,8 +25,8 @@ def page(name,title,description,body,course=False):
  head=re.sub(r'<title>.*?</title>','<title>'+e(title)+' | RUFCOM</title>',header)
  head=re.sub(r'<meta name="description" content="[^"]*">','<meta name="description" content="'+e(description,quote=True)+'">',head)
  head=head.replace('https://rufcom.cl/materias-radioaficion.html','https://rufcom.cl/'+name)
- head=re.sub(r'estudio\.css\?v=[^"\s]+','estudio.css?v='+VERSION,head)
- scripts=''.join(f'<script src="assets/js/{x}'+(f'?v={VERSION}' if x.startswith('estudio') else '')+'" defer></script>' for x in ['main.js','analytics.js','estudio-curso.js','estudio-modelo.js','estudio-banco.js','estudio-curso-ui.js','estudio.js'])
+ head=re.sub(r'estudio\.css\?v=[^"\s]+','estudio.css?v='+REVIEW_VERSION,head)
+ scripts=''.join(f'<script src="assets/js/{x}'+(f'?v={REVIEW_VERSION if x=="estudio-curso-ui.js" else VERSION}' if x.startswith('estudio') else '')+'" defer></script>' for x in ['main.js','analytics.js','estudio-curso.js','estudio-modelo.js','estudio-banco.js','estudio-curso-ui.js','estudio.js'])
  write(SITE/name,head+'<main id="contenido" class="container section study-wrap">'+body+'</main>'+footer+scripts+'</body></html>\n')
 
 # Agrupación editorial por concepto. Los enunciados, opciones y claves originales no se cambian.
@@ -178,7 +179,7 @@ for i,lesson in enumerate(LESSONS):
  body+='<section id="ejemplos" class="study-lesson"><h2 data-rf-role="section-title">Resuelve paso a paso</h2>'
  for subtitle,text in lesson['examples']:body+='<div class="study-example"><h3 data-rf-role="card-title">'+e(subtitle)+'</h3>'+p(e(text))+'</div>'
  body+='<details class="course-check"><summary data-rf-role="control">Comprueba lo aprendido: '+e(lesson['check'][0])+'</summary>'+p(e(lesson['check'][1]))+'</details></section>'
- body+='<section id="preguntas-oficiales" class="study-lesson" data-course-module="'+id+'"><h2 id="course-bank-title" tabindex="-1" data-rf-role="section-title">Preguntas oficiales de este tema</h2>'+p('Estudia los enunciados y figuras sin salir de RUFCOM. Intenta responder antes de abrir la clave. Las incidencias documentales se indican y quedan fuera de la práctica calificada.')
+ body+='<section id="preguntas-oficiales" class="study-lesson" data-course-module="'+id+'"><h2 id="course-bank-title" tabindex="-1" data-rf-role="section-title">Preguntas oficiales de este tema</h2>'+p('Selecciona una alternativa y pulsa «Comprobar respuesta». Si fallas, podrás ver la respuesta correcta para seguir aprendiendo. Las preguntas con incidencias documentales se muestran solo para consulta y no se califican.')
  body+='<label class="quiz-field" for="course-category" data-rf-role="control">Tu categoría<select id="course-category" data-rf-role="control"><option value="aspirante">Aspirante</option><option value="novicio">Novicio</option><option value="general">General</option><option value="superior">Superior</option><option value="todas">Todas las categorías</option></select></label><p id="course-bank-count" role="status" class="source-note" data-rf-role="note"></p><div id="course-bank-list"></div><div class="study-actions"><button id="course-bank-previous" type="button" class="rf-button" data-rf-role="control">Preguntas anteriores</button><button id="course-bank-next" type="button" class="rf-button" data-rf-role="control">Más preguntas</button><a id="course-practice" class="rf-button" data-rf-role="control" href="practicar-examen.html?leccion='+id+'">Practicar este tema</a></div><noscript>'+p('Para consultar las preguntas interactivas, activa JavaScript. Las explicaciones, los ejemplos y la autoevaluación de esta lección funcionan sin él.')+'</noscript></section>'
  body+='<section class="study-lesson"><h2 data-rf-role="section-title">Continúa tu recorrido</h2><div class="study-actions">'
  if i:body+=link('estudio-'+LESSONS[i-1]['id']+'.html','Anterior: '+LESSONS[i-1]['title'],True)
