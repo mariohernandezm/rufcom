@@ -4,7 +4,7 @@ document.querySelectorAll('[data-print-study]').forEach(button=>button.addEventL
 if(!document.querySelector('#quiz-setup'))return;
 const M=window.estudioModelo,bank=window.estudioBanco,$=id=>document.getElementById(id);
 if(!M||!Array.isArray(bank)){$('quiz-error').hidden=false;$('quiz-error').textContent='No se pudo cargar la práctica. Vuelve a abrir esta página.';return;}
-const category=$('quiz-category'),mode=$('quiz-mode'),topic=$('quiz-topic');
+const category=$('quiz-category'),training=$('quiz-training'),topic=$('quiz-topic'),legalCount=$('quiz-legal-count'),technicalCount=$('quiz-technical-count'),config=$('quiz-config');
 const params=new URLSearchParams(location.search);
 if(Object.hasOwn(M.categories,params.get('categoria')))category.value=params.get('categoria');
 if(Object.hasOwn(M.topics,params.get('tema')))topic.value=params.get('tema');
@@ -14,18 +14,37 @@ function element(tag,text,role='body'){
  const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(role)el.dataset.rfRole=role;return el;
 }
 function updateSetup(){
- const c=M.categories[category.value],sim=mode.value==='simulacro';topic.disabled=sim;
- const count=M.pool(bank,category.value,topic.value).length;
- $('quiz-format').textContent=sim?`${c.legal} preguntas de reglamentación y ${c.technical} técnicas. Peso: ${c.weights[0]*100}% y ${c.weights[1]*100}%.`:`${Math.min(10,count)} preguntas de un conjunto de ${count} para esta selección.`;
- $('quiz-mode-help').textContent=sim?'Tienes 45 minutos. Puedes cambiar respuestas y dejar preguntas para después; las soluciones aparecen al finalizar.':'Sin reloj. Después de responder verás la solución y su explicación. Puedes saltar una pregunta y volver.';
- $('quiz-start').textContent=sim?'Comenzar simulacro de 45 minutos':'Comenzar repaso';
+ const c=M.categories[category.value],total=Number(legalCount.value)+Number(technicalCount.value),standard=Number(legalCount.value)===c.legal&&Number(technicalCount.value)===c.technical;
+ $('quiz-config-title').textContent=`Configurar ${training.checked?'entrenamiento':'examen'} ${c.name}`;
+ topic.closest('label').hidden=!training.checked;
+ $('quiz-format').textContent=`Total: ${total} preguntas`;
+ $('quiz-mode-help').textContent=training.checked?'Sin reloj. Después de responder verás la solución y su referencia en SUBTEL.':standard?'Formato de examen: 30 preguntas y 45 minutos. Las soluciones se muestran al finalizar.':'Práctica personalizada de 45 minutos. El resultado orienta tu estudio; no se aplica el criterio de aprobación del examen.';
+ $('quiz-start').textContent=training.checked?'Iniciar entrenamiento':standard?'Iniciar examen':'Iniciar práctica';$('quiz-start').disabled=total===0;
 }
-for(const el of [category,mode,topic])el.addEventListener('change',updateSetup);
+function countOptions(select,available,standard){
+ select.replaceChildren();
+ for(const n of [...new Set([standard,0,5,10,20,available])].filter(n=>n<=available)){
+  const option=document.createElement('option');option.value=String(n);option.textContent=`${n} preguntas${n===standard?' (Examen)':n===available?' (Todas)':''}`;select.append(option);
+ }select.value=String(Math.min(standard,available));
+}
+function refreshCounts(){
+ const c=M.categories[category.value],list=M.pool(bank,category.value,training.checked?topic.value:'todos');
+ countOptions(legalCount,list.filter(q=>q.topic==='reglamento').length,c.legal);countOptions(technicalCount,list.filter(q=>q.topic!=='reglamento').length,c.technical);updateSetup();
+}
+function openConfig(value){category.value=value;refreshCounts();window.scrollTo({top:0,behavior:'instant'});config.showModal();}
+document.querySelectorAll('[data-category]').forEach(button=>button.addEventListener('click',()=>openConfig(button.dataset.category)));
+training.addEventListener('change',()=>{if(!training.checked)topic.value='todos';refreshCounts();});topic.addEventListener('change',refreshCounts);
+for(const el of [legalCount,technicalCount])el.addEventListener('change',updateSetup);
+$('quiz-cancel').addEventListener('click',()=>config.close());
 function stopClock(){if(timer!==null){clearInterval(timer);timer=null;}}
 function start(customQuestions=null){
  stopClock();
- const chosen=customQuestions||M.choose(bank,category.value,mode.value,topic.value);
- attempt={category:category.value,mode:customQuestions?'errores':mode.value,questions:M.prepare(chosen),answers:{},index:0,deadline:customQuestions||mode.value!=='simulacro'?null:Date.now()+45*60*1000,finished:false};
+ const c=M.categories[category.value],standard=Number(legalCount.value)===c.legal&&Number(technicalCount.value)===c.technical;
+ const chosen=customQuestions||M.selectAreas(bank,category.value,Number(legalCount.value),Number(technicalCount.value),training.checked?topic.value:'todos');
+ const practiceMode=customQuestions?'errores':training.checked?'repaso':standard?'simulacro':'personalizado';
+ attempt={category:category.value,mode:practiceMode,questions:M.prepare(chosen),answers:{},index:0,deadline:customQuestions||training.checked?null:Date.now()+45*60*1000,finished:false};
+ config.close();$('quiz-intro').hidden=true;$('quiz-help').hidden=true;
+ $('quiz-session-title').textContent=`${practiceMode==='errores'?'Repaso de errores':training.checked?'Entrenamiento':standard?'Examen':'Práctica'} ${c.name}`;
  $('quiz-error').hidden=true;$('quiz-setup').hidden=true;$('quiz-results').hidden=true;$('quiz-session').hidden=false;$('quiz-confirm').hidden=true;
  $('quiz-clock').hidden=!attempt.deadline;
  $('quiz-progress').max=attempt.questions.length;
@@ -35,7 +54,8 @@ function start(customQuestions=null){
 function tick(){
  if(!attempt||attempt.finished||!attempt.deadline)return;
  const seconds=M.secondsLeft(attempt.deadline),minutes=Math.floor(seconds/60),rest=seconds%60;
- $('quiz-clock').textContent=`Tiempo restante: ${String(minutes).padStart(2,'0')}:${String(rest).padStart(2,'0')}`;
+ $('quiz-clock').textContent=`${String(minutes).padStart(2,'0')}:${String(rest).padStart(2,'0')}`;
+ $('quiz-clock').setAttribute('aria-label',`Tiempo restante: ${minutes} minutos y ${rest} segundos`);
  if(seconds===0)finish(true);
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
@@ -49,7 +69,7 @@ function buildNavigation(){
 function updateNavigation(){
  const answered=Object.keys(attempt.answers).length,total=attempt.questions.length;
  $('quiz-progress').value=answered;
- $('quiz-progress-label').textContent=`Pregunta ${attempt.index+1} de ${total} · ${answered} respondidas`;
+ $('quiz-progress-label').textContent=`Total: ${attempt.index+1}/${total} · ${answered} respondidas`;
  [...$('quiz-nav').children].forEach((button,index)=>{
   const done=Object.hasOwn(attempt.answers,attempt.questions[index].id);button.dataset.answered=String(done);
   button.setAttribute('aria-label',`Pregunta ${index+1}, ${done?'respondida':'sin responder'}`);
@@ -60,32 +80,43 @@ function updateNavigation(){
 function renderQuestion(){
  const q=attempt.questions[attempt.index],picked=attempt.answers[q.id];
  $('quiz-confirm').hidden=true;$('quiz-feedback').hidden=true;$('quiz-choices').replaceChildren();
- $('quiz-question-topic').textContent=M.topics[q.topic]+' · '+M.categories[attempt.category].name;
+ const area=q.topic==='reglamento'?'Reglamentación':'Técnica',areaQuestions=attempt.questions.filter(item=>(item.topic==='reglamento')===(q.topic==='reglamento'));
+ $('quiz-question-topic').textContent='Materia '+area.toLowerCase();
+ $('quiz-area-progress').textContent=`Pregunta ${areaQuestions.findIndex(item=>item.id===q.id)+1} de ${areaQuestions.length}`;
  $('quiz-question-title').textContent=q.question;
+ $('quiz-figures').replaceChildren();for(const figure of q.figures||[]){const image=document.createElement('img');image.src=figure.src;image.alt=figure.alt;image.width=figure.width;image.height=figure.height;image.className='quiz-figure';$('quiz-figures').append(image);}
  q.choices.forEach((choice,index)=>{
   const label=element('label',undefined,'control');label.className='quiz-option';
   const input=element('input',undefined,'control');input.type='radio';input.name='quiz-answer';input.value=String(choice.id);input.id=`quiz-answer-${index}`;
-  input.checked=picked===choice.id;input.disabled=attempt.mode!=='simulacro'&&picked!==undefined;
-  const text=element('span',choice.text,null);label.htmlFor=input.id;label.append(input,text);
+  const immediate=attempt.mode==='repaso'||attempt.mode==='errores';
+  input.checked=picked===choice.id;input.disabled=immediate&&picked!==undefined;
+  const letter=element('span',String.fromCharCode(65+index),null);letter.className='quiz-option-letter';letter.setAttribute('aria-hidden','true');
+  const text=element('span',choice.text,null);label.htmlFor=input.id;label.append(input,letter,text);
   input.addEventListener('change',()=>{
-   if(attempt.finished||attempt.mode!=='simulacro'&&attempt.answers[q.id]!==undefined)return;
+   if(attempt.finished||immediate&&attempt.answers[q.id]!==undefined)return;
    attempt.answers[q.id]=choice.id;updateNavigation();
-   if(attempt.mode!=='simulacro'){
+   if(immediate){
     $('quiz-choices').querySelectorAll('input').forEach(el=>{el.disabled=true;});showFeedback(q);
    }
   });$('quiz-choices').append(label);
  });
- if(attempt.mode!=='simulacro'&&picked!==undefined)showFeedback(q);
- updateNavigation();$('quiz-question-title').focus();
+ if((attempt.mode==='repaso'||attempt.mode==='errores')&&picked!==undefined)showFeedback(q);
+ updateNavigation();$('quiz-question-title').focus({preventScroll:true});$('quiz-session').scrollIntoView({block:'start',behavior:'instant'});
 }
 function learningLink(q){
  const link=element('a','Repasar este concepto',null);link.href='materias-radioaficion.html#'+q.lesson;return link;
+}
+function sourceLinks(q){
+ const wrap=element('p',undefined,'note');
+ for(const [url,text] of [[q.sourceUrl,'Ver pregunta original (PDF)'],[q.keyUrl,'Consultar solucionario (PDF)']]){
+  if(!url)continue;const link=element('a',text,null);link.href=url;link.target='_blank';link.rel='noopener noreferrer';if(wrap.childNodes.length)wrap.append(document.createTextNode(' · '));wrap.append(link);
+ }return wrap;
 }
 function showFeedback(q){
  const feedback=$('quiz-feedback'),correct=attempt.answers[q.id]===q.correct;
  feedback.replaceChildren();feedback.dataset.result=correct?'correct':'incorrect';
  feedback.append(element('p',correct?'Respuesta correcta.':'Esta respuesta no es correcta.'),element('p','Solución: '+q.options[q.correct]),element('p',q.explanation));
- const source=element('p',q.source,'note');source.className='source-note';feedback.append(source,learningLink(q));feedback.hidden=false;
+ const source=element('p',q.source,'note');source.className='source-note';feedback.append(source,sourceLinks(q),learningLink(q));feedback.hidden=false;
 }
 function requestFinish(){
  const remaining=attempt.questions.length-Object.keys(attempt.answers).length;
@@ -110,8 +141,8 @@ function finish(expired){
  attempt.finished=true;stopClock();
  const result=M.grade(attempt.questions,attempt.answers,attempt.category,attempt.mode);
  lastMistakes=attempt.questions.filter(q=>result.mistakes.includes(q.id));
- $('quiz-session').hidden=true;$('quiz-results').hidden=false;$('quiz-confirm').hidden=true;
- $('quiz-result-title').textContent=attempt.mode==='simulacro'?`Resultado ponderado: ${percent(result.weighted)}`:`Repaso: ${result.correct} de ${result.total} correctas`;
+ $('quiz-session').hidden=true;$('quiz-results').hidden=false;$('quiz-confirm').hidden=true;$('quiz-help').hidden=false;
+ $('quiz-result-title').textContent=attempt.mode==='simulacro'?`Resultado ponderado: ${percent(result.weighted)}`:`Práctica: ${result.correct} de ${result.total} correctas`;
  let summary=`${result.correct} ${result.correct===1?'acierto':'aciertos'} de ${result.total}. ${result.unanswered} sin responder. `;
  if(expired)summary='Se agotaron los 45 minutos. '+summary;
  if(attempt.mode==='simulacro')summary+=result.meetsCriteria?'Cumples los mínimos de este simulacro: 60% ponderado y 50% en cada área. Esto no equivale a aprobar el examen oficial.':'Aún no cumples los mínimos de este simulacro: 60% ponderado y 50% en cada área. Revisa abajo qué temas conviene repasar.';
@@ -122,7 +153,7 @@ function finish(expired){
   const picked=attempt.answers[q.id],correct=picked===q.correct,details=element('details',undefined,null);details.className='quiz-review-item';
   details.append(element('summary',`${index+1}. ${picked===undefined?'Sin responder':correct?'Correcta':'Incorrecta'} · ${q.question}`,'control'));
   details.append(element('p','Tu respuesta: '+(picked===undefined?'Sin responder':q.options[picked])),element('p','Respuesta correcta: '+q.options[q.correct]),element('p',q.explanation));
-  const source=element('p',q.source,'note');source.className='source-note';details.append(source,learningLink(q));$('quiz-review').append(details);
+  const source=element('p',q.source,'note');source.className='source-note';details.append(source,sourceLinks(q),learningLink(q));$('quiz-review').append(details);
  });$('quiz-result-title').focus();
 }
 $('quiz-start').addEventListener('click',()=>{try{start();}catch{const alert=$('quiz-error');alert.textContent='No se pudo iniciar esta selección. Prueba otra materia o vuelve a abrir la página.';alert.hidden=false;}});
@@ -132,6 +163,7 @@ $('quiz-finish').addEventListener('click',requestFinish);
 $('quiz-confirm-finish').addEventListener('click',()=>finish(false));
 $('quiz-keep').addEventListener('click',()=>{$('quiz-confirm').hidden=true;$('quiz-question-title').focus();});
 $('quiz-retry-errors').addEventListener('click',()=>{if(lastMistakes.length)start(lastMistakes);});
-$('quiz-restart').addEventListener('click',()=>{stopClock();attempt=null;$('quiz-session').hidden=true;$('quiz-results').hidden=true;$('quiz-setup').hidden=false;updateSetup();category.focus();});
-updateSetup();$('quiz-start').disabled=false;
+$('quiz-restart').addEventListener('click',()=>{stopClock();attempt=null;$('quiz-session').hidden=true;$('quiz-results').hidden=true;$('quiz-setup').hidden=false;$('quiz-intro').hidden=false;$('quiz-help').hidden=false;document.querySelector('[data-category="'+category.value+'"]').focus();});
+refreshCounts();
+if(Object.hasOwn(M.categories,params.get('categoria'))||Object.hasOwn(M.topics,params.get('tema'))){training.checked=Object.hasOwn(M.topics,params.get('tema'));openConfig(category.value);}
 })();

@@ -15,7 +15,7 @@ const estudioModelo = (() => {
  }
  function pool(bank,category,topic='todos'){
   if(!Object.hasOwn(categories,category))throw new Error('Categoría desconocida');
-  return bank.filter(q=>(q.category==='todas'||q.category===category)&&(topic==='todos'||q.topic===topic));
+  return bank.filter(q=>!q.excluded&&(q.category==='todas'||q.category===category)&&(topic==='todos'||q.topic===topic));
  }
  function choose(bank,category,mode='repaso',topic='todos',random=Math.random){
   const list=pool(bank,category,topic);
@@ -26,7 +26,13 @@ const estudioModelo = (() => {
   return shuffle([...shuffle(legal,random).slice(0,config.legal),...shuffle(technical,random).slice(0,config.technical)],random);
  }
  function prepare(questions,random=Math.random){
-  return questions.map(q=>({...q,choices:shuffle(q.options.map((text,id)=>({text,id})),random)}));
+  // Official answers can refer to A, B or C, so their original order is meaningful.
+  return questions.map(q=>({...q,choices:q.official?q.options.map((text,id)=>({text,id})):shuffle(q.options.map((text,id)=>({text,id})),random)}));
+ }
+ function selectAreas(bank,category,legalCount,technicalCount,topic='todos',random=Math.random){
+  const list=pool(bank,category,topic),legal=list.filter(q=>q.topic==='reglamento'),technical=list.filter(q=>q.topic!=='reglamento');
+  if(!Number.isInteger(legalCount)||!Number.isInteger(technicalCount)||legalCount<0||technicalCount<0||legalCount>legal.length||technicalCount>technical.length||legalCount+technicalCount===0)throw new Error('Cantidad de preguntas inválida');
+  return [...shuffle(legal,random).slice(0,legalCount),...shuffle(technical,random).slice(0,technicalCount)];
  }
  function grade(questions,answers,category,mode){
   const sections={legal:{total:0,correct:0},technical:{total:0,correct:0}};
@@ -45,7 +51,7 @@ const estudioModelo = (() => {
    meetsCriteria:completeExam?weighted>=60-1e-9&&sections.legal.percent>=50&&sections.technical.percent>=50:null,mistakes};
  }
  function secondsLeft(deadline,now=Date.now()){return Math.max(0,Math.ceil((deadline-now)/1000));}
- return {categories,topics,shuffle,pool,choose,prepare,grade,secondsLeft};
+ return {categories,topics,shuffle,pool,choose,prepare,selectAreas,grade,secondsLeft};
 })();
 if(typeof module!=='undefined')module.exports=estudioModelo;
 if(typeof window!=='undefined')window.estudioModelo=estudioModelo;
