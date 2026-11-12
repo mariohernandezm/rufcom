@@ -11,8 +11,10 @@ test('official bank preserves section identities, source PDFs, answer keys and f
  for(const q of bank){assert.equal(q.options.length,4);assert(q.correct>=0&&q.correct<4);assert(q.official);assert(q.keyId);assert(q.source.length>10);assert(lessons.includes(`id="${q.lesson}"`));assert(Object.hasOwn(M.topics,q.topic));for(const url of [q.sourceUrl,q.keyUrl,...q.figures.map(f=>f.src)])assert(fs.existsSync(require('node:path').join(__dirname,'../site',url.split('#')[0])),q.id+' '+url);}
  const expected={todas:108,aspirante:114,novicio:162,general:186,superior:138};
  for(const [category,count] of Object.entries(expected))assert.equal(bank.filter(q=>q.category===category).length,count);
- assert.equal(bank.filter(q=>!q.excluded).length,706);
- assert.deepEqual(bank.filter(q=>q.excluded).map(q=>q.id),['D1-16','E2-94']);
+ const issues=require('../docs/estudio-incidencias.json');
+ assert.equal(bank.filter(q=>!q.excluded).length,688);
+ assert.deepEqual(new Set(bank.filter(q=>q.excluded).map(q=>q.id)),new Set(['D1-16','E2-94',...Object.keys(issues)]));
+ for(const [id,reason] of Object.entries(issues))assert.equal(bank.find(q=>q.id===id).excluded,reason);
  assert.equal(bank.find(q=>q.id==='C1-57').figures.length,0);assert.match(bank.find(q=>q.id==='C1-58').figures[0].src,/C1-58/);
  const manifest=require('../docs/estudio-fuentes.json'),crypto=require('node:crypto');
  for(const source of manifest){const bytes=fs.readFileSync(require('node:path').join(__dirname,'../site/assets/docs/subtel-apendice-'+source.appendix.toLowerCase()+'-20201206.pdf'));assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),source.sha256);}
@@ -70,4 +72,35 @@ test('sample official numerical keys agree with independent calculations',()=>{
  assert.equal(answer('E1-10'),'99 W.');assert.equal(18*5.5,99);
  assert.equal(answer('E1-13'),'10:1');assert.equal(Math.sqrt(100),10);
  assert.equal(answer('D1-36'),'50 K - 1 W.');assert.equal(1/(1/100+1/100),50);
+});
+test('Rufis encourages without announcing a pass when an area minimum fails or the attempt is blank',()=>{
+ const q=M.choose(bank,'aspirante','simulacro','todos',random());
+ const pass=M.grade(q,answerAreas(q,12,6),'aspirante','simulacro');
+ assert.equal(M.encouragement(pass).tone,'celebrate');assert.match(M.encouragement(pass).text,/simulacro/);
+ const highTotal=M.grade(q,answerAreas(q,18,0),'aspirante','simulacro');
+ assert.equal(highTotal.weighted,70);assert.equal(M.encouragement(highTotal).tone,'encourage');
+ assert(!/lo lograste|felicitaciones/i.test(M.encouragement(highTotal).title));
+ const blank=M.encouragement(M.grade(q,{},'aspirante','simulacro'));
+ assert.equal(blank.tone,'encourage');assert.match(blank.text,/sin responder/);
+ const short=M.grade(q.slice(0,2),{[q[0].id]:q[0].correct,[q[1].id]:q[1].correct},'aspirante','repaso');
+ assert.equal(M.encouragement(short).tone,'celebrate');assert(!/cumpliste los mínimos|aprobaste/i.test(M.encouragement(short).text));
+});
+test('every official question has a lesson, and category routes cover the concepts represented in their bank',()=>{
+ const coverage=require('../docs/estudio-cobertura.json');assert.equal(Object.keys(M.modules).length,16);
+ const covered=Object.values(coverage).flatMap(x=>x.questionIds);assert.equal(covered.length,708);assert.equal(new Set(covered).size,708);
+ for(const q of bank){assert(Object.hasOwn(M.modules,q.module));assert(coverage[q.module].questionIds.includes(q.id));
+  const page=fs.readFileSync(require('node:path').join(__dirname,'../site',M.modules[q.module].url),'utf8');assert(page.includes('data-course-module="'+q.module+'"'));
+  if(q.category!=='todas')assert(M.modules[q.module].route.includes(q.category),q.id+' missing from category route');
+ }
+ for(const category of Object.keys(M.categories)){
+  const route=fs.readFileSync(require('node:path').join(__dirname,'../site/estudiar-'+category+'.html'),'utf8');
+  for(const q of M.pool(bank,category))assert(route.includes(M.modules[q.module].url+'?categoria='+category),q.id+' route link');
+ }
+});
+test('lesson practice preserves category and excludes documented problems; question E1-20 separates givens from alternatives',()=>{
+ for(const category of Object.keys(M.categories))for(const id of Object.keys(M.modules)){
+  const pool=M.pool(bank,category,'leccion:'+id);assert(pool.every(q=>q.module===id&&!q.excluded&&(q.category==='todas'||q.category===category)));
+ }
+ assert.deepEqual(M.pool(bank,'general','leccion:__proto__'),[]);
+ const q=bank.find(q=>q.id==='E1-20');assert.match(q.question,/20 mA a 100 V/);assert.equal(q.options[1],'700. 714 y 200 Ohm.');assert(q.options.every(o=>!o.includes('A.-')&&!o.includes('B.-')));assert(q.excluded);
 });
