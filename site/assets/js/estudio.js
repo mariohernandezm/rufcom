@@ -6,8 +6,12 @@ const M=window.estudioModelo,bank=window.estudioBanco,$=id=>document.getElementB
 if(!M||!Array.isArray(bank)){$('quiz-error').hidden=false;$('quiz-error').textContent='No se pudo cargar la práctica. Vuelve a abrir esta página.';return;}
 const category=$('quiz-category'),training=$('quiz-training'),topic=$('quiz-topic'),legalCount=$('quiz-legal-count'),technicalCount=$('quiz-technical-count'),config=$('quiz-config');
 const params=new URLSearchParams(location.search);
+const lessonParam=Object.hasOwn(M.modules,params.get('leccion'))?params.get('leccion'):null;
+const group=document.createElement('optgroup');group.label='Lecciones del curso';
+for(const [id,lesson] of Object.entries(M.modules)){const option=document.createElement('option');option.value='leccion:'+id;option.textContent=lesson.title;group.append(option);}topic.append(group);
 if(Object.hasOwn(M.categories,params.get('categoria')))category.value=params.get('categoria');
 if(Object.hasOwn(M.topics,params.get('tema')))topic.value=params.get('tema');
+if(lessonParam)topic.value='leccion:'+lessonParam;
 let attempt=null,timer=null,lastMistakes=[];
 const percent=value=>value.toLocaleString('es-CL',{maximumFractionDigits:1})+'%';
 function element(tag,text,role='body'){
@@ -19,6 +23,7 @@ function updateSetup(){
  topic.closest('label').hidden=!training.checked;
  $('quiz-format').textContent=`Total: ${total} preguntas`;
  $('quiz-mode-help').textContent=training.checked?'Sin reloj. Después de responder verás la solución y su referencia en SUBTEL.':standard?'Formato de examen: 30 preguntas y 45 minutos. Las soluciones se muestran al finalizar.':'Práctica personalizada de 45 minutos. El resultado orienta tu estudio; no se aplica el criterio de aprobación del examen.';
+ if(total===0)$('quiz-mode-help').textContent='No hay preguntas habilitadas para esta selección. Elige otra materia o aumenta la cantidad de preguntas para practicar.';
  $('quiz-start').textContent=training.checked?'Iniciar entrenamiento':standard?'Iniciar examen':'Iniciar práctica';$('quiz-start').disabled=total===0;
 }
 function countOptions(select,available,standard){
@@ -104,7 +109,7 @@ function renderQuestion(){
  updateNavigation();$('quiz-question-title').focus({preventScroll:true});$('quiz-session').scrollIntoView({block:'start',behavior:'instant'});
 }
 function learningLink(q){
- const link=element('a','Repasar este concepto',null);link.href='materias-radioaficion.html#'+q.lesson;return link;
+ const link=element('a','Repasar este concepto',null);link.href=M.modules[q.module]?.url+'?categoria='+attempt.category;return link;
 }
 function sourceLinks(q){
  const wrap=element('p',undefined,'note');
@@ -114,6 +119,11 @@ function sourceLinks(q){
 }
 function showFeedback(q){
  const feedback=$('quiz-feedback'),correct=attempt.answers[q.id]===q.correct;
+ for(const label of $('quiz-choices').querySelectorAll('.quiz-option')){
+  const value=Number(label.querySelector('input').value),result=value===q.correct?'correct':value===attempt.answers[q.id]?'incorrect':null;
+  label.querySelector('.quiz-answer-status')?.remove();
+  if(result){label.dataset.result=result;const status=element('span',result==='correct'?'✓ Correcta':'✕ Incorrecta',null);status.className='quiz-answer-status';label.append(status);}
+ }
  feedback.replaceChildren();feedback.dataset.result=correct?'correct':'incorrect';
  feedback.append(element('p',correct?'Respuesta correcta.':'Esta respuesta no es correcta.'),element('p','Solución: '+q.options[q.correct]),element('p',q.explanation));
  const source=element('p',q.source,'note');source.className='source-note';feedback.append(source,sourceLinks(q),learningLink(q));feedback.hidden=false;
@@ -148,13 +158,25 @@ function finish(expired){
  if(attempt.mode==='simulacro')summary+=result.meetsCriteria?'Cumples los mínimos de este simulacro: 60% ponderado y 50% en cada área. Esto no equivale a aprobar el examen oficial.':'Aún no cumples los mínimos de este simulacro: 60% ponderado y 50% en cada área. Revisa abajo qué temas conviene repasar.';
  else summary+=`Porcentaje de aciertos de esta tanda: ${percent(result.percent)}. Úsalo para orientar tu repaso.`;
  $('quiz-result-summary').textContent=summary;$('quiz-result-scores').replaceChildren(scoreTable(result));
+ const message=M.encouragement(result),rufis=$('quiz-rufis');rufis.dataset.tone=message.tone;
+ $('quiz-rufis-title').textContent=message.title;$('quiz-rufis-message').textContent=message.text;
+ const suggestions=$('quiz-rufis-topics');suggestions.replaceChildren();
+ const reviewTopics=[...new Set(lastMistakes.map(q=>q.module))].sort((a,b)=>lastMistakes.filter(q=>q.module===b).length-lastMistakes.filter(q=>q.module===a).length).slice(0,3);
+ for(const lesson of reviewTopics){
+  const q=lastMistakes.find(item=>item.module===lesson),li=element('li',undefined,'body'),link=learningLink(q);
+  link.textContent=M.modules[q.module].title;li.append(link);suggestions.append(li);
+ }
+ $('quiz-rufis-study').hidden=!lastMistakes.length;
  $('quiz-retry-errors').hidden=!lastMistakes.length;$('quiz-review').replaceChildren();
  attempt.questions.forEach((q,index)=>{
   const picked=attempt.answers[q.id],correct=picked===q.correct,details=element('details',undefined,null);details.className='quiz-review-item';
+  details.dataset.result=picked===undefined?'unanswered':correct?'correct':'incorrect';
   details.append(element('summary',`${index+1}. ${picked===undefined?'Sin responder':correct?'Correcta':'Incorrecta'} · ${q.question}`,'control'));
-  details.append(element('p','Tu respuesta: '+(picked===undefined?'Sin responder':q.options[picked])),element('p','Respuesta correcta: '+q.options[q.correct]),element('p',q.explanation));
+  const chosen=element('p','Tu respuesta: '+(picked===undefined?'Sin responder':q.options[picked]));chosen.className='quiz-review-answer';chosen.dataset.result=picked===undefined?'unanswered':correct?'correct':'incorrect';
+  const solution=element('p','✓ Respuesta correcta: '+q.options[q.correct]);solution.className='quiz-review-answer';solution.dataset.result='correct';
+  details.append(chosen,solution,element('p',q.explanation));
   const source=element('p',q.source,'note');source.className='source-note';details.append(source,sourceLinks(q),learningLink(q));$('quiz-review').append(details);
- });$('quiz-result-title').focus();
+ });$('quiz-result-title').focus({preventScroll:true});$('quiz-results').scrollIntoView({block:'start',behavior:'instant'});
 }
 $('quiz-start').addEventListener('click',()=>{try{start();}catch{const alert=$('quiz-error');alert.textContent='No se pudo iniciar esta selección. Prueba otra materia o vuelve a abrir la página.';alert.hidden=false;}});
 $('quiz-previous').addEventListener('click',()=>{if(attempt.index>0){attempt.index--;renderQuestion();}});
@@ -165,5 +187,5 @@ $('quiz-keep').addEventListener('click',()=>{$('quiz-confirm').hidden=true;$('qu
 $('quiz-retry-errors').addEventListener('click',()=>{if(lastMistakes.length)start(lastMistakes);});
 $('quiz-restart').addEventListener('click',()=>{stopClock();attempt=null;$('quiz-session').hidden=true;$('quiz-results').hidden=true;$('quiz-setup').hidden=false;$('quiz-intro').hidden=false;$('quiz-help').hidden=false;document.querySelector('[data-category="'+category.value+'"]').focus();});
 refreshCounts();
-if(Object.hasOwn(M.categories,params.get('categoria'))||Object.hasOwn(M.topics,params.get('tema'))){training.checked=Object.hasOwn(M.topics,params.get('tema'));openConfig(category.value);}
+if(Object.hasOwn(M.categories,params.get('categoria'))||Object.hasOwn(M.topics,params.get('tema'))||lessonParam){training.checked=Boolean(lessonParam)||Object.hasOwn(M.topics,params.get('tema'));openConfig(category.value);}
 })();

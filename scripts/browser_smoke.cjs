@@ -32,6 +32,7 @@ async function studyQuiz(browser, base, viewport) {
     assert.match(await quiz.locator('#quiz-clock').innerText(),/45:00/);
     await quiz.locator('#quiz-choices label').first().click();
     assert.equal(await quiz.locator('#quiz-feedback').isVisible(),false);
+    assert.equal(await quiz.locator('#quiz-choices [data-result]').count(),0);
     await quiz.locator('#quiz-next').click();
     await quiz.locator('#quiz-previous').click();
     assert.equal(await quiz.locator('#quiz-choices input:checked').count(),1);
@@ -51,9 +52,11 @@ async function studyQuiz(browser, base, viewport) {
   await quiz.locator('#quiz-restart').click();
   await quiz.locator('[data-category="novicio"]').click();
   await quiz.locator('#quiz-training').check();
-  await quiz.locator('#quiz-legal-count').selectOption('108');
-  await quiz.locator('#quiz-technical-count').selectOption('162');
-  assert.equal(await quiz.locator('#quiz-format').innerText(),'Total: 270 preguntas');
+  const model=require('../site/assets/js/estudio-modelo.js'),bank=require('../site/assets/js/estudio-banco.js'),pool=model.pool(bank,'novicio');
+  const legal=pool.filter(q=>q.topic==='reglamento').length,technical=pool.length-legal;
+  await quiz.locator('#quiz-legal-count').selectOption(String(legal));
+  await quiz.locator('#quiz-technical-count').selectOption(String(technical));
+  assert.equal(await quiz.locator('#quiz-format').innerText(),'Total: '+pool.length+' preguntas');
   await quiz.screenshot({path:path.join(output,'estudio-'+viewport+'-configurar.png')});
   await quiz.locator('#quiz-legal-count').selectOption('5');
   await quiz.locator('#quiz-technical-count').selectOption('5');
@@ -61,6 +64,8 @@ async function studyQuiz(browser, base, viewport) {
   await quiz.locator('#quiz-choices input').first().press('Space');
   assert.equal(await quiz.locator('#quiz-feedback').isVisible(),true);
   assert.equal(await quiz.locator('#quiz-choices input:disabled').count(),4);
+  assert.equal(await quiz.locator('#quiz-choices [data-result="correct"]').count(),1);
+  assert.equal(await quiz.locator('#quiz-choices [data-result="incorrect"]').count(),await quiz.locator('#quiz-feedback').getAttribute('data-result')==='incorrect'?1:0);
   assert.match(await quiz.getByRole('link',{name:'Ver pregunta original (PDF)',exact:true}).getAttribute('href'),/^assets\/docs\/subtel-apendice-/);
   await audit(quiz,'practicar-examen',viewport,'repaso-explicado');
   await quiz.screenshot({path:path.join(output,'estudio-'+viewport+'-repaso.png'),fullPage:true});

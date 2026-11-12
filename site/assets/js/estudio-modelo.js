@@ -1,6 +1,7 @@
 'use strict';
 // Resolución Exenta SUBTEL 2620/2023, arts. 5, 8 y 9 (tablas verificadas).
 const estudioModelo = (() => {
+ const modules=typeof module!=='undefined'?require('./estudio-curso.js'):window.estudioCurso;
  const categories = {
   aspirante:{name:'Aspirante',appendix:'B',legal:18,technical:12,weights:[.7,.3]},
   novicio:{name:'Novicio',appendix:'C',legal:15,technical:15,weights:[.5,.5]},
@@ -15,7 +16,7 @@ const estudioModelo = (() => {
  }
  function pool(bank,category,topic='todos'){
   if(!Object.hasOwn(categories,category))throw new Error('Categoría desconocida');
-  return bank.filter(q=>!q.excluded&&(q.category==='todas'||q.category===category)&&(topic==='todos'||q.topic===topic));
+  return bank.filter(q=>!q.excluded&&(q.category==='todas'||q.category===category)&&(topic==='todos'||q.topic===topic||topic.startsWith('leccion:')&&q.module===topic.slice(8)));
  }
  function choose(bank,category,mode='repaso',topic='todos',random=Math.random){
   const list=pool(bank,category,topic);
@@ -51,7 +52,14 @@ const estudioModelo = (() => {
    meetsCriteria:completeExam?weighted>=60-1e-9&&sections.legal.percent>=50&&sections.technical.percent>=50:null,mistakes};
  }
  function secondsLeft(deadline,now=Date.now()){return Math.max(0,Math.ceil((deadline-now)/1000));}
- return {categories,topics,shuffle,pool,choose,prepare,selectAreas,grade,secondsLeft};
+ function encouragement(result){
+  if(result.answered===0)return {tone:'encourage',title:'¡Vamos paso a paso!',text:'Esta vez quedaron las preguntas sin responder. Empieza con una tanda corta, revisa cada solución y vuelve a intentarlo. ¡Yo te acompaño!'};
+  if(result.meetsCriteria===true)return {tone:'celebrate',title:'¡Felicitaciones, lo lograste!',text:'Cumpliste los mínimos de este simulacro. Tu estudio está dando frutos. Sigue practicando para llegar con más confianza al examen de SUBTEL. ¡Buen trabajo!'};
+  if(result.meetsCriteria===false)return {tone:'encourage',title:'¡Sigue adelante, puedes mejorar!',text:'Este intento te muestra qué necesitas reforzar. Repasa los temas que aparecen abajo y vuelve a practicar con tus errores. Cada intento es una oportunidad para aprender. ¡Vamos juntos!'};
+  if(result.percent>=80)return {tone:'celebrate',title:'¡Muy buen trabajo!',text:'Lograste muchos aciertos en esta práctica. Sigue así: repasa lo que te haya costado y después prueba un simulacro completo. ¡Vas avanzando!'};
+  return {tone:'encourage',title:'¡Cada práctica te ayuda a avanzar!',text:'Ya diste un paso al intentarlo. Revisa las respuestas, repasa un tema a la vez y vuelve a probar cuando te sientas listo. ¡Tú puedes, aquí seguimos aprendiendo!'};
+ }
+ return {categories,topics,modules,shuffle,pool,choose,prepare,selectAreas,grade,secondsLeft,encouragement};
 })();
 if(typeof module!=='undefined')module.exports=estudioModelo;
 if(typeof window!=='undefined')window.estudioModelo=estudioModelo;

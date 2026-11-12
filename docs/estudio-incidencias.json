@@ -1,0 +1,20 @@
+{
+  "A0-27": "La clave publicada indica 200 W para móvil VHF Novicio; el art. 13 b/c del Decreto 523 limita VHF a 50 W.",
+  "A0-69": "La clave publicada limita Aspirante VHF a 25 W; el art. 15 b del Decreto 523 indica 50 W.",
+  "C1-70": "El enunciado no especifica onda rectificada ni semiciclo: el promedio algebraico de una sinusoide completa es cero, no 0,636 del pico.",
+  "C1-93": "Aumentar la sección de un conductor reduce su resistencia. La clave “aumenta sólo la capacidad” no describe ese cambio.",
+  "C2-14": "La clave describe electrones de placa a cátodo; en la válvula, el cátodo emite y la placa recoge electrones.",
+  "D1-10": "Con movimiento de 1 mA, 100 Ω y corriente total de 5 mA, el shunt ideal es 25 Ω; la clave publicada indica 20 Ω.",
+  "D1-30": "Con P = 13,75 W e I = 55 mA, R = P/I² ≈ 4.545 Ω. La opción publicada “4,545 Ohm” es ambigua por su separador decimal.",
+  "D1-32": "El enunciado mezcla corriente y voltios y la clave de 10 mA no permite una resolución coherente con los datos transcritos del original.",
+  "D1-41": "No se especifica rectificación ni semiciclo: el promedio algebraico de una sinusoide completa es cero; 0,636Vp es su promedio rectificado.",
+  "D2-15": "La clave “su polarización es en fase” no explica la configuración emisor común; la tensión de señal suele invertir fase en esa etapa.",
+  "D2-16": "La clave publicada indica potasio y tantalio. Los semiconductores habituales de esta pregunta son germanio y silicio.",
+  "D2-17": "El enunciado dice “transmisor” y la clave “por huecos” no describe su estructura; el texto parece referirse a un transistor y requiere aclaración.",
+  "D2-19": "Baja impedancia de entrada y alta de salida describen base común; la clave publicada indica emisor común.",
+  "E1-3": "El enunciado no define rectificación ni semiciclo para el valor medio; no debe confundirse con el promedio de una sinusoide completa.",
+  "E1-20": "La clave publicada termina en 200 Ω para R1; con los datos y la figura, R1 = 100 V / 50 mA = 2.000 Ω. Se conserva el texto original de las alternativas.",
+  "E1-30": "La corriente de una línea coaxial adaptada requiere ida y retorno por los conductores; la clave indica sólo conductor central.",
+  "E3-1": "Las pausas permiten escuchar a otras estaciones; la clave publicada indica ir a buscar lápiz y papel.",
+  "E3-3": "Para valorar un enlace directo se comprueba la otra estación en la entrada de la repetidora; la clave propone escuchar un repetidor más lejano."
+}

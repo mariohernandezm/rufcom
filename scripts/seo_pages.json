@@ -123,12 +123,107 @@
     "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "materias-radioaficion.html": {
-    "type": "Article",
-    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
-    "modified": "2026-11-11T23:07:13+00:00"
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   },
   "practicar-examen.html": {
     "type": "WebPage",
     "image": "assets/images/rufcom-logo-transparent-lossless.webp"
+  },
+  "estudio-reglamento.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-electricidad.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-alterna.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-transformadores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-semiconductores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-fuentes.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-amplificadores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-osciladores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-integrados.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-modulacion.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-transmisores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-receptores.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-antenas.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-propagacion.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-mediciones.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudio-operacion.html": {
+    "type": "Article",
+    "image": "assets/images/rufis-guia-radio.webp",
+    "modified": "2026-11-11T23:30:00-03:00"
+  },
+  "estudiar-aspirante.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufis-guia-radio.webp"
+  },
+  "estudiar-novicio.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufis-guia-radio.webp"
+  },
+  "estudiar-general.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufis-guia-radio.webp"
+  },
+  "estudiar-superior.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufis-guia-radio.webp"
   }
 }
