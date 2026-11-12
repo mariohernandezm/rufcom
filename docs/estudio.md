@@ -8,8 +8,13 @@ Guías, Licencias y el menú compartido «Estudio y exámenes».
 
 Cada lección incluye seis explicaciones, un esquema original, dos ejemplos
 resueltos, una autoevaluación desplegable y las preguntas del tema, con figuras
-y claves consultables sin abrir un PDF. El banco de consulta se pagina de ocho
-en ocho. La categoría elegida se conserva en anterior/siguiente, regreso a su
+y respuestas seleccionables sin abrir un PDF. «Comprobar respuesta» corrige
+la alternativa elegida: verde al acertar, rojo al fallar. La solución se puede
+abrir después de un error; antes de responder no se muestra la clave. Los
+intentos y selecciones se conservan al paginar y cambiar de categoría durante
+la visita, únicamente en memoria. Las preguntas con incidencias se identifican
+como consulta documental y no se califican. El banco se pagina de ocho en
+ocho. La categoría elegida se conserva en anterior/siguiente, regreso a su
 recorrido, preguntas y práctica. General y Superior tienen 16 temas; Novicio,
 15; Aspirante, 13 con orientación de profundidad por categoría.
 

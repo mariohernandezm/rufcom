@@ -94,6 +94,66 @@ async function studyQuiz(browser, base, viewport) {
   await context.close();
 }
 
+async function studyLesson(browser,base,viewport){
+  const context=await browser.newContext({viewport:viewport==='movil'?{width:390,height:844}:{width:1366,height:900}});
+  await context.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
+  const page=await context.newPage(),errors=[],bank=require('../site/assets/js/estudio-banco.js');
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(base+'/estudio-reglamento.html?categoria=novicio');
+  const cards=page.locator('.course-bank-question'),first=cards.first(),second=cards.nth(1),third=cards.nth(2);
+  assert.equal(await first.getByRole('radio').count(),4);
+  assert.equal(await first.locator('details').count(),0,'No answer is exposed before responding');
+  assert.equal(await first.locator('[data-result]').count(),0);
+  assert.equal(await first.getByRole('button',{name:'Comprobar respuesta'}).isDisabled(),true);
+  // The first official key is C. Exercise keyboard selection and an incorrect attempt.
+  await first.getByRole('radio').first().press('Space');
+  assert.equal(await first.locator('.quiz-feedback').isVisible(),false);
+  await first.getByRole('button',{name:'Comprobar respuesta'}).press('Enter');
+  assert.equal(await first.locator('.quiz-feedback').getAttribute('data-result'),'incorrect');
+  assert.equal(await first.locator('.quiz-option[data-result="incorrect"]').count(),1);
+  assert.equal(await first.locator('.quiz-option[data-result="correct"]').count(),0);
+  assert.equal(await first.locator('.course-source-answer').isVisible(),false);
+  assert.equal(await first.locator('input:disabled').count(),4);
+  await audit(page,'estudio-reglamento',viewport,'respuesta-incorrecta');
+  await first.getByText('Ver respuesta correcta',{exact:true}).click();
+  await page.waitForFunction(()=>document.querySelector('.course-bank-question .quiz-option[data-result="correct"]'));
+  assert.match(await first.locator('.course-source-answer').innerText(),/^Clave publicada: C\./);
+  assert.equal(await first.locator('.quiz-option[data-result="correct"]').count(),1);
+  await audit(page,'estudio-reglamento',viewport,'solucion-revelada');
+  // A correct response is green and reveals its explanation immediately.
+  const secondKey=bank.filter(q=>q.module==='reglamento')[1].correct;
+  await second.getByRole('radio').nth(secondKey).check();
+  await second.getByRole('button',{name:'Comprobar respuesta'}).click();
+  assert.equal(await second.locator('.quiz-feedback').getAttribute('data-result'),'correct');
+  assert.equal(await second.locator('.course-source-answer').isVisible(),true);
+  assert.equal(await second.locator('.quiz-option[data-result="incorrect"]').count(),0);
+  // Both checked attempts and an unsubmitted selection survive pagination/category changes.
+  await third.getByRole('radio').nth(1).check();
+  await page.locator('#course-bank-next').click();await page.locator('#course-bank-previous').click();
+  assert.equal(await first.locator('.course-source-answer').isVisible(),true);
+  assert.equal(await first.locator('input:checked').inputValue(),'0');
+  assert.equal(await second.locator('.quiz-feedback').getAttribute('data-result'),'correct');
+  assert.equal(await third.locator('input:checked').inputValue(),'1');
+  assert.equal(await third.locator('details').count(),0);
+  await page.locator('#course-category').selectOption('general');
+  assert.equal(await first.locator('.quiz-feedback').getAttribute('data-result'),'incorrect');
+  await first.scrollIntoViewIfNeeded();
+  await page.screenshot({path:path.join(output,'leccion-'+viewport+'-respuesta.png')});
+  await audit(page,'estudio-reglamento',viewport,'respuesta-correcta-y-retorno');
+  const excluded=bank.find(q=>q.excluded),matching=bank.filter(q=>q.module===excluded.module);
+  await page.goto(base+'/estudio-'+excluded.module+'.html');await page.locator('#course-category').selectOption('todas');
+  for(let i=0;i<Math.floor(matching.findIndex(q=>q.id===excluded.id)/8);i++)await page.locator('#course-bank-next').click();
+  const issue=cards.filter({hasText:excluded.id+' ·'});
+  assert.equal(await issue.count(),1);
+  assert.equal(await issue.getByRole('radio').count(),0,'A documented ambiguous key is not graded');
+  assert.match(await issue.innerText(),/incidencia y no se califica/);
+  await issue.getByText('Ver clave e incidencia documental',{exact:true}).click();
+  assert.equal(await issue.locator('.course-source-issue').isVisible(),true);
+  await audit(page,'estudio-'+excluded.module,viewport,'incidencia-sin-calificar');
+  assert.deepEqual(errors,[],'Lesson JavaScript errors');
+  await context.close();
+}
+
 const server = http.createServer(async (req, res) => {
   try {
     let relative = decodeURIComponent(new URL(req.url, 'http://127.0.0.1').pathname);
@@ -339,6 +399,7 @@ async function carousel(page, label) {
       }
       assert.deepEqual(errors,[],'JavaScript page errors');
       await studyQuiz(browser,base,viewport.label);
+      await studyLesson(browser,base,viewport.label);
       await context.close();
     }
     console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, guard log, menus, panels, roles, images and carousel');
