@@ -1,0 +1,47 @@
+[
+  {
+    "appendix": "A",
+    "count": 108,
+    "sha256": "2d1b91ac1fbecc7350deb64277c3fc6cb3dab23778a3df3bf4cad0faaab3c376",
+    "source": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_A_Preguntas_de_Reglamento_Aspirante_Novicio_General_Superior_20201206.pdf",
+    "sourceVersion": "2020-12-06",
+    "keySource": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
+    "keyVersion": "2019-05-08"
+  },
+  {
+    "appendix": "B",
+    "count": 114,
+    "sha256": "3ad775047e8f9d4ed0825a0d610f4a0231e7e0467ff324f2fd3c6ab9249c753b",
+    "source": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_B_PREGUNTAS_TECNICAS_ASPIRANTE_20201206.pdf",
+    "sourceVersion": "2020-12-06",
+    "keySource": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
+    "keyVersion": "2017-09-08"
+  },
+  {
+    "appendix": "C",
+    "count": 162,
+    "sha256": "534ee8080687b5b9bfff682f17fb9d7b0299b673484b4e136772414bf5209c75",
+    "source": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_20201206.pdf",
+    "sourceVersion": "2020-12-06",
+    "keySource": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
+    "keyVersion": "2017-09-08"
+  },
+  {
+    "appendix": "D",
+    "count": 186,
+    "sha256": "223ed7afd952a5becb40eb35329c1f804b4ef629816b228f9d3ffdd31dd31efd",
+    "source": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_D_PREGUNTAS_TECNICAS_GENERAL_20201206.pdf",
+    "sourceVersion": "2020-12-06",
+    "keySource": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
+    "keyVersion": "2017-09-08"
+  },
+  {
+    "appendix": "E",
+    "count": 138,
+    "sha256": "438a797e5826ca33fc5b992d8dbca1005950822263cae00951007934ef080428",
+    "source": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_E_PREGUNTAS_TECNICAS_SUPERIOR_20201206.pdf",
+    "sourceVersion": "2020-12-06",
+    "keySource": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
+    "keyVersion": "2017-09-08"
+  }
+]

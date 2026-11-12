@@ -6,11 +6,88 @@ const path = require('node:path');
 const { chromium } = require(process.env.RUFCOM_PLAYWRIGHT_MODULE || 'playwright');
 const site = path.resolve(__dirname, '../site');
 const output = process.env.RUFCOM_BROWSER_ARTIFACTS || path.resolve(__dirname, '../browser-review');
-const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json'};
+const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json','.pdf':'application/pdf'};
 const report = { pages: [], carousel: [], density: [], error: null };
 const primaryPages = [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html'],['guias','/guias.html'],['chirp','/chirp.html']];
 const covered = new Set(primaryPages.map(([,url])=>url === '/' ? 'index.html' : url.slice(1)));
 const pages = [...primaryPages, ...Object.keys(require('./seo_pages.json')).filter(name=>!covered.has(name)).map(name=>[name.replace('.html',''),'/'+name]), ['404','/404.html']];
+
+async function studyQuiz(browser, base, viewport) {
+  const context = await browser.newContext({viewport:viewport==='movil'?{width:390,height:844}:{width:1366,height:900},hasTouch:viewport==='movil'});
+  await context.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
+  const quiz = await context.newPage();
+  const errors = [];
+  quiz.on('pageerror', error => errors.push(error.message));
+  await quiz.clock.install({time:new Date('2026-11-11T18:00:00Z')});
+  for (const [category, legal, technical] of [['aspirante',18,12],['novicio',15,15],['general',12,18],['superior',6,24]]) {
+    await quiz.goto(base+'/practicar-examen.html?categoria='+category);
+    assert.equal(await quiz.locator('#quiz-category').inputValue(),category);
+    assert.equal(await quiz.locator('#quiz-config').isVisible(),true);
+    assert.equal(await quiz.locator('#quiz-legal-count').inputValue(),String(legal));
+    assert.equal(await quiz.locator('#quiz-technical-count').inputValue(),String(technical));
+    assert.equal(await quiz.locator('#quiz-training').isChecked(),false);
+    await audit(quiz,'practicar-examen',viewport,'configurar-'+category);
+    await quiz.locator('#quiz-start').click();
+    assert.equal(await quiz.locator('#quiz-nav button').count(),30);
+    assert.match(await quiz.locator('#quiz-clock').innerText(),/45:00/);
+    await quiz.locator('#quiz-choices label').first().click();
+    assert.equal(await quiz.locator('#quiz-feedback').isVisible(),false);
+    await quiz.locator('#quiz-next').click();
+    await quiz.locator('#quiz-previous').click();
+    assert.equal(await quiz.locator('#quiz-choices input:checked').count(),1);
+    await quiz.locator('#quiz-finish').click();
+    assert.match(await quiz.locator('#quiz-confirm-text').innerText(),/29 preguntas sin responder/);
+    await quiz.locator('#quiz-keep').click();
+    assert.equal(await quiz.locator('#quiz-results').isVisible(),false);
+    await audit(quiz,'practicar-examen',viewport,'simulacro-'+category);
+    await quiz.clock.fastForward(45*60*1000);
+    assert.equal(await quiz.locator('#quiz-results').isVisible(),true);
+    assert.match(await quiz.locator('#quiz-result-summary').innerText(),/Se agotaron los 45 minutos/);
+    assert.match(await quiz.locator('#quiz-result-summary').innerText(),/29 sin responder/);
+    assert.match(await quiz.locator('#quiz-result-scores').innerText(),new RegExp('de '+legal));
+    assert.match(await quiz.locator('#quiz-result-scores').innerText(),new RegExp('de '+technical));
+    await audit(quiz,'practicar-examen',viewport,'resultado-'+category);
+  }
+  await quiz.locator('#quiz-restart').click();
+  await quiz.locator('[data-category="novicio"]').click();
+  await quiz.locator('#quiz-training').check();
+  await quiz.locator('#quiz-legal-count').selectOption('108');
+  await quiz.locator('#quiz-technical-count').selectOption('162');
+  assert.equal(await quiz.locator('#quiz-format').innerText(),'Total: 270 preguntas');
+  await quiz.screenshot({path:path.join(output,'estudio-'+viewport+'-configurar.png')});
+  await quiz.locator('#quiz-legal-count').selectOption('5');
+  await quiz.locator('#quiz-technical-count').selectOption('5');
+  await quiz.locator('#quiz-start').click();
+  await quiz.locator('#quiz-choices input').first().press('Space');
+  assert.equal(await quiz.locator('#quiz-feedback').isVisible(),true);
+  assert.equal(await quiz.locator('#quiz-choices input:disabled').count(),4);
+  assert.match(await quiz.getByRole('link',{name:'Ver pregunta original (PDF)',exact:true}).getAttribute('href'),/^assets\/docs\/subtel-apendice-/);
+  await audit(quiz,'practicar-examen',viewport,'repaso-explicado');
+  await quiz.screenshot({path:path.join(output,'estudio-'+viewport+'-repaso.png'),fullPage:true});
+  await quiz.locator('#quiz-finish').click();
+  await quiz.locator('#quiz-confirm-finish').click();
+  assert.equal(await quiz.locator('#quiz-retry-errors').isVisible(),true);
+  await quiz.locator('#quiz-review summary').first().click();
+  await audit(quiz,'practicar-examen',viewport,'revision-abierta');
+  await quiz.locator('#quiz-retry-errors').click();
+  assert.equal(await quiz.locator('#quiz-clock').isVisible(),false);
+  assert((await quiz.locator('#quiz-nav button').count())>=9);
+  await quiz.goto(base+'/practicar-examen.html');
+  await quiz.locator('[data-category="superior"]').click();
+  await quiz.locator('#quiz-legal-count').selectOption('0');
+  await quiz.locator('#quiz-technical-count').selectOption('5');
+  await quiz.locator('#quiz-start').click();
+  assert.equal(await quiz.locator('#quiz-nav button').count(),5);
+  assert.match(await quiz.locator('#quiz-session-title').innerText(),/Práctica Superior/);
+  await quiz.locator('#quiz-finish').click();await quiz.locator('#quiz-confirm-finish').click();
+  assert(!/mínimos|Resultado ponderado/.test(await quiz.locator('#quiz-results').innerText()));
+  await quiz.goto(base+'/practicar-examen.html?categoria=__proto__&tema=constructor');
+  assert.equal(await quiz.locator('#quiz-category').inputValue(),'aspirante');
+  assert.equal(await quiz.locator('#quiz-topic').inputValue(),'todos');
+  assert.deepEqual(errors,[],'Quiz JavaScript errors');
+  await quiz.close();
+  await context.close();
+}
 
 const server = http.createServer(async (req, res) => {
   try {
@@ -256,6 +333,7 @@ async function carousel(page, label) {
         }
       }
       assert.deepEqual(errors,[],'JavaScript page errors');
+      await studyQuiz(browser,base,viewport.label);
       await context.close();
     }
     console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, guard log, menus, panels, roles, images and carousel');

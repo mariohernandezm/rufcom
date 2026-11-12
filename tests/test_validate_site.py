@@ -27,6 +27,15 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
+    def test_only_reviewed_subtel_pdfs_are_accepted(self):
+        (self.root / 'site/assets/docs/unknown.pdf').write_bytes(b'%PDF-1.7\n%%EOF')
+        self.assertTrue(any('unsupported public file: unknown.pdf' in e for e in validate(self.root)))
+
+    def test_reviewed_pdf_cannot_be_replaced_or_appended(self):
+        path = self.root / 'site/assets/docs/subtel-apendice-a-20201206.pdf'
+        path.write_bytes(path.read_bytes() + b'\nchanged')
+        self.assertTrue(any('PDF differs from reviewed SUBTEL source' in e for e in validate(self.root)))
+
     def test_new_page_without_shared_design_is_rejected(self):
         path = self.root / 'site/radios-en-montana.html'
         path.write_text(re.sub(

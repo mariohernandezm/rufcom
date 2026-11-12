@@ -74,7 +74,7 @@
   "licencias.html": {
     "type": "Article",
     "image": "assets/images/rufcom-logo-transparent-lossless.webp",
-    "modified": "2026-10-21T08:23:52-03:00"
+    "modified": "2026-11-11T23:07:13+00:00"
   },
   "morse-sos.html": {
     "type": "Article",
@@ -117,5 +117,18 @@
     "type": "Article",
     "image": "assets/images/radio-simplex-rufis.webp",
     "modified": "2026-11-08T14:41:00-03:00"
+  },
+  "estudiar-radioaficion.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
+  },
+  "materias-radioaficion.html": {
+    "type": "Article",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp",
+    "modified": "2026-11-11T23:07:13+00:00"
+  },
+  "practicar-examen.html": {
+    "type": "WebPage",
+    "image": "assets/images/rufcom-logo-transparent-lossless.webp"
   }
 }
