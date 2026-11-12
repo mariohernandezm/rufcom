@@ -23,7 +23,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-1",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-2",
@@ -46,7 +47,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-2",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-3",
@@ -69,7 +71,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-3",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-4",
@@ -92,7 +95,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-4",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-5",
@@ -115,7 +119,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-5",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-6",
@@ -138,7 +143,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-6",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-7",
@@ -161,7 +167,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-7",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-8",
@@ -184,7 +191,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-8",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-9",
@@ -207,7 +215,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-9",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-10",
@@ -230,7 +239,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-10",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-11",
@@ -253,7 +263,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-11",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-12",
@@ -276,7 +287,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-12",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-13",
@@ -299,7 +311,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-13",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-14",
@@ -322,7 +335,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-14",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-15",
@@ -345,7 +359,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-15",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-16",
@@ -368,7 +383,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-16",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-17",
@@ -391,7 +407,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-17",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-18",
@@ -414,7 +431,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-18",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-19",
@@ -437,7 +455,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-19",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-20",
@@ -460,7 +479,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-20",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-21",
@@ -483,7 +503,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-21",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-22",
@@ -506,7 +527,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-22",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-23",
@@ -529,7 +551,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-23",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-24",
@@ -552,7 +575,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-24",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-25",
@@ -575,7 +599,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-25",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-26",
@@ -598,7 +623,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-26",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-27",
@@ -621,7 +647,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-27",
-  "figures": []
+  "figures": [],
+  "module": "reglamento",
+  "excluded": "La clave publicada indica 200 W para móvil VHF Novicio; el art. 13 b/c del Decreto 523 limita VHF a 50 W."
  },
  {
   "id": "A0-28",
@@ -644,7 +672,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-28",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-29",
@@ -667,7 +696,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-29",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-30",
@@ -690,7 +720,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-30",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-31",
@@ -713,7 +744,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-31",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-32",
@@ -736,7 +768,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-32",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-33",
@@ -759,7 +792,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-33",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-34",
@@ -782,7 +816,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-34",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-35",
@@ -805,7 +840,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-35",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-36",
@@ -828,7 +864,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-36",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-37",
@@ -851,7 +888,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-37",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-38",
@@ -874,7 +912,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-38",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-39",
@@ -897,7 +936,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-39",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-40",
@@ -920,7 +960,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-40",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-41",
@@ -943,7 +984,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-41",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-42",
@@ -966,7 +1008,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-42",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-43",
@@ -989,7 +1032,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-43",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-44",
@@ -1012,7 +1056,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-44",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-45",
@@ -1035,7 +1080,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-45",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-46",
@@ -1058,7 +1104,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-46",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-47",
@@ -1081,7 +1128,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-47",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-48",
@@ -1104,7 +1152,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-48",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-49",
@@ -1127,7 +1176,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-49",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-50",
@@ -1150,7 +1200,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-50",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-51",
@@ -1173,7 +1224,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-51",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-52",
@@ -1196,7 +1248,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-52",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-53",
@@ -1219,7 +1272,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-53",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-54",
@@ -1242,7 +1296,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-54",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-55",
@@ -1265,7 +1320,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-55",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-56",
@@ -1288,7 +1344,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-56",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-57",
@@ -1311,7 +1368,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-57",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-58",
@@ -1334,7 +1392,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-58",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-59",
@@ -1357,7 +1416,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-59",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-60",
@@ -1380,7 +1440,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-60",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-61",
@@ -1403,7 +1464,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-61",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-62",
@@ -1426,7 +1488,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-62",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-63",
@@ -1449,7 +1512,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-63",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-64",
@@ -1472,7 +1536,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-64",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-65",
@@ -1495,7 +1560,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-65",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-66",
@@ -1518,7 +1584,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-66",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-67",
@@ -1541,7 +1608,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-67",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-68",
@@ -1564,7 +1632,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-68",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-69",
@@ -1587,7 +1656,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-69",
-  "figures": []
+  "figures": [],
+  "module": "reglamento",
+  "excluded": "La clave publicada limita Aspirante VHF a 25 W; el art. 15 b del Decreto 523 indica 50 W."
  },
  {
   "id": "A0-70",
@@ -1610,7 +1681,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-70",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-71",
@@ -1633,7 +1705,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-71",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-72",
@@ -1656,7 +1729,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-72",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-73",
@@ -1679,7 +1753,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-73",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-74",
@@ -1702,7 +1777,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-74",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-75",
@@ -1725,7 +1801,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-75",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-76",
@@ -1748,7 +1825,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-76",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-77",
@@ -1771,7 +1849,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-77",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-78",
@@ -1794,7 +1873,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-78",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-79",
@@ -1817,7 +1897,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-79",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-80",
@@ -1840,7 +1921,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-80",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-81",
@@ -1863,7 +1945,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-81",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-82",
@@ -1886,7 +1969,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-82",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-83",
@@ -1909,7 +1993,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-83",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-84",
@@ -1932,7 +2017,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-84",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-85",
@@ -1955,7 +2041,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-85",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-86",
@@ -1978,7 +2065,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-86",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-87",
@@ -2001,7 +2089,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-87",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-88",
@@ -2024,7 +2113,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-88",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-89",
@@ -2047,7 +2137,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-89",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-90",
@@ -2070,7 +2161,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-90",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-91",
@@ -2093,7 +2185,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-91",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-92",
@@ -2116,7 +2209,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-92",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-93",
@@ -2139,7 +2233,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-93",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-94",
@@ -2162,7 +2257,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-94",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-95",
@@ -2185,7 +2281,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-95",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-96",
@@ -2208,7 +2305,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-96",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-97",
@@ -2231,7 +2329,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-97",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-98",
@@ -2254,7 +2353,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-98",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-99",
@@ -2277,7 +2377,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-99",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-100",
@@ -2300,7 +2401,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-100",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-101",
@@ -2323,7 +2425,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-101",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-102",
@@ -2346,7 +2449,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-102",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-103",
@@ -2369,7 +2473,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-103",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-104",
@@ -2392,7 +2497,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-104",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-105",
@@ -2415,7 +2521,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-105",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-106",
@@ -2438,7 +2545,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-106",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-107",
@@ -2461,7 +2569,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-107",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "A0-108",
@@ -2484,7 +2593,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-a.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2019/05/Apendice_A_Preguntas_Reglamento_Aspirante_Novicio_General_Superior_20190508.pdf",
   "keyId": "A0-108",
-  "figures": []
+  "figures": [],
+  "module": "reglamento"
  },
  {
   "id": "B1-1",
@@ -2507,7 +2617,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-1",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-2",
@@ -2530,7 +2641,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-2",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-3",
@@ -2553,7 +2665,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-3",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-4",
@@ -2576,7 +2689,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-4",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-5",
@@ -2599,7 +2713,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-5",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-6",
@@ -2622,7 +2737,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-6",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-7",
@@ -2645,7 +2761,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-7",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-8",
@@ -2668,7 +2785,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-8",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-9",
@@ -2691,7 +2809,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-9",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-10",
@@ -2714,7 +2833,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-10",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-11",
@@ -2737,7 +2857,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-11",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-12",
@@ -2760,7 +2881,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-12",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-13",
@@ -2790,7 +2912,8 @@ const estudioBanco = [
     "width": 120,
     "height": 134
    }
-  ]
+  ],
+  "module": "mediciones"
  },
  {
   "id": "B1-14",
@@ -2813,7 +2936,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-14",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-15",
@@ -2836,7 +2960,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-15",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-16",
@@ -2859,7 +2984,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-16",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-17",
@@ -2882,7 +3008,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-17",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "B1-18",
@@ -2905,7 +3032,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-18",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "B1-19",
@@ -2928,7 +3056,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-19",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "B1-20",
@@ -2951,7 +3080,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-20",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-21",
@@ -2974,7 +3104,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-21",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-22",
@@ -2997,7 +3128,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-22",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-23",
@@ -3020,7 +3152,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-23",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-24",
@@ -3043,7 +3176,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-24",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-25",
@@ -3066,7 +3200,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-25",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-26",
@@ -3089,7 +3224,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-26",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-27",
@@ -3112,7 +3248,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-27",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-28",
@@ -3135,7 +3272,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-28",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-29",
@@ -3158,7 +3296,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-29",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-30",
@@ -3181,7 +3320,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-30",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-31",
@@ -3204,7 +3344,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-31",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-32",
@@ -3227,7 +3368,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-32",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-33",
@@ -3257,7 +3399,8 @@ const estudioBanco = [
     "width": 192,
     "height": 141
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "B1-34",
@@ -3280,7 +3423,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-34",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "B1-35",
@@ -3303,7 +3447,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-35",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "B1-36",
@@ -3333,7 +3478,8 @@ const estudioBanco = [
     "width": 139,
     "height": 136
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "B1-37",
@@ -3363,7 +3509,8 @@ const estudioBanco = [
     "width": 141,
     "height": 130
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "B1-38",
@@ -3386,7 +3533,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-38",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-39",
@@ -3409,7 +3557,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-39",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-40",
@@ -3432,7 +3581,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-40",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-41",
@@ -3455,7 +3605,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-41",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-42",
@@ -3485,7 +3636,8 @@ const estudioBanco = [
     "width": 119,
     "height": 120
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "B1-43",
@@ -3508,7 +3660,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-43",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-44",
@@ -3531,7 +3684,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-44",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-45",
@@ -3554,7 +3708,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-45",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-46",
@@ -3577,7 +3732,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-46",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-47",
@@ -3600,7 +3756,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-47",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-48",
@@ -3623,7 +3780,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-48",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-49",
@@ -3646,7 +3804,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-49",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-50",
@@ -3669,7 +3828,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-50",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-51",
@@ -3692,7 +3852,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-51",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-52",
@@ -3715,7 +3876,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-52",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "B1-53",
@@ -3738,7 +3900,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-53",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-54",
@@ -3761,7 +3924,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-54",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-55",
@@ -3784,7 +3948,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-55",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "B1-56",
@@ -3807,7 +3972,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-56",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-57",
@@ -3830,7 +3996,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-57",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-58",
@@ -3853,7 +4020,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-58",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B1-59",
@@ -3883,7 +4051,8 @@ const estudioBanco = [
     "width": 97,
     "height": 107
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "B1-60",
@@ -3906,7 +4075,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-60",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B1-61",
@@ -3929,7 +4099,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-61",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "B1-62",
@@ -3952,7 +4123,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B1-62",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "B2-1",
@@ -3975,7 +4147,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-1",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "B2-2",
@@ -3998,7 +4171,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-2",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "B2-3",
@@ -4021,7 +4195,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-3",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "B2-4",
@@ -4044,7 +4219,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-4",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "B2-5",
@@ -4067,7 +4243,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-5",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "B2-6",
@@ -4090,7 +4267,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-6",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "B2-7",
@@ -4113,7 +4291,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-7",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-8",
@@ -4136,7 +4315,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-8",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-9",
@@ -4159,7 +4339,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-9",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-10",
@@ -4182,7 +4363,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-10",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-11",
@@ -4205,7 +4387,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-11",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-12",
@@ -4228,7 +4411,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-12",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-13",
@@ -4251,7 +4435,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-13",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-14",
@@ -4274,7 +4459,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-14",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-15",
@@ -4297,7 +4483,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-15",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-16",
@@ -4320,7 +4507,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-16",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B2-17",
@@ -4343,7 +4531,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-17",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B2-18",
@@ -4366,7 +4555,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-18",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B2-19",
@@ -4389,7 +4579,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-19",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B2-20",
@@ -4412,7 +4603,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-20",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "B2-21",
@@ -4435,7 +4627,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-21",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-22",
@@ -4458,7 +4651,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-22",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-23",
@@ -4481,7 +4675,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-23",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-24",
@@ -4504,7 +4699,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-24",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-25",
@@ -4527,7 +4723,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-25",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-26",
@@ -4550,7 +4747,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-26",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "B2-27",
@@ -4573,7 +4771,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-27",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-28",
@@ -4596,7 +4795,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-28",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-29",
@@ -4619,7 +4819,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-29",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-30",
@@ -4642,7 +4843,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-30",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "B2-31",
@@ -4665,7 +4867,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-31",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "B2-32",
@@ -4688,7 +4891,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-32",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "B2-33",
@@ -4711,7 +4915,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B2-33",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "B3-1",
@@ -4734,7 +4939,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-1",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-2",
@@ -4757,7 +4963,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-2",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-3",
@@ -4780,7 +4987,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-3",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-4",
@@ -4803,7 +5011,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-4",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-5",
@@ -4826,7 +5035,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-5",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-6",
@@ -4849,7 +5059,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-6",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-7",
@@ -4872,7 +5083,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-7",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-8",
@@ -4895,7 +5107,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-8",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-9",
@@ -4918,7 +5131,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-9",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-10",
@@ -4941,7 +5155,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-10",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-11",
@@ -4964,7 +5179,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-11",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-12",
@@ -4987,7 +5203,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-12",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-13",
@@ -5010,7 +5227,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-13",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-14",
@@ -5033,7 +5251,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-14",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-15",
@@ -5056,7 +5275,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-15",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-16",
@@ -5079,7 +5299,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-16",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-17",
@@ -5102,7 +5323,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-17",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-18",
@@ -5125,7 +5347,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-18",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "B3-19",
@@ -5148,7 +5371,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-b.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_ASPIRANTE.pdf",
   "keyId": "B3-19",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C1-1",
@@ -5171,7 +5395,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-1",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-2",
@@ -5194,7 +5419,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-2",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-3",
@@ -5217,7 +5443,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-3",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-4",
@@ -5240,7 +5467,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-4",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-5",
@@ -5263,7 +5491,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-5",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-6",
@@ -5286,7 +5515,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-6",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-7",
@@ -5309,7 +5539,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-7",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-8",
@@ -5332,7 +5563,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-8",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-9",
@@ -5355,7 +5587,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-9",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-10",
@@ -5378,7 +5611,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-10",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-11",
@@ -5401,7 +5635,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-11",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-12",
@@ -5431,7 +5666,8 @@ const estudioBanco = [
     "width": 290,
     "height": 190
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "C1-13",
@@ -5454,7 +5690,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-13",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-14",
@@ -5484,7 +5721,8 @@ const estudioBanco = [
     "width": 119,
     "height": 135
    }
-  ]
+  ],
+  "module": "mediciones"
  },
  {
   "id": "C1-15",
@@ -5507,7 +5745,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-15",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-16",
@@ -5530,7 +5769,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-16",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-17",
@@ -5553,7 +5793,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-17",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-18",
@@ -5576,7 +5817,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-18",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-19",
@@ -5599,7 +5841,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-19",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-20",
@@ -5622,7 +5865,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-20",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "C1-21",
@@ -5645,7 +5889,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-21",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "C1-22",
@@ -5668,7 +5913,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-22",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "C1-23",
@@ -5691,7 +5937,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-23",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-24",
@@ -5714,7 +5961,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-24",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-25",
@@ -5737,7 +5985,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-25",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-26",
@@ -5760,7 +6009,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-26",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-27",
@@ -5783,7 +6033,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-27",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-28",
@@ -5806,7 +6057,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-28",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-29",
@@ -5829,7 +6081,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-29",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-30",
@@ -5852,7 +6105,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-30",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-31",
@@ -5875,7 +6129,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-31",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-32",
@@ -5898,7 +6153,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-32",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-33",
@@ -5921,7 +6177,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-33",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-34",
@@ -5944,7 +6201,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-34",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-35",
@@ -5967,7 +6225,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-35",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-36",
@@ -5990,7 +6249,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-36",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-37",
@@ -6013,7 +6273,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-37",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-38",
@@ -6036,7 +6297,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-38",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-39",
@@ -6059,7 +6321,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-39",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-40",
@@ -6082,7 +6345,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-40",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-41",
@@ -6105,7 +6369,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-41",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-42",
@@ -6128,7 +6393,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-42",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-43",
@@ -6151,7 +6417,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-43",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-44",
@@ -6181,7 +6448,8 @@ const estudioBanco = [
     "width": 366,
     "height": 175
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "C1-45",
@@ -6211,7 +6479,8 @@ const estudioBanco = [
     "width": 352,
     "height": 180
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "C1-46",
@@ -6241,7 +6510,8 @@ const estudioBanco = [
     "width": 178,
     "height": 131
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "C1-47",
@@ -6264,7 +6534,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-47",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "C1-48",
@@ -6287,7 +6558,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-48",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "C1-49",
@@ -6317,7 +6589,8 @@ const estudioBanco = [
     "width": 104,
     "height": 130
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C1-50",
@@ -6347,7 +6620,8 @@ const estudioBanco = [
     "width": 223,
     "height": 92
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C1-51",
@@ -6370,7 +6644,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-51",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-52",
@@ -6393,7 +6668,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-52",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-53",
@@ -6423,7 +6699,8 @@ const estudioBanco = [
     "width": 364,
     "height": 201
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C1-54",
@@ -6453,7 +6730,8 @@ const estudioBanco = [
     "width": 487,
     "height": 214
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C1-55",
@@ -6476,7 +6754,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-55",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-56",
@@ -6499,7 +6778,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-56",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-57",
@@ -6522,7 +6802,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-57",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-58",
@@ -6552,7 +6833,8 @@ const estudioBanco = [
     "width": 185,
     "height": 105
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C1-59",
@@ -6575,7 +6857,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-59",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "C1-60",
@@ -6598,7 +6881,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-60",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "C1-61",
@@ -6621,7 +6905,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-61",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-62",
@@ -6644,7 +6929,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-62",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-63",
@@ -6667,7 +6953,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-63",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-64",
@@ -6690,7 +6977,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-64",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-65",
@@ -6713,7 +7001,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-65",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-66",
@@ -6736,7 +7025,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-66",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-67",
@@ -6759,7 +7049,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-67",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-68",
@@ -6782,7 +7073,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-68",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-69",
@@ -6805,7 +7097,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-69",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-70",
@@ -6828,7 +7121,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-70",
-  "figures": []
+  "figures": [],
+  "module": "alterna",
+  "excluded": "El enunciado no especifica onda rectificada ni semiciclo: el promedio algebraico de una sinusoide completa es cero, no 0,636 del pico."
  },
  {
   "id": "C1-71",
@@ -6851,7 +7146,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-71",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-72",
@@ -6874,7 +7170,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-72",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-73",
@@ -6897,7 +7194,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-73",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-74",
@@ -6920,7 +7218,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-74",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-75",
@@ -6943,7 +7242,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-75",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-76",
@@ -6966,7 +7266,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-76",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-77",
@@ -6989,7 +7290,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-77",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-78",
@@ -7012,7 +7314,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-78",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-79",
@@ -7035,7 +7338,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-79",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-80",
@@ -7058,7 +7362,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-80",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-81",
@@ -7081,7 +7386,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-81",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-82",
@@ -7104,7 +7410,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-82",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-83",
@@ -7127,7 +7434,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-83",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-84",
@@ -7157,7 +7465,8 @@ const estudioBanco = [
     "width": 295,
     "height": 193
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "C1-85",
@@ -7180,7 +7489,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-85",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-86",
@@ -7203,7 +7513,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-86",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "C1-87",
@@ -7226,7 +7537,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-87",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "C1-88",
@@ -7249,7 +7561,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-88",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "C1-89",
@@ -7272,7 +7585,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-89",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-90",
@@ -7295,7 +7609,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-90",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-91",
@@ -7318,7 +7633,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-91",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "C1-92",
@@ -7341,7 +7657,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-92",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "C1-93",
@@ -7364,7 +7681,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-93",
-  "figures": []
+  "figures": [],
+  "module": "electricidad",
+  "excluded": "Aumentar la sección de un conductor reduce su resistencia. La clave “aumenta sólo la capacidad” no describe ese cambio."
  },
  {
   "id": "C1-94",
@@ -7387,7 +7706,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-94",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C1-95",
@@ -7410,7 +7730,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C1-95",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-1",
@@ -7433,7 +7754,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-1",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-2",
@@ -7456,7 +7778,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-2",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-3",
@@ -7479,7 +7802,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-3",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-4",
@@ -7502,7 +7826,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-4",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-5",
@@ -7525,7 +7850,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-5",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-6",
@@ -7548,7 +7874,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-6",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-7",
@@ -7571,7 +7898,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-7",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-8",
@@ -7594,7 +7922,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-8",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-9",
@@ -7617,7 +7946,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-9",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-10",
@@ -7640,7 +7970,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-10",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-11",
@@ -7663,7 +7994,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-11",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-12",
@@ -7686,7 +8018,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-12",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-13",
@@ -7709,7 +8042,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-13",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-14",
@@ -7732,7 +8066,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-14",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores",
+  "excluded": "La clave describe electrones de placa a cátodo; en la válvula, el cátodo emite y la placa recoge electrones."
  },
  {
   "id": "C2-15",
@@ -7755,7 +8091,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-15",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "C2-16",
@@ -7778,7 +8115,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-16",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-17",
@@ -7801,7 +8139,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-17",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-18",
@@ -7824,7 +8163,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-18",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-19",
@@ -7847,7 +8187,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-19",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-20",
@@ -7870,7 +8211,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-20",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-21",
@@ -7893,7 +8235,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-21",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-22",
@@ -7916,7 +8259,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-22",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-23",
@@ -7939,7 +8283,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-23",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-24",
@@ -7962,7 +8307,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-24",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-25",
@@ -7985,7 +8331,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-25",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "C2-26",
@@ -8008,7 +8355,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-26",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "C2-27",
@@ -8031,7 +8379,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-27",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-28",
@@ -8054,7 +8403,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-28",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-29",
@@ -8077,7 +8427,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-29",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-30",
@@ -8100,7 +8451,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-30",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-31",
@@ -8130,7 +8482,8 @@ const estudioBanco = [
     "width": 284,
     "height": 162
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C2-32",
@@ -8160,7 +8513,8 @@ const estudioBanco = [
     "width": 276,
     "height": 168
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C2-33",
@@ -8190,7 +8544,8 @@ const estudioBanco = [
     "width": 271,
     "height": 160
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "C2-34",
@@ -8213,7 +8568,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-34",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-35",
@@ -8236,7 +8592,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-35",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-36",
@@ -8259,7 +8616,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-36",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-37",
@@ -8282,7 +8640,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-37",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-38",
@@ -8305,7 +8664,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-38",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-39",
@@ -8328,7 +8688,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-39",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-40",
@@ -8351,7 +8712,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-40",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "C2-41",
@@ -8374,7 +8736,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-41",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-42",
@@ -8397,7 +8760,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-42",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-43",
@@ -8420,7 +8784,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-43",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-44",
@@ -8443,7 +8808,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-44",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-45",
@@ -8466,7 +8832,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-45",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-46",
@@ -8489,7 +8856,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-46",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C2-47",
@@ -8512,7 +8880,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-47",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-48",
@@ -8535,7 +8904,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-48",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C2-49",
@@ -8558,7 +8928,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-49",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "C2-50",
@@ -8581,7 +8952,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C2-50",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "C3-1",
@@ -8604,7 +8976,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-1",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-2",
@@ -8627,7 +9000,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-2",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-3",
@@ -8650,7 +9024,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-3",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-4",
@@ -8673,7 +9048,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-4",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-5",
@@ -8696,7 +9072,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-5",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-6",
@@ -8719,7 +9096,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-6",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-7",
@@ -8742,7 +9120,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-7",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-8",
@@ -8765,7 +9144,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-8",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-9",
@@ -8788,7 +9168,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-9",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C3-10",
@@ -8811,7 +9192,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-10",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "C3-11",
@@ -8834,7 +9216,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-11",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "C3-12",
@@ -8857,7 +9240,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-12",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-13",
@@ -8880,7 +9264,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-13",
-  "figures": []
+  "figures": [],
+  "module": "transmisores"
  },
  {
   "id": "C3-14",
@@ -8903,7 +9288,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-14",
-  "figures": []
+  "figures": [],
+  "module": "transmisores"
  },
  {
   "id": "C3-15",
@@ -8926,7 +9312,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-15",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-16",
@@ -8949,7 +9336,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-16",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "C3-17",
@@ -8972,7 +9360,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-c.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2018/07/Apendice_C_PREGUNTAS_TECNICAS_NOVICIO_v11072018.pdf",
   "keyId": "C3-17",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D1-1",
@@ -9002,7 +9391,8 @@ const estudioBanco = [
     "width": 302,
     "height": 195
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-2",
@@ -9032,7 +9422,8 @@ const estudioBanco = [
     "width": 277,
     "height": 208
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-3",
@@ -9062,7 +9453,8 @@ const estudioBanco = [
     "width": 376,
     "height": 217
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-4",
@@ -9092,7 +9484,8 @@ const estudioBanco = [
     "width": 391,
     "height": 262
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-5",
@@ -9122,7 +9515,8 @@ const estudioBanco = [
     "width": 454,
     "height": 200
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-6",
@@ -9152,7 +9546,8 @@ const estudioBanco = [
     "width": 309,
     "height": 214
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-7",
@@ -9175,7 +9570,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-7",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-8",
@@ -9205,7 +9601,8 @@ const estudioBanco = [
     "width": 316,
     "height": 204
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-9",
@@ -9235,7 +9632,8 @@ const estudioBanco = [
     "width": 301,
     "height": 231
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-10",
@@ -9265,7 +9663,9 @@ const estudioBanco = [
     "width": 456,
     "height": 203
    }
-  ]
+  ],
+  "module": "mediciones",
+  "excluded": "Con movimiento de 1 mA, 100 Ω y corriente total de 5 mA, el shunt ideal es 25 Ω; la clave publicada indica 20 Ω."
  },
  {
   "id": "D1-11",
@@ -9295,7 +9695,8 @@ const estudioBanco = [
     "width": 306,
     "height": 271
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-12",
@@ -9318,7 +9719,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-12",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D1-13",
@@ -9341,7 +9743,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-13",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-14",
@@ -9364,7 +9767,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-14",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-15",
@@ -9394,7 +9798,8 @@ const estudioBanco = [
     "width": 302,
     "height": 230
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-16",
@@ -9425,7 +9830,8 @@ const estudioBanco = [
     "height": 218
    }
   ],
-  "excluded": "La fuente repite el texto de la alternativa marcada correcta en otra alternativa. Se conserva la transcripción, pero no se selecciona para calificar."
+  "excluded": "La fuente repite el texto de la alternativa marcada correcta en otra alternativa. Se conserva la transcripción, pero no se selecciona para calificar.",
+  "module": "alterna"
  },
  {
   "id": "D1-17",
@@ -9455,7 +9861,8 @@ const estudioBanco = [
     "width": 460,
     "height": 224
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-18",
@@ -9485,7 +9892,8 @@ const estudioBanco = [
     "width": 268,
     "height": 166
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D1-19",
@@ -9515,7 +9923,8 @@ const estudioBanco = [
     "width": 277,
     "height": 184
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-20",
@@ -9538,7 +9947,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-20",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D1-21",
@@ -9561,7 +9971,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-21",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D1-22",
@@ -9584,7 +9995,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-22",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-23",
@@ -9614,7 +10026,8 @@ const estudioBanco = [
     "width": 314,
     "height": 179
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-24",
@@ -9644,7 +10057,8 @@ const estudioBanco = [
     "width": 224,
     "height": 130
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "D1-25",
@@ -9674,7 +10088,8 @@ const estudioBanco = [
     "width": 269,
     "height": 192
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-26",
@@ -9704,7 +10119,8 @@ const estudioBanco = [
     "width": 333,
     "height": 138
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-27",
@@ -9734,7 +10150,8 @@ const estudioBanco = [
     "width": 453,
     "height": 267
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-28",
@@ -9764,7 +10181,8 @@ const estudioBanco = [
     "width": 434,
     "height": 282
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "D1-29",
@@ -9787,7 +10205,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-29",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "D1-30",
@@ -9810,7 +10229,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-30",
-  "figures": []
+  "figures": [],
+  "module": "electricidad",
+  "excluded": "Con P = 13,75 W e I = 55 mA, R = P/I² ≈ 4.545 Ω. La opción publicada “4,545 Ohm” es ambigua por su separador decimal."
  },
  {
   "id": "D1-31",
@@ -9833,7 +10254,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-31",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-32",
@@ -9856,7 +10278,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-32",
-  "figures": []
+  "figures": [],
+  "module": "electricidad",
+  "excluded": "El enunciado mezcla corriente y voltios y la clave de 10 mA no permite una resolución coherente con los datos transcritos del original."
  },
  {
   "id": "D1-33",
@@ -9879,7 +10303,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-33",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-34",
@@ -9902,7 +10327,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-34",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-35",
@@ -9925,7 +10351,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-35",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-36",
@@ -9948,7 +10375,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-36",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D1-37",
@@ -9971,7 +10399,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-37",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D1-38",
@@ -9994,7 +10423,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-38",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D1-39",
@@ -10017,7 +10447,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-39",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-40",
@@ -10040,7 +10471,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-40",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-41",
@@ -10063,7 +10495,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-41",
-  "figures": []
+  "figures": [],
+  "module": "alterna",
+  "excluded": "No se especifica rectificación ni semiciclo: el promedio algebraico de una sinusoide completa es cero; 0,636Vp es su promedio rectificado."
  },
  {
   "id": "D1-42",
@@ -10086,7 +10520,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-42",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-43",
@@ -10109,7 +10544,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-43",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-44",
@@ -10132,7 +10568,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-44",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-45",
@@ -10155,7 +10592,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-45",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-46",
@@ -10178,7 +10616,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-46",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-47",
@@ -10201,7 +10640,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-47",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-48",
@@ -10224,7 +10664,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-48",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-49",
@@ -10247,7 +10688,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-49",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D1-50",
@@ -10270,7 +10712,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D1-50",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-1",
@@ -10293,7 +10736,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-1",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-2",
@@ -10316,7 +10760,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-2",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-3",
@@ -10339,7 +10784,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-3",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-4",
@@ -10362,7 +10808,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-4",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-5",
@@ -10385,7 +10832,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-5",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-6",
@@ -10408,7 +10856,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-6",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-7",
@@ -10431,7 +10880,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-7",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-8",
@@ -10454,7 +10904,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-8",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-9",
@@ -10477,7 +10928,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-9",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-10",
@@ -10500,7 +10952,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-10",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-11",
@@ -10530,7 +10983,8 @@ const estudioBanco = [
     "width": 368,
     "height": 252
    }
-  ]
+  ],
+  "module": "semiconductores"
  },
  {
   "id": "D2-12",
@@ -10553,7 +11007,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-12",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-13",
@@ -10576,7 +11031,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-13",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-14",
@@ -10606,7 +11062,8 @@ const estudioBanco = [
     "width": 326,
     "height": 214
    }
-  ]
+  ],
+  "module": "semiconductores"
  },
  {
   "id": "D2-15",
@@ -10629,7 +11086,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-15",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores",
+  "excluded": "La clave “su polarización es en fase” no explica la configuración emisor común; la tensión de señal suele invertir fase en esa etapa."
  },
  {
   "id": "D2-16",
@@ -10652,7 +11111,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-16",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores",
+  "excluded": "La clave publicada indica potasio y tantalio. Los semiconductores habituales de esta pregunta son germanio y silicio."
  },
  {
   "id": "D2-17",
@@ -10675,7 +11136,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-17",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores",
+  "excluded": "El enunciado dice “transmisor” y la clave “por huecos” no describe su estructura; el texto parece referirse a un transistor y requiere aclaración."
  },
  {
   "id": "D2-18",
@@ -10698,7 +11161,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-18",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-19",
@@ -10721,7 +11185,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-19",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores",
+  "excluded": "Baja impedancia de entrada y alta de salida describen base común; la clave publicada indica emisor común."
  },
  {
   "id": "D2-20",
@@ -10744,7 +11210,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-20",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-21",
@@ -10767,7 +11234,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-21",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-22",
@@ -10790,7 +11258,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-22",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-23",
@@ -10813,7 +11282,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-23",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-24",
@@ -10843,7 +11313,8 @@ const estudioBanco = [
     "width": 320,
     "height": 244
    }
-  ]
+  ],
+  "module": "osciladores"
  },
  {
   "id": "D2-25",
@@ -10873,7 +11344,8 @@ const estudioBanco = [
     "width": 431,
     "height": 229
    }
-  ]
+  ],
+  "module": "modulacion"
  },
  {
   "id": "D2-26",
@@ -10903,7 +11375,8 @@ const estudioBanco = [
     "width": 248,
     "height": 192
    }
-  ]
+  ],
+  "module": "mediciones"
  },
  {
   "id": "D2-27",
@@ -10926,7 +11399,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-27",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-28",
@@ -10949,7 +11423,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-28",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-29",
@@ -10972,7 +11447,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-29",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-30",
@@ -10995,7 +11471,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-30",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-31",
@@ -11018,7 +11495,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-31",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-32",
@@ -11048,7 +11526,8 @@ const estudioBanco = [
     "width": 352,
     "height": 200
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-33",
@@ -11078,7 +11557,8 @@ const estudioBanco = [
     "width": 285,
     "height": 258
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-34",
@@ -11108,7 +11588,8 @@ const estudioBanco = [
     "width": 256,
     "height": 236
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-35",
@@ -11138,7 +11619,8 @@ const estudioBanco = [
     "width": 226,
     "height": 224
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-36",
@@ -11161,7 +11643,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-36",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-37",
@@ -11184,7 +11667,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-37",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-38",
@@ -11214,7 +11698,8 @@ const estudioBanco = [
     "width": 416,
     "height": 208
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-39",
@@ -11244,7 +11729,8 @@ const estudioBanco = [
     "width": 321,
     "height": 243
    }
-  ]
+  ],
+  "module": "transmisores"
  },
  {
   "id": "D2-40",
@@ -11274,7 +11760,8 @@ const estudioBanco = [
     "width": 318,
     "height": 166
    }
-  ]
+  ],
+  "module": "semiconductores"
  },
  {
   "id": "D2-41",
@@ -11304,7 +11791,8 @@ const estudioBanco = [
     "width": 235,
     "height": 244
    }
-  ]
+  ],
+  "module": "semiconductores"
  },
  {
   "id": "D2-42",
@@ -11334,7 +11822,8 @@ const estudioBanco = [
     "width": 114,
     "height": 102
    }
-  ]
+  ],
+  "module": "integrados"
  },
  {
   "id": "D2-43",
@@ -11364,7 +11853,8 @@ const estudioBanco = [
     "width": 175,
     "height": 191
    }
-  ]
+  ],
+  "module": "semiconductores"
  },
  {
   "id": "D2-44",
@@ -11380,14 +11870,15 @@ const estudioBanco = [
    "Un condensador."
   ],
   "correct": 2,
-  "explanation": "Respuesta según el solucionario oficial de SUBTEL. Puedes consultar la pregunta y su clave en los documentos de referencia.",
+  "explanation": "El solucionario utiliza “grilla” para el electrodo de control del FET, llamado puerta o gate en la terminología de esta lección. Distingue esta puerta de las rejillas de una válvula.",
   "source": "SUBTEL · Apéndice D-2 · pregunta 44 · página 27 · versión 06/12/2020. Clave contrastada con el solucionario oficial de 08/09/2017.",
   "sourceUrl": "assets/docs/subtel-apendice-d-20201206.pdf#page=27",
   "originUrl": "https://www.subtel.gob.cl/wp-content/uploads/2020/12/Apendice_D_PREGUNTAS_TECNICAS_GENERAL_20201206.pdf",
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-44",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-45",
@@ -11410,7 +11901,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-45",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-46",
@@ -11433,7 +11925,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-46",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-47",
@@ -11456,7 +11949,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-47",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-48",
@@ -11479,7 +11973,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-48",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-49",
@@ -11502,7 +11997,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-49",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-50",
@@ -11525,7 +12021,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-50",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-51",
@@ -11548,7 +12045,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-51",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-52",
@@ -11571,7 +12069,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-52",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-53",
@@ -11594,7 +12093,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-53",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-54",
@@ -11617,7 +12117,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-54",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-55",
@@ -11640,7 +12141,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-55",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-56",
@@ -11663,7 +12165,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-56",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D2-57",
@@ -11686,7 +12189,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-57",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-58",
@@ -11709,7 +12213,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-58",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D2-59",
@@ -11739,7 +12244,8 @@ const estudioBanco = [
     "width": 277,
     "height": 200
    }
-  ]
+  ],
+  "module": "modulacion"
  },
  {
   "id": "D2-60",
@@ -11762,7 +12268,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-60",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "D2-61",
@@ -11792,7 +12299,8 @@ const estudioBanco = [
     "width": 274,
     "height": 199
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "D2-62",
@@ -11822,7 +12330,8 @@ const estudioBanco = [
     "width": 303,
     "height": 193
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "D2-63",
@@ -11852,7 +12361,8 @@ const estudioBanco = [
     "width": 290,
     "height": 230
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "D2-64",
@@ -11882,7 +12392,8 @@ const estudioBanco = [
     "width": 322,
     "height": 180
    }
-  ]
+  ],
+  "module": "integrados"
  },
  {
   "id": "D2-65",
@@ -11912,7 +12423,8 @@ const estudioBanco = [
     "width": 410,
     "height": 192
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "D2-66",
@@ -11935,7 +12447,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-66",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D2-67",
@@ -11958,7 +12471,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-67",
-  "figures": []
+  "figures": [],
+  "module": "osciladores"
  },
  {
   "id": "D2-68",
@@ -11981,7 +12495,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-68",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D2-69",
@@ -12004,7 +12519,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-69",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D2-70",
@@ -12027,7 +12543,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-70",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-71",
@@ -12050,7 +12567,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-71",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-72",
@@ -12080,7 +12598,8 @@ const estudioBanco = [
     "width": 453,
     "height": 188
    }
-  ]
+  ],
+  "module": "modulacion"
  },
  {
   "id": "D2-73",
@@ -12103,7 +12622,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-73",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-74",
@@ -12133,7 +12653,8 @@ const estudioBanco = [
     "width": 268,
     "height": 225
    }
-  ]
+  ],
+  "module": "osciladores"
  },
  {
   "id": "D2-75",
@@ -12156,7 +12677,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-75",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "D2-76",
@@ -12179,7 +12701,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-76",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-77",
@@ -12202,7 +12725,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-77",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-78",
@@ -12225,7 +12749,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-78",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-79",
@@ -12248,7 +12773,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-79",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-80",
@@ -12271,7 +12797,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-80",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-81",
@@ -12294,7 +12821,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-81",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-82",
@@ -12317,7 +12845,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-82",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-83",
@@ -12340,7 +12869,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-83",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-84",
@@ -12363,7 +12893,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-84",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "D2-85",
@@ -12386,7 +12917,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-85",
-  "figures": []
+  "figures": [],
+  "module": "transmisores"
  },
  {
   "id": "D2-86",
@@ -12409,7 +12941,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-86",
-  "figures": []
+  "figures": [],
+  "module": "transmisores"
  },
  {
   "id": "D2-87",
@@ -12432,7 +12965,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-87",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "D2-88",
@@ -12455,7 +12989,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-88",
-  "figures": []
+  "figures": [],
+  "module": "transmisores"
  },
  {
   "id": "D2-89",
@@ -12478,7 +13013,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-89",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "D2-90",
@@ -12501,7 +13037,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-90",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-91",
@@ -12524,7 +13061,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-91",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-92",
@@ -12547,7 +13085,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-92",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-93",
@@ -12570,7 +13109,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-93",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-94",
@@ -12593,7 +13133,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-94",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-95",
@@ -12616,7 +13157,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-95",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-96",
@@ -12639,7 +13181,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-96",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-97",
@@ -12662,7 +13205,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-97",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-98",
@@ -12685,7 +13229,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-98",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D2-99",
@@ -12708,7 +13253,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-99",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-100",
@@ -12731,7 +13277,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-100",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-101",
@@ -12754,7 +13301,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-101",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-102",
@@ -12777,7 +13325,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-102",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-103",
@@ -12800,7 +13349,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-103",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-104",
@@ -12823,7 +13373,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-104",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-105",
@@ -12846,7 +13397,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-105",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-106",
@@ -12869,7 +13421,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-106",
-  "figures": []
+  "figures": [],
+  "module": "osciladores"
  },
  {
   "id": "D2-107",
@@ -12892,7 +13445,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-107",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "D2-108",
@@ -12915,7 +13469,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-108",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-109",
@@ -12938,7 +13493,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-109",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "D2-110",
@@ -12961,7 +13517,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-110",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-111",
@@ -12984,7 +13541,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-111",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "D2-112",
@@ -13007,7 +13565,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-112",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D2-113",
@@ -13030,7 +13589,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-113",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-114",
@@ -13053,7 +13613,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-114",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-115",
@@ -13076,7 +13637,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-115",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "D2-116",
@@ -13099,7 +13661,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-116",
-  "figures": []
+  "figures": [],
+  "module": "osciladores"
  },
  {
   "id": "D2-117",
@@ -13122,7 +13685,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-117",
-  "figures": []
+  "figures": [],
+  "module": "osciladores"
  },
  {
   "id": "D2-118",
@@ -13145,7 +13709,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-118",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D2-119",
@@ -13168,7 +13733,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D2-119",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "D3-1",
@@ -13191,7 +13757,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-1",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-2",
@@ -13214,7 +13781,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-2",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-3",
@@ -13237,7 +13805,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-3",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-4",
@@ -13260,7 +13829,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-4",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-5",
@@ -13283,7 +13853,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-5",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-6",
@@ -13306,7 +13877,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-6",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D3-7",
@@ -13329,7 +13901,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-7",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-8",
@@ -13352,7 +13925,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-8",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-9",
@@ -13375,7 +13949,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-9",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-10",
@@ -13398,7 +13973,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-10",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-11",
@@ -13421,7 +13997,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-11",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-12",
@@ -13444,7 +14021,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-12",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-13",
@@ -13467,7 +14045,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-13",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "D3-14",
@@ -13490,7 +14069,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-14",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D3-15",
@@ -13513,7 +14093,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-15",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D3-16",
@@ -13536,7 +14117,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-16",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "D3-17",
@@ -13559,7 +14141,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-d.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_GENERAL.pdf",
   "keyId": "D3-17",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "E1-1",
@@ -13589,7 +14172,8 @@ const estudioBanco = [
     "width": 376,
     "height": 171
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "E1-2",
@@ -13612,7 +14196,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-2",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-3",
@@ -13635,7 +14220,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-3",
-  "figures": []
+  "figures": [],
+  "module": "alterna",
+  "excluded": "El enunciado no define rectificación ni semiciclo para el valor medio; no debe confundirse con el promedio de una sinusoide completa."
  },
  {
   "id": "E1-4",
@@ -13665,7 +14252,8 @@ const estudioBanco = [
     "width": 296,
     "height": 150
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "E1-5",
@@ -13688,7 +14276,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-5",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-6",
@@ -13711,7 +14300,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-6",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-7",
@@ -13734,7 +14324,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-7",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-8",
@@ -13757,7 +14348,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-8",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "E1-9",
@@ -13780,7 +14372,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-9",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "E1-10",
@@ -13803,7 +14396,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-10",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "E1-11",
@@ -13826,7 +14420,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-11",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "E1-12",
@@ -13849,7 +14444,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-12",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "E1-13",
@@ -13872,7 +14468,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-13",
-  "figures": []
+  "figures": [],
+  "module": "transformadores"
  },
  {
   "id": "E1-14",
@@ -13895,7 +14492,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-14",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-15",
@@ -13918,7 +14516,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-15",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-16",
@@ -13941,7 +14540,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-16",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-17",
@@ -13964,7 +14564,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-17",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-18",
@@ -13994,7 +14595,8 @@ const estudioBanco = [
     "width": 314,
     "height": 202
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "E1-19",
@@ -14017,7 +14619,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-19",
-  "figures": []
+  "figures": [],
+  "module": "electricidad"
  },
  {
   "id": "E1-20",
@@ -14025,10 +14628,10 @@ const estudioBanco = [
   "category": "superior",
   "topic": "electricidad",
   "lesson": "electricidad",
-  "question": "Se conecta un divisor de tensión, con tomas, a una fuente de tensión de 220 V para que suministre corriente de:",
+  "question": "Se conecta un divisor de tensión, con tomas, a una fuente de tensión de 220 V para que suministre corriente de: A.- 20 mA a 100 V. B.- 30 mA a 150 V. ¿Cuál es respectivamente la resistencia de cada sección del divisor, R3, R2 y R1, si la corriente que pasa por el divisor ha de ser 50 mA en carga?",
   "options": [
-   "20 mA a 100 V.",
-   "30 mA a 150 V. ¿Cuál es respectivamente la resistencia de cada sección del divisor, R3, R2 y R1, si la corriente que pasa por el divisor ha de ser 50 mA en carga?: A.-70, 50 y 100 Ohm. B.-700. 714 y 200 Ohm.",
+   "70, 50 y 100 Ohm.",
+   "700. 714 y 200 Ohm.",
    "220, 150 y 100 Ohm.",
    "700, 500 y 2000 Ohm."
   ],
@@ -14047,7 +14650,9 @@ const estudioBanco = [
     "width": 481,
     "height": 247
    }
-  ]
+  ],
+  "module": "electricidad",
+  "excluded": "La clave publicada termina en 200 Ω para R1; con los datos y la figura, R1 = 100 V / 50 mA = 2.000 Ω. Se conserva el texto original de las alternativas."
  },
  {
   "id": "E1-21",
@@ -14070,7 +14675,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-21",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E1-22",
@@ -14093,7 +14699,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-22",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E1-23",
@@ -14116,7 +14723,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-23",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E1-24",
@@ -14139,7 +14747,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-24",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E1-25",
@@ -14162,7 +14771,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-25",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-26",
@@ -14192,7 +14802,8 @@ const estudioBanco = [
     "width": 320,
     "height": 203
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "E1-27",
@@ -14215,7 +14826,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-27",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E1-28",
@@ -14238,7 +14850,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-28",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E1-29",
@@ -14261,7 +14874,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-29",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E1-30",
@@ -14284,7 +14898,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E1-30",
-  "figures": []
+  "figures": [],
+  "module": "antenas",
+  "excluded": "La corriente de una línea coaxial adaptada requiere ida y retorno por los conductores; la clave indica sólo conductor central."
  },
  {
   "id": "E2-1",
@@ -14307,7 +14923,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-1",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-2",
@@ -14330,7 +14947,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-2",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-3",
@@ -14353,7 +14971,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-3",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-4",
@@ -14376,7 +14995,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-4",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-5",
@@ -14399,7 +15019,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-5",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-6",
@@ -14422,7 +15043,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-6",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-7",
@@ -14445,7 +15067,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-7",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-8",
@@ -14468,7 +15091,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-8",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-9",
@@ -14491,7 +15115,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-9",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-10",
@@ -14514,7 +15139,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-10",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E2-11",
@@ -14544,7 +15170,8 @@ const estudioBanco = [
     "width": 282,
     "height": 160
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "E2-12",
@@ -14574,7 +15201,8 @@ const estudioBanco = [
     "width": 277,
     "height": 162
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "E2-13",
@@ -14597,7 +15225,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-13",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-14",
@@ -14627,7 +15256,8 @@ const estudioBanco = [
     "width": 311,
     "height": 164
    }
-  ]
+  ],
+  "module": "alterna"
  },
  {
   "id": "E2-15",
@@ -14657,7 +15287,8 @@ const estudioBanco = [
     "width": 341,
     "height": 190
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "E2-16",
@@ -14680,7 +15311,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-16",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-17",
@@ -14710,7 +15342,8 @@ const estudioBanco = [
     "width": 329,
     "height": 241
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "E2-18",
@@ -14733,7 +15366,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-18",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-19",
@@ -14756,7 +15390,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-19",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "E2-20",
@@ -14786,7 +15421,8 @@ const estudioBanco = [
     "width": 302,
     "height": 203
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "E2-21",
@@ -14809,7 +15445,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-21",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-22",
@@ -14832,7 +15469,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-22",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-23",
@@ -14855,7 +15493,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-23",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-24",
@@ -14878,7 +15517,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-24",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-25",
@@ -14901,7 +15541,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-25",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E2-26",
@@ -14924,7 +15565,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-26",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-27",
@@ -14947,7 +15589,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-27",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-28",
@@ -14970,7 +15613,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-28",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-29",
@@ -14993,7 +15637,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-29",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-30",
@@ -15016,7 +15661,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-30",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-31",
@@ -15039,7 +15685,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-31",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-32",
@@ -15062,7 +15709,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-32",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-33",
@@ -15085,7 +15733,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-33",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-34",
@@ -15108,7 +15757,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-34",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-35",
@@ -15131,7 +15781,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-35",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-36",
@@ -15154,7 +15805,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-36",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-37",
@@ -15177,7 +15829,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-37",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-38",
@@ -15200,7 +15853,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-38",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-39",
@@ -15223,7 +15877,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-39",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-40",
@@ -15246,7 +15901,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-40",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-41",
@@ -15269,7 +15925,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-41",
-  "figures": []
+  "figures": [],
+  "module": "osciladores"
  },
  {
   "id": "E2-42",
@@ -15292,7 +15949,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-42",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-43",
@@ -15315,7 +15973,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-43",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-44",
@@ -15338,7 +15997,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-44",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-45",
@@ -15361,7 +16021,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-45",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-46",
@@ -15384,7 +16045,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-46",
-  "figures": []
+  "figures": [],
+  "module": "fuentes"
  },
  {
   "id": "E2-47",
@@ -15414,7 +16076,8 @@ const estudioBanco = [
     "width": 406,
     "height": 210
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "E2-48",
@@ -15437,7 +16100,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-48",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-49",
@@ -15467,7 +16131,8 @@ const estudioBanco = [
     "width": 521,
     "height": 172
    }
-  ]
+  ],
+  "module": "antenas"
  },
  {
   "id": "E2-50",
@@ -15497,7 +16162,8 @@ const estudioBanco = [
     "width": 266,
     "height": 231
    }
-  ]
+  ],
+  "module": "electricidad"
  },
  {
   "id": "E2-51",
@@ -15520,7 +16186,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-51",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-52",
@@ -15543,7 +16210,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-52",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-53",
@@ -15566,7 +16234,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-53",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-54",
@@ -15589,7 +16258,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-54",
-  "figures": []
+  "figures": [],
+  "module": "integrados"
  },
  {
   "id": "E2-55",
@@ -15619,7 +16289,8 @@ const estudioBanco = [
     "width": 224,
     "height": 124
    }
-  ]
+  ],
+  "module": "integrados"
  },
  {
   "id": "E2-56",
@@ -15649,7 +16320,8 @@ const estudioBanco = [
     "width": 321,
     "height": 191
    }
-  ]
+  ],
+  "module": "integrados"
  },
  {
   "id": "E2-57",
@@ -15672,7 +16344,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-57",
-  "figures": []
+  "figures": [],
+  "module": "integrados"
  },
  {
   "id": "E2-58",
@@ -15702,7 +16375,8 @@ const estudioBanco = [
     "width": 313,
     "height": 179
    }
-  ]
+  ],
+  "module": "integrados"
  },
  {
   "id": "E2-59",
@@ -15725,7 +16399,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-59",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-60",
@@ -15748,7 +16423,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-60",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-61",
@@ -15771,7 +16447,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-61",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-62",
@@ -15794,7 +16471,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-62",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E2-63",
@@ -15817,7 +16495,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-63",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-64",
@@ -15840,7 +16519,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-64",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-65",
@@ -15863,7 +16543,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-65",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-66",
@@ -15886,7 +16567,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-66",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-67",
@@ -15909,7 +16591,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-67",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-68",
@@ -15932,7 +16615,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-68",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-69",
@@ -15955,7 +16639,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-69",
-  "figures": []
+  "figures": [],
+  "module": "propagacion"
  },
  {
   "id": "E2-70",
@@ -15978,7 +16663,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-70",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-71",
@@ -16001,7 +16687,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-71",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-72",
@@ -16024,7 +16711,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-72",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-73",
@@ -16047,7 +16735,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-73",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-74",
@@ -16070,7 +16759,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-74",
-  "figures": []
+  "figures": [],
+  "module": "semiconductores"
  },
  {
   "id": "E2-75",
@@ -16093,7 +16783,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-75",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-76",
@@ -16116,7 +16807,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-76",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-77",
@@ -16146,7 +16838,8 @@ const estudioBanco = [
     "width": 323,
     "height": 197
    }
-  ]
+  ],
+  "module": "modulacion"
  },
  {
   "id": "E2-78",
@@ -16169,7 +16862,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-78",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-79",
@@ -16192,7 +16886,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-79",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-80",
@@ -16215,7 +16910,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-80",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-81",
@@ -16238,7 +16934,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-81",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-82",
@@ -16268,7 +16965,8 @@ const estudioBanco = [
     "width": 268,
     "height": 198
    }
-  ]
+  ],
+  "module": "transformadores"
  },
  {
   "id": "E2-83",
@@ -16298,7 +16996,8 @@ const estudioBanco = [
     "width": 374,
     "height": 196
    }
-  ]
+  ],
+  "module": "fuentes"
  },
  {
   "id": "E2-84",
@@ -16321,7 +17020,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-84",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-85",
@@ -16344,7 +17044,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-85",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-86",
@@ -16367,7 +17068,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-86",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-87",
@@ -16397,7 +17099,8 @@ const estudioBanco = [
     "width": 461,
     "height": 151
    }
-  ]
+  ],
+  "module": "amplificadores"
  },
  {
   "id": "E2-88",
@@ -16420,7 +17123,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-88",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-89",
@@ -16443,7 +17147,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-89",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-90",
@@ -16466,7 +17171,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-90",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-91",
@@ -16489,7 +17195,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-91",
-  "figures": []
+  "figures": [],
+  "module": "mediciones"
  },
  {
   "id": "E2-92",
@@ -16512,7 +17219,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-92",
-  "figures": []
+  "figures": [],
+  "module": "alterna"
  },
  {
   "id": "E2-93",
@@ -16535,7 +17243,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-93",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-94",
@@ -16559,7 +17268,8 @@ const estudioBanco = [
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-94",
   "figures": [],
-  "excluded": "La fuente repite el texto de la alternativa marcada correcta en otra alternativa. Se conserva la transcripción, pero no se selecciona para calificar."
+  "excluded": "La fuente repite el texto de la alternativa marcada correcta en otra alternativa. Se conserva la transcripción, pero no se selecciona para calificar.",
+  "module": "receptores"
  },
  {
   "id": "E2-95",
@@ -16582,7 +17292,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-95",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-96",
@@ -16605,7 +17316,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-96",
-  "figures": []
+  "figures": [],
+  "module": "receptores"
  },
  {
   "id": "E2-97",
@@ -16628,7 +17340,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-97",
-  "figures": []
+  "figures": [],
+  "module": "antenas"
  },
  {
   "id": "E2-98",
@@ -16651,7 +17364,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-98",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-99",
@@ -16674,7 +17388,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-99",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-100",
@@ -16697,7 +17412,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-100",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-101",
@@ -16720,7 +17436,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-101",
-  "figures": []
+  "figures": [],
+  "module": "amplificadores"
  },
  {
   "id": "E2-102",
@@ -16743,7 +17460,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-102",
-  "figures": []
+  "figures": [],
+  "module": "modulacion"
  },
  {
   "id": "E2-103",
@@ -16766,7 +17484,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-103",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "E2-104",
@@ -16789,7 +17508,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E2-104",
-  "figures": []
+  "figures": [],
+  "module": "integrados"
  },
  {
   "id": "E3-1",
@@ -16812,7 +17532,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E3-1",
-  "figures": []
+  "figures": [],
+  "module": "operacion",
+  "excluded": "Las pausas permiten escuchar a otras estaciones; la clave publicada indica ir a buscar lápiz y papel."
  },
  {
   "id": "E3-2",
@@ -16835,7 +17557,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E3-2",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  },
  {
   "id": "E3-3",
@@ -16858,7 +17581,9 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E3-3",
-  "figures": []
+  "figures": [],
+  "module": "operacion",
+  "excluded": "Para valorar un enlace directo se comprueba la otra estación en la entrada de la repetidora; la clave propone escuchar un repetidor más lejano."
  },
  {
   "id": "E3-4",
@@ -16881,7 +17606,8 @@ const estudioBanco = [
   "keyUrl": "assets/docs/subtel-solucionario-e.pdf",
   "keyOriginUrl": "https://www.subtel.gob.cl/wp-content/uploads/2015/04/PREGUNTAS_TECNICAS_SUPERIOR.pdf",
   "keyId": "E3-4",
-  "figures": []
+  "figures": [],
+  "module": "operacion"
  }
 ];
 if(typeof module!=='undefined')module.exports=estudioBanco;
