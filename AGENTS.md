@@ -28,3 +28,5 @@ indexación en cada nueva guía o página, desde su creación.
   Si no hay acceso, informar exactamente qué quedó pendiente.
 
 - Verificar la función de cada texto además del tamaño: navegación, pie, tablas, resultados y paneles abiertos, en escritorio y móvil. Registrar evidencia y pendientes; una lista de tamaños permitidos no certifica cumplimiento.
+
+- El proyecto de maleta de comunicaciones se llama «Base MK1», sin «73», por petición del propietario del 15/11/2026. Mantener la ruta histórica base73-mk1.html para conservar los enlaces existentes.
