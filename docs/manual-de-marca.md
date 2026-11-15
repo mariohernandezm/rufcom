@@ -40,7 +40,7 @@ Usar RUFCOM en el logo y firmas institucionales; Rufcom en textos corridos. Mant
 “La aventura también se comunica.” es la frase principal propuesta, ya presente en el sitio. “Radioafición y aventura” funciona como descriptor breve.
 
 ### Arquitectura
-RUFCOM es la marca principal. Base73 identifica el proyecto de estación transportable; acompañar siempre con su versión real. Rufis aporta un sello de experiencia y personalidad, sin reemplazar a la marca.
+RUFCOM es la marca principal. Base MK1 identifica el proyecto de estación transportable; acompañar siempre con su versión real. Rufis aporta un sello de experiencia y personalidad, sin reemplazar a la marca.
 
 ### Firma personal
 Mario Hernández · CA3HMM. En piezas personales, “Fundador y desarrollador de RUFCOM”. El indicativo identifica al operador; no forma parte del logo corporativo.
