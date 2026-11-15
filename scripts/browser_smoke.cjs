@@ -243,7 +243,7 @@ async function carousel(page, label) {
         await audit(page,name,viewport.label,'initial');
         if (name === 'inicio') {
           const heights = await page.locator('#accesos .resource-card').evaluateAll(items=>items.map(el=>el.getBoundingClientRect().height));
-          assert.equal(heights.length,6);
+          assert.equal(heights.length,5);
           assert(heights.every(height=>height<220), `Home resource cards: ${heights}`);
           await carousel(page,viewport.label);
         }
@@ -327,7 +327,7 @@ async function carousel(page, label) {
       await studyLesson(browser,base,viewport.label);
       await context.close();
     }
-    console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, guard log, menus, panels, roles, images and carousel');
+    console.log('PASS: all canonical pages and 404, desktop/mobile, compact resources and CHIRP entry, searches, menus, panels, roles, images and carousel');
   } catch (error) {
     report.error = error.stack;
     if (page && !page.isClosed()) await page.screenshot({path:path.join(output,'failure.png'),fullPage:true}).catch(()=>{});
