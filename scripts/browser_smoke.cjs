@@ -8,7 +8,7 @@ const site = path.resolve(__dirname, '../site');
 const output = process.env.RUFCOM_BROWSER_ARTIFACTS || path.resolve(__dirname, '../browser-review');
 const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.json':'application/json','.pdf':'application/pdf'};
 const report = { pages: [], carousel: [], density: [], error: null };
-const primaryPages = [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['libro','/libro-de-guardia.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html'],['guias','/guias.html'],['chirp','/chirp.html']];
+const primaryPages = [['inicio','/'],['licencias','/licencias.html'],['codigo-q','/codigo-q.html'],['repetidores','/repetidores.html'],['simplex-repetidor','/simplex-repetidor.html'],['guias','/guias.html'],['chirp','/chirp.html']];
 const covered = new Set(primaryPages.map(([,url])=>url === '/' ? 'index.html' : url.slice(1)));
 const pages = [...primaryPages, ...Object.keys(require('./seo_pages.json')).filter(name=>!covered.has(name)).map(name=>[name.replace('.html',''),'/'+name]), ['404','/404.html']];
 
@@ -305,81 +305,6 @@ async function carousel(page, label) {
           assert.equal(await page.locator('.repeater-card:visible').count(),15);
           await page.locator('.repeater-settings:visible').first().locator('summary').click();
           await audit(page,name,viewport.label,'radio-settings-open');
-        }
-        if (name === 'libro') {
-          await page.clock.install({time:new Date('2026-10-25T14:30:00Z')});
-          const compact=viewport.width<=1100;
-          const field=f=>compact?page.locator('#mobile-'+f):page.locator('[data-field="'+f+'"]').first();
-          await field('call').pressSequentially('ca3 hmm');
-          assert.equal(await page.locator('#registros tr').count(),2);
-          assert.equal(await field('call').evaluate(el=>el===document.activeElement),true);
-          assert.equal(await page.locator('[data-field="time"]').nth(1).inputValue(),'');
-          assert.equal(await field('call').inputValue(),'CA3HMM');
-          assert.equal(await field('name').inputValue(),'MARIO HERNANDEZ MONTES');
-          assert.notEqual(await field('city').inputValue(),'');
-          // Condition shortcuts replace a previous choice at any cursor position.
-          await field('condition').press('p');
-          assert.equal(await field('condition').inputValue(),'PORTÁTIL');
-          await field('condition').press('End');
-          await field('condition').press('m');
-          assert.equal(await field('condition').inputValue(),'MÓVIL');
-          await field('condition').press('Home');
-          await field('condition').press('f');
-          assert.equal(await field('condition').inputValue(),'FIJA');
-          await field('condition').press('Backspace');
-          assert.equal(await field('condition').inputValue(),'');
-          await field('condition').click();
-          await field('condition').press('p');
-          assert.equal(await field('condition').inputValue(),'PORTÁTIL');
-          const stamp=await field('time').inputValue();
-          assert.match(stamp,/^[0-9]{2}:[0-9]{2}$/);
-          await page.clock.fastForward(120000);
-          await field('name').fill('josé pérez');
-          await field('city').fill('ñuñoa');
-          assert.equal(await field('name').inputValue(),'JOSÉ PÉREZ');
-          assert.equal(await field('city').inputValue(),'ÑUÑOA');
-          assert.equal(await field('time').inputValue(),stamp);
-          if(compact){
-            await page.locator('#guard-form button[type=submit]').click();
-            for(let i=2;i<=20;i++){
-              await field('call').fill('DEMO'+i);
-              await page.locator('#guard-form button[type=submit]').click();
-            }
-            assert.equal(await page.locator('#guard-list button').count(),5);
-            assert.equal(await page.locator('#guard-count').innerText(),'20 contactos');
-            await page.locator('#guard-next').click();
-            assert.equal(await page.locator('#guard-page').innerText(),'6–10 de 20');
-            await page.locator('#guard-list button').first().click();
-            await field('city').fill('concon');
-            await page.locator('#guard-form button[type=submit]').click();
-            assert.equal(await page.locator('#guard-count').innerText(),'20 contactos');
-            assert.equal(await field('call').evaluate(el=>el===document.activeElement),true);
-            assert.equal(await page.locator('.guard-mobile').evaluate(el=>el.scrollWidth<=el.clientWidth+1),true);
-          }
-          const download=page.waitForEvent('download');
-          await page.locator('#descargar').click();
-          await (await download).saveAs(path.join(output,'libro-'+viewport.label+'.xlsx'));
-          await audit(page,name,viewport.label,'completed-book');
-          assert.equal(await page.locator('.guard-table').evaluate(el=>el.scrollWidth<=el.clientWidth+1),true);
-          await page.reload();
-          assert.equal(await field('call').inputValue(),'');
-          assert.equal(await field('time').inputValue(),'');
-          assert.equal(await page.locator('#registros tr').count(),1);
-          await field('name').fill('wilson garrido');
-          await field('name').press('ArrowDown');
-          await field('name').press('Enter');
-          assert.equal(await field('call').inputValue(),'CE3WAR');
-          assert.equal(await field('city').inputValue(),'SANTIAGO');
-          assert.match(await field('expiry').inputValue(),/25\/09\/2029/);
-          await field('name').fill('hernan gomez');
-          const person=page.getByRole('option',{name:/HERNÁN ALEJANDRO OLIVERA GÓMEZ · CE3HOG/});
-          await person.filter({visible:true}).click();
-          assert.equal(await field('call').inputValue(),'CE3HOG');
-          assert.equal(await field('city').inputValue(),'RENCA');
-          await audit(page,name,viewport.label,'name-lookup');
-          await page.screenshot({path:path.join(output,'libro-nombre-'+viewport.label+'.png'),fullPage:true});
-          page.once('dialog',dialog=>dialog.accept());
-          await page.reload();
         }
         await page.screenshot({path:path.join(output, `${name}-${viewport.label}-completa.png`),fullPage:primaryPages.some(([key])=>key===name)});
         if(await page.locator('#mainNav').count()) await menus(page,name,viewport.label);

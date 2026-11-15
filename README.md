@@ -65,8 +65,7 @@ interna y alojar los descargables en el propio sitio.
 
 Las plantillas Excel se distribuyen vacías, sin macros ni conexiones externas.
 La ficha de antena contiene las condiciones del ensayo y una tabla de lecturas.
-El libro de guardia contiene el registro de QSO y sus instrucciones. No publicar
-mediciones ni contactos ficticios como si fueran resultados reales.
+No publicar mediciones ni contactos ficticios como si fueran resultados reales.
 
 ## Seguridad
 
