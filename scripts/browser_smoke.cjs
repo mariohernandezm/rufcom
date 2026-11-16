@@ -237,7 +237,13 @@ async function carousel(page, label) {
       page = await context.newPage();
       const errors=[]; page.on('pageerror', error=>errors.push(error.message));
       for (const [name, url] of pages) {
-        await page.goto(base+url,{waitUntil:'networkidle'});
+        const response=await page.goto(base+url,{waitUntil:'networkidle'});
+        if(name==='base-mk1') {
+          assert.equal(response.status(),200);
+          assert.equal(page.url(),base+'/base-mk1.html');
+          assert.equal(response.request().redirectedFrom(),null);
+          assert.equal(await page.locator('meta[http-equiv="refresh"]').count(),0);
+        }
         const reject = page.getByRole('button',{name:'Rechazar',exact:true});
         if (await reject.isVisible()) await reject.click();
         await audit(page,name,viewport.label,'initial');
@@ -322,15 +328,10 @@ async function carousel(page, label) {
           }
         }
       }
-      for (const javaScriptEnabled of [true,false]) {
-        const redirectContext=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},javaScriptEnabled});
-        await redirectContext.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
-        const redirectPage=await redirectContext.newPage();
-        await redirectPage.goto(base+'/base73-mk1.html');
-        await redirectPage.waitForURL(base+'/base-mk1.html');
-        assert.equal(await redirectPage.locator('link[rel="canonical"]').getAttribute('href'),'https://rufcom.cl/base-mk1.html');
-        assert.match(await redirectPage.locator('h1').innerText(),/^Base MK1:/);
-        await redirectContext.close();
+      for(const retired of ['maleta-rufcom.html','base73-mk1.html']) {
+        const response=await page.goto(base+'/'+retired);
+        assert.equal(response.status(),404);
+        assert.equal(page.url(),base+'/'+retired);
       }
       assert.deepEqual(errors,[],'JavaScript page errors');
       await studyQuiz(browser,base,viewport.label);

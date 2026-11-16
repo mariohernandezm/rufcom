@@ -59,18 +59,20 @@ los originales. Las variantes WebP sin pérdida incorporadas el 12/10/2026 se
 compararon píxel por píxel con los PNG. Los ajustes de formato o compresión no
 renuevan las fechas editoriales ni requieren repetir solicitudes de indexación.
 
-## Cambio de URL de Base MK1 · 16/11/2026
+## URL directa de Base MK1 · 16/11/2026
 
-La página canónica es https://rufcom.cl/base-mk1.html. La ruta anterior
-base73-mk1.html contiene únicamente una redirección HTML inmediata al destino
-fijo, con canónica nueva y enlace de respaldo. GitHub Pages sirve archivos
-estáticos; esta redirección usa meta refresh de cero segundos, no un HTTP 301.
-Google interpreta el meta refresh inmediato como redirección permanente:
-https://developers.google.com/search/docs/crawling-indexing/301-redirects
-No bloquear la ruta anterior en robots.txt ni añadirla al sitemap.
-Los validadores limitan las redirecciones a scripts/site_routes.py y rechazan
-destinos externos, bucles y enlaces internos hacia el alias. CI comprueba la
-navegación automática con JavaScript activado y desactivado en escritorio y móvil,
-y compara también el HTML de la ruta anterior tras el despliegue.
-Mantener la fecha editorial del artículo: no cambió su contenido.
-La publicación no acredita indexación de la URL nueva en Google.
+La página canónica es https://rufcom.cl/base-mk1.html y debe responder HTTP 200
+directamente. El propietario confirmó retirar la redirección HTML y mantener el
+criterio que ya se aplicó al retirar maleta-rufcom.html en octubre.
+base73-mk1.html queda retirada y devuelve HTTP 404: los enlaces externos antiguos
+dejan de abrir la ficha. Los enlaces internos, la canónica y el sitemap apuntan
+únicamente a base-mk1.html. No bloquear las rutas retiradas en robots.txt.
+No añadir meta refresh ni páginas puente. CI rechaza las rutas retiradas y las
+redirecciones HTML; comprueba en escritorio y móvil la respuesta directa de la
+ficha nueva y los 404 anteriores. El despliegue verifica estos estados sin
+seguir redirecciones HTTP. Se conservan el contenido y la fecha editorial.
+La prueba publicada de Search Console confirmó que la URL nueva se puede
+indexar y Google aceptó la solicitud de indexación; esto no confirma indexación.
+No atribuir problemas de rendimiento o indexación a las redirecciones sin medir
+la URL afectada y comparar evidencia. Una migración futura con 301/308 reales
+requiere un alojamiento que permita configurarlos y autorización para ese cambio.
