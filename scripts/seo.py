@@ -4,6 +4,7 @@ No browser JavaScript, network access, or CSP changes are needed. Editorial
 dates are explicit in seo_pages.json and never refreshed automatically.
 """
 from pathlib import Path
+from site_routes import REDIRECTS
 from html import escape, unescape
 from datetime import date, datetime
 import argparse
@@ -67,7 +68,7 @@ def render(text, name, info):
 def run(root=ROOT, check=True):
     site = root/'site'
     config = json.loads((root/'scripts/seo_pages.json').read_text(encoding='utf-8'))
-    pages = {p.name:p for p in site.glob('*.html') if p.name!='404.html'}
+    pages = {p.name:p for p in site.glob('*.html') if p.name!='404.html' and p.name not in REDIRECTS}
     issues = []
     if set(pages) != set(config):
         issues.append('seo_pages.json must cover every canonical page and exclude retired URLs')
