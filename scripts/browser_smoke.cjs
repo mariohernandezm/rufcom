@@ -322,6 +322,16 @@ async function carousel(page, label) {
           }
         }
       }
+      for (const javaScriptEnabled of [true,false]) {
+        const redirectContext=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},javaScriptEnabled});
+        await redirectContext.route('**/*',route=>new URL(route.request().url()).hostname==='127.0.0.1'?route.continue():route.abort());
+        const redirectPage=await redirectContext.newPage();
+        await redirectPage.goto(base+'/base73-mk1.html');
+        await redirectPage.waitForURL(base+'/base-mk1.html');
+        assert.equal(await redirectPage.locator('link[rel="canonical"]').getAttribute('href'),'https://rufcom.cl/base-mk1.html');
+        assert.match(await redirectPage.locator('h1').innerText(),/^Base MK1:/);
+        await redirectContext.close();
+      }
       assert.deepEqual(errors,[],'JavaScript page errors');
       await studyQuiz(browser,base,viewport.label);
       await studyLesson(browser,base,viewport.label);

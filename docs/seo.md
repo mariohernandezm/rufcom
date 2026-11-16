@@ -58,3 +58,19 @@ Al optimizar imágenes, conservar la identidad, la transparencia y las rutas de
 los originales. Las variantes WebP sin pérdida incorporadas el 12/10/2026 se
 compararon píxel por píxel con los PNG. Los ajustes de formato o compresión no
 renuevan las fechas editoriales ni requieren repetir solicitudes de indexación.
+
+## Cambio de URL de Base MK1 · 16/11/2026
+
+La página canónica es https://rufcom.cl/base-mk1.html. La ruta anterior
+base73-mk1.html contiene únicamente una redirección HTML inmediata al destino
+fijo, con canónica nueva y enlace de respaldo. GitHub Pages sirve archivos
+estáticos; esta redirección usa meta refresh de cero segundos, no un HTTP 301.
+Google interpreta el meta refresh inmediato como redirección permanente:
+https://developers.google.com/search/docs/crawling-indexing/301-redirects
+No bloquear la ruta anterior en robots.txt ni añadirla al sitemap.
+Los validadores limitan las redirecciones a scripts/site_routes.py y rechazan
+destinos externos, bucles y enlaces internos hacia el alias. CI comprueba la
+navegación automática con JavaScript activado y desactivado en escritorio y móvil,
+y compara también el HTML de la ruta anterior tras el despliegue.
+Mantener la fecha editorial del artículo: no cambió su contenido.
+La publicación no acredita indexación de la URL nueva en Google.

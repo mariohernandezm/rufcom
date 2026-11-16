@@ -5,6 +5,7 @@ validator or comprehensive credential scanner. GitHub secret scanning and
 manual review remain necessary before pushing a public repository.
 """
 from html.parser import HTMLParser
+from site_routes import REDIRECTS
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import re
@@ -130,12 +131,18 @@ def validate(root=ROOT):
             errors.extend(f'{name}: {e}' for e in page.errors)
             if not all([page.csp, page.description, page.viewport, page.title, page.lang == 'es', page.h1 == 1]):
                 errors.append(f'{name}: missing/invalid CSP, language, description, viewport, title or h1')
-            expected = 'https://rufcom.cl/' + ('' if name == 'index.html' else name)
-            if page.refresh is not None:
+            destination = REDIRECTS.get(name)
+            expected = 'https://rufcom.cl/' + (destination or ('' if name == 'index.html' else name))
+            if destination:
+                if page.refresh != '0;url=/' + destination or destination not in files or destination in REDIRECTS:
+                    errors.append(f'{name}: invalid legacy redirect')
+                if page.analytics:
+                    errors.append(f'{name}: redirect must not load analytics')
+            elif page.refresh is not None:
                 errors.append(f'{name}: unexpected HTML redirect')
             if name != '404.html' and page.canonical != expected:
                 errors.append(f'{name}: invalid canonical URL')
-            if name != '404.html' and page.analytics != 1:
+            if name not in REDIRECTS and name != '404.html' and page.analytics != 1:
                 errors.append(f'{name}: exactly one consent-based analytics script required')
             if page.bylines > 1:
                 errors.append(f'{name}: duplicate article byline')
@@ -163,6 +170,8 @@ def validate(root=ROOT):
         except ValueError:
             errors.append(f'{name}: path escapes site: {ref}')
             return
+        if name not in REDIRECTS and target_name in REDIRECTS:
+            errors.append(f'{name}: internal link must use canonical destination: {ref}')
         if target_name not in files:
             errors.append(f'{name}: missing local resource (case sensitive): {ref}')
         elif url.fragment and target_name in pages and unquote(url.fragment) not in pages[target_name].ids:

@@ -1,6 +1,7 @@
 """Verify the deployed HTML of every canonical URL in this commit's sitemap."""
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from site_routes import REDIRECTS
 from urllib.request import urlopen
 from urllib.parse import urlsplit
 from time import sleep
@@ -35,7 +36,8 @@ if __name__ == '__main__':
             if node.tag.endswith('}loc')]
     if not urls or len(urls) != len(set(urls)):
         sys.exit('ERROR: empty sitemap or duplicate URLs')
+    urls += ['https://rufcom.cl/' + name for name in REDIRECTS]
     with ThreadPoolExecutor(max_workers=4) as pool:
         for url in pool.map(verify, urls):
             print('PASS:', url)
-    print(f'PASS: all {len(urls)} canonical pages match the validated commit')
+    print(f'PASS: all {len(urls)} canonical pages and legacy redirects match the validated commit')
