@@ -27,32 +27,16 @@ class ValidationTests(unittest.TestCase):
     def test_baseline(self):
         self.assertEqual(validate(self.root), [])
 
-    def test_legacy_redirect_cannot_change_target_delay_or_canonical(self):
-        path = self.root / 'site/base73-mk1.html'
-        source = path.read_text(encoding='utf-8')
-        for old, new in [
-            ('0;url=/base-mk1.html', '0;url=https://example.com/'),
-            ('0;url=/base-mk1.html', '5;url=/base-mk1.html'),
-            ('0;url=/base-mk1.html', '0;url=/base73-mk1.html'),
-            ('http-equiv="refresh"', 'name="disabled"'),
-            ('href="https://rufcom.cl/base-mk1.html"', 'href="https://rufcom.cl/base73-mk1.html"'),
-        ]:
-            with self.subTest(replacement=new):
-                path.write_text(source.replace(old,new),encoding='utf-8')
-                self.assertTrue(any('invalid legacy redirect' in e or 'invalid canonical URL' in e for e in validate(self.root)))
-
-    def test_redirect_alias_cannot_enter_sitemap_or_internal_navigation(self):
-        path = self.root / 'site/sitemap.xml'
-        source = path.read_text(encoding='utf-8')
-        path.write_text(source.replace('</urlset>','<url><loc>https://rufcom.cl/base73-mk1.html</loc></url></urlset>'),encoding='utf-8')
-        self.assertTrue(any('sitemap does not match' in e for e in validate(self.root)))
-        path.write_text(source,encoding='utf-8')
-        self.inject('<a href="base73-mk1.html">Maleta</a>')
-        self.assertTrue(any('internal link must use canonical destination' in e for e in validate(self.root)))
-
-    def test_unapproved_redirect_is_rejected(self):
+    def test_html_redirect_is_rejected(self):
         self.inject('<meta http-equiv="refresh" content="0;url=/base-mk1.html">')
         self.assertTrue(any('unexpected HTML redirect' in e for e in validate(self.root)))
+
+    def test_retired_url_cannot_enter_navigation_or_sitemap(self):
+        self.inject('<a href="base73-mk1.html">Maleta</a>')
+        self.assertTrue(any('missing local resource' in e for e in validate(self.root)))
+        path = self.root / 'site/sitemap.xml'
+        path.write_text(path.read_text(encoding='utf-8').replace('</urlset>','<url><loc>https://rufcom.cl/base73-mk1.html</loc></url></urlset>'),encoding='utf-8')
+        self.assertTrue(any('sitemap does not match' in e for e in validate(self.root)))
 
     def test_only_reviewed_subtel_pdfs_are_accepted(self):
         (self.root / 'site/assets/docs/unknown.pdf').write_bytes(b'%PDF-1.7\n%%EOF')
@@ -87,9 +71,12 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(any('duplicate article byline' in e for e in validate(self.root)))
 
     def test_retired_url_not_published(self):
-        path = self.root / 'site/maleta-rufcom.html'
-        path.write_text((self.root / 'site/base-mk1.html').read_text(encoding='utf-8'), encoding='utf-8')
-        self.assertTrue(any('retired URL must not be published' in e for e in validate(self.root)))
+        for name in ['maleta-rufcom.html','base73-mk1.html']:
+            with self.subTest(name=name):
+                path = self.root / 'site' / name
+                path.write_bytes((self.root / 'site/base-mk1.html').read_bytes())
+                self.assertTrue(any('retired URL must not be published: '+name in e for e in validate(self.root)))
+                path.unlink()
 
     def test_old_url_excluded_from_sitemap(self):
         path = self.root / 'site/sitemap.xml'

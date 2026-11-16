@@ -29,4 +29,4 @@ indexación en cada nueva guía o página, desde su creación.
 
 - Verificar la función de cada texto además del tamaño: navegación, pie, tablas, resultados y paneles abiertos, en escritorio y móvil. Registrar evidencia y pendientes; una lista de tamaños permitidos no certifica cumplimiento.
 
-- El proyecto de maleta de comunicaciones se llama «Base MK1», sin «73», por petición del propietario del 15/11/2026. La URL oficial es base-mk1.html desde el 16/11/2026. La ruta anterior base73-mk1.html se conserva solo como redirección inmediata; no usarla en enlaces internos ni en el sitemap.
+- El proyecto de maleta de comunicaciones se llama «Base MK1», sin «73», por petición del propietario del 15/11/2026. La URL oficial es base-mk1.html desde el 16/11/2026. La ruta anterior base73-mk1.html está retirada y debe devolver HTTP 404. No publicar páginas puente ni redirecciones HTML; no usar direcciones retiradas en enlaces internos ni en el sitemap.
